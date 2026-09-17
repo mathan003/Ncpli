@@ -7,27 +7,34 @@ import careerBanner from "../assets/image/career/Career banner.jpg";
 const careerJobs = [
   {
     id: "animation-and-graphic-designer",
-    title: "Animation and Graphic Designer",
+    title: "Animation And Graphic Designer",
     experience: "2 years experience",
     education: "Any Degree/Diploma",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Designing and creating engaging 2D/3D animations and visual assets for educational modules.",
-      "Developing graphics, illustrations, layouts, and multimedia elements across digital media.",
-      "Collaborating with instructional designers to convert instructional scripts into visual storyboards.",
-      "Maintaining brand aesthetic, typography, and visual consistency across all creative outputs.",
-      "Reviewing and refining graphic assets based on cross-functional feedback."
+      "Study Design Briefs And Determine Requirements.",
+      "Advise Clients On Strategies To Engage Target Audiences.",
+      "Identify The Best Ways To Illustrate And Communicate Clients' Vision While Complying With Design Best Practices.",
+      "Create Designs Using Illustration, Photo Editing And Layout Software.",
+      "Select Colors, Images, Typography And Layout For Communication Materials, Including Websites, Logos, Signs, Advertisements, And Social Media Posts.",
+      "Produce Drafts For Client Review And Make Revisions Based On Feedback Received.",
+      "Collaborate With Other Team Members, Such As Marketing, Sales, And Business Operations, Throughout The Various Phases Of A Project.",
+      "Review Designs For Errors Before They Are Printed Or Published.",
+      "Keep Up-To-Date With The Latest Design Trends, Tools, And Technologies."
     ],
     requirementsAndSkills: [
-      "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, After Effects, Premiere Pro).",
-      "Strong understanding of layout principles, color palettes, and typography.",
-      "Knowledge of 2D/3D animation software and digital illustration tools.",
-      "Ability to handle multiple projects and meet established deadlines.",
-      "Languages Must Know: Tamil & English."
+      "Autodesk Maya",
+      "Blender",
+      "Adobe Animate CC",
+      "Adobe Premiere",
+      "Adobe After Effects",
+      "Photoshop",
+      "Corel Draw"
     ],
     qualificationsAndExperience: [
-      "Any Degree or Diploma in Graphic Design, Animation, Visual Communication, or related field.",
-      "Minimum 2 years of relevant industry experience with a creative design portfolio."
+      "Any Degree/Diploma With Animation Course From Any Reputed Company/Institute.",
+      "Minimum 2 Years Experienced.",
+      "Must Be Fluent In Tamil And English."
     ]
   },
   {
@@ -37,22 +44,30 @@ const careerJobs = [
     education: "Bachelor's degree",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Creating fluid 2D and 3D animations for digital educational content and e-learning products.",
-      "Keyframing characters, vehicles, environments, and scientific concepts with proper timing.",
-      "Working closely with storyboard artists and content creators to match visual pacing.",
-      "Reviewing animation sequences to ensure seamless deformation, weight, and timing.",
-      "Exporting and optimizing animation assets for interactive web and app deployment."
+      "Create Expressive Character Animation Portraying A Wide Range Of Emotions.",
+      "Recommend The Best Approaches To Integrate 3-D And 2-D Components Into Final Commercial Quality Products.",
+      "Create High-Quality Animations By Utilizing Both Hard Key Animation And Motion Capture Data.",
+      "Collaborating With The Client Team Members To Understand Needs, Review Scripts, Design Storyboards, And Create And Edit Animations.",
+      "Using Software And Other Techniques To Produce Animations.",
+      "Listening To Feedback And Altering Animations To Better Suit Client Needs.",
+      "Using Creativity And Artistic Techniques To Tell A Story Or Provide Information In Visual Form.",
+      "Researching Industry Trends And Developments And Learning New Applications.",
+      "To Work With On Subject Development And Children Stories."
     ],
     requirementsAndSkills: [
-      "Solid knowledge of the 12 principles of animation.",
-      "Hands-on experience with Maya, Blender, Adobe Animate, or 3ds Max.",
-      "Keen visual eye for character timing, expression, and pacing.",
-      "Strong team player with an eagerness to learn modern animation pipelines.",
-      "Languages Must Know: Tamil & English."
+      "Autodesk Maya",
+      "Blender",
+      "Adobe Animate CC",
+      "Adobe Premiere",
+      "Adobe After Effects",
+      "Photoshop",
+      "Corel Draw",
+      "Flash"
     ],
     qualificationsAndExperience: [
-      "Bachelor's degree in Animation, Fine Arts, Multimedia, or related discipline.",
-      "0 - 1 year of experience (Fresher with exceptional showreel is welcome)."
+      "Bachelor's Degree Or Certificate In Computer Animation, Fine Arts, Graphic Design, Or Related Field.",
+      "Experience 0-1 Year.",
+      "Must Be Fluent In Tamil And English."
     ]
   },
   {
@@ -62,22 +77,28 @@ const careerJobs = [
     education: "Any Degree/Diploma",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Translating educational concepts and course scripts into dynamic visual storyboard sequences.",
-      "Sketching rough thumbnail compositions, camera angles, perspective, and character poses.",
-      "Collaborating with animators, directors, and SME teams to determine scene timing.",
-      "Producing clean animatics and presentation pitch boards for project review.",
-      "Adjusting frames and camera setups based on editorial and instructional feedback."
+      "Liaising With Writers, Animators And Directors Regarding The Look, Style And Level Of Detail Required For The Storyboard Of Each Production.",
+      "Reading And Interpreting Scripts.",
+      "Breaking Down The Script With The Director To Identify Key Scenes And Plan Them Visually.",
+      "Sequencing The Scenes From A Script Into Storyboard Format Using Panels Of Images.",
+      "Including Special Effects In The Storyboard Frames.",
+      "Identifying Lighting Requirements And Articulating Circles Of Tension Within Each Scene.",
+      "Including Key Dialogue Or Scene Directions Within Each Frame.",
+      "Briefing Animators On Key Scenes Within The Storyboard.",
+      "Amending Storyboard Scenes During The Course Of Production."
     ],
     requirementsAndSkills: [
-      "Strong digital drawing and sketching skills with digital drawing tablets (Wacom/iPad).",
-      "Deep understanding of cinematography, framing, continuity, and visual storytelling.",
-      "Familiarity with Storyboard Pro, Adobe Photoshop, or Clip Studio Paint.",
-      "High attention to detail and ability to work in a collaborative studio setup.",
-      "Languages Must Know: Tamil & English."
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Ability To Collaborate Effectively With Concept Artists, Writers, Directors, Clients, Etc To Visualize The Story",
+      "Training In Animation",
+      "Presentation Skills",
+      "Fluency In Visual Storytelling"
     ],
     qualificationsAndExperience: [
-      "Any Degree or Diploma in Fine Arts, Animation, or Visual Communication.",
-      "Minimum 1 year of experience in 2D/3D storyboarding or concept sketching."
+      "Any Degree/Diploma With Animation Course From Any Reputed Company/Institute.",
+      "Minimum 1 Year Experienced.",
+      "Must Be Fluent In Tamil And English."
     ]
   },
   {
@@ -87,22 +108,23 @@ const careerJobs = [
     education: "Any Degree/Diploma",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Assembling raw footage, illustrations, animations, voiceovers, and SFX into polished videos.",
-      "Performing color grading, audio leveling, noise reduction, and sound mixing.",
-      "Applying motion graphics, lower thirds, titles, and visual effects to heighten learner engagement.",
-      "Ensuring all exported media meets strict resolution, bitrate, and broadcast quality standards.",
-      "Archiving raw materials and project project files systematically for future versioning."
+      "The Editor Has To Discuss With The Team Thinking Of A Concept For A Story And Align Each Others' Vision.",
+      "The Editor Helps To Decide On The Look, Feel, Mood And Style For The Animation And Characters.",
+      "The Editor Discuss With The Team To Get All The Details Concerning Dialogue And Camera Angles.",
+      "A Static Visual Display Of Each Scene Is Created With The Placement Of Desired Sound And Music.",
+      "This Is Essentially A Rough Draft Before Animating Begins To Check The Flow Of The Story And Possible Changes Of The Order Of The Visuals Or Sound.",
+      "Editing And Reordering The Footage Is Essential In Telling The Story In The Most Direct Way Possible, Following The Director's Vision.",
+      "The Editor Has To Check That The Animations Have Good Timing And That The Sound And Music Conveys The Desired Mood And Pace.",
+      "Changing Between Compositions And Alternating Footage To Create The Desired Effect.",
+      "Ensures The Sound Effects Play In Time To The Visuals."
     ],
     requirementsAndSkills: [
-      "Mastery of Premiere Pro, DaVinci Resolve, Final Cut Pro, and After Effects.",
-      "Strong aesthetic sensibility for rhythm, tempo, and storytelling pacing.",
-      "Knowledge of modern video codecs, rendering pipelines, and aspect ratios.",
-      "Ability to thrive under tight schedules and adapt quickly to editorial revisions.",
-      "Languages Must Know: Tamil & English."
+      "Have Excellent Editing And Visual Effect Skills.",
+      "Must Be Fluent In Tamil And English. Multilingual Candidates Are Preferable."
     ],
     qualificationsAndExperience: [
-      "Any Degree or Diploma in Visual Communication, Film Editing, or Media Arts.",
-      "Demonstrated video editing and visual effect skills with an impressive showreel."
+      "Any Degree/Diploma.",
+      "Video Editing/Graphic Designing Certification Course From Any Reputed Institute."
     ]
   },
   {
@@ -112,22 +134,20 @@ const careerJobs = [
     education: "Any Degree/Diploma",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Building skeletal rigs and control systems for 3D characters, props, and mechanical assets.",
-      "Painting skin weights and setting up blendshapes for realistic facial animations.",
-      "Collaborating with modelers to optimize edge loops and deformation topology.",
-      "Testing and troubleshooting rigs alongside animators to ensure intuitive manipulation.",
-      "Developing basic automation scripts to streamline repetitive rigging tasks."
+      "Has A Solid Grasp And Understanding Of The Principles Of Anatomy And Expression.",
+      "Knowledge Of Traditional And Computer 2D And 3D Animation Techniques.",
+      "Experience With 3D Modelling And Animation Systems.",
+      "Advanced Knowledge Of Maya",
+      "Self - Driven, Good Communicator And A Great Team Player.",
+      "Excellent Organizational And Communication Skills."
     ],
     requirementsAndSkills: [
-      "In-depth knowledge of Maya or Blender rigging toolsets and constraint systems.",
-      "Strong understanding of human and animal anatomy, joint kinematics, and weight distribution.",
-      "Basic scripting skills in Python or MEL is an advantage.",
-      "Rigorous problem-solving aptitude and meticulous attention to detail.",
-      "Languages Must Know: Tamil & English."
+      "Have Excellent Animation And Rigging Skills.",
+      "Must Be Fluent In Tamil And English."
     ],
     qualificationsAndExperience: [
-      "Any Degree or Diploma in Animation, 3D Computer Graphics, or equivalent.",
-      "Minimum 1 year of practical experience as a 3D Rigging Artist."
+      "Any Degree/Diploma With Animation Certification Course From Any Reputed Institute.",
+      "Minimum 1 Yr Experienced."
     ]
   },
   {
@@ -137,22 +157,39 @@ const careerJobs = [
     education: "Any Degree In Engineering",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Architecting, coding, and maintaining scalable enterprise software applications.",
-      "Writing clean, modular, and maintainable code adhering to industry software patterns.",
-      "Developing and integrating RESTful APIs, third-party microservices, and databases.",
-      "Conducting code reviews, unit and integration testing, and bug fixing.",
-      "Participating in agile sprints to deliver edtech solutions that serve thousands of users."
+      "Write Well Designed, Testable, Efficient Code By Using Best Software Development Practices",
+      "Create Website Layout/User Interface By Using Standard HTML/CSS Practices",
+      "Integrate Data From Various Back-End Services And Databases",
+      "Gather And Refine Specifications And Requirements Based On Technical Needs",
+      "Create And Maintain Software Documentation",
+      "Be Responsible For Maintaining, Expanding, And Scaling Our Site",
+      "Stay Plugged Into Emerging Technologies/Industry Trends And Apply Them Into Operations And Activities",
+      "Cooperate With Web Designers To Match Visual-Design Intent",
+      "Maintain And Configure MongoDB Instances",
+      "Keep Clean Documentation Of The Database Setup And Architecture",
+      "Write Procedures For Backup And Disaster Recovery",
+      "Ensure That The Databases Achieve Maximum Performance And Availability",
+      "Design Indexing Strategies",
+      "Configure, Monitor, And Deploy Replica Sets",
+      "Upgrade Databases Through Patches",
+      "Create Roles And Users And Set Their Permissions",
+      "Experience With The Core AWS Services, Plus The Specifics Mentioned In This Job Description.",
+      "Good Background In Linux/Unix Administration"
     ],
     requirementsAndSkills: [
-      "Proficiency in Java, Python, C#, or modern TypeScript/Node.js.",
-      "Solid foundation in Data Structures, Algorithms, and Object-Oriented Programming (OOP).",
-      "Hands-on experience with SQL databases (MySQL, PostgreSQL) and NoSQL storage.",
-      "Familiarity with Git, CI/CD pipelines, Docker, and cloud platforms (AWS/Azure).",
-      "Languages Must Know: Tamil & English."
+      "Javascript",
+      "React JS",
+      "CSS",
+      "MongoDB",
+      "MySQL",
+      "Node JS",
+      "Express",
+      "PHP",
+      "Amazon Web Services (AWS)"
     ],
     qualificationsAndExperience: [
-      "Any Degree in Engineering (BE / B.Tech in CSE, IT, ECE or MCA).",
-      "2 - 3 years of software engineering experience in enterprise or web products."
+      "B.E | M.E | B.Tech | M.Tech | BCA | MCA",
+      "2 – 5 Years Experience In Software Development"
     ]
   },
   {
@@ -162,22 +199,26 @@ const careerJobs = [
     education: "Any Degree In Engineering",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Developing and optimizing responsive, high-performance web applications.",
-      "Building reusable React UI components with modular and accessible styling.",
-      "Integrating front-end applications with server APIs, headless CMS, and authentication systems.",
-      "Ensuring cross-browser compatibility and snappy performance across desktop and mobile.",
-      "Troubleshooting, debugging, and continuous improvement of client-facing web portals."
+      "Website And Software Application Designing, Building, Or Maintaining.",
+      "Using Scripting Or Authoring Languages, Management Tools, Content Creation Tools, Applications, And Digital Media.",
+      "Work Efficient And Time Responsible Person",
+      "Must Be Aiming To Work For The Longer Run",
+      "Works To Design And Develop Websites In Both Static And Dynamic.",
+      "Based On Client Requirements And Demands, Develop The Sites With The Add-On Features.",
+      "Project Accomplishment, Team-Playing And Task Management."
     ],
     requirementsAndSkills: [
-      "Strong proficiency in HTML5, CSS3/SCSS, JavaScript (ES6+), and React.js.",
-      "Familiarity with state management, REST APIs, JSON, and asynchronous requests.",
-      "Experience with modern build tools (Vite, Webpack) and version control with Git.",
-      "Good aesthetic sense for clean UI/UX and micro-interactions.",
-      "Languages Must Know: Tamil & English."
+      "Bachelors Degree In Web Development Or Related Field, Or Relevant Experience.",
+      "Solid Knowledge And Experience In Programming Applications.",
+      "Proficient In JavaScript, HTML, CSS.",
+      "Proficient In My SQL.",
+      "Dedicated Team Player.",
+      "Ability To Thrive In A Fast-Paced Environment.",
+      "Solid Ability In Both Written And Verbal Communication."
     ],
     qualificationsAndExperience: [
-      "Any Degree in Engineering (B.E / B.Tech / B.Sc Computer Science / IT / BCA / MCA).",
-      "Minimum 1 year of professional web development experience."
+      "B.E | M.E | B.Tech | M.Tech | BCA | MCA",
+      "Minimum 1 Year"
     ]
   },
   {
@@ -187,22 +228,31 @@ const careerJobs = [
     education: "PG and Digital Marketing",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Devising and driving end-to-end digital marketing campaigns across search and social channels.",
-      "Executing Search Engine Optimization (SEO) strategies to maximize organic search visibility.",
-      "Managing PPC ad campaigns on Google Ads, Meta Ads, and LinkedIn Ads with high ROI.",
-      "Tracking website metrics, user journey analytics, and campaign conversions via Google Analytics 4.",
-      "Collaborating with design and content teams to produce high-converting marketing collateral."
+      "Plan And Execute All Digital Marketing, Including SEO/SEM, Marketing Database, Email, Social Media And Display Advertising Campaigns.",
+      "Design, Build And Maintain Our Social Media Presence.",
+      "Measure And Report Performance Of All Digital Marketing Campaigns.",
+      "Identify Trends And Insights, And Optimize Spend And Performance Based On The Insights.",
+      "Brainstorm New And Creative Growth Strategies",
+      "Plan, Execute, And Measure Experiments And Conversion Tests.",
+      "Collaborate With Internal Teams To Create Landing Pages And Optimize User Experience.",
+      "Utilize Strong Analytical Ability To Evaluate End-To-End Customer Experience Across Multiple Channels And Customer Touch Points.",
+      "Instrument Conversion Points And Optimize User Funnels.",
+      "Collaborate With Agencies And Other Vendor Partners.",
+      "Evaluate Emerging Technologies. Provide Thought Leadership And Perspective For Adoption Where Appropriate."
     ],
     requirementsAndSkills: [
-      "Hands-on mastery of Google Ads, Meta Ads Manager, GA4, and SEO keyword tools.",
-      "Strong analytical mindset with ability to interpret data and generate actionable insights.",
-      "Competency in email marketing automation, content strategy, and lead nurturing funnels.",
-      "Excellent written communication and copywriting skills.",
-      "Languages Must Know: Tamil & English."
+      "Proven Working Experience In Digital Marketing",
+      "Demonstrable Experience Leading And Managing SEO/SEM, Marketing Database, Email, Social Media And/Or Display Advertising Campaigns",
+      "Highly Creative With Experience In Identifying Target Audiences And Devising Digital Campaigns That Engage, Inform And Motivate.",
+      "Experience In Optimizing Landing Pages And User Funnels",
+      "Solid Knowledge Of Website Analytics Tools (E.G., Google Analytics)/Working Knowledge Of Ad Serving Tools",
+      "Experience In Setting Up And Optimizing Google Adwords Campaigns",
+      "Strong Analytical Skills And Data-Driven Thinking",
+      "Up-To-Date With The Latest Trends And Best Practices In Online Marketing And Measurement."
     ],
     qualificationsAndExperience: [
-      "Post Graduate Degree (MBA, M.Com, MA, or PG Diploma) with certified Digital Marketing training.",
-      "Minimum 2 years of proven digital marketing campaign experience."
+      "PG With Digital Marketing Course",
+      "Minimum 2 Years"
     ]
   },
   {
@@ -212,22 +262,30 @@ const careerJobs = [
     education: "UG/PG Degree",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Conducting outreach to schools, colleges, and training institutions to introduce Netcom solutions.",
-      "Building and cultivating long-term client relationships through regular communication and visits.",
-      "Preparing and presenting tailored product demonstrations and commercial proposals.",
-      "Representing Netcom at educational expos, conferences, and institutional roadshows.",
-      "Analyzing competitor offerings and reporting client feedback to leadership."
+      "Create Awareness Of And Develop The Brand You Are Marketing",
+      "Communicate With Target Audiences And Build And Develop Customer Relationships",
+      "Help With Marketing Plans, Advertising, Direct Marketing And Campaigns",
+      "Work Closely With In-House Or External Creative Agencies To Design Marketing Materials Such As Brochures And Adverts",
+      "Write And Proofread Marketing Copy For Both Online And Print Campaigns",
+      "Produce Creative Content, Including Videos And Blog Posts",
+      "Run Social Media Channels",
+      "Organise And Attend Events Such As Conferences, Seminars, Receptions And Exhibitions",
+      "Arrange The Effective Distribution Of Marketing Materials Maintain And Update Customer Databases",
+      "Conduct Market Research, For Example Using Customer Questionnaires And Focus Groups",
+      "Develop Relationships With Key Stakeholders Both Internal And External"
     ],
     requirementsAndSkills: [
-      "Strong interpersonal, verbal communication, and consultative presentation abilities.",
-      "High energy, self-driven work ethic with a result-oriented mindset.",
-      "Competency with CRM software, MS Office (PowerPoint, Excel), and presentation tools.",
-      "Willingness to travel locally and regionally for institutional meetings.",
-      "Languages Must Know: Tamil & English."
+      "Good Teamwork And Ability To Foster Good working Relationships",
+      "Communication And Interpersonal Skills",
+      "Creativity",
+      "Analytical And Strategic Thinking",
+      "Influencing And Negotiation Skill",
+      "Ability To Work Under Pressure",
+      "A Flexible Approach To Work"
     ],
     qualificationsAndExperience: [
-      "UG or PG Degree in Business Administration, Marketing, Commerce, or related disciplines.",
-      "Minimum 1 year of marketing or business development experience (edtech preferred)."
+      "UG/PG Degree In Marketing, Sales, Or Similar",
+      "Minimum 1 Year"
     ]
   },
   {
@@ -237,22 +295,27 @@ const careerJobs = [
     education: "UG Degree",
     location: "Tirunelveli & Chennai",
     jobDescription: [
-      "Engaging potential educational clients and school administrators via outbound phone calls.",
-      "Clearly communicating the features and value proposition of Netcom's learning products.",
-      "Identifying customer needs and booking product demonstration appointments for sales managers.",
-      "Recording detailed customer details, conversation notes, and follow-up schedules in the CRM.",
-      "Achieving daily and monthly target call volumes and qualified lead quotas."
+      "Completion Of A Marketing-Related Training Program Is Ideal.",
+      "Experience As A Telemarketing Executive Within The Industry.",
+      "Considerable Experience As A Telemarketer Prior To Your Promotion.",
+      "Knowledge Of All Pertinent Consumer Rights And Responsibilities",
+      "Excellent Communication, Both Written And Verbal.",
+      "Ability To Conceptualize, Communicate, And Fulfill Visions",
+      "Top-Notch Leadership, Mentorship, And Capacity Development Abilities",
+      "Capacity To Remain Respectful, Particularly When Speaking To Disgruntled Customers"
     ],
     requirementsAndSkills: [
-      "Pleasing phone demeanor, active listening skills, and polite communication.",
-      "Ability to handle customer questions, objections, and inquiries with composure.",
-      "Basic computer literacy, CRM navigation, and fast typing speed.",
-      "Goal-driven, punctual, and resilient personality.",
-      "Languages Must Know: Tamil & English."
+      "Ability To Conduct Sales And Marketing Calls And Knowledge Of Sales Techniques",
+      "Relaxed, Confident Telephone Manner, And Strong Communication, Negotiation And Persuasion Skills.",
+      "Ability To Convey Message To Customer And Elicit Answers",
+      "Computer Skills",
+      "Result-Oriented Approach.",
+      "Good Team Worker",
+      "Patient, Determined And Motivated"
     ],
     qualificationsAndExperience: [
-      "Any Under Graduate (UG) Degree.",
-      "0 - 1 year experience (Freshers with strong verbal articulation are welcome)."
+      "UG Degree In Marketing, Sales, Or Similar.",
+      "0-1 Year Experience"
     ]
   },
   {
@@ -322,14 +385,27 @@ const careerJobs = [
 function findJobBySlug(slug) {
   if (!slug) return null;
   const s = slug.toLowerCase().trim();
+  const clean = s.replace(/[^a-z0-9]/g, "");
   return (
-    careerJobs.find(
-      (job) =>
-        job.id === s ||
-        job.id.replace(/-/g, "") === s.replace(/-/g, "") ||
-        (s.includes("hardware") && job.id === "hardware-engineer") ||
-        (s.includes("sme") && job.id === "sme")
-    ) || null
+    careerJobs.find((job) => {
+      if (job.id === s) return true;
+      if (job.id.replace(/[^a-z0-9]/g, "") === clean) return true;
+      if (job.title.toLowerCase().replace(/[^a-z0-9]/g, "") === clean) return true;
+      return false;
+    }) ||
+    (s.includes("hardware") ? careerJobs.find((j) => j.id === "hardware-engineer") : null) ||
+    (s.includes("sme") ? careerJobs.find((j) => j.id === "sme") : null) ||
+    (s.includes("telemarketing") ? careerJobs.find((j) => j.id === "telemarketing-executive") : null) ||
+    (s.includes("market") && !s.includes("tele") && !s.includes("digit") ? careerJobs.find((j) => j.id === "marketing-executive") : null) ||
+    (s.includes("digit") ? careerJobs.find((j) => j.id === "digital-marketing") : null) ||
+    (s.includes("web") ? careerJobs.find((j) => j.id === "web-developer") : null) ||
+    (s.includes("soft") ? careerJobs.find((j) => j.id === "software-development") : null) ||
+    (s.includes("rig") ? careerJobs.find((j) => j.id === "rigging") : null) ||
+    (s.includes("edit") ? careerJobs.find((j) => j.id === "editor") : null) ||
+    (s.includes("story") ? careerJobs.find((j) => j.id === "storyboard-artist-2d-3d") : null) ||
+    (s.includes("graph") ? careerJobs.find((j) => j.id === "animation-and-graphic-designer") : null) ||
+    (s.includes("animat") && !s.includes("graph") ? careerJobs.find((j) => j.id === "animator") : null) ||
+    null
   );
 }
 
@@ -363,8 +439,9 @@ function IconMapPin() {
 // Icon: Styled Arrow (matches mockups)
 function IconArrow() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.7 12l-8.85-7.85-1.42 1.42L16.86 11H5v2z" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <line x1="4" y1="12" x2="20" y2="12" />
+      <polyline points="14 6 20 12 14 18" />
     </svg>
   );
 }
@@ -372,8 +449,8 @@ function IconArrow() {
 // Icon: Styled Green Checkmark (matches mockups)
 function IconCheckmark() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12" />
     </svg>
   );
 }
@@ -518,20 +595,6 @@ function Career() {
         <section className="career-detail-section" id="career-detail-content">
           <div className="career-detail-header">
             <h2 className="career-detail-title">{selectedJob.title}</h2>
-            <div className="career-detail-pills">
-              <span className="career-detail-pill">
-                <span className="career-meta-icon"><IconBriefcase /></span>
-                {selectedJob.experience}
-              </span>
-              <span className="career-detail-pill">
-                <span className="career-meta-icon"><IconGraduation /></span>
-                {selectedJob.education}
-              </span>
-              <span className="career-detail-pill">
-                <span className="career-meta-icon"><IconMapPin /></span>
-                {selectedJob.location}
-              </span>
-            </div>
           </div>
 
           {/* 1. Job Description */}

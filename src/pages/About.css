@@ -102,7 +102,7 @@
 .about-stat {
   position: absolute;
   top: 20%;
-  right: -60px;
+  right: 10px;
   display: grid;
   width: 150px;
   height: 85px;
