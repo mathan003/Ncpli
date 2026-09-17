@@ -149,8 +149,9 @@
 .meet__text p {
   color: #2b3b33;
   font-size: 16px;
+  padding-left: 40px;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 2.2;
 }
 
 .meet__gallery {
