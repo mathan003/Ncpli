@@ -19,9 +19,9 @@ function Footer() {
     <footer className="site-footer">
       <div className="container site-footer__grid">
         <div className="site-footer__about">
-          <h3>Netcom Computers Pvt Ltd</h3>
+          <h3>Ncpli</h3>
           <p>
-            Netcom Computers Pvt Ltd is an information technology based
+            Ncpli is an information technology based
             company in education and training.
           </p>
         </div>
@@ -63,7 +63,7 @@ function Footer() {
 
       <div className="site-footer__bottom">
         <div className="container site-footer__bottom-row">
-          <p>&copy; {year} Netcom Computers Pvt Ltd. All rights reserved.</p>
+          <p>&copy; {year} Ncpli. All rights reserved.</p>
         </div>
       </div>
     </footer>

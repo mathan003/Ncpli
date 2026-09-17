@@ -30,7 +30,7 @@ const About = () => (
           <div className="about-stat"><strong>20+</strong><span>Years</span></div>
         </div>
         <div className="about-copy">
-          <p><strong>Netcom Computers Pvt Ltd</strong>, an information technology company founded in 2004, is dedicated to education and training. We offer a comprehensive suite of services, from developing globally relevant educational content to designing large-scale learning initiatives and implementing modern IT infrastructure.</p>
+          <p><strong>Ncpli</strong>, an information technology company founded in 2004, is dedicated to education and training. We offer a comprehensive suite of services, from developing globally relevant educational content to designing large-scale learning initiatives and implementing modern IT infrastructure.</p>
           <p>Our mission is to build robust technology infrastructure, maintain effective operational environments, and deliver prompt, cost-effective, and dependable solutions that empower learners and institutions.</p>
           <p>Over the past two decades, Netcom has built an enduring reputation based on value, trust, and reliability, backed by a proven track record and an expert team.</p>
           <p>We work as a strategic technology partner, helping our clients achieve their organizational goals with innovative, best-in-class solutions.</p>

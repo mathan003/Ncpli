@@ -12,7 +12,7 @@ import messageIcon from "../assets/image/contact/message.png";
 import facebookIcon from "../assets/image/contact/facebook.png";
 import instagramIcon from "../assets/image/contact/insta.png";
 import linkedinIcon from "../assets/image/contact/linkedin.png";
-import xIcon from "../assets/image/contact/x.png";
+import xIcon from "../assets/image/contact/X.png";
 import whatsappIcon from "../assets/image/contact/whatsapp.png";
 
 const locations = [

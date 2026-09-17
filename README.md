@@ -1,6 +1,6 @@
-# Netcom Computers — Website (React + Vite)
+# Ncpli — Website (React + Vite)
 
-A responsive recreation of the Netcom Computers Pvt Ltd home page, built with
+A responsive recreation of the Ncpli home page, built with
 React, Vite, and plain CSS. The Header and Footer are shared components used
 on every route, so they stay identical across the whole site.
 

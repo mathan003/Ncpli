@@ -58,7 +58,7 @@ function Hero() {
             Building the Future.
           </h1>
           <p>
-            Netcom Computers Pvt Ltd, an information technology based company
+            Ncpli, an information technology based company
             since 2004, in education and training, is offering a wide range
             of services that include creating educational and training
             content of global relevance, designing and executing large

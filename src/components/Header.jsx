@@ -98,7 +98,7 @@ function Header() {
     <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
       <div className="container site-header__row">
         <NavLink to="/" className="site-header__brand" onClick={() => setMenuOpen(false)}>
-          <img src={logo} alt="Netcom Computers logo" />
+          <img src={logo} alt="Ncpli logo" />
         </NavLink>
 
         <button
