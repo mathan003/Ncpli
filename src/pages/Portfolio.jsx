@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import "./Portfolio.css";
+import portfolioBanner from "../assets/image/portfolio/portfolio banner.jpg";
 
 const portfolioImages = import.meta.glob(
-  "../../../assets/image/portfolio/**/*.{png,jpg,jpeg,webp}",
+  "../assets/image/portfolio/**/*.{png,jpg,jpeg,webp}",
   { eager: true, import: "default", query: "?url" },
 );
 
@@ -354,7 +355,7 @@ const youtubeProjects = [
     title: "சிட்டு",
     image: findPortfolioImage("Youtube", "சிட்டு.png"),
     isYoutube: true,
-    youtubeUrl: "youtube.com/watch?t=113&v=Vmq9CDAMjVk&feature=youtu.be",
+    youtubeUrl: "https://www.youtube.com/watch?t=113&v=Vmq9CDAMjVk&feature=youtu.be",
   },
   {
     title: "Moral Stories",
@@ -366,7 +367,7 @@ const youtubeProjects = [
     title: "பச்சை கிளி",
     image: findPortfolioImage("Youtube", "பச்சை கிளி.png"),
     isYoutube: true,
-    youtubeUrl: "youtube.com/watch?t=63&v=Uz98TQd1U_s&feature=youtu.be",
+    youtubeUrl: "https://www.youtube.com/watch?t=63&v=Uz98TQd1U_s&feature=youtu.be",
   },
   {
     title: "ஆணை",
@@ -378,7 +379,7 @@ const youtubeProjects = [
     title: "வீரன்",
     image: findPortfolioImage("Youtube", "வீரன்.png"),
     isYoutube: true,
-    youtubeUrl: "youtube.com/watch?v=Uz98TQd1U_s&feature=youtu.be",
+    youtubeUrl: "https://www.youtube.com/watch?v=Uz98TQd1U_s&feature=youtu.be",
   },
   {
     title: "குள்ள வாத்து",
@@ -520,7 +521,13 @@ function Portfolio() {
     <div className={`portfolio-page portfolio-page--${normalizedCategory}`}>
       {/* ================= HERO ================= */}
       <section className="portfolio-hero">
-        <div className="hero-background" aria-hidden="true" />
+        <div
+          className="hero-background"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("${portfolioBanner}")`,
+          }}
+          aria-hidden="true"
+        />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Portfolio</h1>

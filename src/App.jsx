@@ -5,7 +5,7 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Projects/Projects.jsx";
 import ProductsPage from "./pages/Products/ProductsPage.jsx";
 import Service from "./pages/Service/Service.jsx";
-import Portfolio from "./pages/Portfolio/AR&VR/Portfolio.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 import Career from "./pages/Career.jsx";
 import Contact from "./pages/Contact.jsx";
 import NotFound from "./pages/NotFound.jsx";
