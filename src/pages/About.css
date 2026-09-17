@@ -14,7 +14,7 @@
 }
 
 .about-hero-content {
-  width: min(1130px, 100%);
+  width: min(1440px, 100%);
   min-height: 240px;
   margin: auto;
   padding: 50px 24px;
@@ -52,7 +52,7 @@
 }
 
 .about-content {
-  width: min(1040px, 100%);
+  width: min(1440px, 100%);
   margin: auto;
   padding: 40px 24px 70px;
 }

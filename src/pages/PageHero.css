@@ -21,6 +21,7 @@
 .detail-breadcrumb { width: min(92%, 700px); margin: -24px auto 42px; padding: 16px 24px; border-radius: 16px; background: #1d1d1d; color: #fff; text-align: center; box-shadow: 0 8px 18px rgb(0 0 0 / 18%); }
 .detail-breadcrumb span { padding: 0 9px; color: #79d89c; }
 .detail-page { width: min(100% - 48px, 1120px); margin: 0 auto; padding-bottom: 80px; }
+.detail-page { width: min(100% - 48px, 1440px); margin: 0 auto; padding-bottom: 80px; }
 .detail-intro { display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 34px; margin-bottom: 58px; }
 .detail-intro h2, .detail-section-title { margin-bottom: 18px; color: #292929; }
 .detail-intro p { margin: 0 0 14px; color: #4d5751; line-height: 1.7; }

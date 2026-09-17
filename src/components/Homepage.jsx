@@ -85,31 +85,32 @@ function Hero() {
 function MeetNetcom() {
   return (
     <section className="section_meet">
-      <h2>Meet Netcom</h2>
-      <div className="container meet__row">
-        <div className="meet__text">
-          
-          <p>
-            Netcom Computers, an information technology based company since
-            2004, in education and training, is offering a wide range of
-            services that include creating educational and training content
-            of global relevance, designing and executing large learning
-            initiatives and setting up the requisite infrastructure. Netcom
-            provides multiple software services to clients. Our mission is
-            to help customers achieve their business objectives by providing
-            innovative, best&#8209;in&#8209;class consulting, IT solutions, and
-            services. We function as an IT partner to business, offering a
-            consulting &ndash; plan &ndash; implementation approach with an
-            integrated portfolio of technology IT solutions that encompass
-            the entire enterprise value chain.
-          </p>
-        </div>
+      <div className="container">
+        <h2>Meet Netcom</h2>
+        <div className="meet__row">
+          <div className="meet__text">
+            <p>
+              Netcom Computers, an information technology based company since
+              2004, in education and training, is offering a wide range of
+              services that include creating educational and training content
+              of global relevance, designing and executing large learning
+              initiatives and setting up the requisite infrastructure. Netcom
+              provides multiple software services to clients. Our mission is
+              to help customers achieve their business objectives by providing
+              innovative, best&#8209;in&#8209;class consulting, IT solutions, and
+              services. We function as an IT partner to business, offering a
+              consulting &ndash; plan &ndash; implementation approach with an
+              integrated portfolio of technology IT solutions that encompass
+              the entire enterprise value chain.
+            </p>
+          </div>
 
-        <div className="meet__gallery">
-          <img className="img1" src={img1} alt="Students exploring an AI and VR classroom lesson" />
-          <img className="img2" src={img2} alt="Student working at a computer workstation" />
-          <img className="img3" src={img3} alt="Teacher guiding students at a computer" />
-          <img className="img4" src={img4} alt="Close up of code and design work on a laptop screen" />
+          <div className="meet__gallery">
+            <img className="img1" src={img1} alt="Students exploring an AI and VR classroom lesson" />
+            <img className="img2" src={img2} alt="Student working at a computer workstation" />
+            <img className="img3" src={img3} alt="Teacher guiding students at a computer" />
+            <img className="img4" src={img4} alt="Close up of code and design work on a laptop screen" />
+          </div>
         </div>
       </div>
     </section>
