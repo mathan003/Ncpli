@@ -31,32 +31,44 @@ const About = () => (
         </div>
         <div className="about-copy">
           <div className="about-intro">
-          <p><strong>Ncpli</strong>, an information technology company founded in 2004, is dedicated to education and training. We offer a comprehensive suite of services, from developing globally relevant educational content to designing large-scale learning initiatives and implementing modern IT infrastructure.</p>
-          <p>Our mission is to build robust technology infrastructure, maintain effective operational environments, and deliver prompt, cost-effective, and dependable solutions that empower learners and institutions.</p>
-          <p>Over the past two decades, Netcom has built an enduring reputation based on value, trust, and reliability, backed by a proven track record and an expert team.</p>
-          <p>We work as a strategic technology partner, helping our clients achieve their organizational goals with innovative, best-in-class solutions.</p>
+          <p><strong>Netcom Computers Pvt Ltd</strong>, an information technology based company 
+          since 2004, in Education and Training, is offering wide range of that include
+          creating educational and training content of global relevance,designing and
+          executing large learning initiatives and setting up the requisite infrastructure.</p>
+          <p>Netcom is to build a quality and comprehensive technology infrastructure, establish and maintain an effective operational environment ,deliver Quality, prompt cost effective and reliable technology.Netcom to provide innovative, Quality and sustainable ICT solutions and services that meet the aspiration of the educational sector institutions like School boards and universities in the learning, teaching,research and management..</p>
+          <p>Over these years, the company has earned a reputation that has a unique combination of value,trust and reliability.We have a formidable track record and are illustrious for the expertise of our team.</p>
+          <p>Netcom providing multiple software services to clients. Our mission is to help customers achieve their business objectives by providing innovative, best-in-class consulting, IT solutions, and services. We function as an IT partner to business, offering a consulting – plan – implementation approach with an integrated portfolio of technology IT solutions that encompass the entire Enterprise value chain.</p>
         </div>
         </div>
       </div>
 
       <div className="about-story">
-        <p>Driven by a team of innovative software professionals, Netcom is a premier software development provider specializing in custom application engineering, system maintenance, and mobile app development. Our network delivers adaptive, high-impact technology solutions tailored to evolving institutional and business needs.</p>
+        <p>Our company by a team of innovative software professionals, we are a premier software development company, specializing in outsourcing services, product-engineering-services that includes custom Application / software application development, maintenance and mobile application development. Netcom domestic and international business network delivers highly flexible, adaptive solutions and 
+           a best-of-both worlds scenario for business needs. Our Company offshore development team will be always in contact with clients for customer-driven continuous development and to ensure that the project is always on track..</p>
         <img src={about3} alt="Digital technology illustration" />
       </div>
 
       <section className="about-purpose">
         <h2 className="about-title">What We Do</h2>
-        <p>Netcom Computers works across multiple domains in the IT industry. We have established a strong presence in computer education, digital smart classrooms, soft skills development, custom software solutions, and rich 2D &amp; 3D animation.</p>
+        <p>Netcom Computers has a team of working with many fields of IT industry. We have strong foothold in a variety of fields like computer education, 
+           computer aided education, soft skill training, software solutions, web solutions, 3D and 2D animations, cartoon animations, etc.,.</p>
         <div className="purpose-grid">
           <article className="purpose-card">
             <img src={missionIcon} alt="" />
             <h3>Mission</h3>
-            <p>To provide best-of-breed software products and IT solutions that empower organizations to optimize operations, enhance learning, and deliver measurable outcomes.</p>
+            <p>To provide best of breed software products to enable organization to run their 
+                businesss and operations better.To deliver effective IT solution and quality services.
+                To enchance the competitive advantages of our clients.To maintain a sustainable 
+                social environment and be a socially responsible corporate citizen..</p>
           </article>
           <article className="purpose-card">
             <img src={visionIcon} alt="" />
             <h3>Vision</h3>
-            <p>To deliver ubiquitous, secure, and seamless access to modern educational and digital resources through reliable and robust technological infrastructure.</p>
+            <p>Netcom is to provide ubiquitous, secure and seamless access to information 
+                resources in all forms through reliable and robust infrastructure.To build better 
+                solution for education industry through AI and machine learning capabilities in 
+                many areas of space operations to enable people to empower the knowledge of the 
+                application of education..</p>
           </article>
         </div>
       </section>

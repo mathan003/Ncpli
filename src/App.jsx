@@ -25,6 +25,7 @@ function App() {
         <Route path="/portfolio" element={<Navigate to="/portfolio/ar&vr" replace />} />
         <Route path="/portfolio/:category" element={<Portfolio />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/career/:roleId" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

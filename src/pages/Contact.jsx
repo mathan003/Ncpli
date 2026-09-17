@@ -41,32 +41,57 @@ const locations = [
   },
 ];
 
-function GoogleLocationsMap() {
+function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
   const mapElement = useRef(null);
+  const mapRef = useRef(null);
+  const markersRef = useRef({});
+  const activeLocationRef = useRef(activeLocationId);
+
+  useEffect(() => {
+    activeLocationRef.current = activeLocationId;
+  }, [activeLocationId]);
 
   useEffect(() => {
     if (!mapElement.current) return undefined;
 
+    const bounds = L.latLngBounds(locations.map((loc) => loc.position));
+
+    // Enable fractional zoomSnap (0.1) so Leaflet zooms in tightly around the 3 locations
     const map = L.map(mapElement.current, {
       zoomControl: true,
       scrollWheelZoom: false,
-    }).setView([11.1, 78.3], 6);
+      zoomSnap: 0.1,
+      zoomDelta: 0.5,
+    });
+
+    mapRef.current = map;
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    const bounds = L.latLngBounds([]);
+    // Fit tightly to all 3 locations with minimal padding (zoomed in tightly on display)
+    map.fitBounds(bounds, {
+      padding: [35, 35],
+      animate: false,
+    });
 
     locations.forEach((location) => {
-      const position = [location.position[0], location.position[1]];
-      const marker = L.circleMarker(position, {
-        radius: 9,
-        color: "#0e4a34",
-        weight: 2,
-        fillColor: "#0e4a34",
-        fillOpacity: 0.9,
-      }).addTo(map);
+      const isHeadOffice = location.id === 1;
+      const markerPin = L.divIcon({
+        className: "custom-map-pin",
+        html: `
+          <div class="map-pin-container">
+            <div class="map-pin-bubble ${isHeadOffice ? "map-pin-bubble--primary" : ""}"></div>
+            <div class="map-pin-label">${location.name.replace("Netcom Computers - ", "")}</div>
+          </div>
+        `,
+        iconSize: [30, 42],
+        iconAnchor: [15, 42],
+      });
+
+      const marker = L.marker(location.position, { icon: markerPin }).addTo(map);
 
       marker.bindPopup(`
         <div class="map-popup">
@@ -76,15 +101,18 @@ function GoogleLocationsMap() {
         </div>
       `);
 
-      bounds.extend(position);
-    });
+      marker.on("click", () => {
+        if (onSelectLocation) onSelectLocation(location.id);
+      });
 
-    if (bounds.isValid()) {
-      map.fitBounds(bounds.pad(0.45));
-    }
+      markersRef.current[location.id] = marker;
+    });
 
     const resizeObserver = new ResizeObserver(() => {
       map.invalidateSize();
+      if (!activeLocationRef.current) {
+        map.fitBounds(bounds, { padding: [35, 35], animate: false });
+      }
     });
 
     resizeObserver.observe(mapElement.current);
@@ -93,18 +121,41 @@ function GoogleLocationsMap() {
       resizeObserver.disconnect();
       map.remove();
     };
-  }, []);
+  }, [onSelectLocation]);
+
+  useEffect(() => {
+    if (!mapRef.current) return;
+    const bounds = L.latLngBounds(locations.map((loc) => loc.position));
+
+    if (activeLocationId) {
+      const target = locations.find((l) => l.id === activeLocationId);
+      if (target) {
+        mapRef.current.flyTo(target.position, 14, { duration: 1 });
+        const marker = markersRef.current[target.id];
+        if (marker) {
+          marker.openPopup();
+        }
+      }
+    } else {
+      mapRef.current.flyToBounds(bounds, {
+        padding: [35, 35],
+        duration: 1,
+      });
+      mapRef.current.closePopup();
+    }
+  }, [activeLocationId]);
 
   return (
     <div
       className="contact-map"
       ref={mapElement}
-      aria-label="Map showing three Netcom Computers locations"
+      aria-label="Interactive map showing three Netcom Computers locations"
     />
   );
 }
 
 const Contact = () => {
+  const [activeLocationId, setActiveLocationId] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -327,37 +378,60 @@ const Contact = () => {
 
           {/* Map */}
           <div className="map-container">
-            <GoogleLocationsMap />
+            <GoogleLocationsMap
+              activeLocationId={activeLocationId}
+              onSelectLocation={setActiveLocationId}
+            />
+            {activeLocationId && (
+              <button
+                type="button"
+                className="map-reset-btn"
+                onClick={() => setActiveLocationId(null)}
+              >
+                ← View All 3 Locations
+              </button>
+            )}
           </div>
 
           {/* Location Cards */}
           <div className="location-cards">
+            {locations.map((location) => {
+              const isActive = activeLocationId === location.id;
+              return (
+                <div
+                  className={`location-card ${isActive ? "location-card--active" : ""}`}
+                  key={location.id}
+                  onClick={() => setActiveLocationId(isActive ? null : location.id)}
+                  style={{ cursor: "pointer" }}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      setActiveLocationId(isActive ? null : location.id);
+                    }
+                  }}
+                >
+                  <div className="location-number">
+                    {String(location.id).padStart(2, "0")}
+                  </div>
 
-            {locations.map((location) => (
-              <div
-                className="location-card"
-                key={location.id}
-              >
-                <div className="location-number">
-                  {String(location.id).padStart(2, "0")}
+                  <div className="location-card-content">
+                    <h3>{location.name}</h3>
+
+                    <p>{location.address}</p>
+
+                    <a
+                      href={location.mapsUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Get Directions →
+                    </a>
+                  </div>
                 </div>
-
-                <div className="location-card-content">
-                  <h3>{location.name}</h3>
-
-                  <p>{location.address}</p>
-
-                  <a
-                    href={location.mapsUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Get Directions →
-                  </a>
-                </div>
-              </div>
-            ))}
-
+              );
+            })}
           </div>
 
         </div>

@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 .vercel
+.vite
 *.local
 .venv
 venv

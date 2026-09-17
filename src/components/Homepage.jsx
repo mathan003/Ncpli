@@ -58,11 +58,10 @@ function Hero() {
             Building the Future.
           </h1>
           <p>
-            Ncpli, an information technology based company
-            since 2004, in education and training, is offering a wide range
-            of services that include creating educational and training
-            content of global relevance, designing and executing large
-            learning initiatives and setting up the requisite infrastructure.
+            Netcom Computers Pvt Ltd , an information technology based company since 2004, 
+            in Education and Training, is offering wide range of that include creating educational 
+            and training content of global relevance,designing and executing large learning initiatives 
+            and setting up the requisite infrastructure.
           </p>
           <Link to="/service" className="btn btn-accent">
             Explore Our Services
@@ -90,18 +89,18 @@ function MeetNetcom() {
         <div className="meet__row">
           <div className="meet__text">
             <p>
-              Netcom Computers, an information technology based company since
-              2004, in education and training, is offering a wide range of
-              services that include creating educational and training content
-              of global relevance, designing and executing large learning
-              initiatives and setting up the requisite infrastructure. Netcom
-              provides multiple software services to clients. Our mission is
-              to help customers achieve their business objectives by providing
-              innovative, best&#8209;in&#8209;class consulting, IT solutions, and
-              services. We function as an IT partner to business, offering a
-              consulting &ndash; plan &ndash; implementation approach with an
-              integrated portfolio of technology IT solutions that encompass
-              the entire enterprise value chain.
+              Netcom Computers an information technology based company since 2004, in 
+              Education and Training, is offering wide range of that include creating educational 
+              and training content of global relevance,designing and executing large learning 
+              initiatives and setting up the requisite infrastructure. Netcom providing multiple 
+              software services to clients. Our mission is to help customers achieve their business 
+              objectives by providing innovative, best-in-class consulting, IT solutions, and services. 
+              We function as an IT partner to business, offering a consulting – plan – implementation 
+              approach with an integrated portfolio of technology IT solutions that encompass the 
+              entire Enterprise value chain.Netcom Computers Pvt Ltd , an information technology based company since 2004, 
+              in Education and Training, is offering wide range of that include creating educational 
+              and training content of global relevance,designing and executing large learning initiatives 
+              and setting up the requisite infrastructure.
             </p>
           </div>
 
@@ -124,62 +123,57 @@ const SERVICES = [
     title: "Graphic Design",
     image: graphicDesign,
     description:
-      "With a team of creative design professionals, we support our clients to enter into the global business market with trendy and eye-catching designs.",
+      "With A Team Of Creative Design Professionals, We Support Our Clients To Enter Into The Global Business Market With Trendy And Eye-Catching Designs.",
     to: "/service/graphic-design",
   },
   {
     title: "E Content Development",
     image: econtent,
     description:
-      "Comprehensive digital repository offering superior-quality content in Mathematics, Physics, Chemistry, Biology, Social Sciences, English Grammar, Business Studies, and Accountancy.",
+      "Comprehensive digital repository offering superior-quality content in Mathematics, Physics, Chemistry, Biology, Social Sciences, English Grammar, Business Studies, Economics and Accountancy",
     to: "/service/e-content-development",
   },
   {
     title: "Short Film",
     image: shortfilm,
-    description: "We make short films, ads, 2D and 3D animations.",
+    description: "We make Short Films, Ads, 2D and 3D Animations",
     to: "/service/short-film",
   },
   {
     title: "Web Application Development",
     image: webapp,
     description:
-      "A composed team of pre-eminent and rapid working web development professionals are in Netcom.",
-    to: "/service/web-application-development",
-  },
+      "A Composed Team Of Pre-Eminent And Rapid Working Web Development Professionals Are In Netcom", to: "/service/web-application-development",  },
   {
     title: "Mobile Application Development",
     image: mobileapp,
     description:
-      "With a great fame, best working mobile apps are warmly welcomed. In that line, apps from Netcom have received great response from our clients.",
-    to: "/service/mobile-application-development",
+      "With A Great Fame, Best Working Mobile Apps Are Warm Welcomed. In That Line, Apps From Netcom Has Received Great Response From Our Clients.",   to: "/service/mobile-application-development",
   },
   {
     title: "Web Hosting Services",
     image: webhosting,
     description:
-      "Includes software upgrades, repairs and fixes. We will also monitor the performance of the software so you don't face any issues.",
-    to: "/service/web-hosting-services",
+      "Includes software upgrades, repairs and fixes. We will also monitor the performance of the software so you don’t face any issues.",    to: "/service/web-hosting-services",
   },
   {
     title: "Customized Software Development",
     image: customsoftware,
     description:
-      "Aim to provide you the exact services and solutions you have asked for, because we value your product.",
-    to: "/service/custom-software-development",
+      "Aim to provide you the exact services and solutions you have asked for, because we value your product!.",    to: "/service/custom-software-development",
   },
   {
     title: "Hardware Support & Maintenance",
     image: hardware,
     description:
-      "Reliable hardware installation, preventive maintenance, troubleshooting, network support and on-site assistance.",
-    to: "/service/hardware-support",
+      "Aim to provide you the exact services and solutions you have asked for, because we value your product!.",
+          to: "/service/hardware-support",
   },
   {
     title: "Cloud Maintenance",
     image: cloud,
     description:
-      "Proactive cloud infrastructure management, server configuration, performance optimization and automated backups.",
+      "Aim to provide you the exact services and solutions you have asked for, because we value your product!.",
     to: "/service/web-hosting-services",
   },
 ];
@@ -190,7 +184,7 @@ function Services() {
       <div className="container">
         <div className="section-heading">
           <h2>Our Services</h2>
-          <p>Full-spectrum service offerings to take your business into its next stage</p>
+          <p>Full-Spectrum Service Offerings To Make Your Business Into The Next Stage</p>
         </div>
 
         <div className="services__grid">
