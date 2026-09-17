@@ -560,20 +560,6 @@ function Career() {
           <div className="career-hero-content">
             <h1 className="career-hero-title">career</h1>
 
-            <nav className="career-breadcrumb" aria-label="Breadcrumb">
-              <Link to="/">Home</Link>
-              <span className="career-breadcrumb-sep">&gt;</span>
-              {selectedJob ? (
-                <>
-                  <Link to="/career">Career</Link>
-                  <span className="career-breadcrumb-sep">&gt;</span>
-                  <span className="career-breadcrumb-current">Career Details</span>
-                </>
-              ) : (
-                <span className="career-breadcrumb-current">Career</span>
-              )}
-            </nav>
-
             <div className="career-hero-cta">
               <span className="career-hero-kicker">Grow With Us</span>
               <button
@@ -587,6 +573,23 @@ function Career() {
           </div>
         </div>
       </section>
+
+      {/* ================= BREADCRUMB CAPSULE ================= */}
+      <div className="cs-breadcrumb-wrapper">
+        <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
+          <Link to="/">Home</Link>
+          <span className="cs-breadcrumb-separator">›</span>
+          {selectedJob ? (
+            <>
+              <Link to="/career">Career</Link>
+              <span className="cs-breadcrumb-separator">›</span>
+              <span className="cs-breadcrumb-current">{selectedJob.title}</span>
+            </>
+          ) : (
+            <span className="cs-breadcrumb-current">Career</span>
+          )}
+        </nav>
+      </div>
 
       {/* ====================================================================
           VIEW 1: JOB DETAIL VIEW (when a role is selected)

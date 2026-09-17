@@ -531,17 +531,27 @@ function Portfolio() {
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Portfolio</h1>
-          <div className="breadcrumb">
-            <Link to="/">Home</Link>
-            <span>›</span>
-            <span>portfolio</span>
-          </div>
           <a href="#portfolio-content" className="explore-btn">
             Explore Now
           </a>
           <p>We devote all of our experience and efforts for creation</p>
         </div>
       </section>
+
+      {/* ================= BREADCRUMB CAPSULE ================= */}
+      <div className="cs-breadcrumb-wrapper">
+        <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
+          <Link to="/">Home</Link>
+          <span className="cs-breadcrumb-separator">›</span>
+          <Link to="/portfolio">Portfolio</Link>
+          {selectedCategory && (
+            <>
+              <span className="cs-breadcrumb-separator">›</span>
+              <span className="cs-breadcrumb-current">{selectedCategory.title}</span>
+            </>
+          )}
+        </nav>
+      </div>
 
       {/* ================= PORTFOLIO CONTENT ================= */}
       <main className="portfolio-content" id="portfolio-content">

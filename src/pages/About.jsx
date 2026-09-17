@@ -15,10 +15,18 @@ const About = () => (
     >
       <div className="about-hero-content">
         <h1>About Us</h1>
-        <span>Home › About Us</span>
         <Link to="/contact">Get in Touch</Link>
       </div>
     </section>
+
+    {/* ================= BREADCRUMB CAPSULE ================= */}
+    <div className="cs-breadcrumb-wrapper">
+      <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
+        <Link to="/">Home</Link>
+        <span className="cs-breadcrumb-separator">›</span>
+        <span className="cs-breadcrumb-current">About Us</span>
+      </nav>
+    </div>
 
     <section className="about-content">
       <h2 className="about-title">Welcome to Netcom Computers</h2>

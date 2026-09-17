@@ -40,7 +40,16 @@ function ProductsPage() {
       <section className="detail-hero detail-hero--product">
         <div className="container"><span className="detail-kicker">PRODUCT</span><h1>{product.title}</h1><p>{product.description}</p></div>
       </section>
-      <div className="detail-breadcrumb">Home <span>›</span> Product <span>›</span> {product.title}</div>
+      {/* ================= BREADCRUMB CAPSULE ================= */}
+      <div className="cs-breadcrumb-wrapper">
+        <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
+          <Link to="/">Home</Link>
+          <span className="cs-breadcrumb-separator">›</span>
+          <Link to="/products">Products</Link>
+          <span className="cs-breadcrumb-separator">›</span>
+          <span className="cs-breadcrumb-current">{product.title}</span>
+        </nav>
+      </div>
       <main className="detail-page">
         <section className="detail-intro">
           <div><h2>{product.title}</h2><p>{product.description}</p><p>Our products combine thoughtful design, useful technology and dependable support to make daily work and learning easier.</p></div>

@@ -108,7 +108,16 @@ function Projects() {
           <p>{project.description}</p>
         </div>
       </section>
-      <div className="detail-breadcrumb">Home <span>›</span> Project <span>›</span> {project.title}</div>
+      {/* ================= BREADCRUMB CAPSULE ================= */}
+      <div className="cs-breadcrumb-wrapper">
+        <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
+          <Link to="/">Home</Link>
+          <span className="cs-breadcrumb-separator">›</span>
+          <Link to="/projects">Projects</Link>
+          <span className="cs-breadcrumb-separator">›</span>
+          <span className="cs-breadcrumb-current">{project.title}</span>
+        </nav>
+      </div>
       <main className="detail-page">
         <section className="detail-intro">
           <div>

@@ -35,7 +35,7 @@
 
 .about-hero-content a {
   display: inline-block;
-  margin-top: 36px;
+  margin-top: 20px;
   padding: 10px 22px;
   border-radius: var(--radius-sm, 6px);
   background: #f7a828;
