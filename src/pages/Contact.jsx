@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./Contact.css";
@@ -162,8 +163,16 @@ const Contact = () => {
           </div>
           <img className="contact-hero-image" src={heroImage} alt="Netcom Computers reception" />
         </div>
-        <div className="contact-breadcrumb">Home <span>›</span> Contact</div>
       </section>
+
+      {/* ================= BREADCRUMB CAPSULE ================= */}
+      <div className="cs-breadcrumb-wrapper">
+        <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
+          <Link to="/">Home</Link>
+          <span className="cs-breadcrumb-separator">›</span>
+          <span className="cs-breadcrumb-current">Contact</span>
+        </nav>
+      </div>
 
       {/* =========================
           CONTACT INFORMATION + FORM
