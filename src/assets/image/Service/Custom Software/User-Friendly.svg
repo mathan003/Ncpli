@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <rect width="320" height="320" rx="88" ry="88" fill="#0e3d29" />
+  <g fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top-left tile: User Avatar -->
+    <rect x="68" y="68" width="80" height="80" rx="14" />
+    <circle cx="108" cy="97" r="11" fill="#ffffff" stroke="none" />
+    <path d="M92 126 C92 116 100 114 108 114 C116 114 124 116 124 126" stroke-width="12" />
+
+    <!-- Top-right tile -->
+    <rect x="172" y="68" width="80" height="80" rx="14" />
+    <line x1="194" y1="102" x2="230" y2="102" stroke-width="12" />
+    <line x1="194" y1="118" x2="220" y2="118" stroke-width="12" />
+
+    <!-- Bottom-left tile -->
+    <rect x="68" y="172" width="80" height="80" rx="14" />
+    <line x1="90" y1="206" x2="126" y2="206" stroke-width="12" />
+    <line x1="90" y1="222" x2="116" y2="222" stroke-width="12" />
+
+    <!-- Bottom-right tile -->
+    <rect x="172" y="172" width="80" height="80" rx="14" />
+    <polyline points="194 212 206 224 230 200" stroke-width="12" />
+  </g>
+</svg>
+

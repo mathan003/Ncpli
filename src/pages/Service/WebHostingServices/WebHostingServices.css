@@ -1,0 +1,429 @@
+/* ========================================================= */
+/* Web Hosting Services Page Styles                          */
+/* Matching exact Figma & Netcom UI Design System            */
+/* ========================================================= */
+
+.wh-page {
+  background-color: #ffffff;
+  color: var(--color-text, #1f2a24);
+  font-family: inherit;
+  overflow-x: hidden;
+}
+
+/* ================= HERO SECTION ================= */
+.wh-hero {
+  background: linear-gradient(135deg, #d4f7e5 0%, #ebfbf3 55%, #f7fdfa 100%);
+  padding: 60px 24px 76px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e1eee6;
+}
+
+.wh-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.wh-hero__content {
+  max-width: 620px;
+}
+
+.wh-badge {
+  display: inline-block;
+  background: #0e3d29;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.wh-hero h1 {
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  font-weight: 800;
+  color: #0e3d29;
+  line-height: 1.18;
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.wh-hero p {
+  color: #2c4236;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.wh-hero__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wh-hero__img {
+  width: 100%;
+  max-width: 480px;
+  max-height: 380px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(14, 61, 41, 0.12));
+  transition: transform 0.35s ease;
+}
+
+.wh-hero__img:hover {
+  transform: scale(1.02);
+}
+
+/* ================= BREADCRUMB CAPSULE ================= */
+.wh-breadcrumb-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 16px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+.wh-breadcrumb-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #141715;
+  color: #ffffff;
+  padding: 9px 26px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.wh-breadcrumb-capsule a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.wh-breadcrumb-capsule a:hover {
+  color: #7ae4ad;
+}
+
+.wh-breadcrumb-separator {
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.wh-breadcrumb-current {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.wh-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Base Card Style */
+.wh-card {
+  background: #ffffff;
+  border: 1px solid #e3eae5;
+  border-radius: 16px;
+  box-shadow: 0 4px 22px rgba(14, 61, 41, 0.04);
+  padding: 36px 32px;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.wh-card:hover {
+  box-shadow: 0 8px 30px rgba(14, 61, 41, 0.08);
+  border-color: #b7ded0;
+}
+
+.wh-section-title {
+  text-align: center;
+  color: #0e3d29;
+  font-size: clamp(1.45rem, 2.3vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 50px 0 28px;
+}
+
+/* Intro 2-Column Grid */
+.wh-intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+.wh-intro-card h2 {
+  color: #0e3d29;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.wh-intro-card p {
+  color: #3b5044;
+  font-size: 0.93rem;
+  line-height: 1.72;
+  margin-bottom: 14px;
+}
+
+.wh-intro-media-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e3eae5;
+  border-radius: 16px;
+  box-shadow: 0 4px 22px rgba(14, 61, 41, 0.04);
+}
+
+.wh-intro-media-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+/* Two-column Feature Cards (AWS, Elastic Compute, S3, Cloud Storage) */
+.wh-feature-block {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e3eae5;
+  border-radius: 16px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 22px rgba(14, 61, 41, 0.04);
+  margin-bottom: 36px;
+}
+
+.wh-feature-block--reverse {
+  grid-template-columns: 1.3fr 1fr;
+}
+
+.wh-feature-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wh-feature-media img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.wh-aws-banner {
+  background: linear-gradient(135deg, #1b2838 0%, #2e1d4d 100%);
+  border-radius: 14px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.wh-aws-banner img {
+  max-width: 180px;
+  max-height: 100px;
+}
+
+.wh-feature-content h3 {
+  color: #0e3d29;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.wh-feature-content p {
+  color: #3b5044;
+  font-size: 0.93rem;
+  line-height: 1.72;
+  margin-bottom: 12px;
+}
+
+/* Why dedicated 3 cards */
+.wh-three-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 48px;
+}
+
+.wh-why-card {
+  background: #ffffff;
+  border: 1px solid #e3eae5;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 18px rgba(14, 61, 41, 0.04);
+}
+
+.wh-why-card p {
+  color: #3b5044;
+  font-size: 0.91rem;
+  line-height: 1.68;
+  margin: 0;
+}
+
+/* Cloud Benefits List */
+.wh-benefits-box {
+  margin: 40px 0 50px;
+}
+
+.wh-benefits-box h2 {
+  color: #0e3d29;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.wh-benefits-box p {
+  color: #3b5044;
+  font-size: 0.93rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.wh-arrows-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 24px;
+}
+
+.wh-arrow-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wh-arrow-item span {
+  color: #0e3d29;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.wh-arrow-item p {
+  color: #2c4236;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* Bottom Comparison Cards */
+.wh-bottom-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.wh-list-card h3 {
+  color: #0e3d29;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.wh-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wh-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.wh-check-item span {
+  color: #0e3d29;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-top: 1px;
+}
+
+.wh-check-item p {
+  color: #3b5044;
+  font-size: 0.91rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 992px) {
+  .wh-hero__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .wh-hero__content {
+    max-width: 100%;
+  }
+
+  .wh-intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wh-feature-block,
+  .wh-feature-block--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .wh-three-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .wh-arrows-list {
+    grid-template-columns: 1fr;
+  }
+
+  .wh-bottom-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .wh-hero {
+    padding: 44px 18px 60px;
+  }
+
+  .wh-hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .wh-container {
+    padding: 28px 16px 60px;
+  }
+
+  .wh-card {
+    padding: 24px 20px;
+  }
+
+  .wh-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 8px 18px;
+    gap: 6px;
+  }
+}
+

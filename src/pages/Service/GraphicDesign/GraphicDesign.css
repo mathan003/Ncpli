@@ -1,0 +1,343 @@
+/* ========================================================= */
+/* Graphic Design Page Styles                                */
+/* Matching exact Figma & Netcom UI Design System            */
+/* ========================================================= */
+
+.gd-page {
+  background-color: #ffffff;
+  color: var(--color-text, #1f2a24);
+  font-family: inherit;
+  overflow-x: hidden;
+}
+
+/* ================= HERO SECTION ================= */
+.gd-hero {
+  background: linear-gradient(135deg, #d4f7e5 0%, #ebfbf3 55%, #f7fdfa 100%);
+  padding: 60px 24px 76px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e1eee6;
+}
+
+.gd-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.gd-hero__content {
+  max-width: 620px;
+}
+
+.gd-badge {
+  display: inline-block;
+  background: #0e3d29;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.gd-hero h1 {
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  font-weight: 800;
+  color: #0e3d29;
+  line-height: 1.18;
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.gd-hero p {
+  color: #2c4236;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.gd-hero__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gd-hero__img {
+  width: 100%;
+  max-width: 480px;
+  max-height: 380px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(14, 61, 41, 0.12));
+  transition: transform 0.35s ease;
+}
+
+.gd-hero__img:hover {
+  transform: scale(1.02);
+}
+
+/* ================= BREADCRUMB CAPSULE ================= */
+.gd-breadcrumb-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 16px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+.gd-breadcrumb-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #141715;
+  color: #ffffff;
+  padding: 9px 26px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gd-breadcrumb-capsule a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.gd-breadcrumb-capsule a:hover {
+  color: #7ae4ad;
+}
+
+.gd-breadcrumb-separator {
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.gd-breadcrumb-current {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.gd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Base Card Style */
+.gd-card {
+  background: #ffffff;
+  border: 1px solid #e3eae5;
+  border-radius: 16px;
+  box-shadow: 0 4px 22px rgba(14, 61, 41, 0.04);
+  padding: 36px 32px;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.gd-card:hover {
+  box-shadow: 0 8px 30px rgba(14, 61, 41, 0.08);
+  border-color: #b7ded0;
+}
+
+.gd-card-title {
+  color: #0e3d29;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* ================= INTRO 2-COLUMN SECTION ================= */
+.gd-intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 48px;
+}
+
+.gd-intro-card p {
+  color: #3b5044;
+  font-size: 0.94rem;
+  line-height: 1.72;
+  margin-bottom: 18px;
+}
+
+.gd-intro-card p:last-child {
+  margin-bottom: 0;
+}
+
+.gd-intro-media-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e3eae5;
+  border-radius: 16px;
+  box-shadow: 0 4px 22px rgba(14, 61, 41, 0.04);
+}
+
+.gd-intro-media-img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  max-height: 340px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gd-intro-media-img:hover {
+  transform: scale(1.03);
+}
+
+/* ================= SERVICES GRID ================= */
+.gd-services-section {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.gd-services-title {
+  text-align: center;
+  color: #0e3d29;
+  font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 36px;
+}
+
+/* Row 1: 4 cards */
+.gd-services-row-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Row 2: 3 cards centered */
+.gd-services-row-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gd-services-row-bottom .gd-service-card {
+  width: calc(33.333% - 14px);
+  min-width: 240px;
+  max-width: 320px;
+}
+
+.gd-service-card {
+  background: #ffffff;
+  border: 1px solid #e3eae5;
+  border-radius: 16px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 18px rgba(14, 61, 41, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.gd-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(14, 61, 41, 0.1);
+  border-color: #0e3d29;
+}
+
+.gd-service-icon-box {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gd-service-icon-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gd-service-label {
+  color: #0e3d29;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 1080px) {
+  .gd-services-row-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gd-services-row-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gd-services-row-bottom .gd-service-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .gd-hero__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .gd-hero__content {
+    max-width: 100%;
+  }
+
+  .gd-intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .gd-hero {
+    padding: 44px 18px 60px;
+  }
+
+  .gd-hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .gd-container {
+    padding: 28px 16px 60px;
+  }
+
+  .gd-card {
+    padding: 24px 20px;
+  }
+
+  .gd-services-row-top {
+    grid-template-columns: 1fr;
+  }
+
+  .gd-services-row-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .gd-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 8px 18px;
+    gap: 6px;
+  }
+}

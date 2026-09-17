@@ -1,16 +1,62 @@
-# React + Vite
+# Netcom Computers — Website (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive recreation of the Netcom Computers Pvt Ltd home page, built with
+React, Vite, and plain CSS. The Header and Footer are shared components used
+on every route, so they stay identical across the whole site.
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Then open the local URL Vite prints (usually `http://localhost:5173`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build for production
 
-## Expanding the ESLint configuration
+```bash
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`npm run build` outputs static files to `dist/`, which you can deploy to any
+static host (Netlify, Vercel, GitHub Pages, an S3 bucket, etc).
+
+## Project structure
+
+```
+src/
+  assets/images/       All images used across the site (optimized copies of
+                        the originals you supplied)
+  components/
+    Layout.jsx          Wraps every page in the shared Header + Footer
+    Header.jsx/css      Top navigation, including dropdowns and mobile menu
+    Footer.jsx/css      Site footer with sitemap and office details
+    Hero.jsx/css        Homepage hero banner
+    MeetNetcom.jsx/css  "Meet Netcom" about section with the photo grid
+    Services.jsx/css    The 9-card services grid
+    Stats.jsx/css       25+ / 30+ / 100+ / 20+ stats strip
+    ProductsCarousel.jsx/css  Auto-rotating "Our Products" carousel
+    Clients.jsx/css     Client & government partner logo grid
+  pages/
+    Home.jsx            Composes all of the sections above
+    About.jsx, Projects.jsx, ProductsPage.jsx, Service.jsx,
+    Portfolio.jsx, Career.jsx, Contact.jsx, NotFound.jsx
+                         Placeholder pages reachable from the nav — they
+                         already use the same Header/Footer; fill in their
+                         content whenever you're ready.
+```
+
+## Notes
+
+- Navigation, dropdowns, and the products carousel are all built with plain
+  React state — no extra UI libraries.
+- The design is responsive from small phones up through large desktop
+  screens; the nav collapses into a slide-in mobile menu under ~960px.
+- All images were resized/compressed from the original source files to keep
+  the site fast to load. If you want the full-resolution originals in the
+  service/product cards, swap the files in `src/assets/images/`.
+- Only the Home page layout was fully specified in the brief, so the other
+  nav pages (About, Projects, Products, Service, Portfolio, Career, Contact)
+  are simple placeholder pages ready for you to fill in with real content.
