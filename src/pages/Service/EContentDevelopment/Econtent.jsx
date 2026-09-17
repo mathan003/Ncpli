@@ -61,7 +61,7 @@ function Econtent() {
         <nav className="ec-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="ec-breadcrumb-separator">›</span>
-          <Link to="/service">Services</Link>
+          <Link to="/">Services</Link>
           <span className="ec-breadcrumb-separator">›</span>
           <span className="ec-breadcrumb-current">E-Content Development</span>
         </nav>

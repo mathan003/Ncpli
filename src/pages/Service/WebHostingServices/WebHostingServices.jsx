@@ -70,7 +70,7 @@ function WebHostingServices() {
         <nav className="wh-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="wh-breadcrumb-separator">›</span>
-          <Link to="/service">Services</Link>
+          <Link to="/">Services</Link>
           <span className="wh-breadcrumb-separator">›</span>
           <span className="wh-breadcrumb-current">Web Hosting Services</span>
         </nav>

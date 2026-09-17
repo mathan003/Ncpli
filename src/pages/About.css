@@ -90,8 +90,8 @@
 
 .about-photo2 {
   position: absolute;
-  left: 18%;
-  bottom: 10px;
+  left: 28%;
+  bottom: -20px;
   width: min(85%, 340px);
   aspect-ratio: 353 / 247;
   object-fit: cover;
@@ -101,8 +101,8 @@
 
 .about-stat {
   position: absolute;
-  top: 25%;
-  right: -5px;
+  top: 20%;
+  right: -60px;
   display: grid;
   width: 150px;
   height: 85px;
@@ -133,9 +133,15 @@
   font-size: 1rem;
   line-height: 1.7;
 }
+.about-copy .about-intro{
+  padding-top: 25px;
+}
 
 .about-copy p {
-  margin: 0 0 16px;
+  /* margin: 0 0 16px; */
+  /* margin-top: 20px; */
+  padding-top: 10px;
+  text-align: justify;
 }
 
 .about-copy strong {
@@ -214,7 +220,7 @@
   line-height: 1.6;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .about-hero {
     min-height: 260px;
   }
@@ -244,13 +250,19 @@
     min-height: 250px;
     margin: auto;
   }
-
+.about-photo2 {
+    top: 50%;
+    bottom: -10px;
+  }
   .about-copy,
   .about-story p,
   .about-purpose > p {
     font-size: 0.8rem;
+    top: 10px;
   }
-
+.about-copy .about-intro{
+  padding-top: 25px;
+}
   .about-story img {
     max-width: 300px;
     margin: auto;
@@ -285,7 +297,10 @@
   .about-photo2 {
     width: 75%;
   }
-
+  .about-photo2 {
+    left: 30%;
+    bottom: -10px;
+  }
   .about-photo-stack {
     min-height: 230px;
   }

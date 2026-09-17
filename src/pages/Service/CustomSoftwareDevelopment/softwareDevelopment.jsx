@@ -56,7 +56,7 @@ function CustomSoftwareDevelopment() {
         <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="cs-breadcrumb-separator">›</span>
-          <Link to="/service">Services</Link>
+          <Link to="/">Services</Link>
           <span className="cs-breadcrumb-separator">›</span>
           <span className="cs-breadcrumb-current">
             Custom Software Development

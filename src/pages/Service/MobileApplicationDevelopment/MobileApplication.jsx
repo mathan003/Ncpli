@@ -131,7 +131,7 @@ function MobileApplication() {
         <nav className="ma-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="ma-breadcrumb-separator">›</span>
-          <Link to="/service">Services</Link>
+          <Link to="/">Services</Link>
           <span className="ma-breadcrumb-separator">›</span>
           <span className="ma-breadcrumb-current">
             Mobile Application Development

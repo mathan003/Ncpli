@@ -53,7 +53,7 @@ function HardwareSupport() {
         <nav className="hs-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="hs-breadcrumb-separator">›</span>
-          <Link to="/service">Services</Link>
+          <Link to="/">Services</Link>
           <span className="hs-breadcrumb-separator">›</span>
           <span className="hs-breadcrumb-current">
             Hardware Support &amp; Maintenance

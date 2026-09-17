@@ -35,7 +35,7 @@ function ShortFilm() {
         <nav className="sf-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="sf-breadcrumb-separator">›</span>
-          <Link to="/service">Services</Link>
+          <Link to="/">Services</Link>
           <span className="sf-breadcrumb-separator">›</span>
           <span className="sf-breadcrumb-current">Short Film</span>
         </nav>

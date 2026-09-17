@@ -54,7 +54,7 @@ function GraphicDesign() {
         <nav className="gd-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="gd-breadcrumb-separator">›</span>
-          <Link to="/service">Services</Link>
+          <Link to="/">Services</Link>
           <span className="gd-breadcrumb-separator">›</span>
           <span className="gd-breadcrumb-current">Graphic Design</span>
         </nav>
