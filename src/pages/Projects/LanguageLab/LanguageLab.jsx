@@ -4,7 +4,7 @@ import "./LanguageLab.css";
 
 import heroStudentImg from "../../../assets/image/project/Language Lab/language-lab-hero-image 1.png";
 import headphonesImg from "../../../assets/image/project/Language Lab/Headphone.png";
-import howItWorksImg from "../../../assets/image/project/Language Lab/How it Works.png";
+import howItWorksImg from "../../../assets/image/project/Language Lab/How It Works.png";
 import systemScreen1 from "../../../assets/image/project/Language Lab/language-lab system1.png";
 import systemScreen2 from "../../../assets/image/project/Language Lab/language-lab system2.png";
 import systemScreen3 from "../../../assets/image/project/Language Lab/language-lab system3.png";
