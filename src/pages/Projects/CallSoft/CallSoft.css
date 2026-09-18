@@ -1,0 +1,42 @@
+/* ==========================================================================
+   CALL SOFT PROJECT STYLES
+   ========================================================================== */
+@import "../Projects.css";
+
+.callsoft-screens-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin: 40px 0 50px;
+}
+
+.callsoft-screen-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 18px;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(14, 74, 52, 0.06);
+}
+
+.callsoft-screen-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+}
+
+.callsoft-screen-caption {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0e4a34;
+  padding: 12px 4px 4px;
+}
+
+@media (max-width: 800px) {
+  .callsoft-screens-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

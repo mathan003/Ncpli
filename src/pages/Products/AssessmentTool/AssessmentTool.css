@@ -1,0 +1,112 @@
+/* ==========================================================================
+   ASSESSMENT TOOL STYLES
+   ========================================================================== */
+@import "../ProductsPage.css";
+
+.assess-main-title {
+  color: #0e4a34;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 800;
+  text-align: center;
+  margin: 10px 0 28px;
+  letter-spacing: -0.01em;
+}
+
+.assess-section-title {
+  color: #0e4a34;
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  font-weight: 800;
+  text-align: center;
+  margin: 36px 0 24px;
+}
+
+.assess-arrow-block {
+  margin-bottom: 30px;
+}
+
+.assess-arrow-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.04);
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: #3b4640;
+}
+
+.assess-arrow-icon {
+  color: #1b8754;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.assess-subtitle {
+  color: #0e4a34;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin: 40px 0 22px;
+  line-height: 1.4;
+}
+
+/* 2x2 Grid of Assessment Methods */
+.assess-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.assess-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 18px rgba(14, 74, 52, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.assess-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(14, 74, 52, 0.09);
+  border-color: #0e4a34;
+}
+
+.assess-card h3 {
+  color: #0e4a34;
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.assess-card p {
+  color: #435148;
+  font-size: 0.92rem;
+  line-height: 1.68;
+  margin: 0 0 12px;
+}
+
+.assess-card p:last-child {
+  margin-bottom: 0;
+}
+
+.assess-card p strong {
+  color: #0e4a34;
+}
+
+@media (max-width: 768px) {
+  .assess-grid {
+    grid-template-columns: 1fr;
+  }
+  .assess-arrow-card {
+    padding: 16px;
+    font-size: 0.92rem;
+  }
+}
+

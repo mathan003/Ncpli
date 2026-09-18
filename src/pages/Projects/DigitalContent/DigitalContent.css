@@ -1,0 +1,52 @@
+/* ==========================================================================
+   NETCOM DIGITAL CONTENTS PROJECT STYLES
+   ========================================================================== */
+@import "../Projects.css";
+
+.digital-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.digital-demo-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1.5px solid #dce4df;
+  padding: 12px;
+  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.05);
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.digital-demo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(14, 74, 52, 0.1);
+}
+
+.digital-demo-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #d8dedb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digital-demo-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0e4a34;
+  padding: 10px 4px 4px;
+}
+
+@media (max-width: 700px) {
+  .digital-demo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

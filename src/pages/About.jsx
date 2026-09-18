@@ -52,14 +52,14 @@ const About = () => (
 
       <div className="about-story">
         <p>Our company by a team of innovative software professionals, we are a premier software development company, specializing in outsourcing services, product-engineering-services that includes custom Application / software application development, maintenance and mobile application development. Netcom domestic and international business network delivers highly flexible, adaptive solutions and 
-           a best-of-both worlds scenario for business needs. Our Company offshore development team will be always in contact with clients for customer-driven continuous development and to ensure that the project is always on track..</p>
+           a best-of-both worlds scenario for business needs. Our Company offshore development team will be always in contact with clients for customer-driven continuous development and to ensure that the project is always on track.</p>
         <img src={about3} alt="Digital technology illustration" />
       </div>
 
       <section className="about-purpose">
         <h2 className="about-title">What We Do</h2>
         <p>Netcom Computers has a team of working with many fields of IT industry. We have strong foothold in a variety of fields like computer education, 
-           computer aided education, soft skill training, software solutions, web solutions, 3D and 2D animations, cartoon animations, etc.,.</p>
+           computer aided education, soft skill training, software solutions, web solutions, 3D and 2D animations, cartoon animations, etc...</p>
         <div className="purpose-grid">
           <article className="purpose-card">
             <img src={missionIcon} alt="" />
@@ -67,7 +67,7 @@ const About = () => (
             <p>To provide best of breed software products to enable organization to run their 
                 businesss and operations better.To deliver effective IT solution and quality services.
                 To enchance the competitive advantages of our clients.To maintain a sustainable 
-                social environment and be a socially responsible corporate citizen..</p>
+                social environment and be a socially responsible corporate citizen.</p>
           </article>
           <article className="purpose-card">
             <img src={visionIcon} alt="" />
@@ -76,7 +76,7 @@ const About = () => (
                 resources in all forms through reliable and robust infrastructure.To build better 
                 solution for education industry through AI and machine learning capabilities in 
                 many areas of space operations to enable people to empower the knowledge of the 
-                application of education..</p>
+                application of education.</p>
           </article>
         </div>
       </section>

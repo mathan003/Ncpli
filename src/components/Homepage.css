@@ -304,7 +304,7 @@
 
 .service-card__btn:hover {
   background-color: var(--color-primary);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 @media (max-width: 960px) {
   .services__grid {

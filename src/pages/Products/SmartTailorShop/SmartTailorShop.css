@@ -1,0 +1,184 @@
+/* ==========================================================================
+   SMART TAILOR APPLICATION STYLES
+   ========================================================================== */
+@import "../ProductsPage.css";
+
+.tailor-header-left {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.tailor-header-title {
+  color: #0e4a34;
+  font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.tailor-header-desc {
+  color: #3b4640;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 900px;
+}
+
+.tailor-main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+  margin: 20px 0 50px;
+}
+
+.tailor-features-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1.5px solid #dce4df;
+  padding: 26px 22px;
+  box-shadow: 0 6px 20px rgba(14, 74, 52, 0.05);
+}
+
+.tailor-features-heading {
+  color: #0e4a34;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.tailor-feature-group {
+  margin-bottom: 18px;
+}
+
+.tailor-group-title {
+  color: #0e4a34;
+  font-size: 0.96rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.tailor-group-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tailor-group-items li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #3b4640;
+  font-size: 0.88rem;
+  line-height: 1.48;
+}
+
+.tailor-visuals-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Video Preview Card */
+.tailor-video-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px;
+  border: 1.5px solid #dce4df;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tailor-video-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+.tailor-video-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 180px;
+  background: #d4d4d4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tailor-video-info {
+  padding: 8px 4px 2px;
+}
+
+.tailor-video-title {
+  display: block;
+  color: #0e4a34;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.tailor-video-desc {
+  display: block;
+  color: #556259;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+/* Desktop Screens */
+.tailor-desktop-screen {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 6px;
+  border: 1.5px solid #dce4df;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tailor-desktop-screen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Phones 2-Column Grid (Row 1 & Row 2) */
+.tailor-phones-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  justify-items: center;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.tailor-phone-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tailor-phone-item img {
+  max-height: 230px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
+  transition: transform 0.2s ease;
+}
+
+.tailor-phone-item img:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .tailor-main-layout {
+    grid-template-columns: 1fr;
+  }
+}
+

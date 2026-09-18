@@ -284,7 +284,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 73977 30945"
                       required
                     />
                   </div>
@@ -320,30 +320,30 @@ const Contact = () => {
               <h3><img src={companyIcon} alt="" /> Head Office</h3>
               <div className="contact-item">
                 <img className="contact-icon-image" src={houseIcon} alt="" />
-                <p>No. 1/1, Nathan Street, Adikalapuram, Tirunelveli - 627002, Tamil Nadu, India.</p>
+                <p>No. 1/1, Nathan Street, Adikalapuram, Tirunelveli - 627002,<br/>Tamil Nadu, India.</p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={mailIcon} alt="" />
-                <p><a href="mailto:support@ncpl.com">support@ncpl.com</a></p>
+                <p>Email us<br/><a href="mailto:support@ncpl.com">support@ncpl.com</a></p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={callIcon} alt="" />
-                <p><a href="tel:04622595979">0462 - 2595979</a></p>
+                <p>Call us<br/><a href="tel:04622595979">+91 73917 30945</a></p>
               </div>
             </div>
             <div className="contact-office-card">
               <h3><img src={companyIcon} alt="" /> Branch Office</h3>
               <div className="contact-item">
                 <img className="contact-icon-image" src={houseIcon} alt="" />
-                <p>No. 86, First Floor, Chamiers Road, Chennai - 600018, Tamil Nadu, India.</p>
+                <p>No. 86, First Floor, Chamiers Road, Chennai - 600018,<br/>Tamil Nadu, India.</p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={mailIcon} alt="" />
-                <p><a href="mailto:support@ncpl.com">support@ncpl.com</a></p>
+                <p>Mail us<br/><a href="mailto:support@ncpl.com">support@ncpl.com</a></p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={callIcon} alt="" />
-                <p><a href="tel:04442125369">044 - 4212 5369</a></p>
+                <p>Call us<br/><a href="tel:04442125369">+91 73917 30945</a></p>
               </div>
             </div>
             <div className="contact-social">

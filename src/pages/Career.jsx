@@ -153,7 +153,7 @@ const careerJobs = [
   {
     id: "software-development",
     title: "Software Development",
-    experience: "2-3 years experience",
+    experience: "2-5 years experience",
     education: "Any Degree In Engineering",
     location: "Tirunelveli & Chennai",
     jobDescription: [

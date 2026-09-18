@@ -1,0 +1,57 @@
+/* ==========================================================================
+   KIOSK PROJECTS STYLES
+   ========================================================================== */
+@import "../Projects.css";
+
+.kiosk-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 35px 0 50px;
+}
+
+.kiosk-gallery-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 4px 18px rgba(14, 74, 52, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.kiosk-gallery-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(14, 74, 52, 0.1);
+  border-color: #0e4a34;
+}
+
+.kiosk-gallery-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.kiosk-gallery-caption {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #0e4a34;
+  padding: 12px 6px 4px;
+}
+
+@media (max-width: 900px) {
+  .kiosk-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .kiosk-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

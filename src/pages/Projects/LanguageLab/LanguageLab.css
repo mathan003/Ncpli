@@ -1,0 +1,105 @@
+/* ==========================================================================
+   LANGUAGE LAB PROJECT STYLES
+   ========================================================================== */
+@import "../Projects.css";
+
+.lang-feature-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(14, 74, 52, 0.05);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.lang-feature-card--reverse {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.lang-feature-card h3 {
+  color: #0e4a34;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.lang-feature-card p {
+  color: #3b4640;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.lang-feature-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-feature-img img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+.lang-grammar-banner {
+  background: #eef7f2;
+  border: 1.5px dashed #1b8754;
+  border-radius: 14px;
+  padding: 16px 24px;
+  margin: 35px 0 45px;
+  text-align: center;
+  color: #0e4a34;
+  font-weight: 700;
+  font-size: 0.96rem;
+  letter-spacing: 0.02em;
+}
+
+.lang-system-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-bottom: 30px;
+}
+
+.lang-system-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 18px;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(14, 74, 52, 0.06);
+}
+
+.lang-system-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+}
+
+.lang-system-caption {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.94rem;
+  color: #0e4a34;
+  padding: 12px 6px 4px;
+}
+
+@media (max-width: 860px) {
+  .lang-feature-card,
+  .lang-feature-card--reverse {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .lang-system-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

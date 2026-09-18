@@ -1,0 +1,32 @@
+/* ==========================================================================
+   ICT / HI-TECH LAB PROJECT STYLES
+   ========================================================================== */
+@import "../Projects.css";
+
+.ict-highlight-banner {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 6px 22px rgba(14, 74, 52, 0.05);
+  margin-bottom: 40px;
+}
+
+.ict-highlight-banner h3 {
+  color: #0e4a34;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.ict-highlight-banner p {
+  color: #3b4640;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin: 0 0 16px;
+}
+
+.ict-highlight-banner p:last-child {
+  margin-bottom: 0;
+}
+
