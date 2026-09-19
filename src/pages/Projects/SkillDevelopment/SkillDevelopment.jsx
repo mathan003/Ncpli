@@ -20,38 +20,43 @@ function SkillDevelopment() {
       <div className="project-breadcrumb-wrapper">
         <nav className="project-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
-          <span className="project-breadcrumb-separator">›</span>
+          <span className="project-breadcrumb-separator">&gt;</span>
           <Link to="/projects">Project</Link>
-          <span className="project-breadcrumb-separator">›</span>
+          <span className="project-breadcrumb-separator">&gt;</span>
           <span className="project-breadcrumb-current">Skill Development &amp; Training</span>
         </nav>
       </div>
 
       <main className="project-container">
-        <h1 className="project-main-title">Skill Development &amp; Training</h1>
+        {/* Main Title: Skill Development & Training */}
+        <h1 className="skill-main-title">Skill Development &amp; Training</h1>
 
-        {/* Top Intro Section */}
-        <div className="project-intro-split">
-          <div className="project-intro-text">
+        {/* Top 2-Column Split: Text (Left) & Classroom Image (Right) */}
+        <div className="skill-intro-split">
+          <div className="skill-intro-text">
             <p>
               Soft skills are those personal values and interpersonal skills that determine a person's ability to work in a collaborative environment. Soft skill development must be carried out as they are vital to one's professional life as they help individuals to excel in the workplace.
             </p>
             <p>
-              <strong>Netcom's goal</strong> is to help you understand these important dynamics of group communication and learn how to put them into practice to improve your overall teamwork.
+              <strong>Netcom</strong> goal is to help you understand these important dynamics of group communication and learn how to put them into practice to improve your overall teamwork.
             </p>
             <p>
-              The importance of soft skills are distinct from hard skills or domain knowledge. It is increasingly being recognized as a prerequisite in several sectors of job market. Research in many fields such as sales and marketing, software development, Engineering and Law has shown that to be successful in the workplace, knowledge alone is not enough; instead soft skills are needed to deal with the external world and to work in a collaborative manner.
+              The importance of soft skills are distinct from hard skills or domain knowledge. It is increasingly being recognized as a prerequisite in several sections of job market.
+            </p>
+            <p>
+              Research in many fields such as sales and marketing, software development, Engineering and Law has shown that to be successful in the workplace, knowledge alone is not enough instead soft skills are needed to deal with the external world and to work in a collaborative manner.
             </p>
           </div>
 
-          <div className="project-intro-media">
-            <img src={classroomHeroImg} alt="Netcom Skill Development & Soft Skills Classroom Session" />
+          <div className="skill-intro-media">
+            <img src={classroomHeroImg} alt="Netcom Skill Development and Soft Skills Classroom Session" />
           </div>
         </div>
 
         {/* Section: Our Training Focus Area */}
-        <h2 className="project-section-title">Our Training Focus Area</h2>
+        <h2 className="skill-section-title">Our Training Focus Area</h2>
         <div className="skill-focus-grid">
+          {/* Card 1: Communication */}
           <div className="skill-focus-card">
             <span className="skill-icon-badge">
               <img src={commIcon} alt="Our Training Focus Area Icon" />
@@ -59,11 +64,12 @@ function SkillDevelopment() {
             <div className="skill-focus-content">
               <h3>Our Training Focus Area</h3>
               <p>
-                Netcom continuous efforts develop spoken and verbal communication essential to build stronger professional as well as personal relationships. Effective communication is the cornerstone of good teamwork, auditory and visual processing skills, while our important soft skill development training begins with improving your communication, also essential personal soft skills for having a true impact on the workplace.
+                Netcom considers effective combination of spoken and written communication essential to build stronger professional as well as personal relationships. Effective communication is the essence of good cognitive, auditory and visual processing skills, which are important soft skill development. Beginning with improving your communication is an essential step as it would prolong the rest of the skills to impact.
               </p>
             </div>
           </div>
 
+          {/* Card 2: Presentation & Business */}
           <div className="skill-focus-card">
             <span className="skill-icon-badge">
               <img src={skillsIcon} alt="Presentation and Business communication Skill Icon" />
@@ -71,11 +77,12 @@ function SkillDevelopment() {
             <div className="skill-focus-content">
               <h3>Presentation and Business communication Skill:</h3>
               <p>
-                To communicate effectively in the workplace, you need to be able to present your information clearly. Presentation skills classes explain how to put a good set of PowerPoint slides together to make engaging and convincing stories that will enable you to pass your message across.
+                It is to communicate effectively in the workplace, you need to be able to present your information clearly. Presentation skills doesn't just mean knowing how to put a good set of powerpoint slides together. It means engaging and connecting with an audience to get your message across.
               </p>
             </div>
           </div>
 
+          {/* Card 3: Personal Effectiveness */}
           <div className="skill-focus-card">
             <span className="skill-icon-badge">
               <img src={personalIcon} alt="Personal Effectiveness Skills Icon" />
@@ -83,11 +90,12 @@ function SkillDevelopment() {
             <div className="skill-focus-content">
               <h3>Personal Effectiveness Skills:</h3>
               <p>
-                Personal effectiveness builds self-discipline that can differ from individual to individual. Formal training helps build personal effectiveness and problem-solving skills across various situations.
+                Personal Effectiveness skills are not fixed in the mindset; they vary from individual to individual, from discipline to discipline and from situation to situation.
               </p>
             </div>
           </div>
 
+          {/* Card 4: Interpersonal & Team */}
           <div className="skill-focus-card">
             <span className="skill-icon-badge">
               <img src={teamIcon} alt="Interpersonal and Team skills Icon" />
@@ -95,48 +103,45 @@ function SkillDevelopment() {
             <div className="skill-focus-content">
               <h3>Interpersonal and Team skills:</h3>
               <p>
-                Interpersonal and team skills set the foundation for teamwork and enables teams to function effectively. The ability to build positive relationships with teammates helps ensure the success of your organization.
+                Interpersonal and team skills are the behavior and tactics that a person uses to interact with and relates with others effectively. The ability to build relationships with others and maintain them successfully is key to the success of your project.
               </p>
             </div>
           </div>
         </div>
 
         {/* Section: OUR PROJECTS: Anna University Coimbatore */}
-        <div style={{ textAlign: "center", margin: "45px 0 10px" }}>
-          <h2 style={{ color: "#0e4a34", fontSize: "1.6rem", fontWeight: 800, margin: "0 0 6px" }}>
-            OUR PROJECTS:
-          </h2>
-          <p style={{ color: "#4f5e55", fontSize: "0.95rem", margin: "0 0 20px" }}>
-            Netcom have ventures in various fields with different institutions.
+        <div className="skill-projects-header">
+          <h2 className="skill-projects-main-title">OUR PROJECTS:</h2>
+          <p className="skill-projects-subtitle">
+            Netcom have ventured in various fields with different institutions.
           </p>
-          <h3 style={{ color: "#0e4a34", fontSize: "1.35rem", fontWeight: 700, margin: "0 0 14px", textAlign: "left" }}>
-            Anna University Coimbatore:
-          </h3>
-          <p style={{ color: "#3b4640", fontSize: "0.96rem", lineHeight: 1.7, textAlign: "left", margin: "0 0 24px" }}>
-            We have provided training for the students of ANNA UNIVERSITY, COIMBATORE during 2008-2009 and were instrumental in preparing training packages with animation as Computer Aided Learning for Soft Skill Programme.
+          <h3 className="skill-univ-title">Anna University Coimbatore:</h3>
+          <p className="skill-univ-desc">
+            We have provided training for the students of ANNA UNIVERSITY, COIMBATORE during 2008 - 2009 and were instrumental in preparing training packages with animation as Computer Aided Learning for Soft Skill Programme.
           </p>
         </div>
 
         {/* Counter Stat Cards */}
         <div className="skill-stats-grid">
           <div className="skill-stat-card">
-            <img src={studentsIcon} alt="Students" className="skill-stat-icon" />
-            <div>
+            <img src={studentsIcon} alt="Students Trained Icon" className="skill-stat-icon" />
+            <div className="skill-stat-content">
               <span className="skill-stat-number">5000+</span>
               <span className="skill-stat-label">Students Trained</span>
             </div>
           </div>
 
           <div className="skill-stat-card">
-            <img src={dvdIcon} alt="DVDs" className="skill-stat-icon" />
-            <div>
+            <img src={dvdIcon} alt="Training DVDs Produced Icon" className="skill-stat-icon" />
+            <div className="skill-stat-content">
               <span className="skill-stat-number">100+</span>
               <span className="skill-stat-label">Training DVDs Produced</span>
             </div>
           </div>
         </div>
 
-        <p style={{ textAlign: "center", color: "#4f5e55", fontSize: "0.92rem", fontWeight: 600, margin: "16px 0 50px" }}>
+        {/* Stat Support Note */}
+        <p className="skill-stats-footer-note">
           We have supported the students with INTERVIEW SKILLS &amp; GROUP DISCUSSION DVDS for 5000 students.
         </p>
       </main>
@@ -145,4 +150,3 @@ function SkillDevelopment() {
 }
 
 export default SkillDevelopment;
-

@@ -21,8 +21,7 @@ const NAV_ITEMS = [
       { label: "ICT/Hi-Tech Lab", to: "/projects/ict-hi-tech-lab" },
       { label: "Kiosk Project", to: "/projects/kiosk" },
       { label: "Radio-frequency identification (RFID)", to: "/projects/rfid" },
-      { label: "Smart Tailor Shop", to: "/projects/smart-tailor-shop" },
-      { label: "Online Cab Booking", to: "/projects/online-cab-booking" },
+    
     ],
   },
   {

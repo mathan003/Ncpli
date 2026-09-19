@@ -1,17 +1,199 @@
 /* ==========================================================================
-   ASSESSMENT PROJECT STYLES
+   ASSESSMENT PROJECT STYLES (Self-Contained - Matches Mockup)
    ========================================================================== */
-@import "../Projects.css";
 
-.assess-project-subhead {
-  color: #0e4a34;
-  font-size: 1.28rem;
-  font-weight: 700;
-  margin: 32px 0 12px;
+.project-page-wrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: #212529;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 70px;
 }
 
+/* Hero Banner */
+.project-hero {
+  position: relative;
+  background-image: url("../../../assets/image/project page banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px 70px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Floating Mint-Green Breadcrumb Capsule */
+.project-breadcrumb-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 28px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+.project-breadcrumb-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #d4f8db;
+  color: #0e4a34;
+  padding: 9px 28px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1.5px solid #a6eec0;
+  box-shadow: 0 4px 14px rgba(14, 74, 52, 0.1);
+}
+
+.project-breadcrumb-capsule a {
+  color: #0e4a34;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-breadcrumb-capsule a:hover {
+  color: #1b8754;
+  text-decoration: underline;
+}
+
+.project-breadcrumb-separator {
+  color: #1b8754;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.project-breadcrumb-current {
+  color: #0e4a34;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .project-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 7px 18px;
+    gap: 7px;
+  }
+}
+
+/* Main Content Container */
+.project-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Headings */
+.assess-main-title {
+  color: #0e4a34;
+  font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+  font-weight: 800;
+  text-align: center;
+  margin: 35px 0 22px;
+  letter-spacing: -0.01em;
+}
+
+.assess-center-title {
+  color: #0e4a34;
+  font-size: clamp(1.5rem, 2.6vw, 1.95rem);
+  font-weight: 800;
+  text-align: center;
+  margin: 42px 0 18px;
+  letter-spacing: -0.01em;
+}
+
+.assess-subhead-title {
+  color: #0e4a34;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 28px 0 10px;
+}
+
+/* Paragraph Blocks */
+.assess-intro-block p,
+.assess-purpose-block p,
+.assess-sub-block p {
+  color: #2e3832;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  margin: 0 0 16px;
+}
+
+.assess-methods-intro {
+  color: #0e4a34 !important;
+  font-weight: 700;
+  font-size: 0.96rem;
+  margin: 20px 0 0 !important;
+}
+
+/* Dual Cards Grid */
+.assess-dual-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin: 35px 0 60px;
+  align-items: stretch;
+}
+
+.assess-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 22px;
+  padding: 32px 28px;
+  box-shadow: 0 8px 26px rgba(14, 74, 52, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.assess-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(14, 74, 52, 0.08);
+}
+
+/* Right Card: Features */
+.assess-features-title {
+  color: #0e4a34;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.assess-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.assess-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: #242d27;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.assess-check-icon {
+  color: #10673d;
+  font-size: 1.18rem;
+  font-weight: 800;
+  line-height: 1.25;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Left Card: Methods */
 .assess-method-group {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .assess-method-group:last-child {
@@ -22,13 +204,49 @@
   color: #0e4a34;
   font-size: 1.05rem;
   font-weight: 700;
-  margin: 0 0 6px;
+  margin: 0 0 8px;
 }
 
 .assess-method-desc {
-  color: #3b4640;
-  font-size: 0.88rem;
-  line-height: 1.6;
-  margin: 0;
+  color: #2e3832;
+  font-size: 0.91rem;
+  line-height: 1.68;
+  margin: 0 0 10px;
 }
 
+.assess-method-desc:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 920px) {
+  .assess-dual-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .assess-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-hero {
+    min-height: 220px;
+    padding: 90px 16px 60px;
+  }
+
+  .project-container {
+    padding: 0 16px;
+  }
+
+  .assess-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .assess-check-item {
+    font-size: 0.88rem;
+    gap: 10px;
+  }
+}

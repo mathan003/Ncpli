@@ -36,13 +36,26 @@ function LanguageLab() {
               About Language Lab
             </h3>
             <p>
-              A language laboratory is a dedicated space for language learning where students can access audio or audiovisual materials. Language labs allow teachers to monitor student speech, provide individualized practice, and foster an immersive language acquisition environment.
+              Language Lab is a software program designed to help the teachers to improve 
+the learning environment in a Computer-based classroom. It is to increase the 
+language skill to the students in English. In this we can teach the good 
+Pronunciation, Letter writing, Grammar, Conversation, Voice and words 
+reorganization tools, and Parts of Speech.
             </p>
             <p>
-              Netcom Language Lab is a digital, multimedia-based learning solution designed to help learners master English and regional languages. It facilitates active listening, speaking, reading, and writing (LSRW) practice through computer-aided instruction and guided teacher oversight.
+              Without language we cannot communicate with the world. English is the 
+common language that is spoken all over the world. So it is necessary to speak 
+English fluently with proper pronunciation without any grammatical mistakes. 
+we are implementing ―DIGITAL MULTIMEDIA LANGUAGE LAB in colleges and 
+schools. We split whole subject coverage into three different levels. Level 1, 
+Level 2 & Level 3.Language Hall - consists of Hardware -based classroom control 
+system. We have established this language lab projects in 12 colleges based on 
+the UGC norms
             </p>
             <p>
-              Equipped with pronunciation modules, phonetic charts, interactive voice recording, and native speaker benchmarks, Netcom Language Lab bridges the gap between classroom theory and confident, real-world communication skills.
+              In this software Call Soft installed on each computer in a classroom, a teacher 
+has the ability to, Reduce Student Distractions, Demonstrate Skills, Monitor 
+Students, Access Students Understanding, and Help Individual Students.
             </p>
           </div>
 
@@ -58,27 +71,28 @@ function LanguageLab() {
             <ul className="project-check-list" style={{ marginTop: "16px" }}>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Student-Centric Practice Modules</span>
+                <span>Coverage of key grammar areas</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Listening and Recording</span>
+                <span>Integrated Vocabulary</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Model Speech</span>
+                <span>Dictionary</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Pronunciation Assessment</span>
+                <span>Synonyms, Antonyms</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Vocabulary &amp; Grammar</span>
+                <span>Spell Check</span>
               </li>
             </ul>
             <p style={{ marginTop: "18px", fontSize: "0.88rem", color: "#55645b" }}>
-              Netcom Language Lab software operates on high-efficiency client-server architecture, enabling seamless synchronized practice across 60+ workstations simultaneously.
+              We have Memorandum of Understanding (MOU) with around 10 great 
+institutions for our language lab program.
             </p>
           </div>
 
@@ -96,10 +110,19 @@ function LanguageLab() {
           <div>
             <h3>How It Works</h3>
             <p>
-              The language laboratory operates through a centralized teacher console communicating with student client consoles. Teachers broadcast lessons, conduct listening exercises, pair students for dialogues, and review recorded voice samples in real time.
+              Language Lab works by enabling a teacher to control all student 
+              computers within a computer- based classroom. The most logical 
+              way to set up Language Lab is for each classroom or room to have 
+              a teacher computer. This setup enables all of the computers in 
+              the same classroom to interact with each other and one teacher 
+              to control the entire room.
             </p>
             <p style={{ marginTop: "12px" }}>
-              Students listen to native speaker audio recordings, record their own speech through noise-cancelling headsets, and play back their recordings to analyze pitch, tone, and pronunciation accuracy with visual waveform feedback.
+              After installing the software on each computer in a classroom, 
+              one system can act as a teacher or server and remaining system 
+              can act as a student or client. The teacher can monitor students 
+              as they join and/or leave the class. This makes it easy to see who 
+              is absent or who has joined the class.
             </p>
           </div>
         </div>
@@ -107,46 +130,55 @@ function LanguageLab() {
         {/* Dual Cards: Teacher & Student Console Roles */}
         <div className="project-grid-2" style={{ margin: "35px 0 20px" }}>
           <div className="project-card">
+            <div className="project-card-header">
             <h3>Using the Teacher Computer or Server</h3>
             <p>
-              Teachers have total administrative oversight from the master console: broadcasting lesson content, listening in discreetly to individual students, providing two-way intercom feedback, pairing students for interactive role-play, and administering automated listening tests.
+              After installing the teacher setup or server setup in the computer, 
+              the server or teacher has many features to access. They have the 
+              ability to control the student’s or client machines.
             </p>
             <h3 style={{ marginTop: "24px" }}>Using the Student's Computer or Client</h3>
             <p>
-              Students engage in self-paced learning: listening to pristine audio lessons, recording responses, playing back recordings side-by-side with reference speech, consulting the interactive pronunciation dictionary, and completing grammar assessments.
+              Language Lab is set up to run in the background on student 
+              computers. All of the functionality is controlled at the teacher 
+              computer, which enables you to have control over how it is used.
             </p>
+            </div>
           </div>
 
           <div className="project-card">
+            
             <h3>Features</h3>
             <ul className="project-check-list" style={{ marginTop: "14px" }}>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Server acts as a Teacher Console with full student list display and class start/stop controls.</span>
+                <span>Server should act as a Teacher console. This displays the list of students in the teacher console. From this the teacher can select the student to start or stop the class.</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Real-time screen and high-definition audio broadcast from Teacher Console to student workstations.</span>
+                <span>Real Time Screen and Audio Broadcast from Teacher console to Student</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Viewing and remote monitoring of student screens from the Teacher Console without interruption.</span>
+                <span>Viewing and absorbing the screens of students from teacher console</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Recording and storing audio broadcasts and student voice submissions for future academic review.</span>
+                <span>Recording and storing broadcasts for future use this option is used to record the files and broadcast it to other students from teacher console.</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>File sharing and lesson distribution between Teacher Console and student machines.</span>
+                <span>Sharing files among System this module is used to share the files to other system or students from the teacher console.</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Teacher management controls including audio mute, screen blanking, and keyboard/mouse lock.</span>
+                <span>Having controls like mute audio, lock the keyboard of particular student console. This is used to control the student’s 
+                  screen such as to lock the screen or keyboard or mute the audio. Teachers can easily having the control over the student’s screen.</span>
               </li>
               <li>
                 <span className="project-check-icon">✔</span>
-                <span>Pre-loaded sample lesson library with progressive phonetic and grammatical drills.</span>
+                <span>Providing some sample call lessons this provides some sample lessons to student’s 
+                  screen.</span>
               </li>
             </ul>
           </div>
@@ -154,7 +186,8 @@ function LanguageLab() {
 
         {/* Banner: Providing Grammar Tools */}
         <div className="lang-grammar-banner">
-          Providing Grammar Tools: NETCOM LANGUAGE LAB PROVIDES GRAMMAR TOOLS, VOCABULARY BUILDERS, AND PHONETIC PRACTICE FOR COMPREHENSIVE FLUENCY.
+          <strong>Providing Grammar Tools:</strong>
+          This Provides Some Grammar Tools Like - ARTICLES, VOICE, TENSE, PUNCTUATION, PARTS OF SPEECH CONVERSATION, DICTIONARY
         </div>
 
         {/* Section: Language Lab System Screenshots */}
@@ -162,19 +195,32 @@ function LanguageLab() {
         <div className="lang-system-grid">
           <div className="lang-system-card">
             <img src={systemScreen1} alt="Language Lab Teacher Console Master Control Interface" />
-            <div className="lang-system-caption">Teacher Console Master Control Interface</div>
+            <div className="lang-system-caption"><strong>Level I - Grammar </strong> Grammar through activities language lab and 
+                      classroom. The teacher has to be a vigilant, careful of the 
+                      performance, behavior, interest, and need of the students, 
+                      the enthusiastic participants in the lab. Let’s consider Active 
+                      Voice and Passive Voice as an example</div>
           </div>
 
           <div className="lang-system-card">
             <img src={systemScreen2} alt="Interactive Student Practice & Phonetic Drill Interface" />
-            <div className="lang-system-caption">Interactive Student Practice &amp; Phonetic Drill Interface</div>
+            <div className="lang-system-caption"><strong>Skill Generation</strong>Programs are designed to take into account your existing 
+skills and knowledge as well as workplace and other training you may 
+have received.Skills Generation will help you whether you are looking for 
+new career opportunities, advancement within your current role or 
+improving and honing existing skills and knowledge.</div>
+            <div className="lang-system-caption"><strong>Art Of Conversation</strong>Art of conversation includes the ability to listen to others as well as the 
+ability to speak effectively.</div>
           </div>
+          
         </div>
 
         <div style={{ maxWidth: "560px", margin: "0 auto 40px" }}>
           <div className="lang-system-card">
             <img src={systemScreen3} alt="Grammar & Vocabulary Workshop Module" />
-            <div className="lang-system-caption">Grammar &amp; Vocabulary Workshop Module</div>
+            <div className="lang-system-caption"><strong>Art of writing:</strong>Writing is the art of expressing our views, ideas, and thoughts.
+            Writing is a very important skill anywhere, anytime as long as we live. Through writing, we communicate to teachers to receive grades in school. Effective writing can be a task as it demands much more than correct grammar. It is about to gain knowledge about sentence structure, 
+            develop your vocabulary, and build other basic writing skills.</div>
           </div>
         </div>
       </main>

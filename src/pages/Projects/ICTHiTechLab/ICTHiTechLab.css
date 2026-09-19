@@ -1,32 +1,305 @@
 /* ==========================================================================
-   ICT / HI-TECH LAB PROJECT STYLES
+   ICT / HI-TECH LAB PROJECT STYLES (Self-Contained - Matches Mockup)
    ========================================================================== */
-@import "../Projects.css";
 
-.ict-highlight-banner {
-  background: #ffffff;
-  border: 1.5px solid #dce4df;
-  border-radius: 20px;
-  padding: 32px 28px;
-  box-shadow: 0 6px 22px rgba(14, 74, 52, 0.05);
-  margin-bottom: 40px;
+.project-page-wrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: #212529;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 70px;
 }
 
-.ict-highlight-banner h3 {
+/* Hero Banner */
+.project-hero {
+  position: relative;
+  background-image: url("../../../assets/image/project page banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px 70px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Floating Mint-Green Breadcrumb Capsule */
+.project-breadcrumb-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 28px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+.project-breadcrumb-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #d4f8db;
+  color: #0e4a34;
+  padding: 9px 28px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1.5px solid #a6eec0;
+  box-shadow: 0 4px 14px rgba(14, 74, 52, 0.1);
+}
+
+.project-breadcrumb-capsule a {
+  color: #0e4a34;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-breadcrumb-capsule a:hover {
+  color: #1b8754;
+  text-decoration: underline;
+}
+
+.project-breadcrumb-separator {
+  color: #1b8754;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.project-breadcrumb-current {
+  color: #0e4a34;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .project-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 7px 18px;
+    gap: 7px;
+  }
+}
+
+/* Main Content Container */
+.project-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Main Titles */
+.ictht-main-title {
+  color: #0e4a34;
+  font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+  font-weight: 800;
+  text-align: center;
+  margin: 35px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.ictht-main-subtitle {
+  text-align: center;
+  color: #2e3832;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  max-width: 960px;
+  margin: 0 auto 35px;
+}
+
+.ictht-section-title {
+  color: #0e4a34;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  font-weight: 800;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.ictht-edu-desc {
+  color: #2e3832;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  margin: 0 0 35px;
+}
+
+.ictht-edu-desc strong {
+  color: #0e4a34;
+  font-weight: 700;
+}
+
+/* Showcase Card: Hardware Maintenance Management + Image */
+.ictht-showcase-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 22px;
+  padding: 32px 28px;
+  box-shadow: 0 8px 26px rgba(14, 74, 52, 0.05);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 36px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.ictht-showcase-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(14, 74, 52, 0.08);
+}
+
+.ictht-card-title {
   color: #0e4a34;
   font-size: 1.35rem;
   font-weight: 700;
-  margin: 0 0 16px;
+  margin: 0 0 20px;
 }
 
-.ict-highlight-banner p {
+/* Checklists */
+.ictht-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ictht-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: #242d27;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.ictht-check-icon {
+  color: #10673d;
+  font-size: 1.18rem;
+  font-weight: 800;
+  line-height: 1.25;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Media Column */
+.ictht-card-media-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ictht-card-media-col img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: block;
+  object-fit: cover;
+}
+
+/* Dual Cards: Using Teacher Computer vs Using Student's Computer */
+.ictht-dual-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-bottom: 45px;
+}
+
+.ictht-info-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 20px;
+  padding: 26px 24px;
+  box-shadow: 0 6px 20px rgba(14, 74, 52, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.ictht-info-card h3 {
+  color: #0e4a34;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.ictht-info-card p {
   color: #3b4640;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Assessment Methods Definition Section */
+.ictht-methods-section {
+  margin-bottom: 45px;
+}
+
+.ictht-methods-title {
+  text-align: center;
+  color: #0e4a34;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+  font-weight: 800;
+  margin: 0 0 24px;
+  letter-spacing: -0.01em;
+}
+
+.ictht-methods-content p {
+  color: #2e3832;
+  font-size: 0.96rem;
   line-height: 1.75;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
 }
 
-.ict-highlight-banner p:last-child {
-  margin-bottom: 0;
+.ictht-methods-content strong {
+  color: #0e4a34;
+  font-weight: 700;
 }
 
+/* Features Section */
+.ictht-features-section {
+  margin-bottom: 60px;
+}
+
+.ictht-features-title {
+  color: #0e4a34;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 920px) {
+  .ictht-showcase-card {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 24px 20px;
+  }
+
+  .ictht-dual-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-hero {
+    min-height: 220px;
+    padding: 90px 16px 60px;
+  }
+
+  .project-container {
+    padding: 0 16px;
+  }
+
+  .ictht-showcase-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .ictht-check-item {
+    font-size: 0.88rem;
+    gap: 10px;
+  }
+}

@@ -14,74 +14,153 @@ function ICTHiTechLab() {
       <div className="project-breadcrumb-wrapper">
         <nav className="project-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
-          <span className="project-breadcrumb-separator">›</span>
+          <span className="project-breadcrumb-separator">&gt;</span>
           <Link to="/projects">Project</Link>
-          <span className="project-breadcrumb-separator">›</span>
-          <span className="project-breadcrumb-current">ICT / Hi-Tech Lab</span>
+          <span className="project-breadcrumb-separator">&gt;</span>
+          <span className="project-breadcrumb-current">ICT/Hi-Tech Lab</span>
         </nav>
       </div>
 
       <main className="project-container">
-        <h1 className="project-main-title">ICT / Hi-Tech Lab Projects</h1>
+        {/* Main Title: ICT/Hi-Tech Lab */}
+        <h1 className="ictht-main-title">ICT/Hi-Tech Lab</h1>
+        <p className="ictht-main-subtitle">
+          ICT/HI-TECH Skills are about understanding and applying a range of computer programs, software and other applications, the activities or equipment involve or result from the use of High technology.
+        </p>
 
-        {/* Intro Section with Lab Photo */}
-        <div className="project-intro-split">
-          <div className="project-intro-text">
+        {/* Section: ICT Projects */}
+        <div className="ictht-edu-block">
+          <h2 className="ictht-section-title">ICT Projects: Implementing &amp; Delivering IT Infrastructure For</h2>
+          <p className="ictht-edu-desc">
+            <strong>Computer Education:</strong> Experience in Facility Management Facility Management: Netcom has supplied and maintained around 1500 systems and Peripherals In 500 Government schools spread across TamilNadu.Netcom maintains the uptime of 97% for the entire IT Infrastructure supplied In these schools for Computer Education.
+          </p>
+        </div>
+
+        {/* Showcase Card: Hardware Maintenance Management (Left) & Lab Image (Right) */}
+        <section className="ictht-showcase-card">
+          <div className="ictht-card-checklist-col">
+            <h3 className="ictht-card-title">Hardware Maintenance Management</h3>
+            <ul className="ictht-check-list">
+              <li className="ictht-check-item">
+                <span className="ictht-check-icon">✔</span>
+                <span>Server Should Act As A Teacher Console: This Displays The List Of Students In The Teacher Console From This The Teacher Can Select The Student To Start Or Stop The Class.</span>
+              </li>
+              <li className="ictht-check-item">
+                <span className="ictht-check-icon">✔</span>
+                <span>Real Time Screen And Audio Broadcast From Teacher Console To Student</span>
+              </li>
+              <li className="ictht-check-item">
+                <span className="ictht-check-icon">✔</span>
+                <span>Viewing And Absorbing The Screens Of Students From Teacher Console</span>
+              </li>
+              <li className="ictht-check-item">
+                <span className="ictht-check-icon">✔</span>
+                <span>Recording And Storing Broadcasts For Future Use This Option Is Used To Record The Files And Broadcast It To Other Students From Teacher Console.</span>
+              </li>
+              <li className="ictht-check-item">
+                <span className="ictht-check-icon">✔</span>
+                <span>Sharing Files Among System This Module Is Used To Share The Files To Other System Or Students From The Teacher Console.</span>
+              </li>
+              <li className="ictht-check-item">
+                <span className="ictht-check-icon">✔</span>
+                <span>Having Controls Like Mute Audio, Lock The Keyboard Of Particular Student Console. This Is Used To Control The Student's Screen Such As To Lock The Screen Or Keyboard Or Mute The Audio. Teachers Can Easily Having The Control Over The Student's Screen.</span>
+              </li>
+              <li className="ictht-check-item">
+                <span className="ictht-check-icon">✔</span>
+                <span>Providing Some Sample Call Lessons This Provides Some Sample Lessons To Student's Screen.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="ictht-card-media-col">
+            <img src={hiTechImg} alt="Students in Government School Hi-Tech Computer Lab with Interactive Graphics" />
+          </div>
+        </section>
+
+        {/* Dual Cards: Using Teacher Computer vs Using Student's Computer */}
+        <div className="ictht-dual-cards">
+          <div className="ictht-info-card">
+            <h3>Using the Teacher Computer or Server</h3>
             <p>
-              Netcom Computers has been at the forefront of implementing landmark <strong>Information and Communication Technology (ICT) and Hi-Tech Labs</strong> in thousands of government higher secondary and high schools across Tamil Nadu under the Samagra Shiksha initiative.
-            </p>
-            <p>
-              These state-of-the-art computer laboratories provide rural and semi-urban students with equal access to modern digital computing facilities, interactive courseware, coding platforms, and internet connectivity, bridging the digital divide at an unprecedented scale.
-            </p>
-            <p>
-              Each laboratory features high-performance server workstations, networked desktop units, centralized power backup (Online UPS), high-speed structured cabling, document projection systems, and licensed educational operating environments.
+              After installing the teacher setup or server setup in the computer, the server or teacher has many features to access. They have the ability to control the student's or client machines.
             </p>
           </div>
-          <div className="project-intro-media">
-            <img src={hiTechImg} alt="Government School Hi-Tech Computer Lab Infrastructure" />
+
+          <div className="ictht-info-card">
+            <h3>Using the Student's Computer or Client</h3>
+            <p>
+              Language lab is set up to run in the background on student computers. All of the functionality is controlled at the teacher computer, which enables you to have control over classroom activities.
+            </p>
           </div>
         </div>
 
-        {/* Feature Grid */}
-        <h2 className="project-section-title">Key Infrastructure Components</h2>
-        <div className="project-grid-3">
-          <div className="project-card">
-            <h3>Central Server Architecture</h3>
-            <p>Enterprise-grade master servers running Linux and Windows dual operating environments to orchestrate local lesson caching, authentication, and student testing.</p>
-          </div>
-          <div className="project-card">
-            <h3>Student Workstations</h3>
-            <p>10 to 20 high-speed networked desktop units per school lab equipped with monitors, headphones, and localized curriculum software.</p>
-          </div>
-          <div className="project-card">
-            <h3>Uninterrupted Power (UPS)</h3>
-            <p>Heavy-duty online UPS systems with dedicated battery banks ensuring continuous lab sessions even during unexpected power outages.</p>
-          </div>
-          <div className="project-card">
-            <h3>Gigabit Structured Cabling</h3>
-            <p>Comprehensive shielded CAT-6 network cabling, rack enclosures, patch panels, and managed network switches for ultra-low latency internal data transfer.</p>
-          </div>
-          <div className="project-card">
-            <h3>Teacher Enablement</h3>
-            <p>On-site orientation and master training workshops conducted by Netcom technical engineers to empower teachers to manage and teach effectively.</p>
-          </div>
-          <div className="project-card">
-            <h3>Statewide SLA Support</h3>
-            <p>Comprehensive technical support, hardware warranty, and periodic software maintenance handled by Netcom district support teams across all taluks.</p>
+        {/* Assessment Methods Definition Section */}
+        <div className="ictht-methods-section">
+          <h2 className="ictht-methods-title">
+            Netcom Assessment methods define the nature of the assessor actions and include
+          </h2>
+
+          <div className="ictht-methods-content">
+            <p>
+              <strong>Examine method:</strong> the process of reviewing, inspecting, observing, studying, or analyzing one or more assessment objects (i.e., specifications, mechanisms, or activities). The purpose of the examine method is to facilitate assessor understanding, achieve clarification, or obtain evidence.
+            </p>
+            <p>
+              <strong>Interview method:</strong> The process of holding discussions with individuals or groups of individuals within an organization to, once again, facilitate assessor understanding, achieve clarification, or obtain evidence.
+            </p>
+            <p>
+              <strong>Test method:</strong> the process of exercising one or more assessment objects (i.e., activities or mechanisms) under specified conditions to compare actual with expected behavior.
+            </p>
+            <p>
+              Netcom Assessment is the ongoing process of gathering, analyzing and interpreting evidence, reflecting on findings, making informed and consistent judgements to improve student learning.
+            </p>
+            <p>
+              Assessment for improved student learning and deep understanding requires a range of assessment practices to be used with three overarching purposes:
+            </p>
+            <p>
+              <strong>Assessment for learning:</strong> occurs when teachers use inferences about student progress to inform their teaching.
+            </p>
+            <p>
+              <strong>Assessment as learning:</strong> occurs when students reflect on and monitor their progress to inform their future learning goals.
+            </p>
+            <p>
+              <strong>Assessment of learning:</strong> occurs when teachers use evidence of student learning to make judgements on student achievement against goals and standards.
+            </p>
           </div>
         </div>
 
-        {/* Implementation Scope Highlights */}
-        <h2 className="project-section-title">Project Highlights &amp; Reach</h2>
-        <div className="project-grid-2">
-          <div className="project-card">
-            <h3>6,000+ Government Schools Transformed</h3>
-            <p>Over six thousand schools equipped with modern computing infrastructure, benefiting over 1.5 million students annually with digital literacy and computer education.</p>
-          </div>
-          <div className="project-card">
-            <h3>Localized K-12 Digital Repository</h3>
-            <p>Pre-loaded with 10,000+ animated learning resources and virtual labs mapped directly to the Tamil Nadu State Board Samacheer Kalvi syllabus.</p>
-          </div>
+        {/* Features Section */}
+        <div className="ictht-features-section">
+          <h2 className="ictht-features-title">Features</h2>
+          <ul className="ictht-check-list">
+            <li className="ictht-check-item">
+              <span className="ictht-check-icon">✔</span>
+              <span>Server Should Act As A Teacher Console: This Displays The List Of Students In The Teacher Console From This The Teacher Can Select The Student To Start Or Stop The Class.</span>
+            </li>
+            <li className="ictht-check-item">
+              <span className="ictht-check-icon">✔</span>
+              <span>Real Time Screen And Audio Broadcast From Teacher Console To Student</span>
+            </li>
+            <li className="ictht-check-item">
+              <span className="ictht-check-icon">✔</span>
+              <span>Viewing And Absorbing The Screens Of Students From Teacher Console</span>
+            </li>
+            <li className="ictht-check-item">
+              <span className="ictht-check-icon">✔</span>
+              <span>Recording And Storing Broadcasts For Future Use This Option Is Used To Record The Files And Broadcast It To Other Students From Teacher Console.</span>
+            </li>
+            <li className="ictht-check-item">
+              <span className="ictht-check-icon">✔</span>
+              <span>Sharing Files Among System This Module Is Used To Share The Files To Other System Or Students From The Teacher Console.</span>
+            </li>
+            <li className="ictht-check-item">
+              <span className="ictht-check-icon">✔</span>
+              <span>Having Controls Like Mute Audio, Lock The Keyboard Of Particular Student Console. This Is Used To Control The Student's Screen Such As To Lock The Screen Or Keyboard Or Mute The Audio. Teachers Can Easily Having The Control Over The Student's Screen.</span>
+            </li>
+            <li className="ictht-check-item">
+              <span className="ictht-check-icon">✔</span>
+              <span>Providing Some Sample Call Lessons This Provides Some Sample Lessons To Student's Screen.</span>
+            </li>
+          </ul>
         </div>
       </main>
     </div>
@@ -89,4 +168,3 @@ function ICTHiTechLab() {
 }
 
 export default ICTHiTechLab;
-
