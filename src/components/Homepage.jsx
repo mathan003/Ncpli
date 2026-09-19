@@ -63,11 +63,18 @@ function Hero() {
             and training content of global relevance,designing and executing large learning initiatives 
             and setting up the requisite infrastructure.
           </p>
-          <Link to="/service" className="btn btn-accent">
-            Explore Our Services
-            <span aria-hidden="true">&rarr;</span>
-          </Link>
-          
+          <button
+  className="btn btn-accent"
+  onClick={() =>
+    document.getElementById("service")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  }
+>
+  Explore Our Services
+  <span aria-hidden="true">&rarr;</span>
+</button>
         </div>
         <div className="hero_img">
           <img src={heroWoman} alt="Netcom team member working on a laptop" />
@@ -182,10 +189,16 @@ function Services() {
   return (
     <section className="section services" id="services">
       <div className="container">
-        <div className="section-heading">
-          <h2>Our Services</h2>
-          <p>Full-Spectrum Service Offerings To Make Your Business Into The Next Stage</p>
-        </div>
+        <section id="service">
+  <div className="section-heading">
+    <h2>Our Services</h2>
+    <p>
+      Full-Spectrum Service Offerings To Make Your Business Into The Next Stage
+    </p>
+  </div>
+
+  {/* Your services content */}
+</section>
 
         <div className="services__grid">
           {SERVICES.map((service) => (

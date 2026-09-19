@@ -38,6 +38,20 @@
   line-height: 1.6;
 }
 
+.hero_text button{
+  color: #fff;
+  width: 212;
+  height: 47;
+  top: 368px;
+  left: 90px;
+  border-radius: 12px;
+  gap: 10px;
+  opacity: 1;
+  padding: 10px;
+  background: #F8A521;
+
+}
+
 .hero_img {
   width: min(390px, 30vw);
   justify-self: end;

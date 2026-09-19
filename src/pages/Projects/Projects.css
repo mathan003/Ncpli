@@ -345,6 +345,176 @@
   background: #e8f3ed;
 }
 
+/* ==========================================================================
+   UNIVERSAL BOTTOM CONTACT CTA CARD & DEMO MODAL
+   ========================================================================== */
+.prod-cta-card {
+  background: #ffffff;
+  border: 1px solid #dce4df;
+  border-radius: 24px;
+  padding: 36px 44px;
+  margin-top: 50px;
+  box-shadow: 0 8px 30px rgba(14, 74, 52, 0.06);
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 32px;
+}
+
+.prod-cta-content h2 {
+  color: #0e4a34;
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.prod-cta-content p {
+  color: #3b4640;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 24px;
+  max-width: 600px;
+}
+
+.prod-cta-content .btn-request-demo {
+  display: inline-block;
+  background: #f7a828;
+  color: #23330a;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(247, 168, 40, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.prod-cta-content .btn-request-demo:hover {
+  background: #e69517;
+  transform: translateY(-2px);
+}
+
+.prod-cta-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prod-cta-image img {
+  max-height: 220px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Interactive Demo Modal */
+.prod-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+
+.prod-modal-card {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 520px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.prod-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.prod-modal-header h3 {
+  color: #0e4a34;
+  font-size: 1.35rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.prod-modal-close {
+  background: #f0f4f2;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.prod-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.prod-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.prod-form-group label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2b332e;
+}
+
+.prod-form-group input,
+.prod-form-group textarea,
+.prod-form-group select {
+  padding: 11px 14px;
+  border: 1.5px solid #dce4df;
+  border-radius: 8px;
+  font-size: 0.94rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.prod-form-group input:focus,
+.prod-form-group textarea:focus,
+.prod-form-group select:focus {
+  outline: none;
+  border-color: #0e4a34;
+}
+
+.prod-modal-submit {
+  margin-top: 8px;
+  background: #0e4a34;
+  color: #ffffff;
+  padding: 13px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.prod-modal-submit:hover {
+  background: #146346;
+}
+
 /* Responsive adjustments */
 @media (max-width: 960px) {
   .project-intro-split {
@@ -353,6 +523,20 @@
   }
   .project-grid-3 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .prod-cta-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  .prod-cta-content p {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

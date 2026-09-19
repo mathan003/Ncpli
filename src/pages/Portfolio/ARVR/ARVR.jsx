@@ -27,6 +27,7 @@ import chnZaminPallavaram from "../../../assets/image/portfolio/AR&VR/Municipal 
 import chnSelaiyur from "../../../assets/image/portfolio/AR&VR/Corporation high sec.school Selaiyur.png";
 import chnZaminRayapetai from "../../../assets/image/portfolio/AR&VR/Corporation high sec.school zamin rayapetai.png";
 import chnWestTambaram from "../../../assets/image/portfolio/AR&VR/Corporation high. school, kalyan Nagar, West Tambaram.png";
+import chnHasthinapuram from "../../../assets/image/portfolio/AR&VR/Corporation high sec.school  Hasthinapuram.png";
 
 const coimbatoreProjects = [
   { title: "Corporation Girls Higher Secondary School Ramanathapuram", image: cbeRamakrishna },
@@ -53,6 +54,7 @@ const chennaiProjects = [
   { title: "Corporation high sec.school Selaiyur", image: chnSelaiyur },
   { title: "Corporation high sec.school Zamin Rayapettai", image: chnZaminRayapetai },
   { title: "Corporation high school, Kalyan Nagar, West Tambaram", image: chnWestTambaram },
+  { title: "Corporation high sec.school Hasthinapuram", image: chnHasthinapuram },
 ];
 
 function ARVR() {
