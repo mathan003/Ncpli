@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../Portfolio.css";
 import portfolioBanner from "../../../assets/image/portfolio/portfolio banner.jpg";
 
 const PORTFOLIO_CATEGORIES = [

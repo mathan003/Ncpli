@@ -195,7 +195,7 @@ function Services() {
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <Link to={service.to} className="btn btn-outline service-card__btn">
+              <Link to={service.to} className="btn_btn-outline service-card__btn">
                 Explore
               </Link>
             </article>

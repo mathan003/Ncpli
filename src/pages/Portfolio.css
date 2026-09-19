@@ -71,12 +71,64 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* ================= BREADCRUMB CAPSULE ================= */
+.cs-breadcrumb-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 24px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+.cs-breadcrumb-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #141715;
+  color: #ffffff;
+  padding: 9px 26px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cs-breadcrumb-capsule a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cs-breadcrumb-capsule a:hover {
+  color: #7ae4ad;
+}
+
+.cs-breadcrumb-separator {
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.cs-breadcrumb-current {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .cs-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 7px 18px;
+    gap: 7px;
+  }
+}
+
 /* ================= PORTFOLIO MAIN CONTENT ================= */
 .portfolio-content {
-  width: min(1200px, 92%);
   width: min(1440px, 92%);
   margin: 0 auto;
-  padding-top: 48px;
+  padding-top: 24px;
   padding-bottom: 80px;
 }
 

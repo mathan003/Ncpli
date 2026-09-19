@@ -101,11 +101,11 @@
 
 .about-stat {
   position: absolute;
-  top: 20%;
+  top: 7%;
   right: 10px;
   display: grid;
-  width: 150px;
-  height: 85px;
+  width: 249px;
+  height: 150px;
   place-content: center;
   border-radius: 30px 30px 160px 30px;
   background: var(--green);
@@ -116,12 +116,13 @@
 }
 
 .about-stat strong {
-  font-size: 1.8rem;
+  font-size: 48px;
+  
   line-height: 1.1;
 }
 
 .about-stat span {
-  font-size: 0.82rem;
+  font-size: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }

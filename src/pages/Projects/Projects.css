@@ -13,61 +13,70 @@
 /* Hero Banner */
 .project-hero {
   position: relative;
-  background: linear-gradient(115deg, #cdf4dc 0%, #f4fff8 100%);
+  background-image: url("../../assets/image/project page banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 20px 70px;
-  min-height: 240px;
+  min-height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-/* Floating Mint-Green Breadcrumb Capsule */
+/* Floating Black Breadcrumb Capsule matching Design System */
 .project-breadcrumb-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: -24px;
   position: relative;
+  margin-top: -20px;
+  margin-bottom: 28px;
   z-index: 10;
-  margin-bottom: 35px;
+  padding: 0 16px;
 }
 
 .project-breadcrumb-capsule {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: #c2f5d3;
+  gap: 10px;
+  background: #141715;
+  color: #ffffff;
   padding: 9px 26px;
-  border-radius: 9999px;
-  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.1);
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #0e4a34;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .project-breadcrumb-capsule a {
-  color: #0e4a34;
+  color: #ffffff;
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .project-breadcrumb-capsule a:hover {
-  text-decoration: underline;
-  opacity: 0.85;
+  color: #7ae4ad;
+  text-decoration: none;
 }
 
 .project-breadcrumb-separator {
-  color: #2e7a57;
-  font-size: 1rem;
-  line-height: 1;
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
 }
 
 .project-breadcrumb-current {
-  color: #0e4a34;
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .project-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 7px 18px;
+    gap: 7px;
+  }
 }
 
 /* Main Content Container */
