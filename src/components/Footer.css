@@ -1,98 +1,177 @@
 .site-footer {
-  background: var(--color-primary-dark);
-  padding-top: 10px;
-  color: #dcebe3;
+  background-color: #0b3824;
+  color: #ffffff;
+  padding-top: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .site-footer__grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1.1fr 1.1fr;
-  gap: 40px;
-  padding: 64px 24px 40px ;
+  grid-template-columns: 1.35fr 1.05fr 1.25fr 1.15fr;
+  gap: 36px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px 50px;
+  align-items: start;
 }
 
-.site-footer h3 {
-  color: #fff;
-  font-size: 1.15rem;
-  margin-bottom: 14px;
+/* Brand Column */
+.site-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.site-footer h4 {
-  color: #fff;
-  font-size: 1rem;
-  margin-bottom: 18px;
-  letter-spacing: 0.02em;
+.site-footer__logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-.site-footer__about p {
-  color: #b9d3c6;
+.site-footer__brand-text {
+  color: #ffffff;
   font-size: 0.92rem;
-  max-width: 32ch;
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0;
 }
 
-.site-footer__col ul li {
+/* Column Headings */
+.site-footer__heading {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.75);
+  padding-bottom: 4px;
+  margin: 0 0 22px;
+}
+
+/* Site Map Links */
+.site-footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer__nav-list li {
   margin-bottom: 11px;
 }
 
-.site-footer__col a {
+.site-footer__nav-list a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #cfe4da;
-  font-size: 0.92rem;
-  transition: color var(--transition-fast);
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.site-footer__col a:hover {
-  color: var(--color-accent);
+.site-footer__nav-list a:hover {
+  color: #7ae4ad;
+  transform: translateX(3px);
 }
 
 .site-footer__arrow {
-  color: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.92rem;
+  line-height: 1;
+  display: inline-block;
+  transition: color 0.2s ease;
 }
 
+.site-footer__nav-list a:hover .site-footer__arrow {
+  color: #7ae4ad;
+}
+
+/* Office Addresses */
 .site-footer address {
   font-style: normal;
 }
 
-.site-footer address p {
-  color: #cfe4da;
-  font-size: 0.92rem;
-  margin-bottom: 12px;
+.site-footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-size: 0.88rem;
+  line-height: 1.45;
 }
 
-.site-footer address a {
-  color: #cfe4da;
+.site-footer__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #ffffff;
 }
 
-.site-footer address a:hover {
-  color: var(--color-accent);
+.site-footer__icon--phone {
+  margin-top: 1px;
 }
 
+.site-footer__contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer__contact-item a:hover {
+  color: #7ae4ad;
+}
+
+.site-footer__phone-numbers {
+  display: inline;
+}
+
+/* Bottom Bar */
 .site-footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .site-footer__bottom-row {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 18px 24px;
   text-align: center;
 }
 
 .site-footer__bottom-row p {
-  color: #a9c6b8;
-  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.82rem;
+  margin: 0;
 }
 
-@media (max-width: 900px) {
+/* Responsive */
+@media (max-width: 1100px) {
   .site-footer__grid {
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 40px 32px;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
+  .site-footer {
+    padding-top: 40px;
+  }
+
   .site-footer__grid {
     grid-template-columns: 1fr;
-    padding: 48px 24px 32px;
+    gap: 32px;
+    padding: 0 20px 36px;
+  }
+
+  .site-footer__brand {
+    align-items: flex-start;
+  }
+
+  .site-footer__brand-text {
+    font-size: 0.88rem;
   }
 }

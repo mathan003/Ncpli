@@ -206,13 +206,13 @@ const Contact = () => {
           CONTACT HERO
       ========================= */}
       <section className="contact-hero">
+        <img className="contact-hero-image" src={heroImage} alt="Netcom Computers reception" />
         <div className="contact-hero-content">
-          <div>
+          <div className="contact-hero-text">
             <p className="contact-small-title">LET'S CONNECT</p>
             <h1>Contact Us</h1>
             <p>We are here to help answer any question you might have.<br />We look forward to hearing from you!</p>
           </div>
-          <img className="contact-hero-image" src={heroImage} alt="Netcom Computers reception" />
         </div>
       </section>
 
