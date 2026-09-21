@@ -169,7 +169,9 @@
 /* Left Column: Features Card */
 .tailor-features-card {
   background: #ffffff;
-  border-radius: 18px;
+  border-radius: 30px;
+  width: 712px;
+  height: 1784px;
   border: 1.5px solid #dce4df;
   padding: 26px 22px;
   box-shadow: 0 6px 20px rgba(14, 74, 52, 0.05);
@@ -177,7 +179,7 @@
 
 .tailor-features-heading {
   color: #0e4a34;
-  font-size: 1.4rem;
+  font-size: 32px;
   font-weight: 700;
   text-align: center;
   margin: 0 0 20px;
@@ -189,7 +191,7 @@
 
 .tailor-group-title {
   color: #0e4a34;
-  font-size: 0.96rem;
+  font-size: 20px;
   font-weight: 700;
   margin: 0 0 8px;
 }
@@ -200,7 +202,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 18px;
 }
 
 .tailor-group-items li {
@@ -208,8 +210,8 @@
   align-items: flex-start;
   gap: 9px;
   color: #3b4640;
-  font-size: 0.88rem;
-  line-height: 1.48;
+  font-size: 16px;
+ 
 }
 
 /* Right Column: Visuals Stack */
@@ -228,6 +230,7 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 468px;
 }
 
 .tailor-video-card:hover {
@@ -253,16 +256,18 @@
 .tailor-video-title {
   display: block;
   color: #0e4a34;
-  font-size: 0.92rem;
-  font-weight: 700;
+  font-size: 14pxrem;
+  font-weight: 400;
   margin-bottom: 2px;
+
 }
 
 .tailor-video-desc {
   display: block;
   color: #556259;
-  font-size: 0.8rem;
-  line-height: 1.35;
+  font-size: 12px;
+  font-weight: 400;
+  width: 320px;
 }
 
 /* YouTube Badge */
@@ -295,22 +300,25 @@
 }
 
 /* Desktop Screens */
-.tailor-desktop-screen {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 6px;
-  border: 1.5px solid #dce4df;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+.tailor-desktop-screen0 img{
+  width: 468px;
+  height: 433px;
+  top: 1000px;
+  left: 852px;
+  border-radius: 30px;
 }
 
-.tailor-desktop-screen img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  object-fit: contain;
+.tailor-desktop-screen1 img{
+  width: 468px;
+  height: 225px;
+ 
 }
+.tailor-desktop-screen2 img{
+  width: 468px;
+  height: 225px;
+ 
+}
+
 
 /* Phones 2-Column Grid */
 .tailor-phones-grid {
@@ -359,6 +367,8 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 386px;
+  height: auto;
 }
 
 .prod-price-card:hover {
@@ -483,7 +493,6 @@
 
 .prod-arrow-icon {
   color: #0e4a34;
-  font-size: 1.3rem;
   line-height: 1.2;
   flex-shrink: 0;
 }

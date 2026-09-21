@@ -164,17 +164,17 @@ function SmartTailorShop() {
             </div>
 
             {/* 2. Desktop Screenshot 1 (Dashboard Overview) */}
-            <div className="tailor-desktop-screen">
+            <div className="tailor-desktop-screen0">
               <img src={tailorImg1} alt="Tailor Management Dashboard Screen" />
             </div>
 
             {/* 3. Desktop Screenshot 2 (Order Status Table) */}
-            <div className="tailor-desktop-screen">
+            <div className="tailor-desktop-screen1">
               <img src={tailorImg2} alt="Tailor Orders and Measurement Schedule" />
             </div>
 
             {/* 4. Desktop Screenshot 3 (Order Ledger Table) */}
-            <div className="tailor-desktop-screen">
+            <div className="tailor-desktop-screen2">
               <img src={tailorImg3} alt="Order Tracking and Status Overview" />
             </div>
 
@@ -211,12 +211,12 @@ function SmartTailorShop() {
             </div>
             <div className="prod-price-body">
               <ul className="prod-check-list">
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Single Branch Support</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> 500 Orders Placement</li>
                 <li className="prod-check-item"><span className="prod-check-badge">✓</span> Customer Management</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Standard Measurement Book</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Basic Billing & Invoicing</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> SMS Notifications</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Basic Order Tracking</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Interactive Charts</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Report Generation</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Rates Updater</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Smart Billing</li>
                 <li className="prod-check-item"><span className="prod-check-badge">✓</span> Up to 3 Staff Accounts</li>
                 <li className="prod-check-item"><span className="prod-check-badge">✓</span> Mobile Web View</li>
                 <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Multi-Branch Support</li>

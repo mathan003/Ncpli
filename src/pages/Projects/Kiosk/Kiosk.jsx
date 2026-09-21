@@ -35,19 +35,25 @@ function Kiosk() {
           <div className="kiosk-top-info-col">
             <h2 className="kiosk-top-card-title">Kiosk Project</h2>
             <p>
-              A Kiosk is a small, stand-alone booth used in high-traffic areas for marketing, service or informational purposes. Early kiosks were simple wooden booths that sold refreshments or provided information to passersby, but today&apos;s kiosks are much more sophisticated.
+              A kiosk is an interactive system designed for public use thatdelivers information or enables transactions.
+              Standard or custom applications developed for information kiosks provide customers with information, 
+              the ability to participate in loyalty programs, and transaction capability.Enterprises deploy kiosks to 
+              increase customer loyalty, strengthen their brand with target customers, and reduce operational costs.
             </p>
             <p>
-              Interactive digital kiosks feature touchscreen displays, video players, and audio systems that allow users to interact with content in a variety of ways. Self-service kiosks are also becoming increasingly popular in places like airports, grocery stores, and quick-service restaurants, allowing customers to check in for flights, purchase groceries, and order food without waiting in line for a customer service representative.
+              A kiosk includes a computer and a display screen and allows for customer input of data via an input device 
+              such as a touch screen or keyboard. A kiosk differs from a standard computer in that it runs application(s) 
+              developed for a specific purpose(s).
             </p>
           </div>
         </section>
 
         {/* Development Goals Callout Card */}
         <div className="kiosk-goals-box">
-          <h3 className="kiosk-goals-heading">Development Goals</h3>
+          <h3 className="kiosk-goals-heading">Purpose of Kiosk:</h3>
           <p className="kiosk-goals-desc">
-            Netcom is an expert provider of KIOSK based solutions for various organizations like Government and Corporates. We offer complete solutions for Kiosk projects, including software and hardware.
+                A kiosk is a small, stand-alone booth typically placed in high-traffic areas for business purposes.It typically provides information and applications on education, commerce, entertainment, 
+                and a variety of other topics.
           </p>
         </div>
 
@@ -55,10 +61,10 @@ function Kiosk() {
         <section className="kiosk-intro-block">
           <h1 className="kiosk-center-title">Kiosk Project</h1>
           <p className="kiosk-center-desc">
-            The self-service interactive KIOSK machine is an effective communication medium designed for indoor and outdoor environments. In today&apos;s competitive world, it is vital to stay ahead of the curve and offer your customers the best possible experience.
+            The software we developed for TMB contains the Contents that are designed and developed by using the FLASH software. Online Contents can be upload/download easily. If we want to changeor edit the contents, it will be easily modified and updated.
           </p>
           <p className="kiosk-center-desc">
-            Netcom provides complete end-to-end solutions for Kiosk projects, from design and development to hardware deployment and ongoing maintenance. Our interactive kiosks are engineered to streamline operations, reduce wait times, and deliver engaging user experiences across diverse industries.
+            NETCOM executed the KIOSK project along with Software and have installed 82 Bank Kiosks for Tamil Nadu Mercantile Bank (TMB). These KIOSKs have touch screen facility where the user or the customer could access his / her Banking details such as transaction details along with the information about the bank's new products and facilities. These KIOSKs have been established in the States of Karnataka, Gujarat, Delhi, Maharashtra, Andhra Pradesh, Kerala, Tamil Nadu and Puducherry in India.
           </p>
         </section>
 
@@ -69,7 +75,11 @@ function Kiosk() {
             <div className="kiosk-industry-text">
               <h3 className="kiosk-industry-title">KIOSK In Healthcare:</h3>
               <p>
-                Healthcare kiosks are revolutionizing patient care by streamlining registration, check-ins, and appointments. Patients can easily verify insurance information, pay co-pays, and access health records privately. This reduces waiting room congestion and frees hospital staff to focus on critical patient care and medical assistance.
+                Netcom Health Care Kiosk helps in mechanised check-ins and registration, patient 
+                status, online filling of forms and questionnaires, insurance confirmation, 
+                systematize patient queuing, payment of bills and report of outstanding payments. 
+                Public Health Centre often utilize self-service kiosks to assist patients with 
+                check-in, as well as offer wayfinding services on large campuses.
               </p>
             </div>
             <div className="kiosk-industry-media">
@@ -85,7 +95,12 @@ function Kiosk() {
             <div className="kiosk-industry-text">
               <h3 className="kiosk-industry-title">KIOSK In Travel Desk:</h3>
               <p>
-                Interactive travel and ticketing kiosks simplify trip planning for commuters and travelers. From booking bus, train, or attraction tickets to printing itinerary details and viewing city route maps, travel kiosks deliver 24/7 self-service convenience without requiring dedicated ticket counter agents.
+                Netcom Travel Desk Kiosk used in bus and train stations to dispense tickets and 
+                provide wayfinding for different stops along each route.Printing tickets for train 
+                or bus journeys.Interactive touchscreen for viewing timetables and selecting 
+                train or bus tickets. Scanning railcards, and season tickets.Buying travel and 
+                season tickets.Gaining feedback via surveys on interactive kiosks.It is helpful in 
+                information such as bus or train times, travel updates or government guidelines.
               </p>
             </div>
           </div>
@@ -95,7 +110,12 @@ function Kiosk() {
             <div className="kiosk-industry-text">
               <h3 className="kiosk-industry-title">KIOSK at Airports:</h3>
               <p>
-                Airport self-service check-in kiosks empower passengers to quickly print boarding passes, select or change seats, scan passports, and check in baggage with ease. This significantly accelerates passenger throughput, mitigates long queues during peak flight hours, and optimizes terminal floor operations.
+                Netcom kiosks for flight check-in and self-tagging of checked luggage have been 
+                common for more than a decade now. Airports also utilize kiosks for wayfinding 
+                around facility, and to communicate flight information and gate changes. It is a 
+                touch-screen device allowing passengers to do self-check-in and pay with credit 
+                or debit cards for free.Kiosks provide a valid boarding pass at the end.Passengers 
+                can save time by using kiosks at busy airports and avoid long queues.
               </p>
             </div>
             <div className="kiosk-industry-media">
@@ -111,7 +131,10 @@ function Kiosk() {
             <div className="kiosk-industry-text">
               <h3 className="kiosk-industry-title">KIOSK in Tourism Department:</h3>
               <p>
-                Tourism information kiosks serve as 24/7 digital concierge terminals in public centers, heritage landmarks, and transport hubs. Visitors can explore interactive maps, local cultural attractions, emergency helplines, hotel accommodations, and upcoming events in multiple regional and international languages.
+                Netcom Travel and Tourism kiosks provide visitors with information on local 
+                restaurants, hotels, shopping, and attractions. Individual listings provide 
+                additional information, and wayfinding capabilities allow visitors to navigate 
+                their destination.
               </p>
             </div>
           </div>
@@ -121,8 +144,12 @@ function Kiosk() {
             <div className="kiosk-industry-text">
               <h3 className="kiosk-industry-title">KIOSK In Agriculture:</h3>
               <p>
-                Rural and agricultural kiosks bridge the digital divide for farming communities by delivering localized weather forecasts, real-time crop market prices, government subsidy schemes, and modern farming techniques through simple multilingual touch interfaces, empowering farmers with actionable insights.
-              </p>
+                Netcom agri-kiosk is finding a strong foothold and to empower marginalized 
+                peoples from some of the backward districts and creating skilled farmers.
+                Agri-kiosk is a one-stop shop for all agricultural needs providing services such 
+                as soil testing, seed selection, appropriate pesticides, herbicides, and fungicides.
+                Agri-kiosks also provide the latest agriculturalequipment on rent which make it 
+                easily accessible for women farmers.             </p>
             </div>
             <div className="kiosk-industry-media">
               <img src={kioskImg6} alt="Agriculture greenhouse smart kiosk illustration" />
@@ -134,21 +161,21 @@ function Kiosk() {
         <section className="kiosk-bank-section">
           <h2 className="kiosk-bank-title">Reasons to Consider a Kiosk for Your Bank</h2>
           <p className="kiosk-bank-intro">
-            As customer expectations continue to evolve towards faster, personalized, and more convenient banking experiences, self-service kiosks have emerged as one of the most effective and versatile tools for banks looking to modernise their branch operations, improve customer satisfaction, and reduce operating costs.
+            Netcom smart card is connected with our project ―School Management System‖. This is about the class attendance signing system using student’s smart card. The Purpose of our project is to collect the student’s class attendance by using student’s smart card and it also provides the options for the staff to calculate the student attendance percentage to view the attendance report and entry the student’s marks for automatically calculating the total, percentage, and grade.
           </p>
 
           <ul className="kiosk-bank-checklist">
             <li>
               <span className="kiosk-check-icon">✔</span>
-              <span>Higher brand recognition through dynamic and interactive advertising &amp; marketing materials</span>
+              <span>Migrate customers from teller-based transactions to on-line banking to reduce costs.</span>
             </li>
             <li>
               <span className="kiosk-check-icon">✔</span>
-              <span>Reduced long queues and customer churn rate with faster and more efficient service</span>
+              <span>Enhance customer satisfaction by providing needed Web-based services in the branch office.</span>
             </li>
             <li>
               <span className="kiosk-check-icon">✔</span>
-              <span>Lower costs per transaction. Self-service kiosks can be up to 90% cheaper than traditional branch counters</span>
+              <span>Increase revenue and 'share of wallet' by offering additional products and services via cross sell and up-sell opportunities.</span>
             </li>
             <li>
               <span className="kiosk-check-icon">✔</span>
@@ -156,24 +183,33 @@ function Kiosk() {
             </li>
             <li>
               <span className="kiosk-check-icon">✔</span>
-              <span>Extended working hours with round-the-clock service availability</span>
+              <span>Acquire new customers via sign-up/opening an account.</span>
             </li>
             <li>
               <span className="kiosk-check-icon">✔</span>
-              <span>More personalized and streamlined banking experience</span>
+              <span>Educate new and existing customers about service & product offering.</span>
             </li>
             <li>
               <span className="kiosk-check-icon">✔</span>
-              <span>Greater flexibility with a broad range of banking capabilities</span>
+              <span>nitiate and provide rewards in the form of loyalty.</span>
             </li>
             <li>
               <span className="kiosk-check-icon">✔</span>
-              <span>Increased cross-selling and up-selling opportunities through targeted promotions</span>
+              <span>Learn more about customer preferences by collecting vital data.</span>
+            </li>
+            <li>
+              <span className="kiosk-check-icon">✔</span>
+              <span>Provide additional training and educational services to employees.</span>
+            </li>
+            <li>
+              <span className="kiosk-check-icon">✔</span>
+              <span>Bridge language barriers with non-English speaking customers.
+                    Netcom can give this project to Aranilayathurai, Agriculture, health care, travel desk, tourism department.</span>
             </li>
           </ul>
 
           <p className="kiosk-bank-conclusion">
-            As banks continue to adapt to the latest digital trends, kiosks will likely become an increasingly popular option for consumers looking for a fast, convenient and cost-effective way to conduct their banking transactions. If you&apos;re looking for a way to improve your bank&apos;s efficiency and customer service, consider implementing a kiosk system.
+            Our kiosks can also streamline the check-in process— significantly reducing long lines at airports, train stations or car hire outlets. Netcom Tourism Kiosk Application streamlines information and provides the best possible and latest results, which significantly saves the time of users and consistently yields desirable results.
           </p>
         </section>
 
@@ -184,25 +220,25 @@ function Kiosk() {
             <li>
               <span className="kiosk-arrow-icon">➔</span>
               <div>
-                <strong>To improve customer satisfaction</strong> - Self - Service kiosk can help you simplify the customer journey and improve their overall experience with your company.
+                The primary reasons of self-service kiosks have become popular so quickly is that they allow companies to engage with their customer base on the user’s own terms.
               </div>
             </li>
             <li>
               <span className="kiosk-arrow-icon">➔</span>
               <div>
-                <strong>To save time and money</strong> - Automated kiosks can help you reduce the need for manual processing and shorten wait times, saving both time and money for your business.
+                The self-service kiosk is to allow customers to complete various common tasks on their own without the assistance of a dedicated employee.
               </div>
             </li>
             <li>
               <span className="kiosk-arrow-icon">➔</span>
               <div>
-                <strong>Increased efficiency for the bank.</strong>
+                Kiosks can also reduce business costs.
               </div>
             </li>
             <li>
               <span className="kiosk-arrow-icon">➔</span>
               <div>
-                <strong>Streamline operations and improve employee efficiency:</strong> Self-service kiosks can free up your staff from having to perform mundane tasks, such as printing boarding passes or issuing movie tickets. This allows them to focus on other tasks, such as helping customers with more complicated queries or issues.
+                Kiosks are easily accessible and the individuals working there are usually pleasant and ready to help, both of which make it simpler to provide the customer with detailed information. ∙ Kiosks are small, temporary booths placed in areas with high foot traffic that are used by businesses to reach their customers.
               </div>
             </li>
           </ul>

@@ -1,42 +1,95 @@
 /* ==========================================================================
-   EMIS PROJECT STYLES (Self-Contained)
+   EMIS PROJECT STYLES (Matches Product/Project Design System)
    ========================================================================== */
 
-.project-page-wrapper {
-  background-color: #f7faf8;
+.emis-page-wrapper {
+  background-color: #ffffff;
   min-height: 100vh;
   color: #212529;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 
-/* Hero Banner */
-.project-hero {
+/* ==========================================================================
+   HERO BANNER
+   ========================================================================== */
+.prod-hero {
   position: relative;
-  background-image: url("../../../assets/image/project page banner.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 20px 70px;
-  min-height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #f2eee9;
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(220, 215, 206, 0.45) 0%, transparent 60%),
+    linear-gradient(180deg, #f6f3ee 0%, #ebe6df 100%);
+  padding: 60px 20px 50px;
   text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid #ded8cf;
 }
 
-/* Floating Black Breadcrumb Capsule */
-.project-breadcrumb-wrapper {
+.prod-hero::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 70px;
+  border: 1px solid rgba(160, 155, 145, 0.4);
+  border-bottom: none;
+  border-radius: 140px 140px 0 0;
+  pointer-events: none;
+}
+
+.prod-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 65%;
+  width: 1px;
+  height: 100%;
+  background: rgba(180, 175, 165, 0.25);
+  pointer-events: none;
+}
+
+.prod-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.prod-hero-title {
+  font-size: clamp(2.8rem, 7vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-family: inherit;
+  line-height: 1.05;
+}
+
+.prod-hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #4a4a4a;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* ==========================================================================
+   FLOATING CAPSULE BREADCRUMB
+   ========================================================================== */
+.cs-breadcrumb-wrapper {
   display: flex;
   justify-content: center;
   position: relative;
   margin-top: -20px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   z-index: 10;
   padding: 0 16px;
 }
 
-.project-breadcrumb-capsule {
+.cs-breadcrumb-capsule {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -49,227 +102,250 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.project-breadcrumb-capsule a {
+.cs-breadcrumb-capsule a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.project-breadcrumb-capsule a:hover {
+.cs-breadcrumb-capsule a:hover {
   color: #7ae4ad;
-  text-decoration: none;
 }
 
-.project-breadcrumb-separator {
-  color: #8da498;
+.cs-breadcrumb-separator {
+  color: #8c9b91;
   font-size: 0.95rem;
-  user-select: none;
 }
 
-.project-breadcrumb-current {
-  color: #ffffff;
+.cs-breadcrumb-current {
+  color: #7ae4ad;
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
-  .project-breadcrumb-capsule {
-    font-size: 0.78rem;
-    padding: 7px 18px;
-    gap: 7px;
-  }
-}
-
-/* Main Content Container */
-.project-container {
-  max-width: 1140px;
+/* ==========================================================================
+   MAIN CONTAINER
+   ========================================================================== */
+.emis-main-container {
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-/* Headings */
-.project-main-title {
+.emis-page-heading {
+  font-size: clamp(1.6rem, 2.8vw, 2.15rem);
   color: #0e4a34;
-  font-size: clamp(1.7rem, 3.2vw, 2.3rem);
   font-weight: 800;
   text-align: center;
-  margin: 0 0 32px;
+  margin: 0 0 28px;
   letter-spacing: -0.01em;
 }
 
-.project-section-title {
-  color: #0e4a34;
-  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
-  font-weight: 800;
-  text-align: center;
-  margin: 45px 0 26px;
-}
-
-.project-section-title--left {
-  text-align: left;
-}
-
-/* Split Intro Section (Text + Media) */
-.project-intro-split {
+/* ==========================================================================
+   TOP INTRO CARD
+   ========================================================================== */
+.emis-intro-card {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 36px;
-  align-items: center;
-  margin-bottom: 45px;
-}
-
-.project-intro-text p {
-  color: #3b4640;
-  font-size: 0.96rem;
-  line-height: 1.75;
-  margin-bottom: 16px;
-}
-
-.project-intro-text p strong {
-  color: #0e4a34;
-  font-weight: 700;
-}
-
-.project-intro-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-intro-media img {
-  width: 100%;
-  max-width: 460px;
-  height: auto;
-  border-radius: 18px;
-  box-shadow: 0 10px 28px rgba(14, 74, 52, 0.08);
-  object-fit: contain;
-}
-
-/* Reusable Standard Cards */
-.project-card {
   background: #ffffff;
   border: 1.5px solid #dce4df;
-  border-radius: 18px;
-  padding: 24px 20px;
-  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.04);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 26px rgba(14, 74, 52, 0.09);
-  border-color: #0e4a34;
-}
-
-.project-card h3,
-.project-card h4 {
-  color: #0e4a34;
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin: 0 0 10px;
-  line-height: 1.35;
-}
-
-.project-card p {
-  color: #4b5951;
-  font-size: 0.88rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Grids */
-.project-grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-bottom: 35px;
-}
-
-.project-grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 35px;
-}
-
-/* EMIS Arrow Capability List */
-.emis-proj-arrow-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 30px 0 50px;
-}
-
-.emis-proj-arrow-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  background: #ffffff;
-  border: 1.5px solid #dce4df;
-  border-radius: 16px;
-  padding: 18px 22px;
-  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.04);
-  color: #3b4640;
-  font-size: 0.94rem;
-  line-height: 1.68;
-}
-
-.emis-proj-arrow-icon {
-  color: #1b8754;
-  font-size: 1.2rem;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-/* Universal Contact CTA Card */
-.prod-cta-card {
-  background: #ffffff;
-  border: 1px solid #dce4df;
   border-radius: 24px;
-  padding: 36px 44px;
-  margin-top: 50px;
-  box-shadow: 0 8px 30px rgba(14, 74, 52, 0.06);
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  padding: 38px 40px;
+  box-shadow: 0 6px 24px rgba(14, 74, 52, 0.05);
   align-items: center;
-  gap: 32px;
+  margin-bottom: 50px;
 }
 
-.prod-cta-content h2 {
-  color: #0e4a34;
-  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
-  font-weight: 700;
+.emis-intro-text p {
+  color: #333333;
+  font-size: 0.93rem;
+  line-height: 1.65;
   margin: 0 0 14px;
 }
 
-.prod-cta-content p {
-  color: #3b4640;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin: 0 0 24px;
-  max-width: 600px;
+.emis-intro-text p:last-child {
+  margin-bottom: 0;
 }
 
-.prod-cta-content .btn-request-demo {
-  display: inline-block;
-  background: #f7a828;
-  color: #23330a;
-  padding: 12px 28px;
-  border-radius: 8px;
-  font-size: 0.95rem;
+.emis-intro-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8faf9;
+  border-radius: 18px;
+  border: 1.5px solid #e3ece7;
+  padding: 18px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.emis-intro-media img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
+}
+
+/* ==========================================================================
+   SECTIONS & HEADINGS
+   ========================================================================== */
+.emis-section {
+  margin-bottom: 50px;
+}
+
+.emis-section-heading {
+  color: #0e4a34;
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   9-CARD GRID (Implementation & Ease of Use)
+   ========================================================================== */
+.emis-cards-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.emis-feature-card {
+  background: #ffffff;
+  border: 1.5px solid #dce4df;
+  border-radius: 20px;
+  padding: 24px 22px;
+  box-shadow: 0 4px 18px rgba(14, 74, 52, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.emis-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(14, 74, 52, 0.1);
+  border-color: #0e4a34;
+}
+
+.emis-card-title {
+  color: #0e4a34;
+  font-size: 1.1rem;
   font-weight: 700;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 6px 18px rgba(247, 168, 40, 0.35);
-  transition: transform 0.2s ease, background 0.2s ease;
+  margin: 0 0 12px;
+  line-height: 1.35;
+  width: 100%;
 }
 
-.prod-cta-content .btn-request-demo:hover {
-  background: #e69517;
+.emis-card-desc {
+  color: #495057;
+  font-size: 0.88rem;
+  line-height: 1.62;
+  margin: 0 0 20px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.emis-readmore-btn {
+  background: #0e4a34;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.emis-readmore-btn:hover {
+  background: #146346;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   ARROW CAPABILITY LISTS
+   ========================================================================== */
+.emis-arrow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.emis-arrow-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 0.92rem;
+  color: #2e3832;
+  line-height: 1.65;
+  background: #ffffff;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.emis-arrow-icon {
+  color: #0e4a34;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   BOTTOM CALL-TO-ACTION (CTA) CARD
+   ========================================================================== */
+.prod-cta-card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  background: linear-gradient(135deg, #f4faf6 0%, #eaf5ee 100%);
+  border: 1.5px solid #cce5d6;
+  border-radius: 24px;
+  padding: 42px 48px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 30px rgba(14, 74, 52, 0.06);
+}
+
+.prod-cta-content h2 {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  color: #0e4a34;
+  margin: 0 0 12px;
+}
+
+.prod-cta-content p {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: #3d4a41;
+  margin: 0 0 24px;
+  max-width: 580px;
+}
+
+.btn-request-demo {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: #ffffff;
+  border: none;
+  padding: 13px 32px;
+  border-radius: 999px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(230, 126, 34, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-request-demo:hover {
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(230, 126, 34, 0.45);
 }
 
 .prod-cta-image {
@@ -284,7 +360,9 @@
   object-fit: contain;
 }
 
-/* Interactive Demo Modal */
+/* ==========================================================================
+   INTERACTIVE DEMO MODAL
+   ========================================================================== */
 .prod-modal-backdrop {
   position: fixed;
   inset: 0;
@@ -335,6 +413,11 @@
   justify-content: center;
   font-size: 1.1rem;
   color: #333;
+  transition: background 0.2s ease;
+}
+
+.prod-modal-close:hover {
+  background: #e2ece7;
 }
 
 .prod-modal-form {
@@ -391,23 +474,24 @@
   background: #146346;
 }
 
-/* Responsive Breakpoints */
-@media (max-width: 960px) {
-  .project-intro-split {
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 980px) {
+  .emis-intro-card {
     grid-template-columns: 1fr;
     gap: 28px;
+    padding: 30px 24px;
   }
-  .project-grid-3 {
+
+  .emis-cards-grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (max-width: 768px) {
   .prod-cta-card {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 28px 20px;
     text-align: center;
+    padding: 32px 24px;
   }
 
   .prod-cta-content p {
@@ -416,15 +500,21 @@
   }
 }
 
-@media (max-width: 640px) {
-  .project-grid-3 {
-    grid-template-columns: 1fr;
+@media (max-width: 680px) {
+  .emis-main-container {
+    padding: 0 16px;
   }
-  .project-grid-2 {
-    grid-template-columns: 1fr;
+
+  .prod-hero {
+    padding: 45px 16px 40px;
   }
-  .project-hero {
-    min-height: 220px;
-    padding: 100px 16px 70px;
+
+  .emis-cards-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .prod-modal-card {
+    padding: 24px 18px;
   }
 }

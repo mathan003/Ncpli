@@ -89,7 +89,9 @@ function ICTHiTechLab() {
           <div className="ictht-info-card">
             <h3>Using the Student's Computer or Client</h3>
             <p>
-              Language lab is set up to run in the background on student computers. All of the functionality is controlled at the teacher computer, which enables you to have control over classroom activities.
+              Language Lab is set up to run in the background on student computers. All of the 
+              functionality is controlled at the teacher computer, which enables you to have control 
+              over how it is used.
             </p>
           </div>
         </div>
