@@ -57,7 +57,7 @@ function AssessmentTool() {
           <div className="assess-arrow-card">
             <span className="assess-arrow-icon">➔</span>
             <span>
-              Netcom Assessment Is The Process Of Gathering And Discussing Information From Multiple And Diverse Sources In Order To Develop A Deep Understanding Of What Students Know, Understand, And Can Do With Their Knowledge As A Result Of Their Educational Experiences; Netcom Process Culminates When Assessment Results Are Used To Improve Subsequent Learning. Assessment Is The Systematic Basis For Making Inferences About The Learning And Development Of Students; Netcom Process Is About Defining, Selecting, Designing, Collecting, Analyzing, Interpreting, And Using Information To Increase Students' Learning And Development. Assessment Is The Systematic Collection, Review, And Use Of Information About Educational Programs Undertaken For The Purpose Of Improving Student Learning And Development.
+              Netcom Assessment is the process of gathering and discussing information from multiple and diverse sources in order to develop a deep understanding of what students know, understand, and can do with their knowledge as a result of their educational experiences. Netcom process culminates when assessment results are used to improve subsequent learning. Assessment is the systematic basis for making inferences about the learning and development of students. Netcom process is about defining, selecting, designing, collecting, analyzing, interpreting, and using information to increase students' learning and development. Assessment is the systematic collection, review, and use of information about educational programs undertaken for the purpose of improving student learning and development.
             </span>
           </div>
         </div>
@@ -68,7 +68,7 @@ function AssessmentTool() {
           <div className="assess-arrow-card">
             <span className="assess-arrow-icon">➔</span>
             <span>
-              Two Common Phrases Surrounding Assessment Recently Are Assessment For Improvement And Assessment For Accountability. While Assessment For Accountability Is An Important Reason To Initiate And Conduct Assessment, The Real Benefit To An Institution And Its Students Come From The Discussions And Changes That Happen As A Result Of Assessment For Improvement. Many Staff Are Motivated By The Benefits Of Focusing On Assessment For Improving The Quality Of Teaching, Learning, Programs And Services, And Planning And Decision Making. The Purpose Of Assessment For Accountability Is To Demonstrate The Effectiveness Of Programs And Services Across The Institution To Various Audiences, Including Parents. An Assessment Cycle Effectively Addressing Assessment For Improvement Will Also Provide The Necessary Evidence For Accountability.
+              Two common phrases surrounding assessment recently are assessment for improvement and assessment for accountability. While assessment for accountability's is an important reason to initiate and conduct assessment, the real benefit to an institution and its students come from the discussions and changes that happen as a result of assessment for improvement. Many staff are motivated by the benefits of focusing on assessment for improving the quality of teaching, learning, programs and services, and planning and decision-making. The purpose of assessment for accountability is to demonstrate the effectiveness of programs and services across the institution to various audiences, including parents. An assessment cycle effectively addressing assessment for improvement will also provide the necessary evidence for accountability.
             </span>
           </div>
         </div>
@@ -88,33 +88,33 @@ function AssessmentTool() {
           <div className="assess-card">
             <h3>Interview method:</h3>
             <p>
-              The process of holding discussions with individuals or groups of individuals within an organization to facilitate the assessor's understanding, achieve clarification, or obtain evidence.
+              The process of reviewing, inspecting, observing, studying, or analyzing one or more assessment objects (i.e., specifications, mechanisms, or activities). The purpose of the examine method is to facilitate assess or understanding, achieve clarification, or obtain evidence.
             </p>
           </div>
 
           <div className="assess-card">
             <h3>Test method:</h3>
             <p>
-              The process of exercising one or more assessment objects (i.e., activities) under specified conditions to compare actual with expected behavior.
+              The process of exercising one or more assessment objects (i.e., activities or mechanisms) under specified conditions to compare actual with expected behavior.
             </p>
             <p>
-              Netcom Assessment is the ongoing process of gathering and analysis of data regarding student performance in order to understand and conduct judgement on it to improve student learning.
+              Netcom Assessment is the ongoing process of gathering, analysing and interpreting evidence, reflecting on findings, making informed and consistent judgements to improve student learning.
             </p>
             <p>
-              Netcom Assessment for Improvement happens at any time and can take on an infinite variety of forms: formal and informal; short term and long term.
+              Assessment for improved student learning and deep understanding requires a range of assessment practices to be used with three overarching purposes
             </p>
           </div>
 
           <div className="assess-card">
             <h3>Assessment for learning:</h3>
             <p>
-              <strong>Assessment for learning:</strong> occurs when teachers use inferences about student progress to inform their teaching.
+              <strong>Assessment for learning:</strong> occurs when teachers use inferences about student progress to inform their teaching
             </p>
             <p>
-              <strong>Assessment for learning:</strong> occurs when students reflect on and monitor their progress to inform their future learning goals.
+              <strong>Assessment for learning:</strong> occurs when students reflect on and monitor their progress to inform their future learning goals
             </p>
             <p>
-              <strong>Assessment for learning:</strong> occurs when teachers use evidence of students' learning to make judgements on students' achievement against goals and standards.
+              <strong>Assessment for learning:</strong> occurs when teachers use evidence of student learning to make judgements on student achievement against goals and standards
             </p>
           </div>
         </div>

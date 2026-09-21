@@ -385,36 +385,16 @@
   position: relative;
   z-index: 15;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 12px;
   margin-top: 14px;
   padding: 0 20px;
-}
-
-.gilgal-slider-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3px;
-}
-
-.gilgal-slide-title {
-  color: #0e4a34;
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.gilgal-slide-caption {
-  color: #556259;
-  font-size: 0.88rem;
 }
 
 .gilgal-slider-dots {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 4px;
 }
 
 .gilgal-dot {
@@ -432,20 +412,6 @@
   width: 26px;
   border-radius: 10px;
   background: #1b8754;
-}
-
-.gilgal-slider-timer-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #0e4a34;
-  background: #e8f3ed;
-  border: 1px solid #c2ded0;
-  padding: 4px 12px;
-  border-radius: 12px;
-  margin-top: 2px;
 }
 
 /* Bottom Contact CTA Card */
@@ -696,10 +662,37 @@
   .gilgal-slider-arrow--next {
     right: 8px;
   }
-  .gilgal-slide-title {
-    font-size: 0.95rem;
+}
+
+@media (max-width: 440px) {
+  .gilgal-slider-container {
+    --slide-w: 115px;
+    --slide-h: 202px;
+    --phone-w: 165px;
+    --phone-h: 298px;
+    --slide-gap: 10px;
+    padding: 14px 0 12px;
+    border-radius: 18px;
   }
-  .gilgal-slide-caption {
-    font-size: 0.8rem;
+  .gilgal-slider-stage {
+    height: 310px;
+  }
+  .gilgal-slider-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .gilgal-slider-container {
+    --slide-w: 100px;
+    --slide-h: 176px;
+    --phone-w: 144px;
+    --phone-h: 260px;
+    --slide-gap: 8px;
+  }
+  .gilgal-slider-stage {
+    height: 270px;
   }
 }

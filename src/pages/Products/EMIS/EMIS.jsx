@@ -78,7 +78,9 @@ function EMIS() {
         <div className="emis-grid">
           <div className="emis-card">
             <h3>Personalized portals and dashboards</h3>
-            <p>Students and school staff have their own identity, individual dashboards and environment for communication and interaction between individuals.</p>
+            <p>The dashboard comes with a flexible functionality, 
+which allows administrator to create number of 
+portals personalized for students, faculty and parents.</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -96,7 +98,9 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>360 degree student profile</h3>
-            <p>Provides extensive insight about personal, academic information, and health information about students for student well-being.</p>
+            <p>Right from academic reports, attendance information, 
+grading and examination results – Everything on the 
+screen with details</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -114,7 +118,8 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>Alerts and notifications</h3>
-            <p>Instantly notify alerts and sending updates to parents regarding daily activities of students.</p>
+            <p>Enabling timely alerts and sending push notifications 
+to students, parents, and teachers.</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -132,7 +137,9 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>Integrated academic calendar</h3>
-            <p>It's convenient for parents and students to get accurate academic calendar through mobile app to monitor events of the academic year.</p>
+            <p>EMIS system is the perfect medium to integrate your 
+academic calendar, through simple excel import option
+and work your plan</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -150,7 +157,9 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>Inbuilt attendance – biometric/ RFID Integration</h3>
-            <p>Multiple modes of attendance to keep attendance easy and effective without taking away crucial classroom hours and send alert to parents.</p>
+            <p>No more hassles of paper-based attendance routine. 
+Go paperless and free your faculty from the 
+monotonous manual work with EMIS.</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -168,7 +177,8 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>Multi-language support</h3>
-            <p>Learning in regular languages makes understanding easy and available in English and regional languages.</p>
+            <p>Enabling timely alerts and sending push notifications 
+to students, parents, and teachers.</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -186,7 +196,8 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>Question bank</h3>
-            <p>Choose from huge database of questions categorized according to topics and difficulty levels.</p>
+            <p>Our educational experts have curated a large sorted 
+NTA based question bank with solutions.</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -204,7 +215,10 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>Informative videos</h3>
-            <p>Delivers curated videos aligned with learning outcomes that teachers can readily integrate into lessons to help students better visualize concepts and boost retention.</p>
+            <p>Redefine your students learning experience by letting 
+them access video lectures, and informative videos. 
+Align into the futuristic learning and stay ahead of the 
+competition.</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -222,7 +236,10 @@ function EMIS() {
 
           <div className="emis-card">
             <h3>Lecturer notes</h3>
-            <p>High-quality resources including lesson plans, multimedia presentations, exercises, and assessments to support teachers in lesson delivery and enrich learning experiences.</p>
+            <p>Taking the lecturer notes and referring them offline 
+consumes enormous amount of time and efforts. 
+Let you students access their lecturer’s notes, right 
+after the completion of class.</p>
             <button
               type="button"
               className="emis-btn-readmore"
@@ -243,19 +260,31 @@ function EMIS() {
         <div className="emis-arrow-list">
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>Netcom Developed An Application Called EMIS (Educational Management Information System). In This Application We Can Analyze Overall School Day To Day Tasks And Activities Through Interactive Dashboard, Student Information, Staff Record, Number, Class, Community, Etc., By This Application We Can Easily Handle All Tendencial Process And We Can Monitor The Same.</span>
+            <span>Netcom developed an application called EMIS(Educational Management Information System). In this application we can analyse overall 
+school day to day process like teachers information, students information like Enroll number, Name, Class, Community, etc., by this 
+appliaction we can easily handle all the school process and we can monitor the same.</span>
           </div>
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>EMIS Software Is A Platform Which Helps In Managing The Day To Day Academic And Administrative Activities From A Single Platform. NETCOM Provides User-Friendly Dashboards With Login Access For Teachers, Non-Teaching Staff, Students, Parents, And Management Personnel Of Your Institution. The Various Modules Available in Netcom EMIS Software Automate Daily Operations Of Your Institution Such As From Students' Admission To Generating Transfer Certificates To Digital To The Online Learning Experience That Can Be Managed Effortlessly.</span>
+            <span>EMIS Software is a platform which helps in managing the day to day academic and administrative activities from a single platform. 
+NETCOM provides user-friendly dashboards with login access for teachers, non-teaching staff, students, parents, and management 
+personnel of your institution. The various modules available in school EMIS software automate daily operations of your institution such 
+as from students' admission to generating transfer certificates to digitizing the online learning experience all can be managed 
+effortlessly .</span>
           </div>
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>NETCOM EMIS Has Modules To Manage Timetable, Attendance, Online Class, Examinations, Gradebooks, Mobile Learning, Hostel, Library, Transportation, School Calendar, Events, And Many More. It Has A Fully-Fledged Human Resource Module To Manage The Payroll And Employee Pay Slips. The Finance Module Helps You To Plan And Allot Different Fee Structures To Students. NETCOM EMIS System Is Also An Excellent Collaboration Tool Using Its Task, Discussion, Poll, Blog, And Video Conference Plugins. There Is An Internal Messaging System Within Netcom, But You Can Also Integrate It With External Communication Tools Like Email And Texting.</span>
+            <span>NETCOM EMIS has modules to manage Timetable, Attendance, Online Class, Examinations, Gradebooks, Mobile Learning, Hostel, Library, 
+Transportation, School Calendar, Events, and many more. It has a fully-fledged Human Resource module to manage the payroll and 
+employee pay slips. The Finance module helps you to plan and allot different fee structures to students. NETCOM EMIS System is also 
+an excellent collaboration tool using its Task, Discussion, Poll, Blog, and Videoconference plugins. There is an internal messaging system 
+within Netcom, but you can also integrate it with external communication tools like email and texting.</span>
           </div>
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>Netcom Is A Leading System Provider Of All Of Above Features. NETCOM Delivers Practical Advanced Web-Based Features Which Are Able To Provide Better Operations For Admin / Multi-Scale Platform Transforming Your Institutional Traditional Academic Experience Into Digital Learning With All New Utilities.</span>
+            <span>Netcom is a learning platform for schools, which allows teachers to deliver courses, promote an interactive learning environment and 
+provide better operations for admin from a single platform.Transform your institute's traditional academic experience into digital learning 
+within a few clicks.</span>
           </div>
         </div>
 
@@ -264,19 +293,28 @@ function EMIS() {
         <div className="emis-arrow-list">
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>Institutions Can Create End To End Customized And Engaging Courses By Adding Teaching Materials With Their Respective Medium. Principal Can Access Teachers And Students Dashboard, Teachers Can Record The Week Plan, Time Table And Schedule, Students Get Notified About The Updates At Different Administrative Tasks Attendance, Result, Assessments, And Curriculum. By This Data, EMIS School Facilities The Collection, Processing, And Management Of Information At The School. Like A Customizable Application That Supports The Day-To-Day Administrative And Academic Activities And Provide A Clear Framework That Outlines The Core Elements That Should Be Considered In The Class Room Level. Teachers Can Collect Data On Attendance, Assessment, And Behaviors.</span>
+            <span>Instructors can create end to end customized and engaging courses by adding teaching materials using their favourite medium. Principal 
+can access teachers and students dashboard. Teachers can record the week plan, time table and schedule. Students get notified about 
+the updates. As a school administrator, take attendance, record assessments, and oragnize staff data. EMIS school facilities the 
+collection, processing, and management of information at the school. It is a customizable application that supports the day-to-day 
+activities involved in managing an individual school. EMIS Classroom is a mobile app for android that facilities the collection of data 
+at the class room level. Techers can collect data on attandance , assessments and behaviors.</span>
           </div>
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>EMIS Classroom Store Data Can Then Be Exported And Shared In Standard Central Formats, EMIS Classroom Is Able To Function With Limited Or No Internet Connection.</span>
+            <span>EMIS classroom data can then be exported and shared in standard output formats. EMIS Classroom is able to function with an active in 
+ternet connection.</span>
           </div>
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>Principals And Education Officials Can Easily And Quickly Search, View, And Update Staff Details Using A Mobile Device Including Staff Profile. EMIS Staff Room Connects To Securely Access And Update Information.</span>
+            <span>Principals and education officails can easily and quickly search, viw and update staff details using a mobile device including staff photos.
+EMIS staffroom connects to securely access and update information.</span>
           </div>
           <div className="emis-arrow-item">
             <span className="emis-arrow-icon">➔</span>
-            <span>EMIS Provides The Digital Content That Gives A Central Repository Accessible To Teachers Across Tamil Nadu And Unique Identification For Transaction With SAMI (Samiksha) Curriculum. Also Track User Nutritional Status/Readiness, With The Help Of This Portal. The School Administrator Also Provides All The Information Through The Syllabus, School Topology, New Modules, And Maintenance Details In Online.</span>
+            <span>EMIS provides the Digital Content that gives a central repository accessible to teachers across Tamil Nadu and Unique login identifier for 
+Teachers linked with state curiculum. Also track your personal career excellence. With the help of this portal, the school administration 
+also provides all the information about the syllabus, school timings, new notices, and modification details in online.</span>
           </div>
         </div>
 

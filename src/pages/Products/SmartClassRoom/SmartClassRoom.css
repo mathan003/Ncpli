@@ -203,22 +203,19 @@
 .prod-arrow-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
   margin: 30px 0 45px;
 }
 
 .prod-arrow-item {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
   background: #ffffff;
   padding: 16px 22px;
   border-radius: 14px;
   border: 1px solid #e8edea;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
-  line-height: 1.7;
   color: #2b332e;
-  font-size: 0.96rem;
+  font-size: 16px;
 }
 
 .prod-arrow-icon {
@@ -289,8 +286,7 @@
 
 .smartclass-box-card p {
   color: #435148;
-  font-size: 0.94rem;
-  line-height: 1.65;
+  font-size: 16px;
   margin: 0 0 18px;
 }
 

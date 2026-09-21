@@ -75,52 +75,80 @@ function OnlineCabBooking() {
           </div>
         </div>
 
-        {/* Features & Video Split */}
+        {/* Features & Media Split */}
         <section className="cab-features-section">
-          <h2 className="cab-section-heading">Features</h2>
           <div className="cab-features-split">
-            {/* Left 6 Icons Grid */}
-            <div className="cab-feature-grid">
-              <div className="cab-feature-card">
-                <span className="cab-feature-icon-badge">
-                  <img src={cabIconBook} alt="Book Cabs Instantly" />
-                </span>
-                <h3>Book Cabs Instantly</h3>
+            {/* Left Column: Features + Tech Used */}
+            <div className="cab-left-content">
+              <h2 className="cab-section-heading">Features</h2>
+              <div className="cab-feature-grid">
+                <div className="cab-feature-card">
+                  <span className="cab-feature-icon-badge">
+                    <img src={cabIconBook} alt="Book Cabs Instantly" />
+                  </span>
+                  <h3>Book Cabs Instantly</h3>
+                </div>
+
+                <div className="cab-feature-card">
+                  <span className="cab-feature-icon-badge">
+                    <img src={cabIconVehicles} alt="Vehicles Gallery" />
+                  </span>
+                  <h3>Vehicles Gallery</h3>
+                </div>
+
+                <div className="cab-feature-card">
+                  <span className="cab-feature-icon-badge">
+                    <img src={cabIconPrice} alt="Pricing List for various places" />
+                  </span>
+                  <h3>Pricing List for various places</h3>
+                </div>
+
+                <div className="cab-feature-card">
+                  <span className="cab-feature-icon-badge">
+                    <img src={cabIconMap} alt="Google Places Integration" />
+                  </span>
+                  <h3>Google Places Integration</h3>
+                </div>
+
+                <div className="cab-feature-card">
+                  <span className="cab-feature-icon-badge">
+                    <img src={cabIconMobile} alt="Mobile-Friendly & Responsive Website" />
+                  </span>
+                  <h3>Mobile-Friendly & Responsive Website</h3>
+                </div>
+
+                <div className="cab-feature-card">
+                  <span className="cab-feature-icon-badge">
+                    <img src={cabIconEase} alt="Ease Of Use" />
+                  </span>
+                  <h3>Ease Of Use</h3>
+                </div>
               </div>
 
-              <div className="cab-feature-card">
-                <span className="cab-feature-icon-badge">
-                  <img src={cabIconVehicles} alt="Vehicles Gallery" />
-                </span>
-                <h3>Vehicles Gallery</h3>
-              </div>
+              {/* Technology Used Section */}
+              <div className="cab-tech-section">
+                <h2 className="cab-section-heading">Technology used</h2>
+                <div className="cab-tech-grid">
+                  <div className="cab-tech-card">
+                    <h3>Web Application</h3>
+                    <ul className="cab-tech-list">
+                      <li><span className="cab-tech-bullet">⚛</span> React Js</li>
+                      <li><span className="cab-tech-bullet">🚂</span> ExpressJS</li>
+                      <li><span className="cab-tech-bullet">🟢</span> Node JS</li>
+                      <li><span className="cab-tech-bullet">🍃</span> MongoDB</li>
+                    </ul>
+                  </div>
 
-              <div className="cab-feature-card">
-                <span className="cab-feature-icon-badge">
-                  <img src={cabIconPrice} alt="Pricing List for various places" />
-                </span>
-                <h3>Pricing List for various places</h3>
-              </div>
-
-              <div className="cab-feature-card">
-                <span className="cab-feature-icon-badge">
-                  <img src={cabIconMap} alt="Google Places Integration" />
-                </span>
-                <h3>Google Places Integration</h3>
-              </div>
-
-              <div className="cab-feature-card">
-                <span className="cab-feature-icon-badge">
-                  <img src={cabIconMobile} alt="Mobile-Friendly & Responsive Website" />
-                </span>
-                <h3>Mobile-Friendly & Responsive Website</h3>
-              </div>
-
-              <div className="cab-feature-card">
-                <span className="cab-feature-icon-badge">
-                  <img src={cabIconEase} alt="Ease Of Use" />
-                </span>
-                <h3>Ease Of Use</h3>
+                  <div className="cab-tech-card">
+                    <h3>Mobile Application</h3>
+                    <ul className="cab-tech-list">
+                      <li><span className="cab-tech-bullet">🤖</span> Android</li>
+                      <li><span className="cab-tech-bullet">🚂</span> ExpressJS</li>
+                      <li><span className="cab-tech-bullet">🟢</span> Node JS</li>
+                      <li><span className="cab-tech-bullet">🍃</span> MongoDB</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -152,32 +180,6 @@ function OnlineCabBooking() {
               <div className="cab-screen-preview">
                 <img src={cabScreenFrame} alt="Cab Vehicle Selection Preview" />
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Technology Used Section */}
-        <section className="cab-tech-section">
-          <h2 className="cab-section-heading">Technology used</h2>
-          <div className="cab-tech-grid">
-            <div className="cab-tech-card">
-              <h3>Web Application</h3>
-              <ul className="cab-tech-list">
-                <li><span className="cab-tech-bullet">⚛</span> React Js</li>
-                <li><span className="cab-tech-bullet">🚂</span> ExpressJS</li>
-                <li><span className="cab-tech-bullet">🟢</span> Node JS</li>
-                <li><span className="cab-tech-bullet">🍃</span> MongoDB</li>
-              </ul>
-            </div>
-
-            <div className="cab-tech-card">
-              <h3>Mobile Application</h3>
-              <ul className="cab-tech-list">
-                <li><span className="cab-tech-bullet">🤖</span> Android</li>
-                <li><span className="cab-tech-bullet">🚂</span> ExpressJS</li>
-                <li><span className="cab-tech-bullet">🟢</span> Node JS</li>
-                <li><span className="cab-tech-bullet">🍃</span> MongoDB</li>
-              </ul>
             </div>
           </div>
         </section>

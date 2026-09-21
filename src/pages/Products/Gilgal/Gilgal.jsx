@@ -134,7 +134,6 @@ function Gilgal() {
   };
 
   const activeIndex = currentSlide % slides.length;
-  const currentSlideInfo = slides[activeIndex];
 
   const handleDemoSubmit = (e) => {
     e.preventDefault();
@@ -195,39 +194,43 @@ function Gilgal() {
           <div className="gilgal-card">
             <h3>Learn with Video Classes</h3>
             <ul className="gilgal-card-list">
-              <li><span className="gilgal-check-icon">✔</span> You Can Watch Each Topic And Chapter In All Lessons In Order With Videos.</li>
-              <li><span className="gilgal-check-icon">✔</span> Clarifies Lessons Step By Step & Direct Lessons From The Subject Area Expert Teacher.</li>
-              <li><span className="gilgal-check-icon">✔</span> Easy-To-Understand Method Of Assessment Data Analysis For The Weakness Points.</li>
+              <li><span className="gilgal-check-icon">✔</span> You can watch each topic and 
+understand concepts together with 
+videos.</li>
+              <li><span className="gilgal-check-icon">✔</span> Our Video lectures cover all topics & 
+chapters from the CBSE and State 
+Board syllabus.</li>
+              <li><span className="gilgal-check-icon">✔</span> Each Videos comes with lot of animations helps Students to understand concepts in an attractive manner</li>
             </ul>
           </div>
 
           <div className="gilgal-card">
             <h3>Question and Answers</h3>
             <ul className="gilgal-card-list">
-              <li><span className="gilgal-check-icon">✔</span> Learn 2 Marks Questions With Answer In Form Of Videos Based On The Topic.</li>
+              <li><span className="gilgal-check-icon">✔</span> Learn 2 marks Questions with Answers of each and every subject in the Class.</li>
             </ul>
           </div>
 
           <div className="gilgal-card">
             <h3>Model Question Papers for all Subjects</h3>
             <ul className="gilgal-card-list">
-              <li><span className="gilgal-check-icon">✔</span> Model Question Paper For Each Subject Is Provided With Solved Questions.</li>
+              <li><span className="gilgal-check-icon">✔</span> Revised Question Papers of every Subject in the Class will be provided.</li>
             </ul>
           </div>
 
           <div className="gilgal-card">
             <h3>Choice Based Questions</h3>
             <ul className="gilgal-card-list">
-              <li><span className="gilgal-check-icon">✔</span> In Our App We Have All Types Of Questions Like MCQs With Choice And Solution For Each Questions.</li>
+              <li><span className="gilgal-check-icon">✔</span> You can test your Knowledge of every Subject with the interactive Choice Based 1 mark Questions with solutions.</li>
             </ul>
           </div>
 
           <div className="gilgal-card">
             <h3>Clear doubts anytime and anywhere</h3>
             <ul className="gilgal-card-list">
-              <li><span className="gilgal-check-icon">✔</span> Clarify Doubts With Subject Matter Experts In Real-Time By Asking Questions In Doubt Section.</li>
-              <li><span className="gilgal-check-icon">✔</span> Dedicated Support For Any Doubts/Queries.</li>
-              <li><span className="gilgal-check-icon">✔</span> You Can Connect With Teachers And Clarify Doubts Instant Whenever Needed.</li>
+              <li><span className="gilgal-check-icon">✔</span> Connect with tutors to clear your doubts in real-time and learn better.</li>
+              <li><span className="gilgal-check-icon">✔</span> Comes with 24*7 chat support and dedicated ask from the expert section.</li>
+              <li><span className="gilgal-check-icon">✔</span> You can connect with the trainer itself through Q&A in the lecture session.</li>
             </ul>
           </div>
 
@@ -241,14 +244,14 @@ function Gilgal() {
           <div className="gilgal-card">
             <h3>Learn from Anywhere</h3>
             <ul className="gilgal-card-list">
-              <li><span className="gilgal-check-icon">✔</span> You Can Access Your Courses On Any Of Devices Anywhere.</li>
+              <li><span className="gilgal-check-icon">✔</span> You can learn in your Comfort Zone or wherever you wish.</li>
             </ul>
           </div>
 
           <div className="gilgal-card">
             <h3>Device Support</h3>
             <ul className="gilgal-card-list">
-              <li><span className="gilgal-check-icon">✔</span> Compatible Across Android, Tablets And Desktops.</li>
+              <li><span className="gilgal-check-icon">✔</span> Gilgal App is available in Mobiles, Tablets and Desktops.</li>
             </ul>
           </div>
         </div>
@@ -319,13 +322,8 @@ function Gilgal() {
               </div>
             </div>
 
-            {/* Slider Caption, Dots & Timer Badge */}
+            {/* Slider Dots */}
             <div className="gilgal-slider-controls">
-              <div className="gilgal-slider-info">
-                <span className="gilgal-slide-title">{currentSlideInfo.title}</span>
-                <span className="gilgal-slide-caption">{currentSlideInfo.caption}</span>
-              </div>
-
               <div className="gilgal-slider-dots">
                 {slides.map((_, dotIdx) => (
                   <button
@@ -336,10 +334,6 @@ function Gilgal() {
                     aria-label={`Go to slide ${dotIdx + 1}`}
                   />
                 ))}
-              </div>
-
-              <div className="gilgal-slider-timer-badge">
-                <span>⏱ Auto-slides every 3s</span>
               </div>
             </div>
           </div>

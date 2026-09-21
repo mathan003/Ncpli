@@ -13,12 +13,12 @@ const GUIDELINES = [
 ];
 
 const STORYBOARD_ITEMS = [
-  "Title Screen and Introduction",
-  "Concept Explanation and Theory",
-  "2D / 3D Animation & Visuals",
-  "Interactive Activities",
-  "Real-Life Examples",
-  "Summary & Assessment Questions",
+  "Title and version as the header",
+  "Page number as the footer",
+  "Category / illustrations",
+  "Voice over Script.",
+  "Text Script",
+  "Descriptions of media objects",
 ];
 
 const STEPS_ITEMS = [
@@ -42,8 +42,8 @@ function Econtent() {
             <span className="ec-badge">OUR SERVICES</span>
             <h1>E-Content Development</h1>
             <p>
-              We create interactive and engaging curriculum-aligned digital
-              content that supports modern institutions and learners.
+              Hauty dang contant for scand Inalitutions. We croats inocactive angaging 
+and cuticulum agnet coment that stances warming cutcomes
             </p>
           </div>
           <div className="ec-hero__media">
@@ -74,19 +74,14 @@ function Econtent() {
           <article className="ec-card ec-intro-card">
             <h2 className="ec-card-title">About E-Content Development</h2>
             <p>
-              E-Content or Electronic Content is digital information delivered
-              over network-based devices or that can be made available on other
-              computer media. It includes all forms of digital content like text,
-              audio, video, animation, graphics, interactive simulations and
-              games that can be used for teaching, learning and training
-              purposes.
+              Netcom E-Content includes a comprehensive digital repository offering 
+              superior-quality content in Mathematics, Physics, Chemistry, Biology, Social 
+              Sciences, English Grammar, Business Studies, Economics and Accountancy. 
+              The portal has been designed especially for students of Classes I to XII and 
+              includes numerous visuals and animations to help increase student 
+              understanding and retention.
             </p>
-            <p>
-              Netcom Computers is an authorized educational technology and
-              e-content development partner delivering interactive modules,
-              animations, assessments, and curriculum digitization across state
-              and national educational frameworks.
-            </p>
+            
           </article>
           <div className="ec-intro-media-card">
             <img
@@ -110,11 +105,9 @@ function Econtent() {
             ))}
           </ul>
           <p className="ec-guidelines-summary">
-            Our team creates compelling, visually engaging, curriculum-based
-            interactive multimedia content. From mobile-ready educational
-            modules to complete school curriculum digitization, our e-content
-            enables students and educators to unlock engaging learning
-            experiences.
+            Technologies are changing the way we develop and deliver online content. Enable exploration of more usable presentation in the context of 
+elearning content creation through models, practical examples and checklists.To develop e-content using contemporary ICT. To maintain 
+uniformity and follow appropriate standards for interoperability.
           </p>
         </section>
 
@@ -124,42 +117,30 @@ function Econtent() {
             Roles and Responsibilities of Content Writer/Subject Matter Experts
           </h2>
           <p className="ec-section-paragraph">
-            As a Subject Matter Expert, you are responsible for researching,
-            creating, reviewing, and editing educational content for digital
-            learning. You will work closely with instructional designers,
-            animators, and developers to ensure accurate, engaging, and
-            syllabus-aligned material that caters to learners of all levels.
+            Subject Matter Experts are academics with sufficient experience in teaching and optionally have past experience in creating content in the area 
+            they have specialised.They have been involved in academic activities at UG or PG level.Content writing could be accomplished by the subject 
+            matter expert by co-opting academics into the team.
           </p>
 
-          <h3 className="ec-section-subhead">1. Tasks:</h3>
+          <h3 className="ec-section-subhead">E-Tasks:</h3>
           <p className="ec-section-paragraph">
-            Conceptualizing and developing curriculum-aligned content for diverse
-            educational levels; creating comprehensive scripts and storyboards for
-            audio-video modules; verifying factual accuracy and ensuring
-            conceptual clarity; reviewing and validating content produced by
-            other team members.
+            Content Writer have detailed write-up on the topic of module as per content structure.The textual description also enriched with multimedia 
+supplements, wherever applicable. Multimedia supplements may include images, animations, graphics, video or audio clips, line drawings, 
+hand drawings whichever applicable/possible.For each topic or subtopic, Content Writer have used the examples to explain the module..
           </p>
 
           <h3 className="ec-section-subhead">
             Web Resources / Supplementary Materials:
           </h3>
           <p className="ec-section-paragraph">
-            Curating and evaluating relevant and high-quality web resources, open
-            educational resources (OERs), supplementary reading lists, and digital
-            assets that enrich the core syllabus. Ensuring that all external
-            links and referenced materials comply with intellectual property
-            guidelines and enhance the learning journey.
+            It contains supplementary material for the topic of the module in different forms like other related reading materials, source of further reading (such as books, articles etc.) and links to websites dealing with the topic etc. Supplementary material for respective modules in different forms. Books, articles, research papers, journals, case studies etc. Links to web sites giving additional readings, Wikipedia, blogs, open source content etc., Glossary
           </p>
 
           <h3 className="ec-section-subhead">
             Curriculum and Pedagogical Standards:
           </h3>
           <p className="ec-section-paragraph">
-            Adhering to modern learning theories and standards like Bloom&apos;s
-            Taxonomy, Constructivism, and Experiential Learning. Creating
-            structured learning outcomes that guide learners systematically
-            through foundational, intermediate, and advanced concepts while
-            incorporating regular formative checks.
+           In Netcom, The learning object conforms the curriculum in terms of its aims, learning outcomes, objectives,skills and values. The learning object promotes the acquisition of knowledge: content, problem solving, epistemic and inquiry knowledge.The learning object is depict local life or culture.Local life or culture depicted in the learning object must observe sensitivity issues of various ethnic groups in the country.The learning object permits self-paced, self-accessed and self- directed learning.The content is to clear learning strategy to achieve learning.
           </p>
         </section>
 
@@ -169,49 +150,36 @@ function Econtent() {
             roles / responsibilities:
           </h2>
           <p className="ec-section-paragraph">
-            Subject Matter Experts oversee the pedagogical integrity of every
-            module. They bridge academic rigor with interactive multimedia
-            production, ensuring every lesson not only satisfies the educational
-            curriculum but actively stimulates curiosity and concept retention.
+           Subject matter expert / team carried out necessary corrections as determined by the academic coordinators or the peer review team from CEC. The subject matter expert would be responsible for preparing the course within the time limit to make it possible to undertake the production and editing related activities.The subject matter expert also ensured the content is free from plagiarism and copyright issues.
           </p>
 
           <h3 className="ec-section-subhead">
             Web Resources / Supplementary Materials:
           </h3>
           <p className="ec-section-paragraph">
-            Designing interactive digital workbooks, reference guides, practice
-            worksheets, and contextual glossaries that give learners
-            supplementary depth and self-paced revision materials.
+           It contains supplementary material for the topic of the module in different forms like other related reading materials, source of further reading (such as books, articles etc.) and links to websites dealing with the topic etc. supplementary material for respective modules in different forms. Books, articles, research papers, journals, case studies etc. Links to web sites giving additional readings, Wikipedia, blogs, open source content etc., Glossary
           </p>
 
           <h3 className="ec-section-subhead">Self-Learning (Audio/Video):</h3>
           <p className="ec-section-paragraph">
-            Creating high-quality bite-sized videos and clear, concise audio
-            explanations that enable learners to master complex concepts through
-            independent self-study.
+            Content Writers provide video tutorial which will explain the topic of the module.It includes Multimedia, Animation, Documentary, Simulation, Virtual Lab, etc,
           </p>
 
           <h3 className="ec-section-subhead">
             Self - Assessment (Evaluation):
           </h3>
           <p className="ec-section-paragraph">
-            Constructing objective and subjective assessments, interactive
-            quizzes, flashcards, and diagnostic tests with immediate explanatory
-            feedback to track learner progress.
+            Content Writers provide minimum 10-15 questions for each module in Multiple Choice Questions with Answer or True & False Statements.
           </p>
 
           <h3 className="ec-section-subhead">Presentation:</h3>
           <p className="ec-section-paragraph">
-            Structuring visually balanced layouts with clear visual hierarchy,
-            intuitive typography, and uncluttered presentation tailored for
-            school and institutional environments.
+            The presentation is a part of video. The format for presentation would be PPT (PowerPoint Presentation program). During preparation of presentation
           </p>
 
           <h3 className="ec-section-subhead">Audio Standards:</h3>
           <p className="ec-section-paragraph">
-            High-definition studio-recorded voiceovers with native pronunciation,
-            standard accent, uniform pacing, and optimal frequency balance for
-            maximum clarity and engagement.
+            It Specifies the kinds of music and sound effects if required.Voice over is synchronized with text, video, animation or graphic. Voice Over is appropriate according to gender and age of the character is portrayed.The voice talent is appropriate to the characters appear in the learning object.
           </p>
         </section>
 

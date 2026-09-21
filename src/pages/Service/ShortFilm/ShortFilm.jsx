@@ -48,22 +48,19 @@ function ShortFilm() {
           <article className="sf-card sf-intro-card">
             <h2 className="sf-card-title">About Short Film Production</h2>
             <p>
-              Netcom Media Works Has Been Started By A Group Of Young And Dynamic
-              Entrepreneurial IT Professionals In The Year Of 2004 With A Vision
-              To Make A Mark In Information Technology. We Are Working With
-              Short Films, 2D Animation, Flash Animation, 3D Animation And Visual
-              Advertisements. We Are Doing Animation For Short Films, Episode
-              Works For Television And Web.
+              Netcom Media Works has been started by a group of young and dynamic 
+              entrepreneurial IT professionals in the year of 2004 with a vision to make a 
+              mark in Information Technology. We are working with Short films,2D animation, 
+              Flash animation, 3D animation and Visual advertisements. We are doing animation 
+              for short films, episodic works for television and web. Our Development Division 
+              consists of established writers, illustrators and designers who generate ideas 
+              and concepts for commercially successful and market-driven products. We are 
+              working on a short films. A complete range of animation services are available 
+              for Netcom's clients. Netcom offers end-to-end animation services for production 
+              including storyboard, layout, background and animation, clean-up and 
+              compositing.
             </p>
-            <p>
-              Our Development Division Consists Of Established Writers,
-              Illustrators And Designers Who Generate Ideas And Concepts For
-              Commercially Successful And Market-Driven Products. We Are Working
-              On A Short Films, A Complete Range Of Animation Services Are
-              Available For Netcom’s Clients. Netcom Offers End-To-End Animation
-              Services For Production Including Storyboard, Layout, Background And
-              Animation, Clean Up And Compositing.
-            </p>
+            
           </article>
           <div className="sf-intro-media-card">
             <img

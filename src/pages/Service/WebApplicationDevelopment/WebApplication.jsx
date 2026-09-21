@@ -43,38 +43,38 @@ const PROCESS_STEPS = [
     step: "01",
     title: "Analysis",
     icon: step1Icon,
-    desc: "Detailed business and requirements analysis to determine scope.",
+    desc: "We understand your business needs and analyze the best solution.",
   },
   {
     step: "02",
     title: "Design",
     icon: step2Icon,
-    desc: "Wireframes, prototypes, and user-centric UI/UX architectures.",
+    desc: "We create wireframes and user flows to plan the perfect interface.",
   },
   {
     step: "03",
     title: "Responsive Development",
     icon: step3Icon,
-    desc: "Clean, modular code built for mobile and desktop screens.",
+    desc: "Our developers build clean,scalable and high-performing applications.",
   },
   {
     step: "04",
     title: "Testing & Bug Fixes",
     icon: step4Icon,
-    desc: "Thorough cross-browser validation and performance tuning.",
+    desc: "We test throughly and fix issues to ensure a bug-free application",
   },
   {
     step: "05",
     title: "Deployment",
     icon: step5Icon,
-    desc: "Seamless production rollout and cloud server integration.",
+    desc: "We deploy your application to a secure environment",
   },
   {
     step: "06",
     title: "Maintenance & Support",
     icon: step6Icon,
-    desc: "Ongoing monitoring, system updates, and reliable support.",
-  },
+    desc: "We provide ongoing support and updates for smooth performance",
+ },
 ];
 
 const STACK_DATA = {
@@ -190,10 +190,10 @@ function WebApplication() {
                   →
                 </span>
                 <p>
-                  Businesses From All Corners Of The World, Offering A Huge
-                  Range Of Products, Have Begun Migrating From The Physical World
-                  Of Handing Out Leaflets, Printing Advertisements, And Hanging
-                  Billboards To The Digital Realm.
+                  Businesses from all corners of the world, offering a huge 
+                  range of products, have begun migrating from the physical 
+                  world of handing out leaflets, printing advertisements, and 
+                  hanging billboards, to the digital realm
                 </p>
               </li>
               <li className="wa-arrow-item">
@@ -201,11 +201,11 @@ function WebApplication() {
                   →
                 </span>
                 <p>
-                  The Business World Is Evolving Every Single Day, Thus
-                  Increasing Your Competitors And – Making It Hard To Sustain
-                  Like Yesterday. So The Only Solution To Standout In The Crowd
-                  Is To Attracting Clients And New Orders By Showcasing Your Work
-                  Style, Products And Skills In The Right.
+                  The business world is evolving every single day, thus increasing 
+                  your competitors and hurdles making it hard to sustain like 
+                  yesterday. So the only solution to standout in the crowd is to 
+                  attracting clients and new offers by showcasing your work 
+                  style, products and skills in the light.
                 </p>
               </li>
             </ul>
@@ -220,9 +220,7 @@ function WebApplication() {
                   ✓
                 </span>
                 <p>
-                  NETCOM Will Help You In Developing Your Company Web
-                  Application That Would Help Increasing The Pace And Quality Of
-                  Your Business Operations.
+                  NETCOM will help you in developing your company web application that would help increasing the pace and scale of your Business expansion.
                 </p>
               </li>
               <li className="wa-check-item">
@@ -230,9 +228,7 @@ function WebApplication() {
                   ✓
                 </span>
                 <p>
-                  We Will Create And Customize Your Website Highlighting All The
-                  Services And Features Of Your Business Niche In A Cost Effective
-                  Way.
+                  We will create and customize your website highlighting all the services and features of your business firms in a cost effective way.
                 </p>
               </li>
               <li className="wa-check-item">
@@ -240,9 +236,7 @@ function WebApplication() {
                   ✓
                 </span>
                 <p>
-                  Our Strength Is Our Small And Highly Experienced Team Of Web
-                  Development Pros, Who Are In Turn Complemented By Our
-                  Experience.
+                  Our strength is our small and highly expertise teams of Web Development Pros, who are in turn complemented by our experience.
                 </p>
               </li>
             </ul>

@@ -241,11 +241,19 @@
   margin: 0;
 }
 
-/* YouTube Video Preview Card */
+.cab-left-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* YouTube Video Preview Card & Media Stack */
 .cab-media-stack {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  height: auto;
+  width: 100%;
 }
 
 .cab-video-card {
@@ -256,6 +264,8 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cab-video-card:hover {
@@ -329,6 +339,8 @@
   border: 1.5px solid #dce4df;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cab-screen-preview img {
@@ -341,21 +353,27 @@
 
 /* Technology Used Section */
 .cab-tech-section {
-  margin-bottom: 45px;
+  margin-top: 36px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .cab-tech-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 20px;
+  width: 100%;
 }
 
 .cab-tech-card {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
   border: 1.5px solid #dce4df;
-  padding: 24px;
+  padding: 24px 20px;
   box-shadow: 0 4px 16px rgba(14, 74, 52, 0.05);
+  box-sizing: border-box;
 }
 
 .cab-tech-card h3 {
@@ -396,7 +414,6 @@
 
 .cab-laptop-showcase img {
   width: 100%;
-  max-width: 820px;
   height: auto;
   filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.15));
 }

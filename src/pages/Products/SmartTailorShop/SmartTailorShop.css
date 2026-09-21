@@ -160,7 +160,7 @@
 /* Layout */
 .tailor-main-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 28px;
   align-items: start;
   margin: 20px 0 50px;
@@ -169,12 +169,13 @@
 /* Left Column: Features Card */
 .tailor-features-card {
   background: #ffffff;
-  border-radius: 30px;
-  width: 712px;
-  height: 1784px;
+  border-radius: 24px;
+  width: 100%;
+  height: auto;
   border: 1.5px solid #dce4df;
-  padding: 26px 22px;
+  padding: 28px 24px;
   box-shadow: 0 6px 20px rgba(14, 74, 52, 0.05);
+  box-sizing: border-box;
 }
 
 .tailor-features-heading {
@@ -225,12 +226,13 @@
 .tailor-video-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 10px;
+  padding: 12px;
   border: 1.5px solid #dce4df;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 468px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tailor-video-card:hover {
@@ -256,18 +258,18 @@
 .tailor-video-title {
   display: block;
   color: #0e4a34;
-  font-size: 14pxrem;
-  font-weight: 400;
+  font-size: 0.95rem;
+  font-weight: 700;
   margin-bottom: 2px;
-
 }
 
 .tailor-video-desc {
   display: block;
   color: #556259;
-  font-size: 12px;
+  font-size: 0.82rem;
   font-weight: 400;
-  width: 320px;
+  line-height: 1.4;
+  width: 100%;
 }
 
 /* YouTube Badge */
@@ -300,25 +302,28 @@
 }
 
 /* Desktop Screens */
-.tailor-desktop-screen0 img{
-  width: 468px;
-  height: 433px;
-  top: 1000px;
-  left: 852px;
-  border-radius: 30px;
+.tailor-desktop-screen0,
+.tailor-desktop-screen1,
+.tailor-desktop-screen2 {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1.5px solid #dce4df;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.tailor-desktop-screen1 img{
-  width: 468px;
-  height: 225px;
- 
+.tailor-desktop-screen0 img,
+.tailor-desktop-screen1 img,
+.tailor-desktop-screen2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
 }
-.tailor-desktop-screen2 img{
-  width: 468px;
-  height: 225px;
- 
-}
-
 
 /* Phones 2-Column Grid */
 .tailor-phones-grid {
@@ -367,8 +372,9 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 386px;
+  width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 
 .prod-price-card:hover {
@@ -666,10 +672,15 @@
 }
 
 /* Responsive Breakpoints */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
+  .tailor-main-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
   .prod-pricing-grid {
     grid-template-columns: 1fr;
-    max-width: 500px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -684,19 +695,15 @@
     padding: 20px 16px 60px;
   }
 
-  .tailor-main-layout,
   .prod-cta-card {
     grid-template-columns: 1fr;
     gap: 24px;
+    padding: 28px 20px;
+    text-align: center;
   }
 
   .tailor-phones-grid {
     grid-template-columns: 1fr;
-  }
-
-  .prod-cta-card {
-    padding: 28px 20px;
-    text-align: center;
   }
 
   .prod-cta-content p {
@@ -706,5 +713,32 @@
 
   .prod-modal-card {
     padding: 24px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tailor-features-card {
+    padding: 20px 16px;
+    border-radius: 18px;
+  }
+
+  .tailor-features-heading {
+    font-size: 24px;
+  }
+
+  .tailor-group-title {
+    font-size: 18px;
+  }
+
+  .tailor-group-items li {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .tailor-desktop-screen0,
+  .tailor-desktop-screen1,
+  .tailor-desktop-screen2 {
+    border-radius: 14px;
+    padding: 4px;
   }
 }

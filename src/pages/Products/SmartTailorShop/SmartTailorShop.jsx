@@ -217,12 +217,13 @@ function SmartTailorShop() {
                 <li className="prod-check-item"><span className="prod-check-badge">✓</span> Report Generation</li>
                 <li className="prod-check-item"><span className="prod-check-badge">✓</span> Rates Updater</li>
                 <li className="prod-check-item"><span className="prod-check-badge">✓</span> Smart Billing</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Up to 3 Staff Accounts</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Mobile Web View</li>
-                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Multi-Branch Support</li>
-                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Custom Pattern Upload</li>
-                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Dedicated Customer Mobile App</li>
-                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Advanced Analytics & Reports</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Live Support</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Free installation</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Fit In ALl  Devicrs</li>
+                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Stiching Team Login Panel</li>
+                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Stiched Dress Image Updater</li>
+                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Export Customer Details & Order Details as Excel File</li>
+                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Separate App for Customers</li>
               </ul>
             </div>
           </div>
@@ -235,18 +236,19 @@ function SmartTailorShop() {
             </div>
             <div className="prod-price-body">
               <ul className="prod-check-list">
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Up to 3 Branch Support</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> 1000 Orders Placement</li>
                 <li className="prod-check-item"><span className="prod-check-badge">✓</span> Customer Management</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Advanced Measurement Book</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> GST / Non-GST Invoicing</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> SMS & WhatsApp Alerts</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Real-time Order Tracking</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Up to 10 Staff Accounts</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Inventory Tracking</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Worker Piece-Rate Ledger</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Pattern & Design Upload</li>
-                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Dedicated Customer Mobile App</li>
-                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Multi-Currency & Franchise Support</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Interactive Charts</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Report Generation</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Rates Updater</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Smart Billing</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Live Support</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Free Installation</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Fit In All Devices</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Stiching Team Login Panel</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Stiched Dress Image Updater</li>
+                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Export Customer Details & Order Details as Excel File</li>
+                <li className="prod-check-item" style={{ color: "#8a948e" }}><span className="prod-cross-badge">✕</span> Separate App for Customers</li>
               </ul>
             </div>
           </div>
@@ -259,18 +261,19 @@ function SmartTailorShop() {
             </div>
             <div className="prod-price-body">
               <ul className="prod-check-list">
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Unlimited Branch Support</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Multi-Store Customer Management</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Advanced Custom Measurement System</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Complete ERP & GST Billing</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> SMS, WhatsApp & Email Automation</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Live Order Tracking with Barcode/QR</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Unlimited Staff Accounts & Roles</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Comprehensive Inventory & Raw Material ERP</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Tailor Performance & Incentive Tracker</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Fabric Image & 3D Pattern Upload</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Dedicated Android & iOS Customer App</li>
-                <li className="prod-check-item"><span className="prod-check-badge">✓</span> 24/7 Priority Support & Dedicated Account Manager</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> 1000 Orders Placement</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Customer Management</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Interactive Charts</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Report Generation</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Rates Updater</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Smart Billing</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Live Support</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Free Installation</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Fit In All Devices</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Stiching Team Login Panel</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Stiched Dress Image Updater</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Export Customer Details & Order Details as Excel File</li>
+                <li className="prod-check-item"><span className="prod-check-badge">✓</span> Separate App For Customers</li>
               </ul>
             </div>
           </div>
@@ -280,15 +283,15 @@ function SmartTailorShop() {
         <div className="prod-arrow-list" style={{ maxWidth: "100%", margin: "20px 0 40px" }}>
           <div className="prod-arrow-item">
             <span className="prod-arrow-icon">➔</span>
-            <span>All plans include secure cloud backup, regular updates, and technical onboarding assistance.</span>
+            <span>First Time Fee - ₹ 14999 for Domain and Hosting Charges (includes 1 Month Ultimate Plan)</span>
           </div>
           <div className="prod-arrow-item">
             <span className="prod-arrow-icon">➔</span>
-            <span>Custom feature additions, barcode scanner integrations, and white-label branding available upon request.</span>
+            <span>7 Days FREE Trial</span>
           </div>
           <div className="prod-arrow-item">
             <span className="prod-arrow-icon">➔</span>
-            <span>Annual billing discounts: Pay for 10 months and get 2 months free on all subscription tiers.</span>
+            <span>GST @18% Applicable on All Purchases</span>
           </div>
         </div>
 

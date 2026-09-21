@@ -59,13 +59,21 @@ function SmartClassRoom() {
         <div className="prod-intro-split">
           <div className="prod-intro-text">
             <p>
-              <strong>Netcom Classroom</strong> is a computer-enabled classroom where the teacher can access students' personal computers and manage teaching activities like distributing lessons, administering tests, surveying students, controlling students' applications and managing internet access.
+              Smart Classroom is a specially designed computer enabled classroom and has 
+interactive learning software which provides teachers with essential tools to manage 
+classrooms, assess students and encourage collaboration.
             </p>
             <p>
-              Smart Classroom combines proprietary interactive learning software with audio-visual equipment and digital courseware to create a comprehensive digital classroom environment.
+              Smart Classroom is designed to integrate with the existing classroom technology and 
+also with school's wireless or wired network. The need to improve the quality of 
+education to global standards is contributing to the increase in adoption of smart 
+classrooms in India.
             </p>
             <p>
-              Smart Classroom is a digital initiative of Netcom which is rapidly transforming the way teachers teach and students learn in schools with innovative and meaningful use of technology. Powered by the largest repository of digital content mapped to various curriculum, Smart Class has brought about a complete transformation in classrooms.
+              Smart Classroom helps in making classroom sessions more interactive by incorporating 
+live videos, audio, and pictures. This helps in improving students' engagement with 
+learning. With advances in content creation technology and availability of online 
+content,the proportion of digital content in course curriculum has increased.
             </p>
           </div>
 
@@ -90,13 +98,28 @@ function SmartClassRoom() {
         <div className="prod-intro-split" style={{ alignItems: "center", marginBottom: "40px" }}>
           <div className="prod-intro-text">
             <p>
-              Smart Class was founded by experienced educators who recognize the unique needs of schools. Classroom management is a cornerstone of teaching and learning. It facilitates meaningful teacher-student collaboration and keeps students engaged while keeping teachers in control of modern classroom technology.
+              Smart Classroom helps in making classroom sessions more interactive by incorporating 
+live videos, audio, and pictures. This helps in improving students' engagement with 
+learning. With advances in content creation technology and availability of online 
+content,the proportion of digital content in course curriculum has increased.
             </p>
             <p>
-              Smart Class software combines teaching tools and automated administrative tasks to make classroom management simpler and more intuitive for educators. Teachers can seamlessly broadcast their screens to the entire class or specific students, share files, and administer tests all from a single, centralized dashboard.
+              The result was amazing. Knowledge flourished freed from the centuries old bonds of 
+books and chalk and blackboard.
             </p>
             <p>
-              Teachers can monitor student activity in real time with thumbnail views of each student's screen, ensuring everyone stays focused on the lesson. With one click, teachers can mute student audio, blank screens, lock input devices, and restrict access to specific applications and websites to eliminate distractions and maintain an engaging learning environment.
+              A new light of understanding dawned on young awakened minds. And the classroom 
+became a fascinating place to be in as a new generation of learners saw (instead of just 
+being told and explained) for the first time. And the teacher smiled as she now saw not 
+just one, two or three but a sea of hands go up every time she asked a question.
+            </p>
+            <p>
+              nitial and ongoing trainings are given to the teachers. Training to teachers is given by 
+the trainers appointed by the management. We can provide guidance to the teachers in 
+digitizing existing curricular materials for use with the Smart Classrooms. A periodical 
+training session is given to the teachers so that they can easily adopt the innovative 
+technology. By this training, teachers can help the students to become familiar with IT 
+and problem solving skills.
             </p>
           </div>
 
@@ -112,70 +135,93 @@ function SmartClassRoom() {
           <div className="smartclass-box-card">
             <h3>Our Smart Classroom Projects</h3>
             <p>
-              In collaboration with the Government of Tamil Nadu, Netcom implemented Smart Classroom projects across thousands of government schools, equipping classrooms with modern infrastructure, interactive digital whiteboards, audio systems, and teacher training to ensure effective technology integration in rural and urban schools alike.
+              Initial and ongoing trainings are given to the teachers. Training to 
+teachers is given by the trainers appointed by the management. 
+We can provide guidance to the teachers in digitizing existing 
+curricular materials for use with the Smart Classrooms. A periodical 
+training session is given to the teachers so that they can easily adopt
+the innovative technology. By this training, teachers can help the 
+students to become familiar with IT and problem solving skills.
             </p>
             <ul className="prod-check-list">
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>Interactive Whiteboard System (Multimedia Projector, Screen, Interactive Sensor)</span>
+                <span>86 Smart Classrooms in Chennai Corporation Schools through ELCOT.</span>
               </li>
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>2 KVA Online UPS with Battery Bank for uninterrupted learning sessions</span>
+                <span>171 Adi Dravidar & Tribal Welfare Department schools through ELCOT.</span>
               </li>
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>Teacher Workstation with high performance CPU and dual OS</span>
+                <span>25 Smart classrooms through Tirunelveli Corporations.</span>
               </li>
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>Pre-loaded K-12 Animated Digital Content in English and Tamil medium mapped to Samacheer Kalvi</span>
+                <span>15 Kallar (Most Denotified Backward Class) schools in districts of Madurai, Theni and Dindugal through ELCOT.</span>
               </li>
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>Document Camera Scanner for real-time text and object display</span>
+                <span>13 Thanjavur Corporation Schools through ELCOT</span>
               </li>
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>Complete classroom cabling, mounting kit, and audio amplification setup</span>
+                <span>4 Smart classrooms through ELCOT by Coimbatore Corporations.</span>
               </li>
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>Comprehensive teacher enablement and orientation programs conducted on-site</span>
+                <span>38 Smart classrooms through Government aided Schools</span>
               </li>
               <li className="prod-check-item">
                 <span className="prod-check-icon">✔</span>
-                <span>Networked Digital Class Server System with 10,000+ curriculum-aligned resources and virtual lab tools for Science and Maths</span>
+                <span>1 Government Children Home for Boys, Ranipet through ELCOT</span>
+              </li>
+              <li className="prod-check-item">
+                <span className="prod-check-icon">✔</span>
+                <span>Netcom e-Smart Class Rooms more than 300 Government and Corporation Schools through ELCOT in BOOT model.</span>
               </li>
             </ul>
           </div>
 
           <div className="smartclass-box-card">
             <h3>Highlights of Netcom Smart Class Room</h3>
-            <div className="prod-arrow-list" style={{ margin: "16px 0 0", gap: "14px" }}>
+            <div className="prod-arrow-list" style={{ margin: "16px 0 0", }}>
               <div className="prod-arrow-item" style={{ padding: "12px 14px", border: "none", boxShadow: "none", background: "transparent" }}>
                 <span className="prod-arrow-icon">➔</span>
-                <span>Netcom smart classroom includes digital content library for classes 1st to 12th covering all major subjects in English and regional languages.</span>
+                <span>The content installed in the server is Samacheer based syllabus 
+for the Std. 6 to 12 with diagrams and animations for the easy 
+understanding of students.</span>
               </div>
               <div className="prod-arrow-item" style={{ padding: "12px 14px", border: "none", boxShadow: "none", background: "transparent" }}>
                 <span className="prod-arrow-icon">➔</span>
-                <span>Interactive software designed specifically for school teachers with easy-to-use tools for drawing, writing, highlighting, and dynamic presentation of lessons.</span>
+                <span>The content has been developed and installed at schools in 
+both Tamil and English language according to the medium of 
+instruction required for the students.</span>
               </div>
               <div className="prod-arrow-item" style={{ padding: "12px 14px", border: "none", boxShadow: "none", background: "transparent" }}>
                 <span className="prod-arrow-icon">➔</span>
-                <span>Built-in assessment engine allowing teachers to conduct formative assessments through quick polls, multiple choice questions, and interactive quizzes with instant performance analytics.</span>
+                <span>An excellent ambience with live voice and computer 
+presentation through multimedia,projector will enable the 
+students to have 100% attention which converts the 
+teaching process into more effective learning than the 
+traditional class room teaching.</span>
               </div>
               <div className="prod-arrow-item" style={{ padding: "12px 14px", border: "none", boxShadow: "none", background: "transparent" }}>
                 <span className="prod-arrow-icon">➔</span>
-                <span>Compatible with various input devices including interactive slates, document cameras, smart phones, and tablet PCs for seamless classroom interaction.</span>
+                <span>The touch screen feature placed in KIOSK is loaded with the 
+same content for students to enhance self-learning, which is 
+one of the main feature in the E-Smart Class Room project.</span>
               </div>
               <div className="prod-arrow-item" style={{ padding: "12px 14px", border: "none", boxShadow: "none", background: "transparent" }}>
                 <span className="prod-arrow-icon">➔</span>
-                <span>High-quality audio visual experience with heavy duty wall mount speakers and wireless hand microphone ensuring crystal clear audibility even in large classrooms.</span>
+                <span>We have these animated contents for the schools under both 
+the State and the CBSE syllabus, in English, Tamil and Hindi.</span>
               </div>
               <div className="prod-arrow-item" style={{ padding: "12px 14px", border: "none", boxShadow: "none", background: "transparent" }}>
                 <span className="prod-arrow-icon">➔</span>
-                <span>Comprehensive post-installation technical support, hardware warranty, and periodic software updates ensuring long-term sustainability.</span>
+                <span>We take full credit as we have successfully implemented these 
+projects within the stipulated time frame by the Government 
+for the beneficial of student community.</span>
               </div>
             </div>
           </div>
@@ -191,7 +237,9 @@ function SmartClassRoom() {
         <div className="smartclass-passion-section">
           <h2 className="prod-section-title">Passion for Learning</h2>
           <p className="smartclass-passion-text">
-            Smart Classroom creates an interactive and collaborative learning experience that transforms everyday classrooms into vibrant knowledge hubs. Students participate actively, retain concepts longer, and develop a genuine enthusiasm for learning across all subjects.
+            Smart Classroom is celebrating the influential people who inspire students "passion for learning". Initial and ongoing trainings are given to the 
+teachers. Training to teachers is given by the trainers appointed by the management. We can provide guidance to the teachers in digitizing existing 
+curricular materials for use with the Smart Classrooms.
           </p>
 
           <div className="smartclass-dual-photos">
@@ -204,7 +252,9 @@ function SmartClassRoom() {
           </div>
 
           <p className="smartclass-passion-text" style={{ marginTop: "20px" }}>
-            Over 2000+ government and private schools across Tamil Nadu have experienced the transformational impact of Netcom Smart Classrooms, bridging the digital divide and empowering students from all socio-economic backgrounds with world-class education tools.
+            Smart Class Room is an integrated program for schools with interactive self-placed learning for students. Smart Class Room uses a rational approach
+in selecting Innovative Technology that gives good results. Improving the learning ability through self evaluation. A Smart Class Room that has 
+stationed a teacher equipped with computer and audio visual aids."
           </p>
         </div>
 
