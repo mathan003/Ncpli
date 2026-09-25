@@ -92,7 +92,9 @@ function Header() {
   }, []);
 
   const toggleDropdown = (label) => {
-    setOpenDropdown((current) => (current === label ? null : label));
+    if (window.innerWidth <= 960) {
+      setOpenDropdown((current) => (current === label ? null : label));
+    }
   };
 
   return (
@@ -125,7 +127,13 @@ function Header() {
                     <button
                       type="button"
                       className="site-nav__link site-nav__link--button"
-                      onClick={() => toggleDropdown(item.label)}
+                      onClick={(e) => {
+                        if (window.innerWidth <= 960) {
+                          toggleDropdown(item.label);
+                        } else {
+                          e.currentTarget.blur();
+                        }
+                      }}
                       aria-expanded={openDropdown === item.label}
                     >
                       {item.label}

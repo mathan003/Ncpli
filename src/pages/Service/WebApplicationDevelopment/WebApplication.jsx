@@ -150,22 +150,22 @@ function WebApplication() {
           <article className="wa-card wa-intro-card">
             <h2 className="wa-card-title">Web Application Development</h2>
             <p>
-              Web Application Development Is The Creation Of Application Program
-              That Reside On Remote Servers And Are Delivered To The User&apos;s
-              Device Over The Internet. Netcom Development Process Will
-              Typically Have A Short Development Life-Cycle Lead By A Small And
-              Efficient Development Team.
+              Web Application Development is the creation of application program that reside 
+              on remote servers and are delivered to the user's device over the internet.
             </p>
             <p>
-              Our Web Development Company Has Been Developing Web Applications
-              For The Custom Business Requirements Of All Our Esteemed Clients.
-              Our Developer&apos;s Skill &amp; Experience And Cutting-Edge
-              Technology Will Deliver You With Robust Web Applications.
+              Netcom development process will typically have a short development life-cycle 
+              lead by a small and efficient development team.
             </p>
             <p>
-              As Leading Web Development Company, Delivering Quality
-              Applications Is Always Our Priority. Discover Our Wide Range Of
-              Services And Work With Us!
+              Our web development company has been developing web applications for the 
+              custom business requirements of all our esteemed clients. Our developer's 
+              skills & experience and cutting-edge technology will deliver you with Robust 
+              Web Applications.
+            </p>
+            <p>
+              As leading Web Development company, delivering quality applications is always 
+              our priority. Discover our wide range of services and work with us!
             </p>
           </article>
           <div className="wa-intro-media-card">

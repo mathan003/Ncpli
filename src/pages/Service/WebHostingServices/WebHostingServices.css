@@ -355,18 +355,20 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
+
 }
 
 .wh-check-item span {
   color: #0e3d29;
+  font-size: 1.02rem;
   font-weight: 800;
-  font-size: 1.1rem;
-  margin-top: 1px;
+  margin-top: 0px;
+  padding-bottom: 12px;
 }
 
 .wh-check-item p {
   color: #3b5044;
-  font-size: 0.91rem;
+  font-size: 16px;
   line-height: 1.6;
   margin: 0;
 }

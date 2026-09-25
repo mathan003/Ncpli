@@ -9,34 +9,37 @@ import cloudStorageImg from "../../../assets/image/Service/Web Hosting/06.jpg";
 import awsLogo from "../../../assets/image/Service/Web Application/aws.png";
 
 const CLOUD_BENEFITS = [
-  "High Reliability & Redundancy",
-  "Cost Optimization",
-  "Proactive Security",
+  "Cloud Storage might be more secure",
+  "Zero Maintenance",
+  "Anywhere Access",
   "Automated Backups",
-  "24/7 Technical Support",
-  "Seamless Scalability",
+  "Pay As You Go Pricing",
+  "Scalability",
+  "Automate data protection",
 ];
 
 const SERVER_MAINTENANCE_TASKS = [
-  "Server Setup and Configuration",
-  "Operating System Patching",
-  "Regular Data Backup Verification",
-  "Hardware Health and Diagnostics",
-  "Firewall and Port Security Audits",
-  "Antivirus & Malware Protection",
-  "Proactive Performance Monitoring",
-  "24/7 Rapid Incident Resolution",
+  "Checking server log files",
+  "Assessing hard disk space",
+  "Examining folder permissions",
+  "Monitoring network temperature applications",
+  "Ensuring adequate redundancy of systems",
+  "Examining security features",
+  "Installing security software patches",
+  "Reading server logs for security alerts or evidence of computer hacking attempts",
+  "Updating antivirus software on all computers on the network",
+  "Updating critical service packs and software updates",
 ];
 
 const NETWORK_MAINTENANCE_TASKS = [
-  "Router and Switch Configuration",
-  "Network Traffic and Bandwidth Monitoring",
-  "LAN/WAN Cabling and Infrastructure",
-  "VPN & Remote Access Solutions",
-  "Wireless Network Optimization",
-  "Disaster Recovery Planning",
-  "Quality of Service (QoS) Implementation",
-  "Regular Security and Firmware Updates",
+  "Troubleshooting network problems.",
+  "Hardware and software installation/configuration.",
+  "Monitoring and improving network performance.",
+  "Planning for future network growth.",
+  "Creating network documentation and keeping it up-to-date.",
+  "Ensuring compliance with company policies.",
+  "Ensuring compliance with legal regulations.",
+  "Securing the network against all kind of threats.",
 ];
 
 function WebHostingServices() {
@@ -49,10 +52,9 @@ function WebHostingServices() {
             <span className="wh-badge">OUR SERVICES</span>
             <h1>Web Hosting Services</h1>
             <p>
-              Web hosting allows organizations and individuals to post a website
-              or web page onto the Internet. A web hosting service provider is a
-              business that provides the technologies and services needed for the
-              website or webpage to be viewed in the Internet.
+              Web Hosting is a service that allows organizations and individuals to post a website or web 
+              page onto the Internet. It is the activity of providing storage space for a website that is 
+              connected to the Internet. 
             </p>
           </div>
           <div className="wh-hero__media">
@@ -83,16 +85,19 @@ function WebHostingServices() {
           <article className="wh-card wh-intro-card">
             <h2>Web Hosting Services</h2>
             <p>
-              Websites Are Hosted Or Stored On Special Computers Called Servers.
-              When Internet Users Want To View Your Website, All They Need To Do
-              Is Type Your Website Address Or Domain Into Their Browser. Their
-              Computer Will Then Connect To Your Server And Your Webpages Will Be
-              Delivered To Them Through The Browser.
+              Web Hosting is a service that allows organizations and individuals to post a 
+              website or web page onto the Internet. It is the activity of providing storage 
+              space for a website that is connected to the Internet. Websites are hosted, or 
+              stored, on special computers called servers. When any client wants to view your 
+              website, all they need to do is type your website address or domain into their 
+              browser.
             </p>
             <p>
-              Most Hosting Companies Require That You Own Your Domain In Order To
-              Host With Them. If You Do Not Have A Domain, The Hosting Companies
-              Will Help You Purchase One.
+              Their computer will then connect to your server and your webpage(s) will be 
+              delivered to them through the browser. You must have your own domain in order 
+              to host webs. If you do not have a domain, we will help you purchase one for your 
+              site.Netcom provide the latest technologies and services that needed for your 
+              website or webpage to be viewed in the Internet.
             </p>
           </article>
           <div className="wh-intro-media-card">
@@ -115,15 +120,15 @@ function WebHostingServices() {
           <div className="wh-feature-content">
             <h3>Amazon Web Services</h3>
             <p>
-              To meet the complex and dynamic requirements of businesses,
-              Netcom specializes in providing full-suite AWS cloud consulting
-              and development services.
+              Amazon Web Services is a collection of web services that provides on-demand 
+              cloud computing platforms and APIs to individuals, companies, and governments.
             </p>
             <p>
-              We assist clients from varied business verticals to adopt the cloud
-              for agility, lower costs, and enhanced performance. Netcom helps
-              build and modernize applications using cloud-native architectures
-              that deliver high availability and elastic scaling.
+              Application Nexus has good hand-in experience in Amazon Web Services. We have 
+              a dedicated team of developers that will help you to do all the configuration and 
+              optimization of the AWS Cloud to meet your business needs. Also, we offer an 
+              orderly step-by-step strategy for migrating applications to the cloud and 
+              monitoring the performance of the cloud applications.
             </p>
           </div>
         </section>
@@ -134,15 +139,20 @@ function WebHostingServices() {
           <div className="wh-feature-content">
             <h3>Elastic Computing</h3>
             <p>
-              Amazon Elastic Compute Cloud (Amazon EC2) is a web service that
-              provides secure, resizable compute capacity in the cloud. It is
-              designed to make web-scale cloud computing easier for developers.
+              An Amazon EC2 instance is a virtual server in Amazon's Elastic Compute Cloud (EC2) 
+              for running applications on the Amazon Web Services (AWS) infrastructure.
             </p>
             <p>
-              Amazon EC2’s simple web service interface allows you to obtain and
-              configure capacity with minimal friction. It provides you with
-              complete control of your computing resources and lets you run on
-              Amazon’s proven computing environment.
+              C2 encourages the scalable deployment of applications by providing a web service 
+              through which a user can boot an Amazon Machine Image (AMI) to configure a 
+              virtual machine, which Amazon calls an "instance", containing any software desired.
+            </p>
+            <p>
+
+              A user can create, launch, and terminate server-instances as needed, paying by 
+              the second for active servers – hence the term "elastic". EC2 provides users with 
+              control over the geographical location of instances that allows for latency 
+              optimization and high levels of redundancy.
             </p>
           </div>
           <div className="wh-feature-media">
@@ -162,16 +172,19 @@ function WebHostingServices() {
           <div className="wh-feature-content">
             <h3>Amazon S3</h3>
             <p>
-              Amazon Simple Storage Service (Amazon S3) is an object storage
-              service that offers industry-leading scalability, data availability,
-              security, and performance.
+              An Amazon S3 is a high-speed and low-cost service offered by Amazon Web 
+              Services that provides object storage, archiving of data and application programs 
+              through a web service interface.
             </p>
             <p>
-              Customers of all sizes and industries can use Amazon S3 to store
-              and protect any amount of data for a range of use cases, such as
-              data lakes, websites, mobile applications, backup and restore,
-              archive, enterprise applications, IoT devices, and big data
-              analytics.
+              The need for storage for any business increases day by day without knowing 
+              actual numbers which sometimes results in overused or underused of that 
+              storage. AWS S3 is highly-scalable and it uses the same storage infrastructure 
+              that Amazon.com uses.
+            </p>
+            <p>
+              Amazon S3 offers four different storage classes that offer different levels of 
+              durability, availability, and performance requirements.
             </p>
           </div>
         </section>
@@ -183,23 +196,17 @@ function WebHostingServices() {
         <section className="wh-three-cards">
           <div className="wh-why-card">
             <p>
-              Cost-Effective Control: Dedicated web hosting offers predictable
-              monthly costs and fixed pricing, ideal for established websites
-              with consistent traffic and resource demands.
+              Cloud computing can also support remote web hosting. The definition of cloud computing services involves the connection of clients to vendors through wireless or IP connected networks. In cloud computing, a client sends data to a vendor through an abstract network trajectory called 'the cloud.' Data is then stored and maintained on remote servers owned and operated by the vendors.
             </p>
           </div>
           <div className="wh-why-card">
             <p>
-              Tailored Configuration: Full root access and customized server
-              configurations give you complete freedom to tailor server-level
-              software, libraries, and security policies.
+              In general, cloud computing services that include web hosting can be an alternative to other traditional kinds of web hosting that are not based on cloud computing principles. One of the biggest differences could be called a 'single client' versus 'multitenant' approach.
             </p>
           </div>
           <div className="wh-why-card">
             <p>
-              Dedicated Performance: High processing speeds without resource
-              contention. You never share CPU, RAM, or bandwidth with other
-              users, ensuring sustained performance.
+              Cloud computing services that include web hosting are usually multitenant. That means that the files and data resources of multiple clients are housed on the same server. This provides flexibility and on-demand services for individual clients, so that providers can scale up or scale down delivery easily.By contrast, dedicated web hosting will involve a web hosting company serving only one client on any given server. This provides more individual security and a more focused approach to serving an individual customer.
             </p>
           </div>
         </section>
@@ -213,10 +220,17 @@ function WebHostingServices() {
           <div className="wh-feature-content">
             <h3>Cloud Storage Management</h3>
             <p>
-              Cloud Storage Management involves managing data storage across
-              remote cloud servers, ensuring data integrity, encryption,
-              automated backups, and seamless scalability for modern enterprise
-              workloads.
+              Cloud Data Management is the practice of storing a company's data on an offsite 
+              server that is typically owned and overseen by a vendor who specialized in cloud 
+              data hosting. Netcom Cloud Computing is now a standard way to access IT 
+              infrastructure,software,hardware resources.They are Scalable,which means as your 
+              company grows you can increase the subscription to the resources you need.
+            </p>
+            <p>
+              When you adopt cloud services,you benefit from improved efficiency and lower 
+              costs. Our Cloud Storage Management helps business to be more efficient. 
+              Managing data in the cloud provides an automated backup strategy, professional 
+              support, and ease of access from any location.
             </p>
           </div>
         </section>
@@ -225,9 +239,9 @@ function WebHostingServices() {
         <section className="wh-benefits-box">
           <h2>Benefits in NETCOM Cloud Services:</h2>
           <p>
-            Netcom Cloud Services deliver an agile, high-uptime cloud ecosystem
-            with end-to-end security, continuous performance monitoring, and
-            proactive technical assistance.
+            Netcom Cloud Services are designed around our customers and delivered on the platform that best meets their needs. Whether you are looking 
+            to fix issues, develop a strategy, utilize managed services, or further modernize and secure your applications and infrastructure. Netcom is the 
+            end-to-end services provider that can help.
           </p>
           <ul className="wh-arrows-list">
             {CLOUD_BENEFITS.map((b) => (

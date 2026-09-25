@@ -328,7 +328,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={callIcon} alt="" />
-                <p>Call us<br/><a href="tel:04622595979">+91 73917 30945</a></p>
+                <p>Call us<br/><a href="tel:7391730945">+91 73917 30945 , 89255 50380</a></p>
               </div>
             </div>
             <div className="contact-office-card">
@@ -343,7 +343,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={callIcon} alt="" />
-                <p>Call us<br/><a href="tel:04442125369">+91 73917 30945</a></p>
+                <p>Call us<br/><a href="tel:7391730945">+91 73917 30945</a></p>
               </div>
             </div>
             <div className="contact-social">

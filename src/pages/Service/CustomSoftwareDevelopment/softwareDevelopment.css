@@ -21,7 +21,7 @@
 
 .cs-hero__container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
@@ -71,6 +71,8 @@
   width: 100%;
   max-width: 480px;
   max-height: 380px;
+  margin-right: 0px;
+  padding-right: 0px;
   object-fit: contain;
   filter: drop-shadow(0 14px 28px rgba(14, 61, 41, 0.12));
   transition: transform 0.35s ease;
