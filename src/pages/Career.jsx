@@ -475,6 +475,7 @@ function Career() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("idle");
   const [savedFileName, setSavedFileName] = useState("");
+  const [savedFormData, setSavedFormData] = useState(null);
   const [resumeFile, setResumeFile] = useState(null);
   const [fileError, setFileError] = useState("");
   const fileInputRef = useRef(null);
@@ -499,6 +500,7 @@ function Career() {
     setIsSubmitting(false);
     setResumeFile(null);
     setSavedFileName("");
+    setSavedFormData(null);
     setFileError("");
     if (fileInputRef.current) fileInputRef.current.value = "";
     setIsModalOpen(true);
@@ -510,6 +512,7 @@ function Career() {
     setIsSubmitting(false);
     setResumeFile(null);
     setSavedFileName("");
+    setSavedFormData(null);
     setFileError("");
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
@@ -552,29 +555,39 @@ function Career() {
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
-  const openMailtoFallback = (jobTitle, file) => {
-    const subject = encodeURIComponent(`Job Application: ${jobTitle} - ${formData.name}`);
-    const fileSizeMB = file ? (file.size / (1024 * 1024)).toFixed(2) : "0";
-    const fileName = file ? file.name : "Resume.pdf";
+  const triggerEmailFallback = (customData) => {
+    const d = customData || savedFormData || {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      experience: formData.experience,
+      portfolio: formData.portfolio,
+      message: formData.message,
+      jobTitle: activeApplyingJob?.title || "Role",
+      fileName: savedFileName,
+      fileSizeMB: "",
+    };
+    const recipientEmail = "hr@ncpli.com";
+    const subject = encodeURIComponent(`Job Application: ${d.jobTitle} - ${d.name}`);
     const body = encodeURIComponent(
-      `Job Position: ${jobTitle}\n` +
-      `Applicant Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone}\n` +
-      `Experience: ${formData.experience}\n` +
-      `Attached Resume: ${fileName} (${fileSizeMB} MB)\n` +
-      (formData.portfolio ? `Portfolio/Profile Link: ${formData.portfolio}\n` : "") +
-      `\nCover Note:\n${formData.message || "N/A"}\n\n` +
-      `[Important: Please ensure your resume file '${fileName}' is attached to this email before sending.]`
+      `Job Position: ${d.jobTitle}\n` +
+      `Applicant Name: ${d.name}\n` +
+      `Email: ${d.email}\n` +
+      `Phone: ${d.phone}\n` +
+      `Experience: ${d.experience}\n` +
+      (d.fileName ? `Attached Resume: ${d.fileName}${d.fileSizeMB ? ` (${d.fileSizeMB} MB)` : ""}\n` : "") +
+      (d.portfolio ? `Portfolio/Profile Link: ${d.portfolio}\n` : "") +
+      `\nCover Note:\n${d.message || "N/A"}\n\n` +
+      (d.fileName ? `[Important: Please ensure your resume file '${d.fileName}' is attached to this email before sending.]` : "")
     );
-    window.location.href = `mailto:hr@ncpli.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
   };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     if (!resumeFile) {
-      setFileError("Resume upload (PDF) is mandatory. Please add your resume.");
+      setFileError("Please upload your resume in PDF format (mandatory).");
       return;
     }
 
@@ -585,6 +598,19 @@ function Career() {
     setSavedFileName(currentName);
 
     const jobTitle = activeApplyingJob ? activeApplyingJob.title : "General Application";
+
+    const submissionSnapshot = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      experience: formData.experience,
+      portfolio: formData.portfolio,
+      message: formData.message,
+      jobTitle,
+      fileName: currentName,
+      fileSizeMB: (currentFile.size / (1024 * 1024)).toFixed(2),
+    };
+    setSavedFormData(submissionSnapshot);
 
     try {
       const postData = new FormData();
@@ -613,29 +639,33 @@ function Career() {
 
       if (result && (result.success === "true" || result.success === true)) {
         setSubmitStatus("success");
-      } else if (result && result.message && result.message.toLowerCase().includes("activation")) {
+      } else if (
+        result?.message &&
+        (result.message.toLowerCase().includes("activation") ||
+          result.message.toLowerCase().includes("activate"))
+      ) {
+        // FormSubmit requires one-time confirmation link clicked in hr@ncpli.com inbox
         setSubmitStatus("activation_needed");
-        openMailtoFallback(jobTitle, currentFile);
       } else {
         setSubmitStatus("fallback_mailto");
-        openMailtoFallback(jobTitle, currentFile);
+        triggerEmailFallback(submissionSnapshot);
       }
     } catch {
       setSubmitStatus("fallback_mailto");
-      openMailtoFallback(jobTitle, currentFile);
-    } finally {
-      setIsSubmitting(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        experience: "",
-        portfolio: "",
-        message: ""
-      });
-      setResumeFile(null);
-      if (fileInputRef.current) fileInputRef.current.value = "";
+      triggerEmailFallback(submissionSnapshot);
     }
+
+    setIsSubmitting(false);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      experience: "",
+      portfolio: "",
+      message: ""
+    });
+    setResumeFile(null);
+    if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   return (
@@ -812,42 +842,61 @@ function Career() {
                     <>
                       <h4>Application &amp; Resume Sent!</h4>
                       <p>
-                        Your application details and attached resume (<strong>{savedFileName}</strong>) have been sent directly to{" "}
+                        Your application details and attached PDF resume (<strong>{savedFileName}</strong>) have been sent directly to{" "}
                         <strong>hr@ncpli.com</strong>.
                       </p>
                       <p className="career-success-sub">
-                        Our recruitment team will review your qualifications and contact you soon.
+                        Our HR team will review your qualifications and contact you soon.
                       </p>
                     </>
                   )}
                   {submitStatus === "activation_needed" && (
                     <>
-                      <h4>Application Prepared!</h4>
+                      <h4>One-Time Form Activation Required</h4>
                       <p>
-                        Your application and resume (<strong>{savedFileName}</strong>) have been prepared, and your email client was opened to send it directly to{" "}
-                        <strong>hr@ncpli.com</strong>.
+                        FormSubmit has sent an activation link to <strong>hr@ncpli.com</strong>.
                       </p>
-                      <p className="career-success-sub">
-                        Please ensure your PDF resume (<strong>{savedFileName}</strong>) is attached in your email window before sending.
+                      <p className="career-success-sub" style={{ marginBottom: "14px" }}>
+                        Please open the <strong>hr@ncpli.com</strong> inbox and click the <strong>"Activate Form"</strong> button. After activating, all submissions with attached resumes will automatically arrive directly in the HR inbox.
                       </p>
+                      <div>
+                        <button
+                          type="button"
+                          className="career-mailto-retry-btn"
+                          onClick={() => triggerEmailFallback()}
+                        >
+                          ✉️ Open Email App to hr@ncpli.com
+                        </button>
+                      </div>
                     </>
                   )}
                   {submitStatus === "fallback_mailto" && (
                     <>
-                      <h4>Email Client Opened!</h4>
+                      <h4>Email Application Prepared</h4>
                       <p>
-                        Your default email client has been opened with your application pre-filled for{" "}
-                        <strong>hr@ncpli.com</strong>.
+                        Your email draft to <strong>hr@ncpli.com</strong> has been opened.
                       </p>
-                      <p className="career-success-sub">
-                        Please ensure your PDF resume (<strong>{savedFileName}</strong>) is attached to the email before clicking send.
-                      </p>
+                      {savedFileName && (
+                        <p className="career-success-sub" style={{ marginBottom: "14px" }}>
+                          Please ensure your resume PDF (<strong>{savedFileName}</strong>) is attached to the email before clicking send.
+                        </p>
+                      )}
+                      <div>
+                        <button
+                          type="button"
+                          className="career-mailto-retry-btn"
+                          onClick={() => triggerEmailFallback()}
+                        >
+                          ✉️ Reopen Email to hr@ncpli.com
+                        </button>
+                      </div>
                     </>
                   )}
                   <button
                     type="button"
                     className="career-apply-btn"
                     onClick={closeApplyModal}
+                    style={{ marginTop: "12px" }}
                   >
                     Done
                   </button>
@@ -908,10 +957,10 @@ function Career() {
                     </div>
                   </div>
 
-                  {/* Mandatory Resume Upload (PDF) */}
+                  {/* Resume Upload (PDF) */}
                   <div className="career-form-group">
                     <label htmlFor="applicant-resume">
-                      Add Resume (PDF) <span className="career-required-star">*</span>
+                      Resume (PDF) <span className="career-required-star">*</span>
                     </label>
 
                     <input
@@ -922,7 +971,6 @@ function Career() {
                       accept=".pdf,application/pdf"
                       onChange={handleFileChange}
                       className="career-file-input-hidden"
-                      required={!resumeFile}
                     />
 
                     {!resumeFile ? (
@@ -957,7 +1005,7 @@ function Career() {
                           >
                             + Add Resume
                           </button>
-                          <span className="career-upload-hint">Upload PDF file (Mandatory, max 15MB)</span>
+                          <span className="career-upload-hint">Upload PDF file (Max 10MB) * Mandatory</span>
                         </div>
                       </div>
                     ) : (

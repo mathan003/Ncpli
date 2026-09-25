@@ -536,6 +536,13 @@
   margin-left: 2px;
 }
 
+.career-optional-hint {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #557065;
+  margin-left: 6px;
+}
+
 .career-file-input-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -789,6 +796,34 @@
   font-size: 0.82rem !important;
   color: #7b9487 !important;
   margin: 0 0 20px !important;
+}
+
+.career-required-star {
+  color: #c81e1e;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+.career-mailto-retry-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--career-green);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 8px auto 16px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.career-mailto-retry-btn:hover {
+  background: var(--career-green-dark);
+  transform: translateY(-1px);
 }
 
 /* ==========================================================================
