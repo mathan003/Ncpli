@@ -604,7 +604,7 @@ ${d.email}`;
     window.location.href = mailtoUrl;
   };
 
-  const handleFormSubmit = async (e) => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
 
     if (!resumeFile) {
@@ -612,7 +612,6 @@ ${d.email}`;
       return;
     }
 
-    setIsSubmitting(true);
     setFileError("");
     const currentFile = resumeFile;
     const currentName = currentFile.name;
@@ -633,6 +632,14 @@ ${d.email}`;
     };
     setSavedFormData(submissionSnapshot);
 
+    // Show the "Application Email Prepared! / IMPORTANT STEP" screen for ALL applications
+    setSubmitStatus("ready_to_send");
+    setIsSubmitting(false);
+
+    // Trigger email client immediately on direct user click (prevent popup/mailto blocking on Vercel/mobile)
+    triggerEmailDefault(submissionSnapshot);
+
+    // Also send submission to FormSubmit in background without blocking UI
     try {
       const postData = new FormData();
       postData.append("Applicant_Name", formData.name);
@@ -648,30 +655,17 @@ ${d.email}`;
       postData.append("_captcha", "false");
       postData.append("_replyto", formData.email);
 
-      const response = await fetch("https://formsubmit.co/ajax/hr@ncpli.com", {
+      fetch("https://formsubmit.co/ajax/hr@ncpli.com", {
         method: "POST",
         body: postData,
         headers: {
           Accept: "application/json",
         },
-      });
-
-      const result = await response.json().catch(() => null);
-
-      if (result && (result.success === "true" || result.success === true)) {
-        setSubmitStatus("success_auto");
-      } else {
-        // By default, trigger email sending with resume attachment for the applied person
-        setSubmitStatus("ready_to_send");
-        triggerEmailDefault(submissionSnapshot);
-      }
+      }).catch(() => {});
     } catch {
-      // By default, trigger email sending with resume attachment for the applied person
-      setSubmitStatus("ready_to_send");
-      triggerEmailDefault(submissionSnapshot);
+      // background submission non-blocking
     }
 
-    setIsSubmitting(false);
     setFormData({
       name: "",
       email: "",
@@ -854,41 +848,25 @@ ${d.email}`;
                   <div className="career-success-icon">
                     <IconCheckmark />
                   </div>
-                  {submitStatus === "ready_to_send" && (
-                    <>
-                      <h4>Application Email Prepared!</h4>
-                      <p>
-                        Your application to <strong>hr@ncpli.com</strong> has been prepared with your details.
-                      </p>
-                      <div className="career-attach-alert">
-                        <span className="career-attach-badge">Important Step</span>
-                        <p>
-                          Please ensure your resume PDF (<strong>{savedFileName}</strong>) is attached to the email before clicking <strong>Send</strong>.
-                        </p>
-                      </div>
-                      <div className="career-email-actions">
-                        <button
-                          type="button"
-                          className="career-mailto-retry-btn"
-                          onClick={() => triggerEmailDefault()}
-                        >
-                          ✉️ Open Email
-                        </button>
-                      </div>
-                    </>
-                  )}
-                  {submitStatus === "success_auto" && (
-                    <>
-                      <h4>Application &amp; Resume Sent!</h4>
-                      <p>
-                        Your application details and attached PDF resume (<strong>{savedFileName}</strong>) have been sent directly to{" "}
-                        <strong>hr@ncpli.com</strong>.
-                      </p>
-                      <p className="career-success-sub">
-                        Our HR team will review your qualifications and contact you soon.
-                      </p>
-                    </>
-                  )}
+                  <h4>Application Email Prepared!</h4>
+                  <p>
+                    Your application to <strong>hr@ncpli.com</strong> has been prepared with your details.
+                  </p>
+                  <div className="career-attach-alert">
+                    <span className="career-attach-badge">IMPORTANT STEP</span>
+                    <p>
+                      Please ensure your resume PDF (<strong>{savedFileName}</strong>) is attached to the email before clicking <strong>Send</strong>.
+                    </p>
+                  </div>
+                  <div className="career-email-actions">
+                    <button
+                      type="button"
+                      className="career-mailto-retry-btn"
+                      onClick={() => triggerEmailDefault()}
+                    >
+                      ✉️ Open Email
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form className="career-form" onSubmit={handleFormSubmit}>
