@@ -472,7 +472,9 @@ function Career() {
   // Application modal state
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeApplyingJob, setActiveApplyingJob] = useState(null);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("idle");
+  const [savedFileName, setSavedFileName] = useState("");
   const [resumeFile, setResumeFile] = useState(null);
   const [fileError, setFileError] = useState("");
   const fileInputRef = useRef(null);
@@ -493,8 +495,10 @@ function Career() {
 
   const openApplyModal = (job) => {
     setActiveApplyingJob(job || selectedJob);
-    setSubmitSuccess(false);
+    setSubmitStatus("idle");
+    setIsSubmitting(false);
     setResumeFile(null);
+    setSavedFileName("");
     setFileError("");
     if (fileInputRef.current) fileInputRef.current.value = "";
     setIsModalOpen(true);
@@ -502,8 +506,10 @@ function Career() {
 
   const closeApplyModal = () => {
     setIsModalOpen(false);
-    setSubmitSuccess(false);
+    setSubmitStatus("idle");
+    setIsSubmitting(false);
     setResumeFile(null);
+    setSavedFileName("");
     setFileError("");
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
@@ -529,8 +535,8 @@ function Career() {
       return;
     }
 
-    if (file.size > 15 * 1024 * 1024) {
-      setFileError("File size exceeds 15 MB. Please upload a smaller PDF file.");
+    if (file.size > 10 * 1024 * 1024) {
+      setFileError("File size exceeds 10 MB limit for email attachments. Please upload a smaller PDF file.");
       setResumeFile(null);
       if (fileInputRef.current) fileInputRef.current.value = "";
       return;
@@ -546,7 +552,25 @@ function Career() {
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
-  const handleFormSubmit = (e) => {
+  const openMailtoFallback = (jobTitle, file) => {
+    const subject = encodeURIComponent(`Job Application: ${jobTitle} - ${formData.name}`);
+    const fileSizeMB = file ? (file.size / (1024 * 1024)).toFixed(2) : "0";
+    const fileName = file ? file.name : "Resume.pdf";
+    const body = encodeURIComponent(
+      `Job Position: ${jobTitle}\n` +
+      `Applicant Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Experience: ${formData.experience}\n` +
+      `Attached Resume: ${fileName} (${fileSizeMB} MB)\n` +
+      (formData.portfolio ? `Portfolio/Profile Link: ${formData.portfolio}\n` : "") +
+      `\nCover Note:\n${formData.message || "N/A"}\n\n` +
+      `[Important: Please ensure your resume file '${fileName}' is attached to this email before sending.]`
+    );
+    window.location.href = `mailto:hr@ncpli.com?subject=${subject}&body=${body}`;
+  };
+
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     if (!resumeFile) {
@@ -554,27 +578,53 @@ function Career() {
       return;
     }
 
-    // Pre-fill mailto URL to support immediate email drafting to HR
+    setIsSubmitting(true);
+    setFileError("");
+    const currentFile = resumeFile;
+    const currentName = currentFile.name;
+    setSavedFileName(currentName);
+
     const jobTitle = activeApplyingJob ? activeApplyingJob.title : "General Application";
-    const subject = encodeURIComponent(`Job Application: ${jobTitle} - ${formData.name}`);
-    const fileSizeMB = (resumeFile.size / (1024 * 1024)).toFixed(2);
-    const body = encodeURIComponent(
-      `Job Position: ${jobTitle}\n` +
-      `Applicant Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone}\n` +
-      `Experience: ${formData.experience}\n` +
-      `Resume PDF: ${resumeFile.name} (${fileSizeMB} MB)\n` +
-      (formData.portfolio ? `Portfolio/Profile Link: ${formData.portfolio}\n` : "") +
-      `\nCover Note:\n${formData.message || "N/A"}\n\n` +
-      `[Important: Please ensure your resume file '${resumeFile.name}' is attached to this email.]`
-    );
 
-    // Open mailto link
-    window.location.href = `mailto:hr@ncpli.com?subject=${subject}&body=${body}`;
+    try {
+      const postData = new FormData();
+      postData.append("Applicant_Name", formData.name);
+      postData.append("Email_Address", formData.email);
+      postData.append("Phone_Number", formData.phone);
+      postData.append("Experience", formData.experience);
+      postData.append("Job_Position", jobTitle);
+      postData.append("Portfolio_Link", formData.portfolio || "Not provided");
+      postData.append("Cover_Message", formData.message || "Not provided");
+      postData.append("attachment", currentFile, currentName);
+      postData.append("_subject", `Job Application: ${jobTitle} - ${formData.name}`);
+      postData.append("_template", "table");
+      postData.append("_captcha", "false");
+      postData.append("_replyto", formData.email);
 
-    setSubmitSuccess(true);
-    setTimeout(() => {
+      const response = await fetch("https://formsubmit.co/ajax/hr@ncpli.com", {
+        method: "POST",
+        body: postData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      const result = await response.json().catch(() => null);
+
+      if (result && (result.success === "true" || result.success === true)) {
+        setSubmitStatus("success");
+      } else if (result && result.message && result.message.toLowerCase().includes("activation")) {
+        setSubmitStatus("activation_needed");
+        openMailtoFallback(jobTitle, currentFile);
+      } else {
+        setSubmitStatus("fallback_mailto");
+        openMailtoFallback(jobTitle, currentFile);
+      }
+    } catch {
+      setSubmitStatus("fallback_mailto");
+      openMailtoFallback(jobTitle, currentFile);
+    } finally {
+      setIsSubmitting(false);
       setFormData({
         name: "",
         email: "",
@@ -585,7 +635,7 @@ function Career() {
       });
       setResumeFile(null);
       if (fileInputRef.current) fileInputRef.current.value = "";
-    }, 1500);
+    }
   };
 
   return (
@@ -753,28 +803,53 @@ function Career() {
             </div>
 
             <div className="career-modal-body">
-              {submitSuccess ? (
+              {submitStatus !== "idle" ? (
                 <div className="career-modal-success">
                   <div className="career-success-icon">
                     <IconCheckmark />
                   </div>
-                  <h4>Application Drafted!</h4>
-                  <p>
-                    Your email client has been opened with your application details.
-                    {resumeFile && (
-                      <>
-                        <br />
-                        Please ensure your resume PDF (<strong>{resumeFile.name}</strong>) is attached to the email sent to{" "}
-                      </>
-                    )}
-                    <strong>hr@ncpli.com</strong>.
-                  </p>
+                  {submitStatus === "success" && (
+                    <>
+                      <h4>Application &amp; Resume Sent!</h4>
+                      <p>
+                        Your application details and attached resume (<strong>{savedFileName}</strong>) have been sent directly to{" "}
+                        <strong>hr@ncpli.com</strong>.
+                      </p>
+                      <p className="career-success-sub">
+                        Our recruitment team will review your qualifications and contact you soon.
+                      </p>
+                    </>
+                  )}
+                  {submitStatus === "activation_needed" && (
+                    <>
+                      <h4>Application Prepared!</h4>
+                      <p>
+                        Your application and resume (<strong>{savedFileName}</strong>) have been prepared, and your email client was opened to send it directly to{" "}
+                        <strong>hr@ncpli.com</strong>.
+                      </p>
+                      <p className="career-success-sub">
+                        Please ensure your PDF resume (<strong>{savedFileName}</strong>) is attached in your email window before sending.
+                      </p>
+                    </>
+                  )}
+                  {submitStatus === "fallback_mailto" && (
+                    <>
+                      <h4>Email Client Opened!</h4>
+                      <p>
+                        Your default email client has been opened with your application pre-filled for{" "}
+                        <strong>hr@ncpli.com</strong>.
+                      </p>
+                      <p className="career-success-sub">
+                        Please ensure your PDF resume (<strong>{savedFileName}</strong>) is attached to the email before clicking send.
+                      </p>
+                    </>
+                  )}
                   <button
                     type="button"
                     className="career-apply-btn"
                     onClick={closeApplyModal}
                   >
-                    Close
+                    Done
                   </button>
                 </div>
               ) : (
@@ -787,7 +862,7 @@ function Career() {
                         type="text"
                         name="name"
                         required
-                        placeholder="John Doe"
+                        placeholder="Mathan"
                         value={formData.name}
                         onChange={handleInputChange}
                       />
@@ -799,7 +874,7 @@ function Career() {
                         type="email"
                         name="email"
                         required
-                        placeholder="john@example.com"
+                        placeholder="Mathan@gmail.com"
                         value={formData.email}
                         onChange={handleInputChange}
                       />
@@ -951,8 +1026,18 @@ function Career() {
                     />
                   </div>
 
-                  <button type="submit" className="career-form-submit">
-                    Submit Application
+                  <button
+                    type="submit"
+                    className="career-form-submit"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <span className="career-submit-loading">
+                        <span className="career-spinner" aria-hidden="true" /> Sending Application &amp; Resume...
+                      </span>
+                    ) : (
+                      "Submit Application"
+                    )}
                   </button>
                 </form>
               )}

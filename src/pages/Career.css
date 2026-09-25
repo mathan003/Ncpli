@@ -732,6 +732,29 @@
   cursor: not-allowed;
 }
 
+.career-submit-loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.career-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: careerSpin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes careerSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .career-modal-success {
   text-align: center;
   padding: 30px 10px;
@@ -759,7 +782,13 @@
   color: #556c60;
   font-size: 0.95rem;
   line-height: 1.5;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
+}
+
+.career-success-sub {
+  font-size: 0.82rem !important;
+  color: #7b9487 !important;
+  margin: 0 0 20px !important;
 }
 
 /* ==========================================================================
