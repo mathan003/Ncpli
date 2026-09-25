@@ -555,7 +555,7 @@ function Career() {
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
-  const triggerEmailFallback = (customData) => {
+  const getMailData = (customData) => {
     const d = customData || savedFormData || {
       name: formData.name,
       email: formData.email,
@@ -568,19 +568,40 @@ function Career() {
       fileSizeMB: "",
     };
     const recipientEmail = "hr@ncpli.com";
-    const subject = encodeURIComponent(`Job Application: ${d.jobTitle} - ${d.name}`);
-    const body = encodeURIComponent(
-      `Job Position: ${d.jobTitle}\n` +
-      `Applicant Name: ${d.name}\n` +
-      `Email: ${d.email}\n` +
-      `Phone: ${d.phone}\n` +
-      `Experience: ${d.experience}\n` +
-      (d.fileName ? `Attached Resume: ${d.fileName}${d.fileSizeMB ? ` (${d.fileSizeMB} MB)` : ""}\n` : "") +
-      (d.portfolio ? `Portfolio/Profile Link: ${d.portfolio}\n` : "") +
-      `\nCover Note:\n${d.message || "N/A"}\n\n` +
-      (d.fileName ? `[Important: Please ensure your resume file '${d.fileName}' is attached to this email before sending.]` : "")
-    );
-    window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+    const subject = `Job Application: ${d.jobTitle} - ${d.name}`;
+    const body =
+`Dear Netcom HR Team,
+
+I am applying for the position of "${d.jobTitle}" at Netcom Computers.
+
+APPLICANT DETAILS:
+-------------------
+• Full Name: ${d.name}
+• Email: ${d.email}
+• Phone: ${d.phone}
+• Experience: ${d.experience}
+• Job Position: ${d.jobTitle}
+${d.portfolio ? `• Portfolio/Profile: ${d.portfolio}\n` : ""}${d.fileName ? `• Attached Resume PDF: ${d.fileName}${d.fileSizeMB ? ` (${d.fileSizeMB} MB)` : ""}\n` : ""}
+COVER MESSAGE:
+--------------
+${d.message || "Please find my attached resume for your consideration."}
+
+--------------------------------------------------
+[IMPORTANT: Please attach your resume file '${d.fileName || "PDF"}' to this email before clicking Send.]
+
+Best regards,
+${d.name}
+${d.phone}
+${d.email}`;
+
+    const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    return { recipientEmail, subject, body, mailtoUrl, d };
+  };
+
+  const triggerEmailDefault = (customData) => {
+    const { mailtoUrl } = getMailData(customData);
+    window.location.href = mailtoUrl;
   };
 
   const handleFormSubmit = async (e) => {
@@ -638,21 +659,16 @@ function Career() {
       const result = await response.json().catch(() => null);
 
       if (result && (result.success === "true" || result.success === true)) {
-        setSubmitStatus("success");
-      } else if (
-        result?.message &&
-        (result.message.toLowerCase().includes("activation") ||
-          result.message.toLowerCase().includes("activate"))
-      ) {
-        // FormSubmit requires one-time confirmation link clicked in hr@ncpli.com inbox
-        setSubmitStatus("activation_needed");
+        setSubmitStatus("success_auto");
       } else {
-        setSubmitStatus("fallback_mailto");
-        triggerEmailFallback(submissionSnapshot);
+        // By default, trigger email sending with resume attachment for the applied person
+        setSubmitStatus("ready_to_send");
+        triggerEmailDefault(submissionSnapshot);
       }
     } catch {
-      setSubmitStatus("fallback_mailto");
-      triggerEmailFallback(submissionSnapshot);
+      // By default, trigger email sending with resume attachment for the applied person
+      setSubmitStatus("ready_to_send");
+      triggerEmailDefault(submissionSnapshot);
     }
 
     setIsSubmitting(false);
@@ -838,7 +854,30 @@ function Career() {
                   <div className="career-success-icon">
                     <IconCheckmark />
                   </div>
-                  {submitStatus === "success" && (
+                  {submitStatus === "ready_to_send" && (
+                    <>
+                      <h4>Application Email Prepared!</h4>
+                      <p>
+                        Your application to <strong>hr@ncpli.com</strong> has been prepared with your details.
+                      </p>
+                      <div className="career-attach-alert">
+                        <span className="career-attach-badge">Important Step</span>
+                        <p>
+                          Please ensure your resume PDF (<strong>{savedFileName}</strong>) is attached to the email before clicking <strong>Send</strong>.
+                        </p>
+                      </div>
+                      <div className="career-email-actions">
+                        <button
+                          type="button"
+                          className="career-mailto-retry-btn"
+                          onClick={() => triggerEmailDefault()}
+                        >
+                          ✉️ Open Email
+                        </button>
+                      </div>
+                    </>
+                  )}
+                  {submitStatus === "success_auto" && (
                     <>
                       <h4>Application &amp; Resume Sent!</h4>
                       <p>
@@ -850,62 +889,14 @@ function Career() {
                       </p>
                     </>
                   )}
-                  {submitStatus === "activation_needed" && (
-                    <>
-                      <h4>One-Time Form Activation Required</h4>
-                      <p>
-                        FormSubmit has sent an activation link to <strong>hr@ncpli.com</strong>.
-                      </p>
-                      <p className="career-success-sub" style={{ marginBottom: "14px" }}>
-                        Please open the <strong>hr@ncpli.com</strong> inbox and click the <strong>"Activate Form"</strong> button. After activating, all submissions with attached resumes will automatically arrive directly in the HR inbox.
-                      </p>
-                      <div>
-                        <button
-                          type="button"
-                          className="career-mailto-retry-btn"
-                          onClick={() => triggerEmailFallback()}
-                        >
-                          ✉️ Open Email App to hr@ncpli.com
-                        </button>
-                      </div>
-                    </>
-                  )}
-                  {submitStatus === "fallback_mailto" && (
-                    <>
-                      <h4>Email Application Prepared</h4>
-                      <p>
-                        Your email draft to <strong>hr@ncpli.com</strong> has been opened.
-                      </p>
-                      {savedFileName && (
-                        <p className="career-success-sub" style={{ marginBottom: "14px" }}>
-                          Please ensure your resume PDF (<strong>{savedFileName}</strong>) is attached to the email before clicking send.
-                        </p>
-                      )}
-                      <div>
-                        <button
-                          type="button"
-                          className="career-mailto-retry-btn"
-                          onClick={() => triggerEmailFallback()}
-                        >
-                          ✉️ Reopen Email to hr@ncpli.com
-                        </button>
-                      </div>
-                    </>
-                  )}
-                  <button
-                    type="button"
-                    className="career-apply-btn"
-                    onClick={closeApplyModal}
-                    style={{ marginTop: "12px" }}
-                  >
-                    Done
-                  </button>
                 </div>
               ) : (
                 <form className="career-form" onSubmit={handleFormSubmit}>
                   <div className="career-form-row">
                     <div className="career-form-group">
-                      <label htmlFor="applicant-name">Full Name *</label>
+                      <label htmlFor="applicant-name">
+                        Full Name <span className="career-required-star">*</span>
+                      </label>
                       <input
                         id="applicant-name"
                         type="text"
@@ -917,7 +908,9 @@ function Career() {
                       />
                     </div>
                     <div className="career-form-group">
-                      <label htmlFor="applicant-email">Email Address *</label>
+                      <label htmlFor="applicant-email">
+                        Email Address <span className="career-required-star">*</span>
+                      </label>
                       <input
                         id="applicant-email"
                         type="email"
@@ -932,7 +925,9 @@ function Career() {
 
                   <div className="career-form-row">
                     <div className="career-form-group">
-                      <label htmlFor="applicant-phone">Phone Number *</label>
+                      <label htmlFor="applicant-phone">
+                        Phone Number <span className="career-required-star">*</span>
+                      </label>
                       <input
                         id="applicant-phone"
                         type="tel"
@@ -944,7 +939,9 @@ function Career() {
                       />
                     </div>
                     <div className="career-form-group">
-                      <label htmlFor="applicant-experience">Experience *</label>
+                      <label htmlFor="applicant-experience">
+                        Experience <span className="career-required-star">*</span>
+                      </label>
                       <input
                         id="applicant-experience"
                         type="text"
@@ -1005,7 +1002,9 @@ function Career() {
                           >
                             + Add Resume
                           </button>
-                          <span className="career-upload-hint">Upload PDF file (Max 10MB) * Mandatory</span>
+                          <span className="career-upload-hint">
+                            Upload PDF file (Max 10MB) • <span className="career-required-star">*</span> Mandatory
+                          </span>
                         </div>
                       </div>
                     ) : (
