@@ -181,7 +181,7 @@ const SERVICES = [
     image: cloud,
     description:
       "Aim to provide you the exact services and solutions you have asked for, because we value your product!.",
-    to: "/service/web-hosting-services",
+    to: "/service/cloud-maintenance",
   },
 ];
 
