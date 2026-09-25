@@ -21,23 +21,23 @@ const locations = [
     id: 1,
     name: "Netcom Computers - Head Office",
     address: "No. 71, First Floor, South Bypass Road, Opp. BSNL Office, Tirunelveli - 627 005",
-    position: [8.7139, 77.7567],
+    position: [8.725167, 77.730111],
     mapsUrl: "https://maps.app.goo.gl/8jndRX12MuaUeuxRA",
   },
   {
     id: 2,
     name: "Netcom Computers - Chennai Branch",
     address: "No. 89, Third Floor, Chamiers Road, Nandanam, Chennai - 600 018",
-    position: [13.0335, 80.2442],
+    position: [13.028889, 80.248917],
     mapsUrl: "https://maps.app.goo.gl/hXx8qFuXUAX2db9GA",
   },
   {
     id: 3,
     name: "Netcom Computers - Coimbatore Branch",
     address: "Coimbatore, Tamil Nadu, India",
-    position: [11.0168, 76.9558],
+    position: [11.022597, 76.978373],
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Netcom+Computers+Coimbatore+Tamil+Nadu",
+      "https://www.google.com/maps/search/?api=1&query=11.022597,76.978373",
   },
 ];
 
@@ -252,7 +252,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="contact-form-column">
             <div className="contact-section-heading">
-              <span aria-hidden="true">➤</span>
+              <img src={messageIcon} alt="" className="contact-heading-icon" aria-hidden="true" />
               <div>
                 <h2>Send Us a Message</h2>
                 <p>Fill out the form and team will get back to you soon</p>

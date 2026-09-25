@@ -101,7 +101,7 @@
 
 .contact-section-heading {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   margin: 0 0 28px 8px;
 }
@@ -110,6 +110,14 @@
   color: var(--contact-green);
   font-size: 1.7rem;
   transform: rotate(-25deg);
+}
+
+.contact-section-heading img,
+.contact-heading-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .contact-section-heading h2 {
