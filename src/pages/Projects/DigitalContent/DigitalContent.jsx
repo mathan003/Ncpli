@@ -1,19 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./DigitalContent.css";
 
-const demoVideos = [
-  { id: 1, title: "English Rhymes (Kindergarten)", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  { id: 2, title: "Science - Plant Life (Class 6)", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  { id: 3, title: "Maths - Shapes & Geometry (Class 3)", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  { id: 4, title: "Tamil Grammar - Ilakkanam (Class 8)", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  { id: 5, title: "Physics - Electric Current (Class 10)", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  { id: 6, title: "Chemistry - Periodic Table (Class 9)", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-];
-
 function DigitalContent() {
-  const [activeVideo, setActiveVideo] = useState(null);
-
   return (
     <div className="project-page-wrapper">
       {/* Project Hero Banner */}
@@ -33,52 +22,27 @@ function DigitalContent() {
       <main className="project-container">
         <h1 className="project-main-title">Netcom Digital Contents</h1>
 
-        {/* Intro Section with YouTube Demo Video Preview */}
-        <div className="project-intro-split">
-          <div className="project-intro-text">
-            <p>
-              Netcom Media Works has been started by a group of young and dynamic entrepreneurial 
-              IT professionals in the year of 2002 with a vision to make a mark in Information 
-              Technology. We are working with 2-D animation, Flash animation,3-D animation and 
-              Visual advertisements. We are doing animation for short films, episodic works for 
-              television and web.
-            </p>
-            <p>
-              Our Development Division consists of established writers, illustrators and designers 
-              who generate ideas and concepts for commercially successful and market-driven 
-              products. Netcom offers end-to-end animation services for production including 
-              storyboard, layout, background and animation in-betweening, clean-up and 
-              compositing.
-            </p>
-            <p>
-              <strong>3D Production:</strong> The 3-D Animation Production is the set of processes that are used to convert an idea, 
-              into a finished product. It is a system designed to take each step in a pre-determined 
-              order so that everyone knows when and how their work needs to be done.
-            </p>
-          </div>
-
-          <div className="project-intro-media">
-            <h4 style={{ color: "#0e4a34", fontSize: "1.05rem", fontWeight: 700, margin: "0 0 12px", textAlign: "center" }}>
-              Netcom Digital Content Demo Video
-            </h4>
-            <div
-              className="project-video-card"
-              onClick={() =>
-                setActiveVideo({
-                  title: "Netcom Digital Content Demo Video",
-                  url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                })
-              }
-              title="Click to Watch Netcom Digital Content Demo Video"
-            >
-              <div className="project-video-box">
-                <div className="project-yt-badge">
-                  <span className="project-yt-icon"><span className="project-yt-triangle"></span></span>
-                  <span>YouTube</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Intro Section */}
+        <div className="project-intro-card">
+          <p>
+            Netcom Media Works has been started by a group of young and dynamic entrepreneurial 
+            IT professionals in the year of 2002 with a vision to make a mark in Information 
+            Technology. We are working with 2-D animation, Flash animation, 3-D animation and 
+            Visual advertisements. We are doing animation for short films, episodic works for 
+            television and web.
+          </p>
+          <p>
+            Our Development Division consists of established writers, illustrators and designers 
+            who generate ideas and concepts for commercially successful and market-driven 
+            products. Netcom offers end-to-end animation services for production including 
+            storyboard, layout, background and animation in-betweening, clean-up and 
+            compositing.
+          </p>
+          <p>
+            <strong>3D Production:</strong> The 3-D Animation Production is the set of processes that are used to convert an idea, 
+            into a finished product. It is a system designed to take each step in a pre-determined 
+            order so that everyone knows when and how their work needs to be done.
+          </p>
         </div>
 
         {/* Section: Pre-Production */}
@@ -249,73 +213,27 @@ function DigitalContent() {
         <div className="project-grid-2">
           <div className="project-card">
             <h3>2D Animation Experience</h3>
-            <p><strong>Reserve Bank Of India (RBI) Financial Inclusion Project </strong> Over 15+ years of excellence in traditional hand-drawn and digital puppet 2D animation. We have produced over 10,000+ curriculum-aligned learning modules, educational television episodes, and corporate presentations in Tamil and English.</p>
+            <p>
+              <strong>Reserve Bank Of India (RBI) Financial Inclusion Project: </strong> 
+              Over 15+ years of excellence in traditional hand-drawn and digital puppet 2D animation. 
+              We have produced over 10,000+ curriculum-aligned learning modules, educational television 
+              episodes, and corporate presentations in Tamil and English.
+            </p>
           </div>
           <div className="project-card">
             <h3>3D Animation Experience</h3>
-            <p>We have created 3D animation episodes based on stories from the Bible.Another important establishment to add feather to our cap is feature film Productions.
-              We have created 3D animation episodes based on stories from the Bible.We have ventured into production, portraying about a famous personality 
-              <strong>Azariah Enum Vidha. </strong> In the Twentieth century, many great Christian leaders emerged. 
-              Most of their names are unknown, expect outside in their own Church or national 
-              boundaries. Their life stories can provide rich insights to the people and the world. 
-              This great leader’s life, contribution to the mission, methods are the crafted in this film.</p>
+            <p>
+              We have created 3D animation episodes based on stories from the Bible. Another important 
+              establishment to add feather to our cap is feature film productions. We have ventured 
+              into production portraying a famous personality in the film <strong>Azariah Enum Vidha</strong>. 
+              In the twentieth century, many great Christian leaders emerged whose names are unknown 
+              outside their own church or national boundaries. Their life stories provide rich insights 
+              to people and the world. This great leader’s life, contribution to the mission, and methods 
+              are crafted in this film.
+            </p>
           </div>
         </div>
-
-        {/* Section: NetCom Digital Content Demo Videos */}
-        <h2 className="project-section-title">NetCom Digital Content Demo Videos</h2>
-        <div className="digital-demo-grid">
-  {demoVideos.map((video) => (
-    <div
-      key={video.id}
-      className="digital-demo-card"
-      onClick={() => setActiveVideo(video)}
-      title={`Watch ${video.title}`}
-    >
-      <div className="digital-demo-box">
-        <div className="project-yt-badge">
-          <span className="project-yt-icon">
-            <span className="project-yt-triangle"></span>
-          </span>
-
-          <span>YouTube</span>
-        </div>
-      </div>
-
-      <span className="digital-demo-title">
-        {video.title}
-      </span>
-    </div>
-  ))}
-</div>
       </main>
-
-      {/* Video Modal */}
-      {activeVideo && (
-        <div className="project-modal-backdrop" onClick={() => setActiveVideo(null)}>
-          <div className="project-modal-card" onClick={(e) => e.stopPropagation()}>
-            <div className="project-modal-header">
-              <h3>{activeVideo.title}</h3>
-              <button
-                type="button"
-                className="project-modal-close"
-                onClick={() => setActiveVideo(null)}
-                aria-label="Close modal"
-              >
-                ✕
-              </button>
-            </div>
-            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", background: "#000" }}>
-              <iframe
-                title={activeVideo.title}
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-                src={`${activeVideo.url}?autoplay=1`}
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

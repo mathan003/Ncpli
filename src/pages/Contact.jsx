@@ -20,15 +20,15 @@ const locations = [
   {
     id: 1,
     name: "Netcom Computers - Head Office",
-    address: "Adikalapuram, Tirunelveli, Tamil Nadu, India",
+    address: "No. 71, First Floor, South Bypass Road, Opp. BSNL Office, Tirunelveli - 627 005",
     position: [8.7139, 77.7567],
     mapsUrl: "https://maps.app.goo.gl/8jndRX12MuaUeuxRA",
   },
   {
     id: 2,
     name: "Netcom Computers - Chennai Branch",
-    address: "Chamiers Road, Chennai, Tamil Nadu, India",
-    position: [13.0827, 80.2707],
+    address: "No. 89, Third Floor, Chamiers Road, Nandanam, Chennai - 600 018",
+    position: [13.0335, 80.2442],
     mapsUrl: "https://maps.app.goo.gl/hXx8qFuXUAX2db9GA",
   },
   {
@@ -51,12 +51,18 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
     activeLocationRef.current = activeLocationId;
   }, [activeLocationId]);
 
+  const getMapPadding = () => {
+    const isMobile = typeof window !== "undefined" && window.innerWidth <= 640;
+    return isMobile
+      ? { paddingTopLeft: [25, 75], paddingBottomRight: [25, 55] }
+      : { paddingTopLeft: [60, 110], paddingBottomRight: [60, 75] };
+  };
+
   useEffect(() => {
     if (!mapElement.current) return undefined;
 
     const bounds = L.latLngBounds(locations.map((loc) => loc.position));
 
-    // Enable fractional zoomSnap (0.1) so Leaflet zooms in tightly around the 3 locations
     const map = L.map(mapElement.current, {
       zoomControl: true,
       scrollWheelZoom: false,
@@ -71,9 +77,10 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    // Fit tightly to all 3 locations with minimal padding (zoomed in tightly on display)
+    // Initial view: fits South India with generous top headroom so Chennai is NOT a top pin
     map.fitBounds(bounds, {
-      padding: [35, 35],
+      ...getMapPadding(),
+      maxZoom: 6.9,
       animate: false,
     });
 
@@ -82,13 +89,19 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
       const markerPin = L.divIcon({
         className: "custom-map-pin",
         html: `
-          <div class="map-pin-container">
-            <div class="map-pin-bubble ${isHeadOffice ? "map-pin-bubble--primary" : ""}"></div>
+          <div class="map-pin-wrapper">
+            <div class="map-pin-marker ${isHeadOffice ? "map-pin-marker--headoffice" : "map-pin-marker--branch"}">
+              <svg viewBox="0 0 24 32" width="26" height="34" class="map-pin-svg">
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 9.2 12 20 12 20s12-10.8 12-20c0-6.627-5.373-12-12-12z" />
+                <circle cx="12" cy="11.5" r="4.5" fill="#ffffff" />
+              </svg>
+            </div>
             <div class="map-pin-label">${location.name.replace("Netcom Computers - ", "")}</div>
           </div>
         `,
-        iconSize: [30, 42],
-        iconAnchor: [15, 42],
+        iconSize: [140, 62],
+        iconAnchor: [70, 34],
+        popupAnchor: [0, -36],
       });
 
       const marker = L.marker(location.position, { icon: markerPin }).addTo(map);
@@ -111,7 +124,11 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
     const resizeObserver = new ResizeObserver(() => {
       map.invalidateSize();
       if (!activeLocationRef.current) {
-        map.fitBounds(bounds, { padding: [35, 35], animate: false });
+        map.fitBounds(bounds, {
+          ...getMapPadding(),
+          maxZoom: 6.9,
+          animate: false,
+        });
       }
     });
 
@@ -130,7 +147,7 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
     if (activeLocationId) {
       const target = locations.find((l) => l.id === activeLocationId);
       if (target) {
-        mapRef.current.flyTo(target.position, 14, { duration: 1 });
+        mapRef.current.flyTo(target.position, 13.5, { duration: 1.2 });
         const marker = markersRef.current[target.id];
         if (marker) {
           marker.openPopup();
@@ -138,7 +155,8 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
       }
     } else {
       mapRef.current.flyToBounds(bounds, {
-        padding: [35, 35],
+        ...getMapPadding(),
+        maxZoom: 6.9,
         duration: 1,
       });
       mapRef.current.closePopup();
@@ -186,7 +204,7 @@ const Contact = () => {
     ].join("\n");
 
     setSubmitState("sent");
-    window.location.href = `mailto:support@ncpl.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:support@ncpli.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.setTimeout(() => {
       setFormData({
@@ -324,11 +342,11 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={mailIcon} alt="" />
-                <p>Email us<br/><a href="mailto:support@ncpl.com">support@ncpl.com</a></p>
+                <p>Email us<br/><a href="mailto:support@ncpli.com">support@ncpli.com</a></p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={callIcon} alt="" />
-                <p>Call us<br/><a href="tel:7391730945">+91 73917 30945 , 89255 50380</a></p>
+                <p>Call us<br/><a href="tel:+917397730945">+91 73977 30945</a>, <a href="tel:+918925550380">+91 89255 50380</a></p>
               </div>
             </div>
             <div className="contact-office-card">
@@ -339,11 +357,11 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={mailIcon} alt="" />
-                <p>Mail us<br/><a href="mailto:support@ncpl.com">support@ncpl.com</a></p>
+                <p>Mail us<br/><a href="mailto:support@ncpli.com">support@ncpli.com</a></p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={callIcon} alt="" />
-                <p>Call us<br/><a href="tel:7391730945">+91 73917 30945</a></p>
+                <p>Call us<br/><a href="tel:+917397730945">+91 73977 30945</a></p>
               </div>
             </div>
             <div className="contact-social">
@@ -449,7 +467,7 @@ const Contact = () => {
         </p>
 
         <a
-          href="mailto:info@netcomcomputers.com"
+          href="mailto:support@ncpli.com?subject=Website%20Enquiry"
           className="about-button"
         >
           Email Us <span>→</span>

@@ -157,8 +157,8 @@ function RFID() {
       const body = encodeURIComponent(
         `Name: ${demoFormData.name}\nEmail: ${demoFormData.email}\nPhone: ${demoFormData.phone}\nOrganization: ${demoFormData.institution}\nSolution: RFID Software Solutions\n\nMessage:\n${demoFormData.message}`
       );
-      window.open(`mailto:support@ncpli.com?subject=${subject}&body=${body}`, "_blank");
-    }, 800);
+      window.location.href = `mailto:support@ncpli.com?subject=${subject}&body=${body}`;
+    }, 500);
   };
 
   return (
@@ -311,7 +311,7 @@ function RFID() {
           <div className="prod-cta-content">
             <h2>Need this Solution? Contact us:</h2>
             <p>
-              If you like and want this product or solution, Please feel free to contact us. Also we can add/update new features and design changes in this product. If you want to discuss about this project and our other services, please mail us on <strong>support@ncpli.com</strong> or call <strong>+91 73050 23014</strong>.
+              If you like and want this product or solution, Please feel free to contact us. Also we can add/update new features and design changes in this product. If you want to discuss about this project and our other services, please mail us on <strong>support@ncpli.com</strong> or call <strong>+91 73977 30945</strong>.
             </p>
             <button
               type="button"

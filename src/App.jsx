@@ -35,6 +35,7 @@ import MobileApplication from "./pages/Service/MobileApplicationDevelopment/Mobi
 import WebHostingServices from "./pages/Service/WebHostingServices/WebHostingServices.jsx";
 import CustomSoftwareDevelopment from "./pages/Service/CustomSoftwareDevelopment/softwareDevelopment.jsx";
 import HardwareSupport from "./pages/Service/HardwareSupport/HardwareSupport.jsx";
+import CloudMaintenance from "./pages/Service/CloudMaintenance/CloudMaintenance.jsx";
 
 function App() {
   return (
@@ -74,6 +75,7 @@ function App() {
         <Route path="/service/web-hosting-services" element={<WebHostingServices />} />
         <Route path="/service/custom-software-development" element={<CustomSoftwareDevelopment />} />
         <Route path="/service/hardware-support" element={<HardwareSupport />} />
+        <Route path="/service/cloud-maintenance" element={<CloudMaintenance />} />
 
         {/* Portfolio Routes */}
         <Route path="/portfolio" element={<Navigate to="/portfolio/ar&vr" replace />} />

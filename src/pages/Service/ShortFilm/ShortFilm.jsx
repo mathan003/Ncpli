@@ -3,7 +3,6 @@ import "./ShortFilm.css";
 
 import heroGraphic from "../../../assets/image/Service/Short Film/Short Film.png";
 import introIllustration from "../../../assets/image/Service/Short Film/Short Film2.png";
-import youtubeLogo from "../../../assets/image/Service/Short Film/youtube.png";
 
 function ShortFilm() {
   return (
@@ -121,38 +120,22 @@ function ShortFilm() {
           </article>
         </section>
 
-        {/* Spotlight Video and Project Details */}
+        {/* Project Details */}
         <section className="sf-spotlight-section">
-          <div className="sf-spotlight-grid">
-            <div className="sf-video-container">
-              <h2 className="sf-video-title">BISHOP AZARIA Trailer Video</h2>
-              <div
-                className="sf-video-player-mock"
-                role="button"
-                tabIndex={0}
-                aria-label="Play BISHOP AZARIA Trailer Video"
-              >
-                <img
-                  src={youtubeLogo}
-                  alt="YouTube Play Button"
-                  className="sf-youtube-logo"
-                />
-              </div>
-            </div>
-
+          <article className="sf-card sf-project-card">
+            <h2 className="sf-card-title">Our Projects</h2>
             <div className="sf-project-info">
-              <h3>Our Projects:</h3>
               <p>We Have Done A Project For Indian Missionary Society (IMS)</p>
               <p>
                 <strong className="sf-project-highlight">BISHOP AZARIA</strong>{" "}
-                Is A Indian Tamil Language Film. This Autobiography Of
+                Is An Indian Tamil Language Film. This Autobiography Of
                 Vedanayagam Samuel Azariah (1874–1945) Bishop Of The Anglican
                 Church In India From 1912 Until His Death In 1945. We Have Done
                 This Film In 2D Animation And We Have Distributed Entire Story In
                 Books.
               </p>
             </div>
-          </div>
+          </article>
         </section>
       </main>
     </div>

@@ -233,65 +233,25 @@
   margin: 0;
 }
 
-/* Spotlight & Video Section */
+/* Spotlight & Project Section */
 .sf-spotlight-section {
   margin-top: 36px;
+  margin-bottom: 20px;
 }
 
-.sf-spotlight-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-  align-items: center;
-}
-
-.sf-video-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.sf-video-title {
-  color: #0e3d29;
-  font-size: 1.35rem;
-  font-weight: 800;
-  margin-bottom: 18px;
-}
-
-.sf-video-player-mock {
-  background: #e2e8e4;
-  border-radius: 16px;
-  aspect-ratio: 16 / 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.sf-video-player-mock:hover {
-  transform: scale(1.02);
-  background: #d8e2db;
-}
-
-.sf-youtube-logo {
-  max-width: 140px;
-  max-height: 70px;
-  object-fit: contain;
-}
-
-.sf-project-info h3 {
-  color: #0e3d29;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 14px;
+.sf-project-card {
+  padding: 30px 28px;
 }
 
 .sf-project-info p {
   color: #3b5044;
-  font-size: 0.94rem;
-  line-height: 1.72;
+  font-size: 0.95rem;
+  line-height: 1.75;
   margin-bottom: 14px;
+}
+
+.sf-project-info p:last-child {
+  margin-bottom: 0;
 }
 
 .sf-project-highlight {
@@ -316,10 +276,6 @@
   }
 
   .sf-stages-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sf-spotlight-grid {
     grid-template-columns: 1fr;
   }
 }

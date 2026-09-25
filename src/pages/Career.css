@@ -142,6 +142,28 @@
   transform: translateY(0);
 }
 
+.career-hero-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s ease;
+}
+
+.career-hero-whatsapp-btn:hover {
+  background: #1eb956;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+}
+
 /* ==========================================================================
    MAIN LISTING SECTION
    ========================================================================== */
@@ -234,7 +256,12 @@
 
 .career-card-footer {
   margin-top: auto;
-  padding-top: 6px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .career-details-btn {
@@ -244,7 +271,7 @@
   background: var(--career-green);
   color: #ffffff;
   text-decoration: none;
-  padding: 7px 24px;
+  padding: 7px 18px;
   border-radius: 8px;
   font-size: 0.88rem;
   font-weight: 600;
@@ -258,6 +285,28 @@
   background: var(--career-green-dark);
   transform: translateY(-2px);
   box-shadow: 0 5px 14px rgba(14, 74, 52, 0.3);
+}
+
+.career-card-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
+  transition: all 0.2s ease;
+}
+
+.career-card-whatsapp-btn:hover {
+  background: #1eb956;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(37, 211, 102, 0.35);
 }
 
 /* ==========================================================================
@@ -353,9 +402,10 @@
 .career-detail-actions {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
   margin-top: 40px;
   padding-top: 10px;
+  flex-wrap: wrap;
 }
 
 .career-apply-btn {
@@ -378,6 +428,30 @@
   background: var(--career-green-dark);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(14, 74, 52, 0.35);
+}
+
+.career-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #ffffff;
+  border: none;
+  padding: 11px 26px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: all 0.25s ease;
+}
+
+.career-whatsapp-btn:hover {
+  background: #1eb956;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
 }
 
 .career-back-btn {
@@ -474,6 +548,45 @@
 
 .career-modal-body {
   padding: 24px 28px 28px;
+}
+
+.career-modal-whatsapp-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: #eaf8ef;
+  border: 1px solid #c2ebcf;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.career-modal-whatsapp-callout span {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #174230;
+}
+
+.career-modal-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.career-modal-whatsapp-link:hover {
+  background: #1eb956;
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .career-form {

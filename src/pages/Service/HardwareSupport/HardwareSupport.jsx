@@ -29,7 +29,7 @@ function HardwareSupport() {
         <div className="hs-hero__container">
           <div className="hs-hero__content">
             <span className="hs-badge">OUR SERVICES</span>
-            <h1>Hardware Support &amp; Maintainance</h1>
+            <h1>Hardware Support &amp; Maintenance</h1>
             <p>
               Hardware Support &amp; Maintenance are preventive and remedial
               services that physically repair or optimize hardware, including
@@ -53,7 +53,7 @@ function HardwareSupport() {
         <nav className="hs-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="hs-breadcrumb-separator">›</span>
-          <Link to="/">Services</Link>
+          <Link to="/service/hardware-support">Services</Link>
           <span className="hs-breadcrumb-separator">›</span>
           <span className="hs-breadcrumb-current">
             Hardware Support &amp; Maintenance

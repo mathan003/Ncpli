@@ -465,6 +465,15 @@ function IconClose() {
   );
 }
 
+// Icon: WhatsApp
+function IconWhatsApp() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.67 20.16 9.33 19.8 8.15 19.11L7.87 18.94L4.74 19.76L5.57 16.71L5.38 16.41C4.61 15.18 4.2 13.75 4.2 12.28C4.2 7.74 7.9 4.04 12.44 4.04L12.05 3.67ZM8.73 7.34C8.54 7.34 8.24 7.41 7.99 7.68C7.74 7.95 7.03 8.62 7.03 9.97C7.03 11.32 8.01 12.63 8.15 12.82C8.29 13.01 10.08 15.77 12.82 16.95C13.47 17.23 13.98 17.4 14.38 17.53C15.03 17.74 15.63 17.71 16.1 17.64C16.62 17.56 17.7 16.98 17.93 16.34C18.16 15.7 18.16 15.15 18.09 15.04C18.02 14.93 17.83 14.86 17.55 14.72C17.27 14.58 15.9 13.91 15.64 13.82C15.38 13.73 15.19 13.68 15 13.96C14.81 14.24 14.28 14.86 14.12 15.04C13.96 15.22 13.8 15.25 13.52 15.11C13.24 14.97 12.34 14.67 11.27 13.72C10.44 12.98 9.88 12.07 9.72 11.79C9.56 11.51 9.7 11.36 9.84 11.22C9.97 11.09 10.13 10.88 10.27 10.72C10.41 10.56 10.46 10.44 10.55 10.26C10.64 10.08 10.59 9.92 10.52 9.78C10.45 9.64 9.9 8.29 9.67 7.74C9.45 7.21 9.22 7.28 9.05 7.27C8.89 7.26 8.7 7.26 8.51 7.26L8.73 7.34Z" />
+    </svg>
+  );
+}
+
 function Career() {
   const { roleId } = useParams();
   const navigate = useNavigate();
@@ -531,8 +540,8 @@ function Career() {
       `Cover Note:\n${formData.message}`
     );
 
-    // Open mailto link
-    window.location.href = `mailto:support@ncpli.com?subject=${subject}&body=${body}`;
+    // Open mailto link to hr@ncpli.com
+    window.location.href = `mailto:hr@ncpli.com?subject=${subject}&body=${body}`;
 
     setSubmitSuccess(true);
     setTimeout(() => {
@@ -569,6 +578,16 @@ function Career() {
               >
                 Explore the job
               </button>
+              <a
+                href={`https://wa.me/917397730950?text=${encodeURIComponent(
+                  "Hello Netcom HR, I would like to apply for career opportunities at Netcom Computers."
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+                className="career-hero-whatsapp-btn"
+              >
+                <IconWhatsApp /> Apply via WhatsApp
+              </a>
             </div>
           </div>
         </div>
@@ -648,6 +667,16 @@ function Career() {
             >
               Apply Now
             </button>
+            <a
+              href={`https://wa.me/917397730950?text=${encodeURIComponent(
+                `Hello Netcom HR, I would like to apply for the position of ${selectedJob.title} at Netcom Computers.`
+              )}`}
+              target="_blank"
+              rel="noreferrer"
+              className="career-whatsapp-btn"
+            >
+              <IconWhatsApp /> Apply via WhatsApp
+            </a>
             <Link to="/career" className="career-back-btn">
               ← View All Positions
             </Link>
@@ -695,6 +724,17 @@ function Career() {
                   <Link to={`/career/${job.id}`} className="career-details-btn">
                     Details
                   </Link>
+                  <a
+                    href={`https://wa.me/917397730950?text=${encodeURIComponent(
+                      `Hello Netcom HR, I would like to apply for the position of ${job.title} at Netcom Computers.`
+                    )}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="career-card-whatsapp-btn"
+                    title={`Apply for ${job.title} via WhatsApp`}
+                  >
+                    <IconWhatsApp /> Apply on WhatsApp
+                  </a>
                 </div>
               </article>
             ))}
@@ -733,9 +773,16 @@ function Career() {
                   </div>
                   <h4>Application Drafted!</h4>
                   <p>
-                    Your email client has been opened with your application details.
-                    You can also email your resume directly to{" "}
-                    <strong>support@ncpli.com</strong>.
+                    Your email client has been opened with your application details to <strong>hr@ncpli.com</strong>.
+                    You can also message our HR on WhatsApp at{" "}
+                    <a
+                      href="https://wa.me/917397730950?text=Hello%20Netcom%20HR%2C%20I%20have%20submitted%20my%20application."
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "#25D366", fontWeight: 700 }}
+                    >
+                      +91 73977 30950
+                    </a>.
                   </p>
                   <button
                     type="button"
@@ -746,91 +793,107 @@ function Career() {
                   </button>
                 </div>
               ) : (
-                <form className="career-form" onSubmit={handleFormSubmit}>
-                  <div className="career-form-row">
+                <>
+                  <div className="career-modal-whatsapp-callout">
+                    <span>Prefer to apply quickly on WhatsApp?</span>
+                    <a
+                      href={`https://wa.me/917397730950?text=${encodeURIComponent(
+                        `Hello Netcom HR, I would like to apply for the position of ${activeApplyingJob?.title || "Career Opportunity"} at Netcom Computers.`
+                      )}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="career-modal-whatsapp-link"
+                    >
+                      <IconWhatsApp /> Apply via WhatsApp (73977 30950)
+                    </a>
+                  </div>
+
+                  <form className="career-form" onSubmit={handleFormSubmit}>
+                    <div className="career-form-row">
+                      <div className="career-form-group">
+                        <label htmlFor="applicant-name">Full Name *</label>
+                        <input
+                          id="applicant-name"
+                          type="text"
+                          name="name"
+                          required
+                          placeholder="John Doe"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                      <div className="career-form-group">
+                        <label htmlFor="applicant-email">Email Address *</label>
+                        <input
+                          id="applicant-email"
+                          type="email"
+                          name="email"
+                          required
+                          placeholder="john@example.com"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="career-form-row">
+                      <div className="career-form-group">
+                        <label htmlFor="applicant-phone">Phone Number *</label>
+                        <input
+                          id="applicant-phone"
+                          type="tel"
+                          name="phone"
+                          required
+                          placeholder="+91 98765 43210"
+                          value={formData.phone}
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                      <div className="career-form-group">
+                        <label htmlFor="applicant-experience">Experience *</label>
+                        <input
+                          id="applicant-experience"
+                          type="text"
+                          name="experience"
+                          required
+                          placeholder="e.g. 2 years / Fresher"
+                          value={formData.experience}
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                    </div>
+
                     <div className="career-form-group">
-                      <label htmlFor="applicant-name">Full Name *</label>
+                      <label htmlFor="applicant-portfolio">
+                        Resume or Portfolio Link (Google Drive / LinkedIn / GitHub) *
+                      </label>
                       <input
-                        id="applicant-name"
-                        type="text"
-                        name="name"
+                        id="applicant-portfolio"
+                        type="url"
+                        name="portfolio"
                         required
-                        placeholder="John Doe"
-                        value={formData.name}
+                        placeholder="https://drive.google.com/..."
+                        value={formData.portfolio}
                         onChange={handleInputChange}
                       />
                     </div>
+
                     <div className="career-form-group">
-                      <label htmlFor="applicant-email">Email Address *</label>
-                      <input
-                        id="applicant-email"
-                        type="email"
-                        name="email"
-                        required
-                        placeholder="john@example.com"
-                        value={formData.email}
+                      <label htmlFor="applicant-message">Brief Note / Message</label>
+                      <textarea
+                        id="applicant-message"
+                        name="message"
+                        placeholder="Tell us briefly why you're a great fit for this role..."
+                        value={formData.message}
                         onChange={handleInputChange}
                       />
                     </div>
-                  </div>
 
-                  <div className="career-form-row">
-                    <div className="career-form-group">
-                      <label htmlFor="applicant-phone">Phone Number *</label>
-                      <input
-                        id="applicant-phone"
-                        type="tel"
-                        name="phone"
-                        required
-                        placeholder="+91 98765 43210"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-                    <div className="career-form-group">
-                      <label htmlFor="applicant-experience">Experience *</label>
-                      <input
-                        id="applicant-experience"
-                        type="text"
-                        name="experience"
-                        required
-                        placeholder="e.g. 2 years / Fresher"
-                        value={formData.experience}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="career-form-group">
-                    <label htmlFor="applicant-portfolio">
-                      Resume or Portfolio Link (Google Drive / LinkedIn / GitHub) *
-                    </label>
-                    <input
-                      id="applicant-portfolio"
-                      type="url"
-                      name="portfolio"
-                      required
-                      placeholder="https://drive.google.com/..."
-                      value={formData.portfolio}
-                      onChange={handleInputChange}
-                    />
-                  </div>
-
-                  <div className="career-form-group">
-                    <label htmlFor="applicant-message">Brief Note / Message</label>
-                    <textarea
-                      id="applicant-message"
-                      name="message"
-                      placeholder="Tell us briefly why you're a great fit for this role..."
-                      value={formData.message}
-                      onChange={handleInputChange}
-                    />
-                  </div>
-
-                  <button type="submit" className="career-form-submit">
-                    Submit Application
-                  </button>
-                </form>
+                    <button type="submit" className="career-form-submit">
+                      Submit Application
+                    </button>
+                  </form>
+                </>
               )}
             </div>
           </div>

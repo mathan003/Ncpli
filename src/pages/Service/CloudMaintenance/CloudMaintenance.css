@@ -1,0 +1,526 @@
+/* ========================================================= */
+/* Cloud Maintenance Services Page Styles                    */
+/* Matching exact Figma mockup & Netcom UI Design System     */
+/* ========================================================= */
+
+.cm-page {
+  background-color: #ffffff;
+  color: #1f2a24;
+  font-family: inherit;
+  overflow-x: hidden;
+}
+
+/* ================= HERO SECTION ================= */
+.cm-hero {
+  background-color: #e6f7ef;
+  background-image: url("../../../assets/image/Service/cloud maintenance/banner.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  padding: 80px 24px 90px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #dcece3;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+}
+
+.cm-hero-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.cm-hero-content {
+  max-width: 580px;
+  z-index: 2;
+}
+
+.cm-badge {
+  display: inline-block;
+  background: #0d3c2a;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(13, 60, 42, 0.2);
+}
+
+.cm-hero-title {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  font-weight: 800;
+  color: #0d3c2a;
+  line-height: 1.16;
+  margin-bottom: 20px;
+  letter-spacing: -0.015em;
+  display: flex;
+  flex-direction: column;
+}
+
+.cm-hero-subtitle {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: #0d3c2a;
+  margin-top: 4px;
+}
+
+.cm-hero-desc {
+  color: #2c4236;
+  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
+  line-height: 1.68;
+  margin: 0;
+  max-width: 540px;
+}
+
+.cm-hero-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cm-hero-img {
+  width: 100%;
+  max-width: 520px;
+  max-height: 380px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(13, 60, 42, 0.12));
+  transition: transform 0.35s ease;
+}
+
+.cm-hero-img:hover {
+  transform: scale(1.02);
+}
+
+/* ================= BREADCRUMB CAPSULE ================= */
+.cm-breadcrumb-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -22px;
+  margin-bottom: 24px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+.cm-breadcrumb-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #141715;
+  color: #ffffff;
+  padding: 10px 28px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  white-space: nowrap;
+}
+
+.cm-breadcrumb-capsule a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cm-breadcrumb-capsule a:hover {
+  color: #7ae4ad;
+}
+
+.cm-breadcrumb-separator {
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.cm-breadcrumb-current {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.cm-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 24px 90px;
+}
+
+/* Section Header */
+.cm-section-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 40px;
+}
+
+.cm-section-title {
+  color: #0d3c2a;
+  font-size: clamp(1.75rem, 2.8vw, 2.3rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.cm-section-subtitle {
+  color: #4b5563;
+  font-size: clamp(0.92rem, 1.2vw, 1rem);
+  line-height: 1.62;
+  margin: 0;
+}
+
+/* ================= OVERVIEW 2-COLUMN SECTION ================= */
+.cm-overview-grid {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+.cm-overview-card {
+  background: #ffffff;
+  border: 1px solid #e1eee6;
+  border-radius: 20px;
+  padding: 36px 34px;
+  box-shadow: 0 4px 20px rgba(13, 60, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.cm-overview-card:hover {
+  box-shadow: 0 8px 28px rgba(13, 60, 42, 0.08);
+  border-color: #b3dfcb;
+}
+
+.cm-overview-title {
+  color: #0d3c2a;
+  font-size: clamp(1.25rem, 2vw, 1.45rem);
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.cm-overview-text p {
+  color: #374151;
+  font-size: clamp(0.88rem, 1.1vw, 0.93rem);
+  line-height: 1.76;
+  margin: 0;
+}
+
+.cm-overview-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e1eee6;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(13, 60, 42, 0.04);
+}
+
+.cm-overview-img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  max-height: 380px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cm-overview-img:hover {
+  transform: scale(1.02);
+}
+
+/* ================= 4 FEATURE CARDS GRID ================= */
+.cm-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 44px;
+}
+
+.cm-feature-card {
+  background: #ffffff;
+  border: 1px solid #e1eee6;
+  border-radius: 18px;
+  padding: 30px 22px 28px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(13, 60, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.cm-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(13, 60, 42, 0.1);
+  border-color: #8ed5b3;
+}
+
+.cm-feature-media {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cm-feature-img {
+  max-width: 100%;
+  max-height: 110px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cm-feature-card:hover .cm-feature-img {
+  transform: scale(1.06);
+}
+
+.cm-feature-title {
+  color: #0d3c2a;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.cm-feature-desc {
+  color: #4b5563;
+  font-size: 0.83rem;
+  line-height: 1.58;
+  margin: 0;
+}
+
+/* ================= WHY CHOOSE US CARD ================= */
+.cm-why-choose-us {
+  background: #ffffff;
+  border: 1px solid #e1eee6;
+  border-radius: 22px;
+  padding: 42px 48px;
+  box-shadow: 0 4px 24px rgba(13, 60, 42, 0.04);
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  align-items: center;
+  gap: 40px;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.cm-why-choose-us:hover {
+  box-shadow: 0 8px 32px rgba(13, 60, 42, 0.08);
+  border-color: #b3dfcb;
+}
+
+.cm-why-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cm-why-eyebrow {
+  color: #F8A521;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.cm-why-title {
+  color: #0d3c2a;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.28;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.cm-why-desc {
+  color: #374151;
+  font-size: clamp(0.88rem, 1.1vw, 0.94rem);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.cm-why-desc:last-child {
+  margin-bottom: 0;
+}
+
+.cm-why-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cm-why-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(13, 60, 42, 0.08));
+  transition: transform 0.35s ease;
+}
+
+.cm-why-img:hover {
+  transform: scale(1.03);
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+/* Tablet & Smaller Laptops */
+@media (max-width: 1024px) {
+  .cm-hero {
+    background-position: 85% center;
+    padding: 60px 24px 70px;
+    min-height: 380px;
+  }
+
+  .cm-hero-container {
+    justify-content: flex-start;
+  }
+
+  .cm-hero-content {
+    max-width: 540px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 28px 24px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(13, 60, 42, 0.08);
+  }
+
+  .cm-hero-desc {
+    max-width: 100%;
+  }
+
+  .cm-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cm-overview-img {
+    max-height: 320px;
+  }
+
+  .cm-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .cm-why-choose-us {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 36px 30px;
+    gap: 28px;
+  }
+
+  .cm-why-content {
+    align-items: center;
+  }
+
+  .cm-why-desc {
+    max-width: 620px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 640px) {
+  .cm-hero {
+    background-position: 75% center;
+    padding: 44px 16px 56px;
+    min-height: 340px;
+  }
+
+  .cm-hero-content {
+    max-width: 100%;
+    padding: 20px 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.92);
+  }
+
+  .cm-hero-title {
+    font-size: 1.85rem;
+  }
+
+  .cm-hero-subtitle {
+    font-size: 1.55rem;
+  }
+
+  .cm-breadcrumb-wrapper {
+    margin-top: -18px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+  }
+
+  .cm-breadcrumb-capsule {
+    font-size: 0.76rem;
+    padding: 8px 16px;
+    gap: 8px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .cm-container {
+    padding: 24px 16px 60px;
+  }
+
+  .cm-section-header {
+    margin-bottom: 30px;
+  }
+
+  .cm-section-title {
+    font-size: 1.6rem;
+  }
+
+  .cm-overview-card {
+    padding: 24px 18px;
+  }
+
+  .cm-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cm-feature-card {
+    padding: 24px 18px;
+  }
+
+  .cm-why-choose-us {
+    padding: 28px 20px;
+  }
+
+  .cm-why-title {
+    font-size: 1.35rem;
+  }
+}
+
+/* Very Small Mobile (<400px) */
+@media (max-width: 400px) {
+  .cm-breadcrumb-capsule {
+    font-size: 0.72rem;
+    padding: 7px 12px;
+    gap: 6px;
+  }
+
+  .cm-hero-title {
+    font-size: 1.65rem;
+  }
+
+  .cm-hero-subtitle {
+    font-size: 1.35rem;
+  }
+}
+

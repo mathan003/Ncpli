@@ -318,17 +318,17 @@
 
 .map-container {
   position: relative;
-  height: 500px;
+  height: 540px;
   overflow: hidden;
   border-radius: 18px;
   background: #fff;
-  box-shadow: 0 4px 12px rgba(14, 74, 52, 0.1);
+  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.1);
 }
 
 .contact-map {
   width: 100%;
   height: 100%;
-  min-height: 500px;
+  min-height: 540px;
   border: 0;
   overflow: hidden;
   border-radius: 18px;
@@ -337,7 +337,7 @@
 .leaflet-container {
   width: 100%;
   height: 100%;
-  min-height: 500px;
+  min-height: 540px;
   background: #edf5ef;
   font-family: inherit;
 }
@@ -697,55 +697,58 @@
 
 /* Custom Map Pin Marker */
 .custom-map-pin {
-  background: transparent;
-  border: none;
+  background: transparent !important;
+  border: none !important;
 }
 
-.map-pin-container {
-  position: relative;
+.map-pin-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate(-50%, -100%);
+  width: 140px;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
 }
 
-.map-pin-bubble {
-  width: 26px;
-  height: 26px;
-  background: #0e4a34;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  border: 2px solid #ffffff;
-  position: relative;
+.map-pin-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.35));
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.map-pin-bubble--primary {
-  background: #e53e3e;
+.map-pin-marker svg {
+  display: block;
 }
 
-.map-pin-bubble::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 12px;
-  height: 12px;
-  background: #ffffff;
-  border-radius: 50%;
+.map-pin-marker--headoffice svg path {
+  fill: #e53e3e;
+}
+
+.map-pin-marker--branch svg path {
+  fill: #0e4a34;
+}
+
+.map-pin-wrapper:hover .map-pin-marker {
+  transform: scale(1.15) translateY(-2px);
 }
 
 .map-pin-label {
-  margin-top: 4px;
+  margin-top: 3px;
   background: #ffffff;
-  color: #1a211d;
+  color: #101813;
   font-size: 11px;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 3px 9px;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
   white-space: nowrap;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #d1d5db;
+  pointer-events: none;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
 }
 
 .location-card--active {

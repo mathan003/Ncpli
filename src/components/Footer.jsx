@@ -97,8 +97,8 @@ function Footer() {
             <div className="site-footer__contact-item">
               <PhoneIcon />
               <div className="site-footer__phone-numbers">
-                <a href="tel:+917305023014">+91 7305023014</a>,{" "}
-                <a href="tel:+919791509522">+91 9791509522</a>
+                <a href="tel:+917397730945">+91 73977 30945</a>,{" "}
+                <a href="tel:+918925550380">+91 89255 50380</a>
               </div>
             </div>
           </address>
@@ -122,7 +122,7 @@ function Footer() {
             </div>
             <div className="site-footer__contact-item">
               <PhoneIcon />
-              <a href="tel:04442125369">044 - 421 253 69</a>
+              <a href="tel:+917397730945">+91 73977 30945</a>
             </div>
           </address>
         </div>

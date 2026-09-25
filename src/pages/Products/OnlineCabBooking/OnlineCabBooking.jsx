@@ -35,8 +35,8 @@ function OnlineCabBooking() {
       const body = encodeURIComponent(
         `Name: ${demoFormData.name}\nEmail: ${demoFormData.email}\nPhone: ${demoFormData.phone}\nCompany: ${demoFormData.institution}\nProduct: Online Cab Booking Application\n\nMessage:\n${demoFormData.message}`
       );
-      window.open(`mailto:support@ncpli.com?subject=${subject}&body=${body}`, "_blank");
-    }, 800);
+      window.location.href = `mailto:support@ncpli.com?subject=${subject}&body=${body}`;
+    }, 500);
   };
 
   return (
@@ -194,7 +194,7 @@ function OnlineCabBooking() {
           <div className="prod-cta-content">
             <h2>Need this Product? Contact us:</h2>
             <p>
-              If you like and want this product, Please feel free to contact us. Also we can add/update new features and design changes in this product. If you want To discuss about this product and our other services, please mail us on <strong>support@ncpli.com</strong> or call <strong>+91 73050 23014</strong>.
+              If you like and want this product, Please feel free to contact us. Also we can add/update new features and design changes in this product. If you want To discuss about this product and our other services, please mail us on <strong>support@ncpli.com</strong> or call <strong>+91 73977 30945</strong>.
             </p>
             <button
               type="button"

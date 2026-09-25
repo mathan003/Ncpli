@@ -48,6 +48,7 @@ const NAV_ITEMS = [
       { label: "Web Hosting Services", to: "/service/web-hosting-services" },
       { label: "Custom Software Development", to: "/service/custom-software-development" },
       { label: "Hardware Support & Maintenance", to: "/service/hardware-support" },
+      { label: "Cloud Maintenance", to: "/service/cloud-maintenance" },
     ],
   },
   {
