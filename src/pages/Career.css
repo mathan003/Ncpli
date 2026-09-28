@@ -30,16 +30,17 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: #142a22;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(180deg, #134B32, #4E5D4E);
 }
 
 .career-hero-image {
   width: 100%;
   height: clamp(220px, 28vw, 420px);
   object-fit: cover;
+  opacity: 65%;
   object-position: center;
   display: block;
 }

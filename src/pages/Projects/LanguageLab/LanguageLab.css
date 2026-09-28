@@ -120,7 +120,7 @@
 .project-intro-text p {
   color: #3b4640;
   font-size: 0.96rem;
-  line-height: 1.75;
+  line-height: 24px;
   margin-bottom: 16px;
 }
 
@@ -140,7 +140,8 @@
   width: 100%;
   max-width: 460px;
   height: auto;
-  border-radius: 18px;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 120px;
   box-shadow: 0 10px 28px rgba(14, 74, 52, 0.08);
   object-fit: contain;
 }

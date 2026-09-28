@@ -12,7 +12,6 @@ import tailorImg6 from "../../../assets/image/product/Smart Tailor Shop/image6.p
 import tailorImg7 from "../../../assets/image/product/Smart Tailor Shop/image7.png";
 
 function SmartTailorShop() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [demoSuccess, setDemoSuccess] = useState(false);
   const [demoFormData, setDemoFormData] = useState({
@@ -149,19 +148,6 @@ function SmartTailorShop() {
 
           {/* Right Column: Visual Previews Stack matching Mockup */}
           <div className="tailor-visuals-stack">
-            {/* 1. YouTube Video Preview Card */}
-            <div className="tailor-video-card" onClick={() => setVideoModalOpen(true)} title="Click to Watch Smart Tailor Demo">
-              <div className="tailor-video-box">
-                <div className="prod-yt-badge">
-                  <span className="prod-yt-icon"><span className="prod-yt-triangle"></span></span>
-                  <span>YouTube</span>
-                </div>
-              </div>
-              <div className="tailor-video-info">
-                <span className="tailor-video-title">Smart Tailor Application</span>
-                <span className="tailor-video-desc">Watch how to manage tailoring orders, customer measurements and deliveries.</span>
-              </div>
-            </div>
 
             {/* 2. Desktop Screenshot 1 (Dashboard Overview) */}
             <div className="tailor-desktop-screen0">
@@ -312,26 +298,6 @@ function SmartTailorShop() {
           </div>
         </section>
       </main>
-
-      {/* Video Modal */}
-      {videoModalOpen && (
-        <div className="prod-modal-backdrop" onClick={() => setVideoModalOpen(false)}>
-          <div className="prod-modal-card" style={{ maxWidth: "680px" }} onClick={(e) => e.stopPropagation()}>
-            <div className="prod-modal-header">
-              <h3>Smart Tailor Application - Video Demonstration</h3>
-              <button type="button" className="prod-modal-close" onClick={() => setVideoModalOpen(false)}>✕</button>
-            </div>
-            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", background: "#000" }}>
-              <iframe
-                title="Smart Tailor Demo"
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Demo Modal */}
       {isDemoModalOpen && (

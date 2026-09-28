@@ -1,12 +1,18 @@
 .about-page {
   --green: #0e4a34;
   --muted: #5a675f;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
   overflow: hidden;
   color: #111914;
   background: #fff;
 }
 
 .about-hero {
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
   min-height: 240px;
   background:
     linear-gradient(90deg, rgb(14 74 52 / 72%), rgb(14 74 52 / 32%)),
@@ -14,7 +20,9 @@
 }
 
 .about-hero-content {
-  width: min(1440px, 100%);
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
   min-height: 240px;
   margin: auto;
   padding: 50px 24px;
@@ -51,8 +59,18 @@
   transform: translateY(-2px);
 }
 
+.about-page .cs-breadcrumb-wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 24px 0;
+}
+
 .about-content {
-  width: min(1440px, 100%);
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
   margin: auto;
   padding: 40px 24px 70px;
 }
@@ -66,22 +84,34 @@
 
 .about-welcome {
   display: grid;
-  grid-template-columns: minmax(240px, 0.95fr) minmax(0, 1.35fr);
+  grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.35fr);
   gap: clamp(32px, 5vw, 64px);
-  align-items: center;
+  align-items: start;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
 }
 
 .about-photo-stack {
   position: relative;
-  min-height: clamp(280px, 32vw, 420px);
   width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  min-height: clamp(340px, 32vw, 420px);
+  max-height: 460px;
+  align-self: start;
 }
 
 .about-photo1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: min(85%, 340px);
+  width: 85%;
+  min-width: 250px;
+  max-width: 360px;
+  height: 240px;
+  min-height: 200px;
+  max-height: 260px;
   aspect-ratio: 353 / 247;
   object-fit: cover;
   border-radius: 30px 60px 180px 30px;
@@ -92,7 +122,12 @@
   position: absolute;
   left: 28%;
   bottom: -20px;
-  width: min(85%, 340px);
+  width: 85%;
+  min-width: 250px;
+  max-width: 360px;
+  height: 240px;
+  min-height: 200px;
+  max-height: 260px;
   aspect-ratio: 353 / 247;
   object-fit: cover;
   border-radius: 18px;
@@ -105,7 +140,11 @@
   right: 10px;
   display: grid;
   width: 249px;
+  min-width: 200px;
+  max-width: 250px;
   height: 150px;
+  min-height: 120px;
+  max-height: 160px;
   place-content: center;
   border-radius: 30px 30px 160px 30px;
   background: var(--green);
@@ -117,7 +156,6 @@
 
 .about-stat strong {
   font-size: 48px;
-  
   line-height: 1.1;
 }
 
@@ -127,6 +165,12 @@
   text-transform: uppercase;
 }
 
+.about-copy {
+  width: 100%;
+  min-width: 300px;
+  max-width: 100%;
+}
+
 .about-copy,
 .about-story p,
 .about-purpose > p {
@@ -134,13 +178,17 @@
   font-size: 1rem;
   line-height: 1.7;
 }
-.about-copy .about-intro{
-  padding-top: 25px;
+
+.about-copy .about-intro {
+  padding-top: 0;
+}
+
+.about-copy .about-intro p:first-child {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .about-copy p {
-  /* margin: 0 0 16px; */
-  /* margin-top: 20px; */
   padding-top: 10px;
   text-align: justify;
 }
@@ -155,6 +203,9 @@
   gap: 40px;
   align-items: center;
   margin: 50px 0 35px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
 }
 
 .about-story p {
@@ -163,6 +214,9 @@
 
 .about-story img {
   width: 100%;
+  min-width: 260px;
+  max-width: 450px;
+  min-height: 200px;
   max-height: 280px;
   object-fit: cover;
   border-radius: 17px;
@@ -172,6 +226,9 @@
 .about-purpose {
   margin-top: 40px;
   text-align: center;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
 }
 
 .about-purpose .about-title {
@@ -179,6 +236,8 @@
 }
 
 .about-purpose > p {
+  width: 100%;
+  min-width: 280px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -188,9 +247,15 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 45px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
 }
 
 .purpose-card {
+  width: 100%;
+  min-width: 260px;
+  max-width: 100%;
   min-height: 190px;
   padding: 32px 36px;
   border-radius: 24px;
@@ -221,101 +286,401 @@
   line-height: 1.6;
 }
 
-@media (max-width: 750px) {
+/* ==========================================================================
+   Responsive Breakpoints with explicit min-width & max-width
+   ========================================================================== */
+
+/* Medium Laptop / Small Desktop (min-width: 993px) and (max-width: 1200px) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .about-photo-stack {
+    min-width: 280px;
+    max-width: 440px;
+    min-height: 350px;
+    max-height: 400px;
+  }
+
+  .about-photo1,
+  .about-photo2 {
+    min-width: 220px;
+    max-width: 320px;
+    min-height: 180px;
+    max-height: 230px;
+  }
+
+  .about-stat {
+    min-width: 180px;
+    max-width: 220px;
+    min-height: 110px;
+    max-height: 140px;
+  }
+}
+
+/* Tablet Screens (min-width: 601px) and (max-width: 992px)
+   Requirement: .about-photo-stack goes to TOP (order: 1)
+   Layout: [Photo 1] - [20+ Years Stat Badge] - [Photo 2] */
+@media screen and (min-width: 601px) and (max-width: 992px) {
   .about-hero {
-    min-height: 260px;
+    min-height: 240px;
+    max-height: 320px;
   }
 
   .about-hero-content {
-    min-height: 280px;
+    min-width: 320px;
+    max-width: 100%;
+    min-height: 240px;
     padding: 40px 20px;
   }
 
   .about-content {
-    padding: 28px 20px 55px;
+    min-width: 320px;
+    max-width: 100%;
+    padding: 32px 20px 55px;
   }
 
   .about-title {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
-  .about-welcome,
-  .about-story {
+  .about-welcome {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 28px;
+    min-width: 320px;
+    max-width: 100%;
+    align-items: start;
   }
 
+  /* PHOTO STACK GOES TO TOP IN TABLET VIEW */
   .about-photo-stack {
-    width: min(100%, 390px);
-    max-width: 390px;
-    min-height: 250px;
-    margin: auto;
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(12px, 2.5vw, 24px);
+    width: 100%;
+    min-width: 320px;
+    max-width: 820px;
+    min-height: 150px;
+    max-height: 200px;
+    margin: 0 auto 16px;
+    position: static;
+    align-self: center;
   }
-.about-photo2 {
-    top: 50%;
-    bottom: -10px;
+
+  .about-photo1,
+  .about-photo2 {
+    position: static;
+    flex: 1 1 0;
+    width: 35%;
+    min-width: 140px;
+    max-width: 260px;
+    height: 160px;
+    min-height: 120px;
+    max-height: 180px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(14, 74, 52, 0.12);
   }
+
+  .about-stat {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 26%;
+    min-width: 110px;
+    max-width: 140px;
+    height: 110px;
+    min-height: 90px;
+    max-height: 120px;
+    border-radius: 20px;
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(14, 74, 52, 0.25);
+  }
+
+  .about-stat strong {
+    font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+    line-height: 1.05;
+  }
+
+  .about-stat span {
+    font-size: clamp(0.75rem, 1.4vw, 0.95rem);
+    letter-spacing: 0.05em;
+  }
+
+  .about-copy {
+    order: 2;
+    width: 100%;
+    min-width: 320px;
+    max-width: 100%;
+  }
+
   .about-copy,
   .about-story p,
   .about-purpose > p {
-    font-size: 0.8rem;
-    top: 10px;
+    font-size: 0.95rem;
   }
-.about-copy .about-intro{
-  padding-top: 25px;
-}
+
+  .about-copy .about-intro {
+    padding-top: 10px;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    min-width: 320px;
+    max-width: 100%;
+  }
+
   .about-story img {
-    max-width: 300px;
-    margin: auto;
+    width: 100%;
+    min-width: 280px;
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   .purpose-grid {
     grid-template-columns: 1fr;
     gap: 25px;
     margin-top: 35px;
+    min-width: 320px;
+    max-width: 100%;
+  }
+
+  .purpose-card {
+    min-width: 280px;
+    max-width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile Screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
   .about-hero {
-    min-height: 230px;
+    min-height: 200px;
+    max-height: 260px;
   }
 
   .about-hero-content {
-    min-height: 230px;
-    padding: 30px 18px;
+    min-width: 280px;
+    max-width: 100%;
+    min-height: 180px;
+    padding: 36px 18px;
   }
 
   .about-hero-content h1 {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 6.5vw, 2.2rem);
   }
 
   .about-hero-content a {
-    margin-top: 32px;
+    margin-top: 18px;
+    padding: 9px 20px;
+    font-size: 0.88rem;
   }
 
-  .about-photo1,
-  .about-photo2 {
-    width: 75%;
+  .about-page .cs-breadcrumb-wrapper {
+    min-width: 280px;
+    padding: 12px 16px 0;
   }
-  .about-photo2 {
-    left: 30%;
-    bottom: -10px;
+
+  .about-content {
+    min-width: 280px;
+    max-width: 100%;
+    padding: 24px 16px 50px;
   }
+
+  .about-title {
+    margin-bottom: 24px;
+    font-size: 1.45rem;
+  }
+
+  .about-welcome {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    min-width: 280px;
+    max-width: 100%;
+  }
+
+  /* Compact overlapping stack on mobile */
   .about-photo-stack {
+    order: 1;
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 260px;
+    max-width: 320px;
     min-height: 230px;
+    max-height: 250px;
+    margin: 0 auto 16px;
+  }
+
+  .about-photo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68%;
+    min-width: 180px;
+    max-width: 220px;
+    height: 145px;
+    min-height: 130px;
+    max-height: 155px;
+    aspect-ratio: auto;
+    border-radius: 20px 40px 100px 20px;
+  }
+
+  .about-photo2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    left: auto;
+    width: 68%;
+    min-width: 180px;
+    max-width: 220px;
+    height: 145px;
+    min-height: 130px;
+    max-height: 155px;
+    aspect-ratio: auto;
+    border-radius: 16px;
   }
 
   .about-stat {
-    width: 120px;
-    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    min-width: 90px;
+    max-width: 110px;
+    height: 68px;
+    min-height: 60px;
+    max-height: 75px;
+    border-radius: 14px;
+    z-index: 3;
+    box-shadow: 0 4px 14px rgba(14, 74, 52, 0.35);
   }
 
   .about-stat strong {
     font-size: 1.4rem;
   }
 
+  .about-stat span {
+    font-size: 0.72rem;
+  }
+
+  .about-copy {
+    order: 2;
+    min-width: 280px;
+    max-width: 100%;
+  }
+
+  .about-copy,
+  .about-story p,
+  .about-purpose > p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .about-copy p {
+    text-align: left;
+    padding-top: 8px;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+    margin: 30px 0 24px;
+    gap: 20px;
+    min-width: 280px;
+    max-width: 100%;
+  }
+
+  .about-story p {
+    text-align: left;
+  }
+
+  .about-story img {
+    width: 100%;
+    min-width: 240px;
+    max-width: 100%;
+    max-height: 210px;
+  }
+
+  .purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 24px;
+    min-width: 280px;
+    max-width: 100%;
+  }
+
   .purpose-card {
-    padding: 22px 20px;
+    padding: 22px 18px;
+    border-radius: 18px;
+    min-width: 260px;
+    max-width: 100%;
+  }
+
+  .purpose-card img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 10px;
+  }
+
+  .purpose-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .purpose-card p {
+    font-size: 0.88rem;
+  }
+}
+
+/* Extra Small Phones (max-width: 380px) */
+@media screen and (max-width: 380px) {
+  .about-hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-photo-stack {
+    max-width: 280px;
+    min-width: 240px;
+    min-height: 205px;
+    max-height: 230px;
+  }
+
+  .about-photo1,
+  .about-photo2 {
+    height: 130px;
+    min-width: 160px;
+    max-width: 195px;
+    min-height: 110px;
+    max-height: 140px;
+  }
+
+  .about-stat {
+    width: 88px;
+    min-width: 80px;
+    max-width: 95px;
+    height: 60px;
+    min-height: 55px;
+    max-height: 65px;
+  }
+
+  .about-stat strong {
+    font-size: 1.25rem;
+  }
+
+  .about-stat span {
+    font-size: 0.65rem;
+  }
+
+  .purpose-card {
+    min-width: 240px;
+    max-width: 100%;
   }
 }

@@ -9,7 +9,6 @@ import smartClassPhoto2 from "../../../assets/image/product/Smart Class Room/Met
 import smartClassPhoto3 from "../../../assets/image/product/Smart Class Room/passion of learing2.png";
 
 function SmartClassRoom() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [demoSuccess, setDemoSuccess] = useState(false);
   const [demoFormData, setDemoFormData] = useState({
@@ -56,41 +55,24 @@ function SmartClassRoom() {
 
       <main className="prod-container">
         {/* Top Intro Section */}
-        <div className="prod-intro-split">
-          <div className="prod-intro-text">
-            <p>
-              Smart Classroom is a specially designed computer enabled classroom and has 
-interactive learning software which provides teachers with essential tools to manage 
-classrooms, assess students and encourage collaboration.
-            </p>
-            <p>
-              Smart Classroom is designed to integrate with the existing classroom technology and 
-also with school's wireless or wired network. The need to improve the quality of 
-education to global standards is contributing to the increase in adoption of smart 
-classrooms in India.
-            </p>
-            <p>
-              Smart Classroom helps in making classroom sessions more interactive by incorporating 
-live videos, audio, and pictures. This helps in improving students' engagement with 
-learning. With advances in content creation technology and availability of online 
-content,the proportion of digital content in course curriculum has increased.
-            </p>
-          </div>
-
-          <div className="prod-intro-media">
-            <div style={{ width: "100%", maxWidth: "460px" }}>
-              <h4 style={{ color: "#0e4a34", fontSize: "1.15rem", fontWeight: 700, margin: "0 0 12px", textAlign: "center" }}>
-                Smart Classroom Teaching Video
-              </h4>
-              <div className="prod-video-placeholder" onClick={() => setVideoModalOpen(true)} title="Click to Watch Teaching Video">
-                <div className="prod-yt-badge">
-                  <span className="prod-yt-icon"><span className="prod-yt-triangle"></span></span>
-                  <span>YouTube</span>
-                </div>
-                <span className="prod-video-caption">Watch Smart Classroom in Action</span>
-              </div>
-            </div>
-          </div>
+        <div className="prod-intro-text" style={{ marginBottom: "40px" }}>
+          <p>
+            Smart Classroom is a specially designed computer enabled classroom and has 
+            interactive learning software which provides teachers with essential tools to manage 
+            classrooms, assess students and encourage collaboration.
+          </p>
+          <p>
+            Smart Classroom is designed to integrate with the existing classroom technology and 
+            also with school's wireless or wired network. The need to improve the quality of 
+            education to global standards is contributing to the increase in adoption of smart 
+            classrooms in India.
+          </p>
+          <p>
+            Smart Classroom helps in making classroom sessions more interactive by incorporating 
+            live videos, audio, and pictures. This helps in improving students' engagement with 
+            learning. With advances in content creation technology and availability of online 
+            content,the proportion of digital content in course curriculum has increased.
+          </p>
         </div>
 
         {/* Methodology Section */}
@@ -274,26 +256,6 @@ stationed a teacher equipped with computer and audio visual aids."
           </div>
         </section>
       </main>
-
-      {/* Video Modal */}
-      {videoModalOpen && (
-        <div className="prod-modal-backdrop" onClick={() => setVideoModalOpen(false)}>
-          <div className="prod-modal-card" style={{ maxWidth: "680px" }} onClick={(e) => e.stopPropagation()}>
-            <div className="prod-modal-header">
-              <h3>Smart Class Room - Video Demonstration</h3>
-              <button type="button" className="prod-modal-close" onClick={() => setVideoModalOpen(false)}>✕</button>
-            </div>
-            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", background: "#000" }}>
-              <iframe
-                title="Smart Class Room Demo"
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Demo Modal */}
       {isDemoModalOpen && (

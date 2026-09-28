@@ -37,25 +37,25 @@ function LanguageLab() {
             </h3>
             <p>
               Language Lab is a software program designed to help the teachers to improve 
-the learning environment in a Computer-based classroom. It is to increase the 
-language skill to the students in English. In this we can teach the good 
-Pronunciation, Letter writing, Grammar, Conversation, Voice and words 
-reorganization tools, and Parts of Speech.
+              the learning environment in a Computer-based classroom. It is to increase the 
+              language skill to the students in English. In this we can teach the good 
+              Pronunciation, Letter writing, Grammar, Conversation, Voice and words 
+              reorganization tools, and Parts of Speech.
             </p>
             <p>
               Without language we cannot communicate with the world. English is the 
-common language that is spoken all over the world. So it is necessary to speak 
-English fluently with proper pronunciation without any grammatical mistakes. 
-we are implementing ―DIGITAL MULTIMEDIA LANGUAGE LAB in colleges and 
-schools. We split whole subject coverage into three different levels. Level 1, 
-Level 2 & Level 3.Language Hall - consists of Hardware -based classroom control 
-system. We have established this language lab projects in 12 colleges based on 
-the UGC norms
+              common language that is spoken all over the world. So it is necessary to speak 
+              English fluently with proper pronunciation without any grammatical mistakes. 
+              we are implementing ―DIGITAL MULTIMEDIA LANGUAGE LAB in colleges and 
+              schools. We split whole subject coverage into three different levels. Level 1, 
+              Level 2 & Level 3.Language Hall - consists of Hardware -based classroom control 
+              system. We have established this language lab projects in 12 colleges based on 
+              the UGC norms
             </p>
             <p>
               In this software Call Soft installed on each computer in a classroom, a teacher 
-has the ability to, Reduce Student Distractions, Demonstrate Skills, Monitor 
-Students, Access Students Understanding, and Help Individual Students.
+              has the ability to, Reduce Student Distractions, Demonstrate Skills, Monitor 
+              Students, Access Students Understanding, and Help Individual Students.
             </p>
           </div>
 
@@ -205,12 +205,11 @@ institutions for our language lab program.
           <div className="lang-system-card">
             <img src={systemScreen2} alt="Interactive Student Practice & Phonetic Drill Interface" />
             <div className="lang-system-caption"><strong>Skill Generation</strong>Programs are designed to take into account your existing 
-skills and knowledge as well as workplace and other training you may 
-have received.Skills Generation will help you whether you are looking for 
-new career opportunities, advancement within your current role or 
-improving and honing existing skills and knowledge.</div>
-            <div className="lang-system-caption"><strong>Art Of Conversation</strong>Art of conversation includes the ability to listen to others as well as the 
-ability to speak effectively.</div>
+                  skills and knowledge as well as workplace and other training you may 
+                  have received.Skills Generation will help you whether you are looking for 
+                  new career opportunities, advancement within your current role or 
+                  improving and honing existing skills and knowledge.</div>
+            <div className="lang-system-caption"><strong>Art Of Conversation</strong>Art of conversation includes the ability to listen to others as well as the ability to speak effectively.</div>
           </div>
           
         </div>

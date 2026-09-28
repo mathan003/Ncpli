@@ -15,7 +15,6 @@ import cabScreenFrame from "../../../assets/image/product/Online Cab Booking/cab
 import cabLaptopSystem from "../../../assets/image/product/Online Cab Booking/image2.png";
 
 function OnlineCabBooking() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [demoSuccess, setDemoSuccess] = useState(false);
   const [demoFormData, setDemoFormData] = useState({
@@ -154,24 +153,6 @@ function OnlineCabBooking() {
 
             {/* Right Media Stack */}
             <div className="cab-media-stack">
-              <div
-                className="cab-video-card"
-                onClick={() => setVideoModalOpen(true)}
-                title="Click to Watch Cab Booking App Video"
-              >
-                <div className="cab-video-box">
-                  <div className="prod-yt-badge">
-                    <span className="prod-yt-icon">
-                      <span className="prod-yt-triangle"></span>
-                    </span>
-                    <span>YouTube</span>
-                  </div>
-                </div>
-                <div className="cab-video-info">
-                  <span className="cab-video-title">Watch Online Cab Booking App</span>
-                  <span className="cab-video-desc">See the live booking workflow & vehicle selection</span>
-                </div>
-              </div>
 
               <div className="cab-screen-preview">
                 <img src={cabScreenHome} alt="Cab Booking Web Home View" />
@@ -209,33 +190,6 @@ function OnlineCabBooking() {
           </div>
         </section>
       </main>
-
-      {/* Video Modal */}
-      {videoModalOpen && (
-        <div className="prod-modal-backdrop" onClick={() => setVideoModalOpen(false)}>
-          <div className="prod-modal-card" style={{ maxWidth: "680px" }} onClick={(e) => e.stopPropagation()}>
-            <div className="prod-modal-header">
-              <h3>Online Cab Booking - Video Demonstration</h3>
-              <button
-                type="button"
-                className="prod-modal-close"
-                onClick={() => setVideoModalOpen(false)}
-                aria-label="Close modal"
-              >
-                ✕
-              </button>
-            </div>
-            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "12px", background: "#000" }}>
-              <iframe
-                title="Online Cab Booking Demo"
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Demo Modal */}
       {isDemoModalOpen && (
