@@ -15,7 +15,7 @@ const About = () => (
     >
       <div className="about-hero-content">
         <h1>About Us</h1>
-        <Link to="/contact">Get in Touch</Link>
+        <Link to="/contact">Know Who We Are</Link>
       </div>
     </section>
 

@@ -104,10 +104,7 @@ function MeetNetcom() {
               objectives by providing innovative, best-in-class consulting, IT solutions, and services. 
               We function as an IT partner to business, offering a consulting – plan – implementation 
               approach with an integrated portfolio of technology IT solutions that encompass the 
-              entire Enterprise value chain.Netcom Computers Pvt Ltd , an information technology based company since 2004, 
-              in Education and Training, is offering wide range of that include creating educational 
-              and training content of global relevance,designing and executing large learning initiatives 
-              and setting up the requisite infrastructure.
+              entire Enterprise value chain.
             </p>
           </div>
 
