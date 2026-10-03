@@ -561,11 +561,13 @@
 
   .contact-hero {
     min-height: 330px;
+    background: linear-gradient(90deg, #0E402A 0%, #24A66D 100%);
   }
 
   .contact-hero-content {
     align-items: flex-start;
     min-height: 330px;
+    
     padding: 46px 20px;
   }
 
@@ -575,13 +577,18 @@
     z-index: 2;
   }
 
+  .contact-hero-text br,
+  .contact-hero-br {
+    display: none;
+  }
+
   .contact-hero-image {
-    top: auto;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 58%;
+    height: 100%;
     opacity: 0.42;
     object-position: center;
     clip-path: none;

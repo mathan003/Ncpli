@@ -899,14 +899,14 @@
   }
 
   .career-hero {
-    min-height: 250px;
+    min-height: 0px;
   }
 }
 
 @media (max-width: 768px) {
   .career-hero {
-    background-position: 70% center;
-    min-height: 240px;
+    background-position: 100% center;
+    min-height: 0px;
   }
 
   .career-hero-container {

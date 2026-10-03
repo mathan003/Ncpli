@@ -20,14 +20,14 @@ const locations = [
   {
     id: 1,
     name: "Netcom Computers - Head Office",
-    address: "No. 71, First Floor, South Bypass Road, Opp. BSNL Office, Tirunelveli - 627 005",
+    address: "No. 1/1, Nathan Street, Adaikalapuram, Trivandrum Road, Palayamkottai, Tirunelveli-627002, Tamil Nadu , India.",
     position: [8.725167, 77.730111],
     mapsUrl: "https://maps.app.goo.gl/8jndRX12MuaUeuxRA",
   },
   {
     id: 2,
     name: "Netcom Computers - Chennai Branch",
-    address: "No. 89, Third Floor, Chamiers Road, Nandanam, Chennai - 600 018",
+    address: "First Floor, Sudarsan Building, No. 82, Chamiers Rd, Alwarpet, Chennai, Tamil Nadu 600018",
     position: [13.028889, 80.248917],
     mapsUrl: "https://maps.app.goo.gl/hXx8qFuXUAX2db9GA",
   },
@@ -229,7 +229,7 @@ const Contact = () => {
           <div className="contact-hero-text">
             <p className="contact-small-title">LET'S CONNECT</p>
             <h1>Contact Us</h1>
-            <p>We are here to help answer any question you might have.<br />We look forward to hearing from you!</p>
+            <p>We are here to help answer any question you might have. <br className="contact-hero-br" />We look forward to hearing from you!</p>
           </div>
         </div>
       </section>
@@ -357,7 +357,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={mailIcon} alt="" />
-                <p>Mail us<br/><a href="mailto:support@ncpli.com">support@ncpli.com</a></p>
+                <p>Email us<br/><a href="mailto:support@ncpli.com">support@ncpli.com</a></p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={callIcon} alt="" />
