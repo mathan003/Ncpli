@@ -14,7 +14,7 @@ const PORTFOLIO_CATEGORIES = [
 ];
 
 export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
-  const normCurrent = (currentSlug || "").toLowerCase().replace(/&/g, "-");
+  const normCurrent = (currentSlug || "ar&vr").toLowerCase().replace(/&/g, "-");
   const categoriesRef = useRef(null);
   const [canSlideLeft, setCanSlideLeft] = useState(false);
   const [canSlideRight, setCanSlideRight] = useState(false);
@@ -31,29 +31,35 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
   useEffect(() => {
     checkScroll();
     const el = categoriesRef.current;
-    if (el) {
-      el.addEventListener("scroll", checkScroll, { passive: true });
-      window.addEventListener("resize", checkScroll);
-      const timer = setTimeout(checkScroll, 150);
-      return () => {
-        el.removeEventListener("scroll", checkScroll);
-        window.removeEventListener("resize", checkScroll);
-        clearTimeout(timer);
-      };
-    }
+    if (!el) return;
+
+    el.addEventListener("scroll", checkScroll, { passive: true });
+    window.addEventListener("resize", checkScroll);
+
+    const timer1 = setTimeout(checkScroll, 100);
+    const timer2 = setTimeout(checkScroll, 300);
+
+    return () => {
+      el.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("resize", checkScroll);
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
   }, [checkScroll]);
 
-  // Center active category into view
+  // Smoothly center the active category into view
   useEffect(() => {
     const el = categoriesRef.current;
     if (el) {
       const activeEl = el.querySelector(".category-active");
       if (activeEl) {
-        activeEl.scrollIntoView({
-          behavior: "smooth",
-          inline: "center",
-          block: "nearest",
-        });
+        const containerRect = el.getBoundingClientRect();
+        const activeRect = activeEl.getBoundingClientRect();
+        const currentScroll = el.scrollLeft;
+        const offset = activeRect.left - containerRect.left;
+        const targetScroll =
+          currentScroll + offset - containerRect.width / 2 + activeRect.width / 2;
+        el.scrollTo({ left: Math.max(0, targetScroll), behavior: "smooth" });
       }
       checkScroll();
     }
@@ -62,7 +68,7 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
   const slide = (direction) => {
     const el = categoriesRef.current;
     if (el) {
-      const scrollAmount = direction === "left" ? -180 : 180;
+      const scrollAmount = direction === "left" ? -200 : 200;
       el.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
@@ -115,7 +121,19 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
             onClick={() => slide("left")}
             aria-label="Slide categories left"
           >
-            ‹
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
           </button>
 
           <nav
@@ -144,7 +162,19 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
             onClick={() => slide("right")}
             aria-label="Slide categories right"
           >
-            ›
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
           </button>
         </div>
 
