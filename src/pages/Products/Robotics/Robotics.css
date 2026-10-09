@@ -272,22 +272,22 @@
 
 .robotics-gain-body {
   display: grid;
-  grid-template-columns: 1.45fr 0.85fr;
-  gap: clamp(20px, 3vw, 36px);
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: clamp(18px, 2.5vw, 36px);
   align-items: center;
 }
 
 .robotics-gain-pills {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .robotics-gain-pill {
   background: #ffffff;
   border: 1px solid #e1ebe4;
   border-radius: 18px;
-  padding: 16px 8px;
+  padding: 18px 8px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,7 +305,7 @@
 .robotics-gain-pill-icon {
   width: 48px;
   height: 48px;
-  border-radius: 12px;
+  border-radius: 14px;
   background: #0e4a34;
   display: flex;
   align-items: center;
@@ -337,15 +337,15 @@
 .robotics-gain-illustration-wrap {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .robotics-gain-illustration {
   width: 100%;
-  max-width: 420px;
+  max-width: 540px;
   height: auto;
-  object-fit: cover;
-  border-radius: 20px;
+  object-fit: contain;
 }
 
 /* ================= BOTTOM CTA ================= */
@@ -540,8 +540,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .robotics-gain-illustration-wrap {
+    justify-content: center;
+  }
+
   .robotics-gain-illustration {
-    max-width: 380px;
+    max-width: 440px;
   }
 
   .robotics-cta-card {
@@ -571,6 +575,10 @@
   .robotics-gain-pills {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
+  }
+
+  .robotics-gain-illustration {
+    max-width: 320px;
   }
 
   .robotics-feature-card {

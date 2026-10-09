@@ -72,8 +72,9 @@ function ProductARVR() {
             <h2 className="product-arvr-intro-tag">AR/VR</h2>
             <h3 className="product-arvr-intro-subtitle">Build the Next Reality</h3>
             <p className="product-arvr-intro-desc">
-              Step into immersive worlds and learn how to create them.
-              Our AR/VR courses help you master cutting-edge technologies and turn your ideas
+              Step into immersive worlds and learn how to 
+              create them. Our AR/VR courses help you master
+              cutting-edge technologies and turn your ideas
               into interactive experiences.
             </p>
           </div>

@@ -80,8 +80,8 @@ function Robotics() {
               Hands-on robotics training for brighter future innovators
             </h3>
             <p className="robotics-intro-desc">
-              Explore, build and program robots with real-world skills.
-              Our robotics class help student turn ideas into intelligent machine.
+                We make robotics simple, fun and future-ready. With expert trainers, hands-on kits and practical learning,students gain the skills to build, 
+                code and innovative
             </p>
           </div>
           <div className="robotics-intro-image-wrapper">
@@ -186,7 +186,7 @@ function Robotics() {
                 </div>
                 <div className="robotics-gain-pill-text">
                   <h4>Coding Skills</h4>
-                  <p>Learn to program robots and devices</p>
+                  <p>Learn to program robotics and device</p>
                 </div>
               </div>
 
@@ -196,7 +196,7 @@ function Robotics() {
                 </div>
                 <div className="robotics-gain-pill-text">
                   <h4>Problem Solving</h4>
-                  <p>Think logically and build solutions</p>
+                  <p>Think logically and build solution</p>
                 </div>
               </div>
 
@@ -206,7 +206,7 @@ function Robotics() {
                 </div>
                 <div className="robotics-gain-pill-text">
                   <h4>Creativity</h4>
-                  <p>Turn ideas into fun functional models</p>
+                  <p>Turn your ideas into real projects.</p>
                 </div>
               </div>
 
@@ -216,7 +216,7 @@ function Robotics() {
                 </div>
                 <div className="robotics-gain-pill-text">
                   <h4>Teamwork</h4>
-                  <p>Collaborate and work on exciting projects</p>
+                  <p>Collaborate and work on group projects</p>
                 </div>
               </div>
 
@@ -226,7 +226,7 @@ function Robotics() {
                 </div>
                 <div className="robotics-gain-pill-text">
                   <h4>Future Ready</h4>
-                  <p>Gain skills for STEM &amp; tech careers</p>
+                  <p>Gain skills for STEM and beyond.</p>
                 </div>
               </div>
             </div>
