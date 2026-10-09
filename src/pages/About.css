@@ -382,7 +382,7 @@
   .about-photo2 {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -60px;
     top: auto;
     left: auto;
     width: 68%;
@@ -399,8 +399,8 @@
 
   .about-stat {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 80%;
     transform: translate(-50%, -50%);
     display: grid;
     place-content: center;

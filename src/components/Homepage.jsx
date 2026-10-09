@@ -29,7 +29,8 @@ import emis from "../assets/image/home screen/emis.png";
 import smartclass from "../assets/image/home screen/smartclass.png";
 import smarttailor from "../assets/image/home screen/smarttailor.png";
 import onlinecap from "../assets/image/home screen/onlinecap.png";
-
+import ArVR from "../assets/image/home screen/AR & VR.png";
+import Robotics from "../assets/image/home screen/Robotics.png";
 // Clients
 import client1 from "../assets/image/home screen/Clients1.jpg";
 import client2 from "../assets/image/home screen/Clients2.jpg";
@@ -244,11 +245,13 @@ function Stats() {
 
 
 const SLIDES = [
-  { image: gilgal, alt: "GilGal mobile application feature overview" },
-  { image: emis, alt: "EMIS school management system feature overview" },
-  { image: smartclass, alt: "Smart Class learning through technology overview" },
-  { image: smarttailor, alt: "Smart Tailor product overview" },
-  { image: onlinecap, alt: "Online capability product overview" },
+  { image: gilgal, alt: "GilGal mobile application feature overview", to: "/products/gilgal" },
+  { image: emis, alt: "EMIS school management system feature overview", to: "/products/emis" },
+  { image: smartclass, alt: "Smart Class learning through technology overview", to: "/products/smart-class-room" },
+  { image: smarttailor, alt: "Smart Tailor product overview", to: "/products/smart-tailor-shop" },
+  { image: onlinecap, alt: "Online capability product overview", to: "/products/online-cab-booking" },
+  { image: ArVR, alt: "AR & VR product overview", to: "/products/ar-vr" },
+  { image: Robotics, alt: "Robotics product overview", to: "/products/robotics" },
 ];
 
 const AUTO_PLAY_MS = 5000;
@@ -285,7 +288,13 @@ function ProductsCarousel() {
           >
             {SLIDES.map((slide) => (
               <div className="carousel__slide" key={slide.image}>
-                <img src={slide.image} alt={slide.alt} loading="lazy" />
+                {slide.to ? (
+                  <Link to={slide.to} style={{ display: "block", width: "100%", height: "100%" }}>
+                    <img src={slide.image} alt={slide.alt} loading="lazy" />
+                  </Link>
+                ) : (
+                  <img src={slide.image} alt={slide.alt} loading="lazy" />
+                )}
               </div>
             ))}
           </div>

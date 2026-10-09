@@ -34,6 +34,8 @@ const NAV_ITEMS = [
       { label: "Educational Mobile App - Gilgal", to: "/products/gilgal" },
       { label: "Educational Management Information System", to: "/products/emis" },
       { label: "Assessment Tool", to: "/products/assessment-tool" },
+      { label: "Robotics", to: "/products/robotics" },
+      { label: "AR/VR", to: "/products/ar-vr" },
     ],
   },
   {

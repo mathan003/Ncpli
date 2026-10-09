@@ -17,7 +17,7 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
   const normCurrent = (currentSlug || "ar&vr").toLowerCase().replace(/&/g, "-");
   const categoriesRef = useRef(null);
   const [canSlideLeft, setCanSlideLeft] = useState(false);
-  const [canSlideRight, setCanSlideRight] = useState(false);
+  const [canSlideRight, setCanSlideRight] = useState(true);
 
   const checkScroll = useCallback(() => {
     const el = categoriesRef.current;
@@ -117,8 +117,9 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
         <div className="portfolio-categories-container">
           <button
             type="button"
-            className={`category-slide-btn category-slide-btn--prev ${canSlideLeft ? "visible" : ""}`}
+            className={`category-slide-btn category-slide-btn--prev ${!canSlideLeft ? "is-disabled" : ""}`}
             onClick={() => slide("left")}
+            disabled={!canSlideLeft}
             aria-label="Slide categories left"
           >
             <svg
@@ -158,8 +159,9 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
 
           <button
             type="button"
-            className={`category-slide-btn category-slide-btn--next ${canSlideRight ? "visible" : ""}`}
+            className={`category-slide-btn category-slide-btn--next ${!canSlideRight ? "is-disabled" : ""}`}
             onClick={() => slide("right")}
+            disabled={!canSlideRight}
             aria-label="Slide categories right"
           >
             <svg

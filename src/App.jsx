@@ -25,6 +25,8 @@ import OnlineCabBooking from "./pages/Products/OnlineCabBooking/OnlineCabBooking
 import ProductEMIS from "./pages/Products/EMIS/EMIS.jsx";
 import AssessmentTool from "./pages/Products/AssessmentTool/AssessmentTool.jsx";
 import Gilgal from "./pages/Products/Gilgal/Gilgal.jsx";
+import Robotics from "./pages/Products/Robotics/Robotics.jsx";
+import ProductARVR from "./pages/Products/ARVR/ARVR.jsx";
 
 // Service Pages
 import GraphicDesign from "./pages/Service/GraphicDesign/GraphicDesign.jsx";
@@ -64,6 +66,9 @@ function App() {
         <Route path="/products/emis" element={<ProductEMIS />} />
         <Route path="/products/assessment-tool" element={<AssessmentTool />} />
         <Route path="/products/gilgal" element={<Gilgal />} />
+        <Route path="/products/robotics" element={<Robotics />} />
+        <Route path="/products/ar-vr" element={<ProductARVR />} />
+        <Route path="/products/ar&vr" element={<Navigate to="/products/ar-vr" replace />} />
 
         {/* Service Routes */}
         <Route path="/service" element={<Navigate to="/service/graphic-design" replace />} />
