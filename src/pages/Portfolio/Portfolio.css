@@ -397,36 +397,32 @@
     height: 32px;
     border-radius: 50%;
     background: #ffffff;
-    border: 1.5px solid #0e4a34;
+    border: 1.5px solid #d4ded8;
     color: #0e4a34;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(14, 74, 52, 0.15);
+    box-shadow: 0 2px 8px rgba(14, 74, 52, 0.12);
     flex-shrink: 0;
     z-index: 5;
-    transition: all 0.2s ease;
-    opacity: 1;
-    pointer-events: auto;
+    transition: opacity 0.25s ease, transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
     padding: 0;
     user-select: none;
   }
 
-  .category-slide-btn:disabled,
-  .category-slide-btn.is-disabled {
-    opacity: 0.35;
-    pointer-events: none;
-    border-color: #d4ded8;
-    color: #8fa398;
-    box-shadow: none;
+  .category-slide-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  .category-slide-btn:hover:not(:disabled) {
+  .category-slide-btn:hover {
     background: #0e4a34;
     color: #ffffff;
     border-color: #0e4a34;
-    transform: scale(1.08);
+    transform: scale(1.05);
   }
 
-  .category-slide-btn:active:not(:disabled) {
+  .category-slide-btn:active {
     background: #0b3827;
     color: #ffffff;
     border-color: #0b3827;

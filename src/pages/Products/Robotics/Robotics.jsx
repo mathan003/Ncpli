@@ -249,7 +249,7 @@ function Robotics() {
               If you like and want this product, Please feel free to contact us.
               Also we can add/update new features and design changes in this product if you want.
               To discuss about this product and our other services, please mail us on{" "}
-              <strong>support@ncpli.com</strong> or call <strong>+91 73977 30945</strong>.
+              <strong>support@ncpli.com</strong> or call <strong>+91 73050 24014</strong>.
             </p>
             <button
               type="button"

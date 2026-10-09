@@ -272,44 +272,39 @@
 
 .robotics-gain-body {
   display: grid;
-  grid-template-columns: 1.25fr 0.85fr;
-  gap: clamp(24px, 3.5vw, 42px);
+  grid-template-columns: 1.45fr 0.85fr;
+  gap: clamp(20px, 3vw, 36px);
   align-items: center;
 }
 
 .robotics-gain-pills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .robotics-gain-pill {
-  flex: 1 1 calc(50% - 12px);
-  min-width: 190px;
-  background: #f7faf8;
-  border: 1px solid #e3ede6;
-  border-radius: 16px;
-  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid #e1ebe4;
+  border-radius: 18px;
+  padding: 16px 8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.robotics-gain-pill:last-child:nth-child(odd) {
-  flex: 1 1 100%;
+  text-align: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(14, 74, 52, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .robotics-gain-pill:hover {
-  background: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(14, 74, 52, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(14, 74, 52, 0.1);
 }
 
 .robotics-gain-pill-icon {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
   background: #0e4a34;
   display: flex;
@@ -325,15 +320,16 @@
 }
 
 .robotics-gain-pill-text h4 {
-  margin: 0 0 3px;
-  font-size: 0.94rem;
+  margin: 0 0 4px;
+  font-size: 0.86rem;
   font-weight: 700;
   color: #0e4a34;
+  line-height: 1.25;
 }
 
 .robotics-gain-pill-text p {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   color: #4a5750;
   line-height: 1.35;
 }
@@ -513,6 +509,12 @@
 }
 
 /* ================= RESPONSIVE DESIGN ================= */
+@media screen and (max-width: 1100px) {
+  .robotics-gain-pills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .robotics-intro-card {
     grid-template-columns: 1fr;
@@ -532,6 +534,10 @@
   .robotics-gain-body {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .robotics-gain-pills {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .robotics-gain-illustration {
@@ -562,12 +568,19 @@
     max-width: 360px;
   }
 
-  .robotics-gain-pill {
-    flex: 1 1 100%;
+  .robotics-gain-pills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
   .robotics-feature-card {
     padding: 20px 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .robotics-gain-pills {
+    grid-template-columns: 1fr;
   }
 }
 
