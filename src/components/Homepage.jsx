@@ -23,14 +23,15 @@ import statEmployees from "../assets/image/home screen/100+.png";
 import statExperience from "../assets/image/home screen/20+.png";
 
 // our products
+import ArVR from "../assets/image/home screen/AR & VR.png";
+import Robotics from "../assets/image/home screen/Robotics.png";
 import { useState, useEffect, useCallback, useRef } from "react";
 import gilgal from "../assets/image/home screen/gillgall.jpg";
 import emis from "../assets/image/home screen/emis.png";
 import smartclass from "../assets/image/home screen/smartclass.png";
 import smarttailor from "../assets/image/home screen/smarttailor.png";
 import onlinecap from "../assets/image/home screen/onlinecap.png";
-import ArVR from "../assets/image/home screen/AR & VR.png";
-import Robotics from "../assets/image/home screen/Robotics.png";
+
 // Clients
 import client1 from "../assets/image/home screen/Clients1.jpg";
 import client2 from "../assets/image/home screen/Clients2.jpg";
@@ -245,13 +246,14 @@ function Stats() {
 
 
 const SLIDES = [
+  { image: ArVR, alt: "AR & VR product overview", to: "/products/ar-vr" },
+  { image: Robotics, alt: "Robotics product overview", to: "/products/robotics" },
   { image: gilgal, alt: "GilGal mobile application feature overview", to: "/products/gilgal" },
   { image: emis, alt: "EMIS school management system feature overview", to: "/products/emis" },
   { image: smartclass, alt: "Smart Class learning through technology overview", to: "/products/smart-class-room" },
   { image: smarttailor, alt: "Smart Tailor product overview", to: "/products/smart-tailor-shop" },
   { image: onlinecap, alt: "Online capability product overview", to: "/products/online-cab-booking" },
-  { image: ArVR, alt: "AR & VR product overview", to: "/products/ar-vr" },
-  { image: Robotics, alt: "Robotics product overview", to: "/products/robotics" },
+  
 ];
 
 const AUTO_PLAY_MS = 5000;

@@ -61,7 +61,7 @@ function ProductARVR() {
           <span className="cs-breadcrumb-separator">›</span>
           <Link to="/products">Product</Link>
           <span className="cs-breadcrumb-separator">›</span>
-          <span className="cs-breadcrumb-current">AR/VR</span>
+          <span className="cs-breadcrumb-current">AR&VR</span>
         </nav>
       </div>
 
@@ -194,11 +194,11 @@ function ProductARVR() {
               <div className="product-arvr-project-image-wrap">
                 <img
                   src={westTambaramPhoto}
-                  alt="Corporation high, school, kalyan Nagar, West Tambaram"
+                  alt="Corporation high school, kalyan Nagar, West Tambaram"
                 />
               </div>
               <h4 className="product-arvr-project-title">
-                Corporation high, school, kalyan Nagar, West Tambaram
+                Corporation high school, kalyan Nagar, West Tambaram
               </h4>
             </div>
           </div>

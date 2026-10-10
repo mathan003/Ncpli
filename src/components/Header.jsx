@@ -28,14 +28,15 @@ const NAV_ITEMS = [
     label: "Products",
     to: "/products",
     children: [
+      { label: "Robotics", to: "/products/robotics" },
+      { label: "AR&VR", to: "/products/ar-vr" },
       { label: "Smart Class Room", to: "/products/smart-class-room" },
       { label: "Smart Tailor Shop", to: "/products/smart-tailor-shop" },
       { label: "Online Cab Booking", to: "/products/online-cab-booking" },
       { label: "Educational Mobile App - Gilgal", to: "/products/gilgal" },
       { label: "Educational Management Information System", to: "/products/emis" },
       { label: "Assessment Tool", to: "/products/assessment-tool" },
-      { label: "Robotics", to: "/products/robotics" },
-      { label: "AR/VR", to: "/products/ar-vr" },
+      
     ],
   },
   {
