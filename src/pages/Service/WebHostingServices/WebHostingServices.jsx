@@ -3,10 +3,10 @@ import "./WebHostingServices.css";
 
 import heroGraphic from "../../../assets/image/Service/Web Hosting/Web Hosting Services.png";
 import introIllustration from "../../../assets/image/Service/Web Hosting/02.png";
-import elasticComputeImg from "../../../assets/image/Service/Web Hosting/03.png";
-import s3Img from "../../../assets/image/Service/Web Hosting/04.png";
+import awsDevImg from "../../../assets/image/Service/Web Hosting/03.png";
+import amazonServicesImg from "../../../assets/image/Service/Web Hosting/04.png";
+import s3Img from "../../../assets/image/Service/Web Hosting/05.png";
 import cloudStorageImg from "../../../assets/image/Service/Web Hosting/06.jpg";
-import awsLogo from "../../../assets/image/Service/Web Application/aws.png";
 
 const CLOUD_BENEFITS = [
   "Cloud Storage might be more secure",
@@ -110,17 +110,19 @@ function WebHostingServices() {
         </section>
 
         {/* AWS Development Block */}
-        <h2 className="wh-section-title">AWS Development</h2>
-        <section className="wh-feature-block">
-          <div className="wh-feature-media">
-            <div className="wh-aws-banner">
-              <img src={awsLogo} alt="Amazon Web Services" />
-            </div>
+        <section className="wh-intro-grid wh-intro-grid--reverse">
+          <div className="wh-intro-media-card">
+            <img
+              src={awsDevImg}
+              alt="AWS Development"
+              className="wh-intro-media-img"
+            />
           </div>
-          <div className="wh-feature-content">
+          <article className="wh-card wh-intro-card">
+            <h2>AWS Development</h2>
             <h3>Amazon Web Services</h3>
             <p>
-              Amazon Web Services is a collection of web services that provides on-demand 
+              Amazon Web Services is a collection of web services that provides on-demand 
               cloud computing platforms and APIs to individuals, companies, and governments.
             </p>
             <p>
@@ -130,49 +132,52 @@ function WebHostingServices() {
               orderly step-by-step strategy for migrating applications to the cloud and 
               monitoring the performance of the cloud applications.
             </p>
-          </div>
+          </article>
         </section>
 
         {/* Services Offered By Amazon */}
-        <h2 className="wh-section-title">Services Offered By Amazon</h2>
-        <section className="wh-feature-block wh-feature-block--reverse">
-          <div className="wh-feature-content">
+        <section className="wh-intro-grid">
+          <article className="wh-card wh-intro-card">
+            <h2>Services Offered By Amazon</h2>
             <h3>Elastic Computing</h3>
             <p>
-              An Amazon EC2 instance is a virtual server in Amazon's Elastic Compute Cloud (EC2) 
+              An Amazon EC2 instance is a virtual server in Amazon's Elastic Compute Cloud (EC2) 
               for running applications on the Amazon Web Services (AWS) infrastructure.
             </p>
             <p>
-              C2 encourages the scalable deployment of applications by providing a web service 
+              EC2 encourages the scalable deployment of applications by providing a web service 
               through which a user can boot an Amazon Machine Image (AMI) to configure a 
               virtual machine, which Amazon calls an "instance", containing any software desired.
             </p>
             <p>
-
               A user can create, launch, and terminate server-instances as needed, paying by 
               the second for active servers – hence the term "elastic". EC2 provides users with 
               control over the geographical location of instances that allows for latency 
               optimization and high levels of redundancy.
             </p>
-          </div>
-          <div className="wh-feature-media">
+          </article>
+          <div className="wh-intro-media-card">
             <img
-              src={elasticComputeImg}
-              alt="Elastic Computing"
+              src={amazonServicesImg}
+              alt="Services Offered By Amazon"
+              className="wh-intro-media-img"
             />
           </div>
         </section>
 
         {/* Amazon S3 Block */}
-        <h2 className="wh-section-title">Amazon S3</h2>
-        <section className="wh-feature-block">
-          <div className="wh-feature-media">
-            <img src={s3Img} alt="Amazon S3" />
+        <section className="wh-intro-grid wh-intro-grid--reverse">
+          <div className="wh-intro-media-card">
+            <img
+              src={s3Img}
+              alt="Amazon S3"
+              className="wh-intro-media-img"
+            />
           </div>
-          <div className="wh-feature-content">
-            <h3>Amazon S3</h3>
+          <article className="wh-card wh-intro-card">
+            <h2>Amazon S3</h2>
             <p>
-              An Amazon S3 is a high-speed and low-cost service offered by Amazon Web 
+              An Amazon S3 is a high-speed and low-cost service offered by Amazon Web 
               Services that provides object storage, archiving of data and application programs 
               through a web service interface.
             </p>
@@ -186,7 +191,7 @@ function WebHostingServices() {
               Amazon S3 offers four different storage classes that offer different levels of 
               durability, availability, and performance requirements.
             </p>
-          </div>
+          </article>
         </section>
 
         {/* Why dedicated Web Hosting 3-card block */}
@@ -212,13 +217,9 @@ function WebHostingServices() {
         </section>
 
         {/* Cloud Storage Management Block */}
-        <h2 className="wh-section-title">Cloud Storage Management</h2>
-        <section className="wh-feature-block">
-          <div className="wh-feature-media">
-            <img src={cloudStorageImg} alt="Cloud Storage Management" />
-          </div>
-          <div className="wh-feature-content">
-            <h3>Cloud Storage Management</h3>
+        <section className="wh-intro-grid">
+          <article className="wh-card wh-intro-card">
+            <h2>Cloud Storage Management</h2>
             <p>
               Cloud Data Management is the practice of storing a company's data on an offsite 
               server that is typically owned and overseen by a vendor who specialized in cloud 
@@ -232,6 +233,13 @@ function WebHostingServices() {
               Managing data in the cloud provides an automated backup strategy, professional 
               support, and ease of access from any location.
             </p>
+          </article>
+          <div className="wh-intro-media-card">
+            <img
+              src={cloudStorageImg}
+              alt="Cloud Storage Management"
+              className="wh-intro-media-img"
+            />
           </div>
         </section>
 

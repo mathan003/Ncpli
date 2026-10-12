@@ -14,35 +14,22 @@
 /* ================= HERO BANNER ================= */
 .robotics-hero {
   position: relative;
-  min-height: 240px;
-  background: #eae7e1;
+  background-image: url("../../../assets/image/product/banner img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 280px;
+  height: clamp(220px, 24vw, 360px);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 20px 48px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .robotics-hero-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.robotics-hero-title {
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  color: #111914;
-  margin: 0 0 8px;
-  text-transform: uppercase;
-}
-
-.robotics-hero-subtitle {
-  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
-  color: #555e58;
-  margin: 0;
-  font-weight: 400;
+  display: none;
 }
 
 /* ================= CONTAINER ================= */
@@ -678,8 +665,8 @@
 /* Small Phones (<= 400px) */
 @media screen and (max-width: 400px) {
   .robotics-hero {
-    min-height: 190px;
-    padding: 30px 16px 40px;
+    min-height: 200px;
+    background-position: left center;
   }
 
   .robotics-gain-pills {

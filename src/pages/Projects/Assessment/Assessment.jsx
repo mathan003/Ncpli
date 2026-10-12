@@ -29,14 +29,9 @@ function Assessment() {
   };
 
   return (
-    <div className="prod-page-wrapper assess-page-wrapper">
+    <div className="project-page-wrapper assess-page-wrapper">
       {/* Hero Banner */}
-      <section className="prod-hero">
-        <div className="prod-hero-container">
-          <h1 className="prod-hero-title">PROJECT</h1>
-          <p className="prod-hero-subtitle">Designed for the way you work.</p>
-        </div>
-      </section>
+      <section className="project-hero" aria-label="Project Hero Banner"></section>
 
       {/* Floating Capsule Breadcrumb */}
       <div className="cs-breadcrumb-wrapper">

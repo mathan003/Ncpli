@@ -13,12 +13,13 @@
 /* Hero Banner */
 .project-hero {
   position: relative;
-  background-image: url("../../../assets/image/project page banner.jpg");
+  background-image: url("../../../assets/image/project/banner img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 20px 70px;
   min-height: 280px;
+  height: clamp(220px, 24vw, 360px);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,7 +333,7 @@
     grid-template-columns: 1fr;
   }
   .project-hero {
-    min-height: 220px;
-    padding: 100px 16px 70px;
+    min-height: 200px;
+    background-position: left center;
   }
 }

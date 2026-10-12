@@ -13,67 +13,19 @@
 /* ==========================================================================
    HERO BANNER
    ========================================================================== */
-.prod-hero {
+.project-hero {
   position: relative;
-  background: #f2eee9;
-  background-image: 
-    radial-gradient(circle at 50% 30%, rgba(220, 215, 206, 0.45) 0%, transparent 60%),
-    linear-gradient(180deg, #f6f3ee 0%, #ebe6df 100%);
-  padding: 60px 20px 50px;
+  background-image: url("../../../assets/image/project/banner img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 280px;
+  height: clamp(220px, 24vw, 360px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  overflow: hidden;
-  border-bottom: 1px solid #ded8cf;
-}
-
-.prod-hero::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  height: 70px;
-  border: 1px solid rgba(160, 155, 145, 0.4);
-  border-bottom: none;
-  border-radius: 140px 140px 0 0;
-  pointer-events: none;
-}
-
-.prod-hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 65%;
-  width: 1px;
-  height: 100%;
-  background: rgba(180, 175, 165, 0.25);
-  pointer-events: none;
-}
-
-.prod-hero-container {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
-.prod-hero-title {
-  font-size: clamp(2.8rem, 7vw, 4.8rem);
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  color: #1a1a1a;
-  margin: 0 0 10px;
-  text-transform: uppercase;
-  font-family: inherit;
-  line-height: 1.05;
-}
-
-.prod-hero-subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: #4a4a4a;
-  font-weight: 400;
-  margin: 0;
-  letter-spacing: 0.01em;
 }
 
 /* ==========================================================================
@@ -505,8 +457,9 @@
     padding: 0 16px;
   }
 
-  .prod-hero {
-    padding: 45px 16px 40px;
+  .project-hero {
+    min-height: 200px;
+    background-position: left center;
   }
 
   .emis-cards-grid-3 {

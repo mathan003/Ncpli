@@ -4,7 +4,6 @@ import "./EMIS.css";
 
 import emsImage from "../../../assets/image/project/Educational Management Information System/image.png";
 import contactUsImg from "../../../assets/image/product/contact us.png";
-
 const emisFeatures = [
   {
     id: 1,
@@ -88,14 +87,9 @@ function EMIS() {
   };
 
   return (
-    <div className="prod-page-wrapper emis-page-wrapper">
+    <div className="project-page-wrapper emis-page-wrapper">
       {/* Project Hero Banner */}
-      <section className="prod-hero">
-        <div className="prod-hero-container">
-          <h1 className="prod-hero-title">PROJECT</h1>
-          <p className="prod-hero-subtitle">Designed for the way you work.</p>
-        </div>
-      </section>
+      <section className="project-hero" aria-label="Project Hero Banner"></section>
 
       {/* Floating Capsule Breadcrumb */}
       <div className="cs-breadcrumb-wrapper">

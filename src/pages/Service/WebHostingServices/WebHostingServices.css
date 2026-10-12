@@ -158,20 +158,31 @@
   margin: 50px 0 28px;
 }
 
-/* Intro 2-Column Grid */
+/* Intro 2-Column Grid & Section Grids */
 .wh-intro-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 28px;
+  gap: 2px;
   align-items: stretch;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+}
+
+.wh-intro-grid--reverse {
+  grid-template-columns: 0.85fr 1.15fr;
 }
 
 .wh-intro-card h2 {
   color: #0e3d29;
   font-size: 1.35rem;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
+}
+
+.wh-intro-card h3 {
+  color: #0e3d29;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .wh-intro-card p {
@@ -181,20 +192,22 @@
   margin-bottom: 14px;
 }
 
+.wh-intro-card p:last-child {
+  margin-bottom: 0;
+}
+
 .wh-intro-media-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
-  background: #ffffff;
-  border: 1px solid #e3eae5;
-  border-radius: 16px;
-  box-shadow: 0 4px 22px rgba(14, 61, 41, 0.04);
+  padding: 15px;
 }
 
 .wh-intro-media-img {
-  width: 100%;
-  max-height: 320px;
+  width: 400px;
+  max-width: 350px;
+  /* max-height: 320px; */
+  border-radius: 25px;
   object-fit: contain;
 }
 
@@ -385,7 +398,8 @@
     max-width: 100%;
   }
 
-  .wh-intro-grid {
+  .wh-intro-grid,
+  .wh-intro-grid--reverse {
     grid-template-columns: 1fr;
   }
 

@@ -162,14 +162,9 @@ function RFID() {
   };
 
   return (
-    <div className="prod-page-wrapper rfid-page-wrapper">
-      {/* Product / Project Hero Banner */}
-      <section className="prod-hero">
-        <div className="prod-hero-container">
-          <h1 className="prod-hero-title">PROJECT</h1>
-          <p className="prod-hero-subtitle">Designed for the way you work.</p>
-        </div>
-      </section>
+    <div className="project-page-wrapper rfid-page-wrapper">
+      {/* Project Hero Banner */}
+      <section className="project-hero" aria-label="Project Hero Banner"></section>
 
       {/* Floating Capsule Breadcrumb */}
       <div className="cs-breadcrumb-wrapper">
@@ -183,46 +178,30 @@ function RFID() {
       </div>
 
       <main className="prod-container rfid-main-container">
-        {/* Top Intro Card: Title + Checklist (Left) & Hero Image (Right) */}
+        {/* Top Intro Section: Title + Checklist */}
         <div className="rfid-intro-card">
           <div className="rfid-intro-text">
             <h2>Radio-frequency identification (RFID)</h2>
             <ul className="rfid-check-list">
-              <li className="rfid-check-item">
-                <span className="rfid-check-icon">✔</span>
-                <span>Uses electromagnetic fields to automatically identify and track tags attached to objects.</span>
-              </li>
-              <li className="rfid-check-item">
-                <span className="rfid-check-icon">✔</span>
-                <span>An RFID system consists of a tiny radio transponder, a radio receiver and transmitter.</span>
-              </li>
-              <li className="rfid-check-item">
-                <span className="rfid-check-icon">✔</span>
-                <span>Viewing and absorbing the screens of students from teacher console</span>
-              </li>
-              <li className="rfid-check-item">
-                <span className="rfid-check-icon">✔</span>
-                <span>
-                  When triggered by an electromagnetic interrogation pulse from a nearby RFID reader device, the tag transmits digital data, usually an identifying inventory number, back to the reader.
-                </span>
-              </li>
-              <li className="rfid-check-item">
-                <span className="rfid-check-icon">✔</span>
-                <span>This number can be used to track inventory goods. The tags contain electronically stored information.</span>
-              </li>
-              <li className="rfid-check-item">
-                <span className="rfid-check-icon">✔</span>
-                <span>Passive tags collect energy from a nearby RFID reader&apos;s interrogating radio waves.</span>
-              </li>
-              <li className="rfid-check-item">
-                <span className="rfid-check-icon">✔</span>
-                <span>We are using this RFID technology in E-Library, Animal Migration, Forest, Shopping malls.</span>
-              </li>
+              {[
+                "Uses Electromagnetic Fields Toautomatically Identify And Track Tags Attached To Objects.",
+                "An RFID System Consists Of A Tiny Radio Transponder, A Radio Receiver And Transmitter.",
+                "Viewing And Absorbing The Screens Of Students From Teacher Console",
+                "When Triggered By An Electromagnetic Interrogation Pulse From A Nearby RFID Reader Device, The Tag Transmits Digital Data, Usually An Identifying Inventory Number, Back To The Reader.",
+                "This Number Can Be Used To Track Inventory Goods. The Tags Contain Electronically Stored Information.",
+                "Passive Tags Collect Energy From A Nearby RFID Reader's Interrogating Radio Waves.",
+                "We Are Using This RFID Technology In E-Library, Animal Migration, Forest, Shopping Malls.",
+              ].map((point, index) => (
+                <li className="rfid-check-item" key={index}>
+                  <span className="rfid-check-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <span>{point}</span>
+                </li>
+              ))}
             </ul>
-          </div>
-
-          <div className="rfid-intro-media">
-            <img src={rfidTaggingImg} alt="Radio-frequency identification smart tag and device reader" />
           </div>
         </div>
 

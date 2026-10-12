@@ -5,46 +5,24 @@
 /* Product Hero Banner */
 .prod-hero {
   position: relative;
-  background: #f2eee9;
-  background-image: 
-    radial-gradient(circle at 50% 30%, rgba(220, 215, 206, 0.45) 0%, transparent 60%),
-    linear-gradient(180deg, #f6f3ee 0%, #ebe6df 100%);
-  padding: 60px 20px 50px;
+  background-image: url("../../../assets/image/product/banner img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 280px;
+  height: clamp(220px, 24vw, 360px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  overflow: hidden;
-  border-bottom: 1px solid #ded8cf;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.prod-hero::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  height: 70px;
-  border: 1px solid rgba(160, 155, 145, 0.4);
-  border-bottom: none;
-  border-radius: 140px 140px 0 0;
-  pointer-events: none;
-}
-
-.prod-hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 65%;
-  width: 1px;
-  height: 100%;
-  background: rgba(180, 175, 165, 0.25);
-  pointer-events: none;
-}
-
+.prod-hero::before,
+.prod-hero::after,
 .prod-hero-container {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
+  display: none;
 }
 
 .prod-hero-title {
