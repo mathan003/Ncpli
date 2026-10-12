@@ -87,25 +87,25 @@ const rfidApplications = [
   {
     id: 1,
     title: "Animal Migration",
-    tag: "Wildlife Telemetry",
+    tag: "",
     desc: "Netcom RFID in Animal Migration is the great potential for Radio Frequency Identification (RFID) technology to benefit the study ofbirds and other wildlife, the cost of RFID systems can be prohibitive to those with a very modestresearch budget. To those researchers, we offer our design for a RFID data logging system that can be used in association with birdfeeders, nest boxes, or anywhere birds may congregate, to monitor the activity of individual birds bearing RFID tags. Radio tracking involves attaching a small radio transmitter to the animal.This can track the locations and movement of the tagged animals without recapturing them using this RFID technology. RFID ear tags provide superior solutions for animal identification, independent of the field of application and the size of the animal. For livestock, animal identification is necessary for guaranteeing food chain security and food traceability. RFID tags for animals represent one of the uses of RFID. RFID has become crucial in animal identification management. An implantable RFID tag or transponder can also be used for animal identification.",
   },
   {
     id: 2,
     title: "Shopping Malls",
-    tag: "Smart Retail & Billing",
+    tag: "",
     desc: "NETCOM project is based on RFID technology used for uniquely identifying and handling various products in a Shopping mall. The software system is made for thebilling counters with the help of which tracing and billing is made fast and easy. Each individual product is uniquely identified and classified based on its RFID. This is an RFID tag that is attached to the product s that it can be easily scanned and even related data can be entered into the system. The system allows for fast and easy billing procedure. The RFID tag when scanned, allows the billing person to get product specific data into the database and then also sum up the product prices in order to generate the final bill for a customer. The system then stores all these bills generated in its database for further reference. The system provides specific reports of sales along with products. Implementation of RFID in supermarkets allows customers to obtain information about the goods they collect when they are doing the shopping. In Shopping Malls, RFID technology can help retailers manage and track inventory. This enables the consumers satisfaction, reducing time requirement for payment and also the manpower required at markets or malls by instantly payoff their entire purchase upon arrival at the payment counter, increasing customer. These RFID tags to automate the checkout process by building a system that could read the RFID signals of all the objects that would be placed in proximity to an antenna platform. This eliminates the need for barcode scanning of each individual item, making checkout a significantly faster experience. The tags are little in size and so it can be easily pasted on products.",
   },
   {
     id: 3,
     title: "Software Development",
-    tag: "Enterprise Engineering",
+    tag: "",
     desc: "Netcom Computer provides software product and application development solutions to large established companies as well as startups. All services include product visualization, prototyping, design, implementation, maintenance and customer support. Our Motto is to Develop and implement software solutions to stream line and automate business processes to provide optimal, sustainable and scalable technology solutions to minimize risk with greater accessibility to key business functions across spectrum of technology platforms We have the extensive expertise, experience and resources to develop web applications and customized software solutions. We provide web solutions with totally focus and plan on software development as per client requirement with minimal cost as per the global market. Our motto is high professional quality of work hence our path is growth in performance with effective in work. We focus in providing innovate and high superiority solutions to help our clients in advance an edge over their business competitors. We include a wide range of solutions from web solutions, desktop to Mobile solutions. We deliver high quality solutions at spirited cost bringing cost efficiency to the client organization. Our software development experts gain a strong understand your idea, target users, and monetization strategy before offering you a wide range of software solutions.We improve business agility and efficiency by building cutting-edge mobile and web software solutions",
   },
   {
     id: 4,
     title: "Netcom Project - Trademark Search Engine",
-    tag: "Anna University, Coimbatore",
+    tag: "",
     desc: "We have developed Trade Mark Search Engine Project for Anna University, Coimbatore. A Trademark search engine database is created which updates the database and alter the damaged trademark images. The characters, symbols, leer and whatever seen in the image should be classified according to Vienna Classification and stored as data in SQL Server database along the corresponding fields. The image should also be stored in separate folder and should be linked to database. The Vienna Classification is the Table of 29 categories and divisions with explanatory notes about the symbols and leers seen in the image.",
   },
 ];
