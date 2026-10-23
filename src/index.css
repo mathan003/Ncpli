@@ -195,6 +195,30 @@ textarea:focus-visible {
   text-align: center !important;
 }
 
+/* Project & Product pages breadcrumb positioning (perfectly bisecting banner bottom edge) */
+.project-hero + .cs-breadcrumb-wrapper,
+.project-hero + .project-breadcrumb-wrapper,
+.prod-hero + .cs-breadcrumb-wrapper,
+.prod-hero + .project-breadcrumb-wrapper,
+.product-arvr-hero + .cs-breadcrumb-wrapper,
+.product-arvr-hero + .project-breadcrumb-wrapper,
+.robotics-hero + .cs-breadcrumb-wrapper,
+.robotics-hero + .project-breadcrumb-wrapper,
+.projects-overview-page .cs-breadcrumb-wrapper,
+.projects-overview-page .project-breadcrumb-wrapper,
+.products-overview-page .cs-breadcrumb-wrapper,
+.products-overview-page .project-breadcrumb-wrapper,
+.project-page-wrapper .cs-breadcrumb-wrapper,
+.project-page-wrapper .project-breadcrumb-wrapper,
+.prod-page-wrapper .cs-breadcrumb-wrapper,
+.prod-page-wrapper .project-breadcrumb-wrapper,
+.product-arvr-page .cs-breadcrumb-wrapper,
+.product-arvr-page .project-breadcrumb-wrapper,
+.robotics-page .cs-breadcrumb-wrapper,
+.robotics-page .project-breadcrumb-wrapper {
+  margin-top: calc(-20px - 1.48vw) !important;
+}
+
 .cs-breadcrumb-capsule,
 .project-breadcrumb-capsule,
 .wh-breadcrumb-capsule,
@@ -291,6 +315,29 @@ textarea:focus-visible {
     margin-top: -16px !important;
     margin-bottom: 16px !important;
     padding: 0 16px !important;
+  }
+
+  .project-hero + .cs-breadcrumb-wrapper,
+  .project-hero + .project-breadcrumb-wrapper,
+  .prod-hero + .cs-breadcrumb-wrapper,
+  .prod-hero + .project-breadcrumb-wrapper,
+  .product-arvr-hero + .cs-breadcrumb-wrapper,
+  .product-arvr-hero + .project-breadcrumb-wrapper,
+  .robotics-hero + .cs-breadcrumb-wrapper,
+  .robotics-hero + .project-breadcrumb-wrapper,
+  .projects-overview-page .cs-breadcrumb-wrapper,
+  .projects-overview-page .project-breadcrumb-wrapper,
+  .products-overview-page .cs-breadcrumb-wrapper,
+  .products-overview-page .project-breadcrumb-wrapper,
+  .project-page-wrapper .cs-breadcrumb-wrapper,
+  .project-page-wrapper .project-breadcrumb-wrapper,
+  .prod-page-wrapper .cs-breadcrumb-wrapper,
+  .prod-page-wrapper .project-breadcrumb-wrapper,
+  .product-arvr-page .cs-breadcrumb-wrapper,
+  .product-arvr-page .project-breadcrumb-wrapper,
+  .robotics-page .cs-breadcrumb-wrapper,
+  .robotics-page .project-breadcrumb-wrapper {
+    margin-top: calc(-16px - 1.48vw) !important;
   }
 
   .cs-breadcrumb-capsule,

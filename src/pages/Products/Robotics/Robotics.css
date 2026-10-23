@@ -27,13 +27,20 @@
 
 /* ================= FLOATING BREADCRUMB CAPSULE ================= */
 .cs-breadcrumb-wrapper {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-top: -20px;
-  margin-bottom: 24px;
-  z-index: 10;
-  padding: 0 16px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: calc(-20px - 1.48vw) !important;
+  margin-bottom: 24px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  position: relative !important;
+  z-index: 10 !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
 }
 
 .cs-breadcrumb-capsule {

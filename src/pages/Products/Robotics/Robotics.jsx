@@ -51,9 +51,9 @@ function Robotics() {
   };
 
   return (
-    <div className="robotics-page">
+    <div className="robotics-page prod-page-wrapper">
       {/* Product Hero Banner */}
-      <section className="robotics-hero">
+      <section className="robotics-hero prod-hero">
         <div className="robotics-hero-container">
           <h1 className="robotics-hero-title">PRODUCT</h1>
           <p className="robotics-hero-subtitle">Designed for the way you work.</p>

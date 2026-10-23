@@ -45,9 +45,9 @@ function ProductARVR() {
   };
 
   return (
-    <div className="product-arvr-page">
+    <div className="product-arvr-page prod-page-wrapper">
       {/* Product Hero Banner */}
-      <section className="product-arvr-hero">
+      <section className="product-arvr-hero prod-hero">
         <div className="product-arvr-hero-container">
           <h1 className="product-arvr-hero-title">PRODUCT</h1>
           <p className="product-arvr-hero-subtitle">Designed for the way you work.</p>
