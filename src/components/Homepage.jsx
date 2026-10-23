@@ -213,6 +213,12 @@ function Services() {
             </article>
           ))}
         </div>
+
+        <div style={{ textAlign: "center", marginTop: "40px" }}>
+          <Link to="/service" className="btn btn-accent">
+            View All Services &rarr;
+          </Link>
+        </div>
       </div>
     </section>
   );
@@ -328,6 +334,12 @@ function ProductsCarousel() {
               />
             ))}
           </div>
+        </div>
+
+        <div style={{ textAlign: "center", marginTop: "36px" }}>
+          <Link to="/products" className="btn btn-accent">
+            Explore All Products &rarr;
+          </Link>
         </div>
       </div>
     </section>

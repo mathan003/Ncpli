@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: "Home", to: "/", children: [] },
   { label: "About us", to: "/about", children: [] },
   {
-    label: "Projects",
+    label: "Project",
     to: "/projects",
     children: [
       { label: "Netcom Digital Contents", to: "/projects/digital-content" },
@@ -21,7 +21,6 @@ const NAV_ITEMS = [
       { label: "ICT/Hi-Tech Lab", to: "/projects/ict-hi-tech-lab" },
       { label: "Kiosk Project", to: "/projects/kiosk" },
       { label: "Radio-frequency identification (RFID)", to: "/projects/rfid" },
-    
     ],
   },
   {
@@ -36,7 +35,6 @@ const NAV_ITEMS = [
       { label: "Educational Mobile App - Gilgal", to: "/products/gilgal" },
       { label: "Educational Management Information System", to: "/products/emis" },
       { label: "Assessment Tool", to: "/products/assessment-tool" },
-      
     ],
   },
   {
@@ -58,13 +56,6 @@ const NAV_ITEMS = [
     label: "Portfolio",
     to: "/portfolio",
     children: [
-      { label: "AR&VR", to: "/portfolio/ar&vr" },
-      { label: "Robotics", to: "/portfolio/robotics" },
-      { label: "Netcom Smart Class", to: "/portfolio/netcom-smart-class" },
-      { label: "Kiosk", to: "/portfolio/kiosk" },
-      { label: "Skill Development", to: "/portfolio/skill-development" },
-      { label: "Netcom Digital Content", to: "/portfolio/digital-content" },
-      { label: "YouTube", to: "/portfolio/youtube" },
     ],
   },
   { label: "Career", to: "/career", children: [] },
@@ -96,9 +87,7 @@ function Header() {
   }, []);
 
   const toggleDropdown = (label) => {
-    if (window.innerWidth <= 960) {
-      setOpenDropdown((current) => (current === label ? null : label));
-    }
+    setOpenDropdown((current) => (current === label ? null : label));
   };
 
   return (
@@ -127,20 +116,32 @@ function Header() {
                 className={`site-nav__item ${item.children.length ? "has-dropdown" : ""}`}
               >
                 {item.children.length ? (
-                  <>
-                    <button
-                      type="button"
-                      className="site-nav__link site-nav__link--button"
-                      onClick={(e) => {
-                        if (window.innerWidth <= 960) {
-                          toggleDropdown(item.label);
-                        } else {
-                          e.currentTarget.blur();
-                        }
+                  <div className="site-nav__dropdown-wrapper">
+                    <NavLink
+                      to={item.to}
+                      className={({ isActive }) =>
+                        `site-nav__link ${isActive ? "is-active" : ""}`
+                      }
+                      onClick={() => {
+                        setMenuOpen(false);
+                        setOpenDropdown(null);
                       }}
-                      aria-expanded={openDropdown === item.label}
                     >
                       {item.label}
+                    </NavLink>
+
+                    <button
+                      type="button"
+                      className={`site-nav__chevron-btn ${
+                        openDropdown === item.label ? "is-expanded" : ""
+                      }`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleDropdown(item.label);
+                      }}
+                      aria-expanded={openDropdown === item.label}
+                      aria-label={`Toggle ${item.label} menu`}
+                    >
                       <svg
                         className="site-nav__chevron"
                         width="10"
@@ -148,33 +149,51 @@ function Header() {
                         viewBox="0 0 10 6"
                         aria-hidden="true"
                       >
-                        <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.6" fill="none" />
+                        <path
+                          d="M1 1L5 5L9 1"
+                          stroke="currentColor"
+                          strokeWidth="1.6"
+                          fill="none"
+                        />
                       </svg>
                     </button>
+
                     <ul
                       className={`site-nav__dropdown ${
                         openDropdown === item.label ? "is-open" : ""
                       }`}
                     >
+                      <li className="site-nav__overview-item">
+                        <NavLink
+                          to={item.to}
+                          className="site-nav__overview-link"
+                          onClick={() => {
+                            setMenuOpen(false);
+                            setOpenDropdown(null);
+                          }}
+                        >
+                          All {item.label} Overview →
+                        </NavLink>
+                      </li>
                       {item.children.map((child) => {
                         const childLabel = typeof child === "string" ? child : child.label;
                         const childTo = typeof child === "string" ? item.to : child.to;
                         return (
-                        <li key={childLabel}>
-                          <NavLink
-                            to={childTo}
-                            onClick={() => {
-                              setMenuOpen(false);
-                              setOpenDropdown(null);
-                            }}
-                          >
-                            {childLabel}
-                          </NavLink>
-                        </li>
+                          <li key={childLabel}>
+                            <NavLink
+                              to={childTo}
+                              onClick={() => {
+                                setMenuOpen(false);
+                                setOpenDropdown(null);
+                              }}
+                            >
+                              {childLabel}
+                            </NavLink>
+                          </li>
                         );
                       })}
                     </ul>
-                  </>
+                  </div>
                 ) : (
                   <NavLink
                     to={item.to}

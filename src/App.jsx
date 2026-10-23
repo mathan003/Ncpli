@@ -7,6 +7,11 @@ import Career from "./pages/Career.jsx";
 import Contact from "./pages/Contact.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
+// Main Category Hub Pages
+import ProjectsOverview from "./pages/Projects/ProjectsOverview.jsx";
+import ProductsOverview from "./pages/Products/ProductsOverview.jsx";
+import ServiceOverview from "./pages/Service/ServiceOverview.jsx";
+
 // Project Pages
 import DigitalContent from "./pages/Projects/DigitalContent/DigitalContent.jsx";
 import ProjectEMIS from "./pages/Projects/EMIS/EMIS.jsx";
@@ -47,7 +52,8 @@ function App() {
         <Route path="/about" element={<About />} />
 
         {/* Project Routes */}
-        <Route path="/projects" element={<Navigate to="/projects/digital-content" replace />} />
+        <Route path="/projects" element={<ProjectsOverview />} />
+        <Route path="/project" element={<Navigate to="/projects" replace />} />
         <Route path="/projects/digital-content" element={<DigitalContent />} />
         <Route path="/projects/emis" element={<ProjectEMIS />} />
         <Route path="/projects/language-lab" element={<LanguageLab />} />
@@ -59,7 +65,8 @@ function App() {
         <Route path="/projects/rfid" element={<RFID />} />
 
         {/* Product Routes */}
-        <Route path="/products" element={<Navigate to="/products/smart-class-room" replace />} />
+        <Route path="/products" element={<ProductsOverview />} />
+        <Route path="/product" element={<Navigate to="/products" replace />} />
         <Route path="/products/smart-class-room" element={<SmartClassRoom />} />
         <Route path="/products/smart-tailor-shop" element={<SmartTailorShop />} />
         <Route path="/products/online-cab-booking" element={<OnlineCabBooking />} />
@@ -71,7 +78,8 @@ function App() {
         <Route path="/products/ar&vr" element={<Navigate to="/products/ar-vr" replace />} />
 
         {/* Service Routes */}
-        <Route path="/service" element={<Navigate to="/service/graphic-design" replace />} />
+        <Route path="/service" element={<ServiceOverview />} />
+        <Route path="/services" element={<Navigate to="/service" replace />} />
         <Route path="/service/graphic-design" element={<GraphicDesign />} />
         <Route path="/service/e-content-development" element={<Econtent />} />
         <Route path="/service/short-film" element={<ShortFilm />} />

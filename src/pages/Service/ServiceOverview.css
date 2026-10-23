@@ -1,0 +1,671 @@
+/* ==========================================================================
+   SERVICE OVERVIEW PAGE STYLES
+   ========================================================================== */
+
+.service-overview-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: var(--color-text, #1f2a24);
+  padding-bottom: 70px;
+}
+
+/* Service Hero Banner */
+.service-hero-banner {
+  position: relative;
+  background: linear-gradient(135deg, #072a1d 0%, #0e4a34 50%, #176846 100%);
+  color: #ffffff;
+  min-height: 280px;
+  height: clamp(230px, 25vw, 360px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.service-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.service-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+}
+
+.so-hero-badge {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7ae4ad;
+  background: rgba(122, 228, 173, 0.15);
+  border: 1px solid rgba(122, 228, 173, 0.3);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.so-hero-title {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+
+.so-hero-desc {
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.service-overview-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10px 24px 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   PAGE HEADER & KICKER
+   ========================================================================== */
+.so-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 10px auto 36px;
+}
+
+.so-kicker {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary, #14603f);
+  background: #e8f5ed;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.so-title {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  color: var(--color-primary-dark, #0e4a34);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.so-subtitle {
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  color: var(--color-text-muted, #5a6b62);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ==========================================================================
+   STATS ROW
+   ========================================================================== */
+.so-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 48px;
+}
+
+.so-stat-card {
+  background: linear-gradient(135deg, #f5fbf7, #ffffff);
+  border: 1.5px solid #dce8e0;
+  border-radius: var(--radius-md, 12px);
+  padding: 22px 18px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.04);
+  transition: transform var(--transition-fast, 0.2s ease), border-color var(--transition-fast, 0.2s ease);
+}
+
+.so-stat-card:hover {
+  transform: translateY(-3px);
+  border-color: #b7dbcb;
+}
+
+.so-stat-number {
+  display: block;
+  font-size: clamp(1.8rem, 2.6vw, 2.3rem);
+  font-weight: 800;
+  color: var(--color-primary-dark, #0e4a34);
+  line-height: 1.1;
+  margin-bottom: 6px;
+  font-family: var(--font-heading, "Poppins", sans-serif);
+}
+
+.so-stat-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted, #5a6b62);
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   TOOLBAR: SEARCH & FILTERS
+   ========================================================================== */
+.so-toolbar {
+  background: #fbfdfc;
+  border: 1px solid var(--color-border, #e3e9e5);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(14, 74, 52, 0.03);
+}
+
+.so-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.so-search-icon {
+  position: absolute;
+  left: 16px;
+  color: #7d9387;
+  pointer-events: none;
+}
+
+.so-search-input {
+  width: 100%;
+  padding: 13px 44px 13px 48px;
+  border: 1.5px solid #d4dfd8;
+  border-radius: 999px;
+  font-size: 0.98rem;
+  color: var(--color-text, #1f2a24);
+  background: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.so-search-input:focus {
+  outline: none;
+  border-color: var(--color-primary, #14603f);
+  box-shadow: 0 0 0 4px rgba(20, 96, 63, 0.12);
+}
+
+.so-search-clear {
+  position: absolute;
+  right: 14px;
+  background: #e8f0eb;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #4b6355;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.so-search-clear:hover {
+  background: #d4e2d8;
+  color: #123824;
+}
+
+.so-filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.so-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #3b4e43;
+  border: 1.5px solid #dbe6df;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.so-filter-btn:hover {
+  border-color: #9eccb5;
+  color: var(--color-primary-dark, #0e4a34);
+  background: #f4faf6;
+}
+
+.so-filter-btn.is-active {
+  background: var(--color-primary-dark, #0e4a34);
+  border-color: var(--color-primary-dark, #0e4a34);
+  color: #ffffff;
+}
+
+.so-filter-count {
+  font-size: 0.75rem;
+  background: #e9f2ec;
+  color: #234d36;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.so-filter-btn.is-active .so-filter-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.so-results-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: #63776c;
+  padding-top: 12px;
+  border-top: 1px solid #edf2ef;
+}
+
+.so-reset-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary, #14603f);
+  font-weight: 600;
+  font-size: 0.86rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.so-reset-btn:hover {
+  color: var(--color-primary-dark, #0e4a34);
+}
+
+/* ==========================================================================
+   SERVICES GRID & CARDS
+   ========================================================================== */
+.so-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+.so-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1.5px solid #e1ebe5;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(14, 74, 52, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.so-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(14, 74, 52, 0.12);
+  border-color: #9eccb5;
+}
+
+.so-card-media {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  background: #f1f6f3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.so-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.so-card:hover .so-card-media img {
+  transform: scale(1.06);
+}
+
+.so-card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(14, 74, 52, 0.92);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.so-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.so-card-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary, #14603f);
+  margin-bottom: 8px;
+}
+
+.so-card-title {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--color-primary-dark, #0e4a34);
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+
+.so-card-desc {
+  font-size: 0.92rem;
+  color: #4b5a51;
+  line-height: 1.55;
+  margin: 0 0 16px;
+  flex-grow: 1;
+}
+
+.so-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.so-tag {
+  background: #f0f7f3;
+  color: #27563d;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 6px;
+  border: 1px solid #d5e6dc;
+}
+
+.so-card-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #edf4f0;
+}
+
+.so-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 11px 18px;
+  background: #f3faf6;
+  color: var(--color-primary-dark, #0e4a34);
+  border: 1.5px solid #cfe2d7;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.so-card:hover .so-card-btn {
+  background: var(--color-primary-dark, #0e4a34);
+  color: #ffffff;
+  border-color: var(--color-primary-dark, #0e4a34);
+}
+
+.so-btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.so-card:hover .so-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   EMPTY STATE
+   ========================================================================== */
+.so-empty-state {
+  text-align: center;
+  padding: 60px 24px;
+  background: #fbfdfc;
+  border: 1.5px dashed #cbdad1;
+  border-radius: 16px;
+  margin-bottom: 70px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.so-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+
+.so-empty-state h3 {
+  font-size: 1.4rem;
+  color: var(--color-primary-dark, #0e4a34);
+  margin-bottom: 10px;
+}
+
+.so-empty-state p {
+  color: var(--color-text-muted, #5a6b62);
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   SERVICE DELIVERY PROCESS SECTION
+   ========================================================================== */
+.so-process-section {
+  background: linear-gradient(135deg, #f7fbf8, #f0f7f3);
+  border: 1px solid #dce8e0;
+  border-radius: 24px;
+  padding: 56px 40px;
+  margin-bottom: 60px;
+}
+
+.so-process-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 44px;
+}
+
+.so-process-header h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-weight: 800;
+  color: var(--color-primary-dark, #0e4a34);
+  margin: 8px 0 12px;
+}
+
+.so-process-header p {
+  color: var(--color-text-muted, #5a6b62);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.so-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.so-step-card {
+  background: #ffffff;
+  border: 1px solid #e1ede6;
+  border-radius: 16px;
+  padding: 24px 18px;
+  box-shadow: 0 4px 14px rgba(14, 74, 52, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.so-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(14, 74, 52, 0.08);
+}
+
+.so-step-num {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary, #14603f);
+  background: #eef6f1;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  font-family: var(--font-heading, "Poppins", sans-serif);
+}
+
+.so-step-card h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--color-primary-dark, #0e4a34);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.so-step-card p {
+  font-size: 0.84rem;
+  color: #55665d;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   BOTTOM CTA BANNER
+   ========================================================================== */
+.so-cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: linear-gradient(120deg, var(--color-primary-dark, #0e4a34), #176846);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 44px 48px;
+  box-shadow: 0 12px 32px rgba(14, 74, 52, 0.2);
+}
+
+.so-cta-content h2 {
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.so-cta-content p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+  max-width: 640px;
+  line-height: 1.55;
+}
+
+.so-cta-actions {
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .so-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .so-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .so-steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero-banner {
+    min-height: 220px;
+    padding: 40px 16px;
+  }
+
+  .service-overview-container {
+    padding: 10px 16px 0;
+  }
+
+  .so-toolbar {
+    padding: 18px 14px;
+  }
+
+  .so-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .so-process-section {
+    padding: 36px 20px;
+  }
+
+  .so-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .so-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 34px 22px;
+  }
+
+  .so-cta-content p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .so-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .so-filters-row {
+    gap: 6px;
+  }
+
+  .so-filter-btn {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+  }
+}

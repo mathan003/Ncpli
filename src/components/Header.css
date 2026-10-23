@@ -93,6 +93,31 @@
   background: var(--color-bg-soft);
 }
 
+/* DROPDOWN WRAPPER */
+.site-nav__dropdown-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__chevron-btn {
+  background: none;
+  border: none;
+  padding: 8px 6px 8px 2px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.site-nav__chevron-btn:hover {
+  color: var(--color-primary);
+}
+
 /* CHEVRON */
 .site-nav__chevron {
   display: inline-flex;
@@ -102,7 +127,8 @@
   transition: transform var(--transition-fast);
 }
 
-.has-dropdown:hover .site-nav__chevron {
+.has-dropdown:hover .site-nav__chevron,
+.site-nav__chevron-btn.is-expanded .site-nav__chevron {
   transform: rotate(180deg);
 }
 
@@ -111,7 +137,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 200px;
+  min-width: 220px;
   margin: 0;
   padding: 6px;
   background: #fff;
@@ -133,11 +159,30 @@
   height: 8px;
 }
 
-.has-dropdown:hover > .site-nav__dropdown {
+.has-dropdown:hover .site-nav__dropdown {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
+}
+
+.site-nav__overview-item {
+  border-bottom: 1px solid #ebf1ed;
+  margin-bottom: 4px;
+}
+
+.site-nav__dropdown a.site-nav__overview-link {
+  font-weight: 700;
+  color: var(--color-primary-dark, #0e4a34);
+  background: #f0f7f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav__dropdown a.site-nav__overview-link:hover {
+  background: var(--color-primary-dark, #0e4a34);
+  color: #ffffff;
 }
 
 .site-nav__dropdown a {
@@ -275,6 +320,30 @@
     font-size: 0.96rem;
   }
 
+  .site-nav__dropdown-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-nav__dropdown-wrapper .site-nav__link {
+    flex: 1;
+    border-bottom: none;
+    justify-content: flex-start;
+  }
+
+  .site-nav__chevron-btn {
+    padding: 10px 12px;
+  }
+
+  .site-nav__dropdown-wrapper .site-nav__dropdown {
+    width: 100%;
+    order: 3;
+  }
+
   .site-nav__dropdown {
     position: static;
     width: 100%;
@@ -309,7 +378,7 @@
     max-height: 1200px;
   }
 
-  .site-nav__link[aria-expanded="true"] .site-nav__chevron {
+  .site-nav__chevron-btn.is-expanded .site-nav__chevron {
     transform: rotate(180deg);
   }
 }
