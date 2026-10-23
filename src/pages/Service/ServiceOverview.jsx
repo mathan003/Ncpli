@@ -152,25 +152,15 @@ function ServiceOverview() {
 
   return (
     <div className="service-overview-page">
-      {/* Service Hero Banner */}
-      <section className="service-hero-banner" aria-label="Services Hero Banner">
-        <div className="service-hero-overlay"></div>
-        <div className="service-hero-content">
-          <span className="so-hero-badge">FULL-SPECTRUM TECHNOLOGY SERVICES</span>
-          <h1 className="so-hero-title">Engineering Digital Excellence</h1>
-          <p className="so-hero-desc">
-            From creative brand storytelling and bespoke software development to 
-            enterprise web hosting and 24/7 cloud management—Netcom powers your success.
-          </p>
-        </div>
-      </section>
+      {/* Service Hero Banner with image */}
+      <section className="service-hero-banner" aria-label="Services Hero Banner"></section>
 
       {/* Floating Breadcrumb Capsule */}
       <div className="cs-breadcrumb-wrapper">
         <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="cs-breadcrumb-separator">›</span>
-          <span className="cs-breadcrumb-current">Service</span>
+          <span className="cs-breadcrumb-current">Services</span>
         </nav>
       </div>
 
@@ -291,17 +281,21 @@ function ServiceOverview() {
             {filteredServices.map((service) => (
               <article className="so-card" key={service.id}>
                 <div className="so-card-media">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    loading="lazy"
-                  />
+                  <Link to={service.to} className="so-card-media-link" aria-label={`View ${service.title}`}>
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      loading="lazy"
+                    />
+                  </Link>
                   <span className="so-card-badge">{service.badge}</span>
                 </div>
 
                 <div className="so-card-body">
                   <span className="so-card-category">{service.categoryLabel}</span>
-                  <h3 className="so-card-title">{service.title}</h3>
+                  <h3 className="so-card-title">
+                    <Link to={service.to}>{service.title}</Link>
+                  </h3>
                   <p className="so-card-desc">{service.summary}</p>
 
                   <div className="so-card-tags">

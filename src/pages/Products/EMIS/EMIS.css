@@ -6,17 +6,14 @@
 .prod-hero {
   position: relative;
   background-image: url("../../../assets/image/product/banner img.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 280px;
-  height: clamp(220px, 24vw, 360px);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  aspect-ratio: 5760 / 1936;
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .prod-hero::before,

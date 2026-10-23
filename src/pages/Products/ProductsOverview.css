@@ -13,16 +13,71 @@
 .products-overview-page .prod-hero {
   position: relative;
   background-image: url("../../assets/image/product/banner img.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 280px;
-  height: clamp(220px, 24vw, 360px);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  aspect-ratio: 5760 / 1936;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* ==========================================================================
+   FLOATING BREADCRUMB CAPSULE (Centered on Banner Bottom)
+   ========================================================================== */
+.cs-breadcrumb-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: -20px !important;
+  margin-bottom: 24px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  position: relative !important;
+  z-index: 10 !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+.cs-breadcrumb-capsule {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #141715 !important;
+  color: #ffffff !important;
+  padding: 9px 26px !important;
+  border-radius: 999px !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18) !important;
+  margin: 0 auto !important;
+}
+
+.cs-breadcrumb-capsule a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cs-breadcrumb-capsule a:hover {
+  color: #7ae4ad;
+  text-decoration: none;
+}
+
+.cs-breadcrumb-separator {
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.cs-breadcrumb-current {
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .products-overview-container {
@@ -558,8 +613,19 @@
 
 @media (max-width: 768px) {
   .products-overview-page .prod-hero {
-    min-height: 200px;
-    background-position: left center;
+    min-height: auto;
+    background-position: center;
+  }
+
+  .cs-breadcrumb-wrapper {
+    margin-top: -16px;
+    margin-bottom: 16px;
+  }
+
+  .cs-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 7px 18px;
+    gap: 7px;
   }
 
   .products-overview-container {

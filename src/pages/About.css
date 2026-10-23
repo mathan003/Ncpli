@@ -13,7 +13,10 @@
   width: 100%;
   min-width: 320px;
   max-width: 100%;
-  min-height: 240px;
+  min-height: 480px;
+  height: clamp(480px, 60vh, 680px);
+  display: flex;
+  align-items: center;
   background:
     linear-gradient(90deg, rgb(14 74 52 / 72%), rgb(14 74 52 / 32%)),
     var(--about-header-image) center / cover;
@@ -23,7 +26,6 @@
   width: 100%;
   min-width: 320px;
   max-width: 1440px;
-  min-height: 240px;
   margin: auto;
   padding: 50px 24px;
   color: #fff;
@@ -59,12 +61,61 @@
   transform: translateY(-2px);
 }
 
+/* ==========================================================================
+   FLOATING BREADCRUMB CAPSULE (Centered on Banner Bottom)
+   ========================================================================== */
 .about-page .cs-breadcrumb-wrapper {
-  width: 100%;
-  min-width: 320px;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 16px 24px 0;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: -20px !important;
+  margin-bottom: 24px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  position: relative !important;
+  z-index: 10 !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+.about-page .cs-breadcrumb-capsule {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #141715 !important;
+  color: #ffffff !important;
+  padding: 9px 26px !important;
+  border-radius: 999px !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18) !important;
+  margin: 0 auto !important;
+}
+
+.about-page .cs-breadcrumb-capsule a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-page .cs-breadcrumb-capsule a:hover {
+  color: #7ae4ad;
+  text-decoration: none;
+}
+
+.about-page .cs-breadcrumb-separator {
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.about-page .cs-breadcrumb-current {
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .about-content {
@@ -320,14 +371,15 @@
    Layout: [Photo 1] - [20+ Years Stat Badge] - [Photo 2] */
 @media screen and (min-width: 601px) and (max-width: 992px) {
   .about-hero {
-    min-height: 240px;
-    max-height: 320px;
+    min-height: 380px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
   }
 
   .about-hero-content {
     min-width: 320px;
     max-width: 100%;
-    min-height: 240px;
     padding: 40px 20px;
   }
 
@@ -477,15 +529,17 @@
 /* Mobile Screens (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .about-hero {
-    min-height: 200px;
-    max-height: 260px;
+    min-height: 280px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
   }
 
   .about-hero-content {
     min-width: 280px;
     max-width: 100%;
     min-height: 180px;
-    padding: 36px 18px;
+    padding: 30px 18px;
   }
 
   .about-hero-content h1 {
@@ -499,8 +553,15 @@
   }
 
   .about-page .cs-breadcrumb-wrapper {
-    min-width: 280px;
-    padding: 12px 16px 0;
+    margin-top: -16px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+  }
+
+  .about-page .cs-breadcrumb-capsule {
+    font-size: 0.78rem;
+    padding: 7px 18px;
+    gap: 7px;
   }
 
   .about-content {

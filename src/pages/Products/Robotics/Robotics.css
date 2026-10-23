@@ -15,17 +15,60 @@
 .robotics-hero {
   position: relative;
   background-image: url("../../../assets/image/product/banner img.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 280px;
-  height: clamp(220px, 24vw, 360px);
   width: 100%;
+  aspect-ratio: 5760 / 1936;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* ================= FLOATING BREADCRUMB CAPSULE ================= */
+.cs-breadcrumb-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 24px;
+  z-index: 10;
+  padding: 0 16px;
+}
+
+.cs-breadcrumb-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #141715;
+  color: #ffffff;
+  padding: 9px 26px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.cs-breadcrumb-capsule a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cs-breadcrumb-capsule a:hover {
+  color: #7ae4ad;
+}
+
+.cs-breadcrumb-separator {
+  color: #8da498;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.robotics-page .cs-breadcrumb-current,
+.cs-breadcrumb-current {
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .robotics-hero-container {
@@ -665,8 +708,8 @@
 /* Small Phones (<= 400px) */
 @media screen and (max-width: 400px) {
   .robotics-hero {
-    min-height: 200px;
-    background-position: left center;
+    min-height: auto;
+    background-position: center;
   }
 
   .robotics-gain-pills {

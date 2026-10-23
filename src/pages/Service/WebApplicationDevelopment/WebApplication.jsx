@@ -135,7 +135,7 @@ function WebApplication() {
         <nav className="wa-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="wa-breadcrumb-separator">›</span>
-          <Link to="/">Services</Link>
+          <Link to="/service">Services</Link>
           <span className="wa-breadcrumb-separator">›</span>
           <span className="wa-breadcrumb-current">
             Web Application Development

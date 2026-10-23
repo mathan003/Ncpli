@@ -61,7 +61,7 @@ and cuticulum agnet coment that stances warming cutcomes
         <nav className="ec-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
           <span className="ec-breadcrumb-separator">›</span>
-          <Link to="/">Services</Link>
+          <Link to="/service">Services</Link>
           <span className="ec-breadcrumb-separator">›</span>
           <span className="ec-breadcrumb-current">E-Content Development</span>
         </nav>
