@@ -15,14 +15,14 @@ function LanguageLab() {
       {/* Project Hero Banner */}
       <section className="project-hero" aria-label="Project Hero Banner"></section>
 
-      {/* Floating Mint-Green Breadcrumb Capsule */}
-      <div className="project-breadcrumb-wrapper">
-        <nav className="project-breadcrumb-capsule" aria-label="Breadcrumb">
+      {/* Floating Black Breadcrumb Capsule */}
+      <div className="cs-breadcrumb-wrapper">
+        <nav className="cs-breadcrumb-capsule" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
-          <span className="project-breadcrumb-separator">›</span>
+          <span className="cs-breadcrumb-separator">›</span>
           <Link to="/projects">Project</Link>
-          <span className="project-breadcrumb-separator">›</span>
-          <span className="project-breadcrumb-current">Language Lab</span>
+          <span className="cs-breadcrumb-separator">›</span>
+          <span className="cs-breadcrumb-current">Language Lab</span>
         </nav>
       </div>
 

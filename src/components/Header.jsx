@@ -163,18 +163,6 @@ function Header() {
                         openDropdown === item.label ? "is-open" : ""
                       }`}
                     >
-                      <li className="site-nav__overview-item">
-                        <NavLink
-                          to={item.to}
-                          className="site-nav__overview-link"
-                          onClick={() => {
-                            setMenuOpen(false);
-                            setOpenDropdown(null);
-                          }}
-                        >
-                          All {item.label} Overview →
-                        </NavLink>
-                      </li>
                       {item.children.map((child) => {
                         const childLabel = typeof child === "string" ? child : child.label;
                         const childTo = typeof child === "string" ? item.to : child.to;

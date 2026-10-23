@@ -166,25 +166,6 @@
   transform: translateY(0);
 }
 
-.site-nav__overview-item {
-  border-bottom: 1px solid #ebf1ed;
-  margin-bottom: 4px;
-}
-
-.site-nav__dropdown a.site-nav__overview-link {
-  font-weight: 700;
-  color: var(--color-primary-dark, #0e4a34);
-  background: #f0f7f3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-nav__dropdown a.site-nav__overview-link:hover {
-  background: var(--color-primary-dark, #0e4a34);
-  color: #ffffff;
-}
-
 .site-nav__dropdown a {
   display: block;
   margin: 0;
