@@ -13,6 +13,8 @@ import pachaikili from "../../../assets/image/portfolio/Youtube/பச்சை 
 import aanai from "../../../assets/image/portfolio/Youtube/ஆணை.png";
 import veeran from "../../../assets/image/portfolio/Youtube/வீரன்.png";
 import kullaVaathu from "../../../assets/image/portfolio/Youtube/குள்ள வாத்து.png";
+import suttiVilangu from "../../../assets/image/portfolio/Youtube/சுட்டி விலங்குகளின் கதைகள்.png";
+import siruvarStories from "../../../assets/image/portfolio/Youtube/Siruvar Stories Channel intro.jpg";
 
 const youtubeProjects = [
   {
@@ -69,6 +71,18 @@ const youtubeProjects = [
     isYoutube: true,
     youtubeUrl: "https://www.youtube.com/watch?v=Vmq9CDAMjVk&feature=youtu.be",
   },
+  {
+    title: "சுட்டி விலங்குகளின் கதைகள்",
+    image: suttiVilangu,
+    isYoutube: true,
+    youtubeUrl: "https://youtu.be/R0wHaHY8hJI?si=1l4-u81w_hRb7zlf",
+  },
+  {
+    title: "Siruvar Stories Channel intro",
+    image: siruvarStories,
+    isYoutube: true,
+    youtubeUrl: "https://youtu.be/5U60DAYuXgE?si=r4siVxZfgeNG3tZD",
+  },
 ];
 
 function YouTube() {
@@ -86,4 +100,3 @@ function YouTube() {
 }
 
 export default YouTube;
-
