@@ -55,13 +55,13 @@ const PROCESS_STEPS = [
     step: "03",
     title: "Responsive Development",
     icon: step3Icon,
-    desc: "Our developers build clean,scalable and high-performing applications.",
+    desc: "Our developers build clean, scalable and high-performing applications.",
   },
   {
     step: "04",
     title: "Testing & Bug Fixes",
     icon: step4Icon,
-    desc: "We test throughly and fix issues to ensure a bug-free application",
+    desc: "We test thoroughly and fix issues to ensure a bug-free application.",
   },
   {
     step: "05",

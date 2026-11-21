@@ -42,8 +42,8 @@ function Econtent() {
             <span className="ec-badge">OUR SERVICES</span>
             <h1>E-Content Development</h1>
             <p>
-              Hauty dang contant for scand Inalitutions. We croats inocactive angaging 
-and cuticulum agnet coment that stances warming cutcomes
+              High-quality digital content for schools and institutions. We create interactive, engaging, 
+              and curriculum-aligned content that enhances learning outcomes.
             </p>
           </div>
           <div className="ec-hero__media">
@@ -174,7 +174,7 @@ hand drawings whichever applicable/possible.For each topic or subtopic, Content 
 
           <h3 className="ec-section-subhead">Presentation:</h3>
           <p className="ec-section-paragraph">
-            The presentation is a part of video. The format for presentation would be PPT (PowerPoint Presentation program). During preparation of presentation
+            The presentation is a part of the video. The format for presentation is typically PPT (PowerPoint Presentation) or multimedia slide formats, carefully structured with clear visual aids, pedagogical notes, and animations to support the learning narrative.
           </p>
 
           <h3 className="ec-section-subhead">Audio Standards:</h3>

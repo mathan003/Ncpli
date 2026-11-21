@@ -60,15 +60,15 @@ function Hero() {
             Building the Future.
           </h1>
           <p>
-            Netcom Computers Pvt Ltd , an information technology based company since 2004, 
-            in Education and Training, is offering wide range of that include creating educational 
-            and training content of global relevance,designing and executing large learning initiatives 
+            Netcom Computers Pvt Ltd, an information technology based company since 2004, 
+            in Education and Training, is offering a wide range of services that include creating educational 
+            and training content of global relevance, designing and executing large learning initiatives, 
             and setting up the requisite infrastructure.
           </p>
           <button
   className="btn btn-accent"
   onClick={() =>
-    document.getElementById("service")?.scrollIntoView({
+    document.getElementById("services")?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     })
@@ -98,10 +98,10 @@ function MeetNetcom() {
         <div className="meet__row">
           <div className="meet__text">
             <p>
-              Netcom Computers an information technology based company since 2004, in 
-              Education and Training, is offering wide range of that include creating educational 
-              and training content of global relevance,designing and executing large learning 
-              initiatives and setting up the requisite infrastructure. Netcom providing multiple 
+              Netcom Computers, an information technology based company since 2004, in 
+              Education and Training, is offering a wide range of services that include creating educational 
+              and training content of global relevance, designing and executing large learning 
+              initiatives, and setting up the requisite infrastructure. Netcom provides multiple 
               software services to clients. Our mission is to help customers achieve their business 
               objectives by providing innovative, best-in-class consulting, IT solutions, and services. 
               We function as an IT partner to business, offering a consulting – plan – implementation 
@@ -160,26 +160,28 @@ const SERVICES = [
     title: "Web Hosting Services",
     image: webhosting,
     description:
-      "Includes software upgrades, repairs and fixes. We will also monitor the performance of the software so you don’t face any issues.",    to: "/service/web-hosting-services",
+      "High-speed SSD hosting, domain management, SSL security, automated daily backups, and reliable 99.9% uptime.",
+    to: "/service/web-hosting-services",
   },
   {
     title: "Customized Software Development",
     image: customsoftware,
     description:
-      "Aim to provide you the exact services and solutions you have asked for, because we value your product!.",    to: "/service/custom-software-development",
+      "Tailor-made software architectures addressing unique business workflows, enterprise resource planning, and third-party integrations.",
+    to: "/service/custom-software-development",
   },
   {
     title: "Hardware Support & Maintenance",
     image: hardware,
     description:
-      "Aim to provide you the exact services and solutions you have asked for, because we value your product!.",
-          to: "/service/hardware-support",
+      "Comprehensive AMC services, server maintenance, computer peripheral servicing, and rapid on-site hardware support.",
+    to: "/service/hardware-support",
   },
   {
     title: "Cloud Maintenance",
     image: cloud,
     description:
-      "Aim to provide you the exact services and solutions you have asked for, because we value your product!.",
+      "Proactive AWS and cloud infrastructure management, automated disaster recovery, cost optimization, and performance scaling.",
     to: "/service/cloud-maintenance",
   },
 ];
@@ -188,16 +190,12 @@ function Services() {
   return (
     <section className="section services" id="services">
       <div className="container">
-        <section id="service">
-  <div className="section-heading">
-    <h2>Our Services</h2>
-    <p>
-      Full-Spectrum Service Offerings To Make Your Business Into The Next Stage
-    </p>
-  </div>
-
-  {/* Your services content */}
-</section>
+        <div className="section-heading">
+          <h2>Our Services</h2>
+          <p>
+            Full-Spectrum Service Offerings To Make Your Business Into The Next Stage
+          </p>
+        </div>
 
         <div className="services__grid">
           {SERVICES.map((service) => (
@@ -207,7 +205,7 @@ function Services() {
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <Link to={service.to} className="btn_btn-outline service-card__btn">
+              <Link to={service.to} className="btn btn-outline service-card__btn">
                 Explore
               </Link>
             </article>
@@ -258,8 +256,7 @@ const SLIDES = [
   { image: emis, alt: "EMIS school management system feature overview", to: "/products/emis" },
   { image: smartclass, alt: "Smart Class learning through technology overview", to: "/products/smart-class-room" },
   { image: smarttailor, alt: "Smart Tailor product overview", to: "/products/smart-tailor-shop" },
-  { image: onlinecap, alt: "Online capability product overview", to: "/products/online-cab-booking" },
-  
+  { image: onlinecap, alt: "Online cab booking product overview", to: "/products/online-cab-booking" },
 ];
 
 const AUTO_PLAY_MS = 5000;
@@ -268,18 +265,24 @@ function ProductsCarousel() {
   const [index, setIndex] = useState(0);
   const timerRef = useRef(null);
 
-  const goTo = useCallback((next) => {
-    setIndex((next + SLIDES.length) % SLIDES.length);
-  }, []);
-
-  // Auto-advance the carousel, restarting the timer whenever the
-  // person interacts with the dots so it doesn't jump unexpectedly.
-  useEffect(() => {
+  const resetTimer = useCallback(() => {
+    if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
       setIndex((current) => (current + 1) % SLIDES.length);
     }, AUTO_PLAY_MS);
-    return () => clearInterval(timerRef.current);
-  }, [index]);
+  }, []);
+
+  const goTo = useCallback((next) => {
+    setIndex((next + SLIDES.length) % SLIDES.length);
+    resetTimer();
+  }, [resetTimer]);
+
+  useEffect(() => {
+    resetTimer();
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [resetTimer]);
 
   return (
     <section className="section products" id="products">

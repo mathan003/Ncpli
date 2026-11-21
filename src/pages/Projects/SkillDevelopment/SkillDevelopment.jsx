@@ -38,7 +38,7 @@ function SkillDevelopment() {
               Soft skills are those personal values and interpersonal skills that determine a person's ability to work in a collaborative environment. Soft skill development must be carried out as they are vital to one's professional life as they help individuals to excel in the workplace.
             </p>
             <p>
-              <strong>Netcom</strong> goal is to help you understand these important dynamics of group communication and learn how to put them into practice to improve your overall teamwork.
+              <strong>Netcom&apos;s</strong> goal is to help you understand these important dynamics of group communication and learn how to put them into practice to improve your overall teamwork.
             </p>
             <p>
               The importance of soft skills are distinct from hard skills or domain knowledge. It is increasingly being recognized as a prerequisite in several sections of job market.
@@ -77,7 +77,7 @@ function SkillDevelopment() {
             <div className="skill-focus-content">
               <h3>Presentation and Business communication Skill:</h3>
               <p>
-                It is to communicate effectively in the workplace, you need to be able to present your information clearly. Presentation skills doesn't just mean knowing how to put a good set of powerpoint slides together. It means engaging and connecting with an audience to get your message across.
+                To communicate effectively in the workplace, you need to be able to present your information clearly. Presentation skills don&apos;t just mean knowing how to put a good set of PowerPoint slides together. It means engaging and connecting with an audience to get your message across.
               </p>
             </div>
           </div>

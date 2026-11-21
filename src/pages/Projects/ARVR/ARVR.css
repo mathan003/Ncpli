@@ -1,0 +1,620 @@
+/* ==========================================================================
+   AR & VR PROJECT PAGE STYLES (Self-Contained & Fully Responsive)
+   ========================================================================== */
+
+.arvr-proj-page {
+  background-color: #fbfdfc;
+  min-height: 100vh;
+  color: #1a2f26;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 80px;
+}
+
+.arvr-proj-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header Section */
+.arvr-proj-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 36px auto 32px;
+}
+
+.arvr-proj-tag {
+  display: inline-block;
+  background-color: #e6f4ee;
+  color: #0e4a34;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(14, 74, 52, 0.15);
+}
+
+.arvr-proj-title {
+  color: #0e4a34;
+  font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.22;
+  margin-bottom: 14px;
+  letter-spacing: -0.015em;
+}
+
+.arvr-proj-subtitle {
+  color: #41574c;
+  font-size: clamp(0.98rem, 1.4vw, 1.12rem);
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* Metrics Summary Bar */
+.arvr-proj-metrics-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #e1ebe5;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 18px rgba(14, 74, 52, 0.06);
+  margin-bottom: 44px;
+}
+
+.arvr-metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 8px;
+  position: relative;
+}
+
+.arvr-metric-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #e1ebe5;
+}
+
+.arvr-metric-number {
+  color: #0e4a34;
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.arvr-metric-label {
+  color: #556c60;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Overview Showcase Card */
+.arvr-proj-overview-card {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2ede7;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 6px 24px rgba(14, 74, 52, 0.05);
+  margin-bottom: 56px;
+}
+
+.arvr-proj-sec-title {
+  color: #0e4a34;
+  font-size: clamp(1.5rem, 2.2vw, 1.85rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.arvr-proj-overview-text p {
+  color: #3b5045;
+  font-size: 1rem;
+  line-height: 1.68;
+  margin-bottom: 16px;
+}
+
+.arvr-proj-keypoints {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.arvr-keypoint-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #f4fbf7;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #0e4a34;
+  font-size: 0.94rem;
+  color: #273e33;
+  line-height: 1.5;
+}
+
+.arvr-kp-check {
+  color: #0e4a34;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.arvr-proj-overview-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #edf7f2 0%, #f7fbf9 100%);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e0ebe5;
+}
+
+.arvr-proj-overview-img {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.arvr-proj-overview-img:hover {
+  transform: scale(1.02);
+}
+
+/* Highlights Section */
+.arvr-proj-highlights-sec {
+  margin-bottom: 64px;
+}
+
+.arvr-sec-heading-center {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 36px;
+}
+
+.arvr-badge-pill {
+  display: inline-block;
+  background-color: #f7a828;
+  color: #1a2f26;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.arvr-sec-title-main {
+  color: #0e4a34;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.arvr-sec-subtitle-main {
+  color: #4b6357;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.arvr-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.arvr-highlight-card {
+  background: #ffffff;
+  border: 1px solid #e1ece6;
+  border-radius: 16px;
+  padding: 26px 20px;
+  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.04);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arvr-highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(14, 74, 52, 0.09);
+  border-color: #79c7a6;
+}
+
+.arvr-highlight-icon-box {
+  width: 64px;
+  height: 64px;
+  background: #edf7f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  border: 1px solid #d4ebe0;
+}
+
+.arvr-highlight-icon-box img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.arvr-highlight-card h3 {
+  color: #0e4a34;
+  font-size: 1.06rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.arvr-highlight-card p {
+  color: #556c60;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* School Deployments Section (6 Photos) */
+.arvr-deployments-sec {
+  margin-bottom: 64px;
+}
+
+.arvr-deployments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.arvr-deployment-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e2ece6;
+  box-shadow: 0 4px 20px rgba(14, 74, 52, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.arvr-deployment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(14, 74, 52, 0.12);
+}
+
+.arvr-school-img-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #eef4f1;
+}
+
+.arvr-school-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.arvr-deployment-card:hover .arvr-school-img-box img {
+  transform: scale(1.05);
+}
+
+.arvr-school-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(14, 74, 52, 0.92);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arvr-school-content {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.arvr-school-loc {
+  color: #0e4a34;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.arvr-school-title {
+  color: #0e4a34;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.arvr-school-desc {
+  color: #4d6458;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Implementation Timeline Framework */
+.arvr-framework-sec {
+  margin-bottom: 64px;
+  background: #ffffff;
+  border: 1px solid #e1ece6;
+  border-radius: 20px;
+  padding: 44px 36px;
+  box-shadow: 0 4px 20px rgba(14, 74, 52, 0.05);
+}
+
+.arvr-framework-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 900px;
+  margin: 32px auto 0;
+}
+
+.arvr-timeline-step {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+  align-items: center;
+  background: #f7fbf9;
+  border: 1px solid #e2ede7;
+  border-radius: 12px;
+  padding: 16px 22px;
+  transition: all 0.2s ease;
+}
+
+.arvr-timeline-step:hover {
+  background: #eef8f2;
+  border-color: #88cfae;
+  transform: translateX(4px);
+}
+
+.arvr-step-number {
+  background: #0e4a34;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(14, 74, 52, 0.25);
+}
+
+.arvr-step-info h4 {
+  color: #0e4a34;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.arvr-step-info p {
+  color: #4b6357;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Call to Action Card */
+.arvr-proj-cta-card {
+  background: linear-gradient(135deg, #0e4a34 0%, #156246 100%);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 48px 36px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(14, 74, 52, 0.2);
+}
+
+.arvr-cta-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.arvr-cta-content h2 {
+  font-size: clamp(1.5rem, 2.5vw, 1.95rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.arvr-cta-content p {
+  color: #d1e7dc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.arvr-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.arvr-cta-btn-primary {
+  background-color: #f7a828;
+  color: #0e4a34;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(247, 168, 40, 0.35);
+}
+
+.arvr-cta-btn-primary:hover {
+  background-color: #ffb744;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(247, 168, 40, 0.5);
+}
+
+.arvr-cta-btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.arvr-cta-btn-secondary:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .arvr-proj-metrics-bar {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .arvr-metric-item:nth-child(2)::after {
+    display: none;
+  }
+
+  .arvr-proj-overview-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .arvr-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arvr-deployments-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .arvr-framework-sec {
+    padding: 32px 24px;
+  }
+}
+
+/* Mobile Devices (max-width: 640px) */
+@media (max-width: 640px) {
+  .arvr-proj-container {
+    padding: 0 16px;
+  }
+
+  .arvr-proj-metrics-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .arvr-metric-item::after {
+    display: none !important;
+  }
+
+  .arvr-metric-item {
+    border-bottom: 1px solid #eef4f1;
+    padding-bottom: 12px;
+  }
+
+  .arvr-metric-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .arvr-proj-overview-card {
+    padding: 20px 18px;
+    border-radius: 16px;
+  }
+
+  .arvr-highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .arvr-deployments-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .arvr-deployment-card {
+    border-radius: 14px;
+  }
+
+  .arvr-school-content {
+    padding: 16px 18px;
+  }
+
+  .arvr-timeline-step {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+    text-align: left;
+  }
+
+  .arvr-step-number {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .arvr-proj-cta-card {
+    padding: 32px 20px;
+  }
+
+  .arvr-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .arvr-cta-btn-primary,
+  .arvr-cta-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}

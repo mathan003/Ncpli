@@ -1,8 +1,12 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["react", "oxc"],
+  "categories": {
+    "correctness": "warn"
+  },
   "rules": {
     "react/rules-of-hooks": "error",
+    "react/react-in-jsx-scope": "off",
     "react/only-export-components": ["warn", { "allowConstantExport": true }]
   }
 }

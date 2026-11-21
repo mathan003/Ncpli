@@ -274,6 +274,182 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+/* ==========================================================================
+   AR & VR INNOVATION SECTION (Between Welcome and What We Do)
+   ========================================================================== */
+.about-arvr-section {
+  margin: 50px 0 35px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
+}
+
+.about-arvr-card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: clamp(28px, 4vw, 50px);
+  align-items: center;
+  padding: clamp(32px, 4vw, 48px);
+  background: linear-gradient(135deg, #f4fbf7 0%, #eef7f2 100%);
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(14, 74, 52, 0.06);
+}
+
+.about-arvr-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--green, #0e4a34);
+  background: rgba(14, 74, 52, 0.1);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.about-arvr-title {
+  margin: 0 0 16px;
+  color: var(--green, #0e4a34);
+  font-size: clamp(1.4rem, 2.5vw, 1.95rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.about-arvr-text {
+  color: #2b3930;
+  font-size: 0.98rem;
+  line-height: 1.68;
+  margin: 0 0 22px;
+}
+
+.about-arvr-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.about-arvr-feat {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: #334339;
+  line-height: 1.5;
+}
+
+.about-arvr-feat strong {
+  color: var(--green, #0e4a34);
+}
+
+.about-arvr-feat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--green, #0e4a34);
+  color: #ffffff;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.about-arvr-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.about-arvr-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-sm, 8px);
+  padding: 11px 22px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.about-arvr-btn--primary {
+  background: #f7a828;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(247, 168, 40, 0.32);
+}
+
+.about-arvr-btn--primary:hover {
+  background: #ec9a13;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(247, 168, 40, 0.42);
+}
+
+.about-arvr-btn--outline {
+  background: transparent;
+  color: var(--green, #0e4a34);
+  border: 1.5px solid var(--green, #0e4a34);
+}
+
+.about-arvr-btn--outline:hover {
+  background: var(--green, #0e4a34);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.about-arvr-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-arvr-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+}
+
+.about-arvr-img {
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(14, 74, 52, 0.14);
+  display: block;
+}
+
+.about-arvr-tag-card {
+  position: absolute;
+  bottom: -14px;
+  left: 18px;
+  background: var(--green, #0e4a34);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(14, 74, 52, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 2;
+}
+
+.about-arvr-tag-card strong {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.about-arvr-tag-card span {
+  font-size: 0.72rem;
+  opacity: 0.88;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .about-purpose {
   margin-top: 40px;
   text-align: center;
@@ -512,6 +688,21 @@
     margin: 0 auto;
   }
 
+  .about-arvr-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 32px 24px;
+  }
+
+  .about-arvr-media {
+    order: -1;
+  }
+
+  .about-arvr-img-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
   .purpose-grid {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -684,6 +875,61 @@
     min-width: 240px;
     max-width: 100%;
     max-height: 210px;
+  }
+
+  .about-arvr-section {
+    margin: 32px 0 24px;
+  }
+
+  .about-arvr-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .about-arvr-media {
+    order: -1;
+  }
+
+  .about-arvr-title {
+    font-size: 1.35rem;
+  }
+
+  .about-arvr-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-arvr-feat {
+    font-size: 0.86rem;
+  }
+
+  .about-arvr-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .about-arvr-btn {
+    justify-content: center;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.88rem;
+  }
+
+  .about-arvr-tag-card {
+    bottom: -10px;
+    left: 12px;
+    padding: 6px 14px;
+  }
+
+  .about-arvr-tag-card strong {
+    font-size: 0.85rem;
+  }
+
+  .about-arvr-tag-card span {
+    font-size: 0.65rem;
   }
 
   .purpose-grid {

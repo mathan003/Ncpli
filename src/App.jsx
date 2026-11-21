@@ -22,6 +22,7 @@ import SkillDevelopment from "./pages/Projects/SkillDevelopment/SkillDevelopment
 import ICTHiTechLab from "./pages/Projects/ICTHiTechLab/ICTHiTechLab.jsx";
 import Kiosk from "./pages/Projects/Kiosk/Kiosk.jsx";
 import RFID from "./pages/Projects/RFID/RFID.jsx";
+import ProjectARVR from "./pages/Projects/ARVR/ARVR.jsx";
 
 // Product Pages
 import SmartClassRoom from "./pages/Products/SmartClassRoom/SmartClassRoom.jsx";
@@ -43,6 +44,7 @@ import WebHostingServices from "./pages/Service/WebHostingServices/WebHostingSer
 import CustomSoftwareDevelopment from "./pages/Service/CustomSoftwareDevelopment/softwareDevelopment.jsx";
 import HardwareSupport from "./pages/Service/HardwareSupport/HardwareSupport.jsx";
 import CloudMaintenance from "./pages/Service/CloudMaintenance/CloudMaintenance.jsx";
+import ServiceARVR from "./pages/Service/ARVR/ARVR.jsx";
 
 function App() {
   return (
@@ -63,6 +65,8 @@ function App() {
         <Route path="/projects/ict-hi-tech-lab" element={<ICTHiTechLab />} />
         <Route path="/projects/kiosk" element={<Kiosk />} />
         <Route path="/projects/rfid" element={<RFID />} />
+        <Route path="/projects/ar-vr" element={<ProjectARVR />} />
+        <Route path="/projects/ar&vr" element={<Navigate to="/projects/ar-vr" replace />} />
 
         {/* Product Routes */}
         <Route path="/products" element={<ProductsOverview />} />
@@ -89,6 +93,8 @@ function App() {
         <Route path="/service/custom-software-development" element={<CustomSoftwareDevelopment />} />
         <Route path="/service/hardware-support" element={<HardwareSupport />} />
         <Route path="/service/cloud-maintenance" element={<CloudMaintenance />} />
+        <Route path="/service/ar-vr" element={<ServiceARVR />} />
+        <Route path="/service/ar&vr" element={<Navigate to="/service/ar-vr" replace />} />
 
         {/* Portfolio Routes */}
         <Route path="/portfolio" element={<Navigate to="/portfolio/ar&vr" replace />} />

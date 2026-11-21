@@ -491,7 +491,9 @@ function Career() {
 
   // Scroll to top on route or role change
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (roleId) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   }, [roleId]);
 
   const openApplyModal = (job) => {
@@ -632,14 +634,7 @@ ${d.email}`;
     };
     setSavedFormData(submissionSnapshot);
 
-    // Show the "Application Email Prepared! / IMPORTANT STEP" screen for ALL applications
-    setSubmitStatus("ready_to_send");
-    setIsSubmitting(false);
-
-    // Trigger email client immediately on direct user click (prevent popup/mailto blocking on Vercel/mobile)
-    triggerEmailDefault(submissionSnapshot);
-
-    // Also send submission to FormSubmit in background without blocking UI
+    // Send submission to FormSubmit in background without blocking UI
     try {
       const postData = new FormData();
       postData.append("Applicant_Name", formData.name);
@@ -665,6 +660,13 @@ ${d.email}`;
     } catch {
       // background submission non-blocking
     }
+
+    // Show the "Application Email Prepared! / IMPORTANT STEP" screen for ALL applications
+    setSubmitStatus("ready_to_send");
+    setIsSubmitting(false);
+
+    // Trigger email client immediately on direct user click (prevent popup/mailto blocking on Vercel/mobile)
+    triggerEmailDefault(submissionSnapshot);
 
     setFormData({
       name: "",

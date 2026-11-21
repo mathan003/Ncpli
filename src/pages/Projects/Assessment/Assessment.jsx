@@ -104,20 +104,20 @@ function Assessment() {
             </p>
           </div>
 
-          {/* 4. Assessment for Learning */}
+          {/* 4. Assessment Overarching Purposes */}
           <div className="assess-method-card">
             <h4 className="assess-card-title">Assessment for learning:</h4>
             <p className="assess-card-desc">
               occurs when teachers use inferences about student progress to inform their teaching.
             </p>
             <h4 className="assess-card-title" style={{ marginTop: "16px" }}>
-              Assessment for learning:
+              Assessment as learning:
             </h4>
             <p className="assess-card-desc">
               occurs when students reflect on and monitor their progress to inform their future learning goals.
             </p>
             <h4 className="assess-card-title" style={{ marginTop: "16px" }}>
-              Assessment for learning:
+              Assessment of learning:
             </h4>
             <p className="assess-card-desc">
               occurs when teachers use evidence of student learning to make judgements on student achievement against goals and standards.

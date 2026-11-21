@@ -86,7 +86,7 @@ function GraphicDesign() {
 
         {/* Services Grid Section */}
         <section className="gd-services-section">
-          <h2 className="gd-services-title">Our Graphic Design Servies are:</h2>
+          <h2 className="gd-services-title">Our Graphic Design Services are:</h2>
 
           {/* Row 1: 4 Cards */}
           <div className="gd-services-row-top">

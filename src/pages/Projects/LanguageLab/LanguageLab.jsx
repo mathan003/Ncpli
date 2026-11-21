@@ -36,26 +36,25 @@ function LanguageLab() {
               About Language Lab
             </h3>
             <p>
-              Language Lab is a software program designed to help the teachers to improve 
-              the learning environment in a Computer-based classroom. It is to increase the 
-              language skill to the students in English. In this we can teach the good 
-              Pronunciation, Letter writing, Grammar, Conversation, Voice and words 
-              reorganization tools, and Parts of Speech.
+              Language Lab is a software program designed to help teachers improve 
+              the learning environment in a computer-based classroom. It aims to develop English 
+              language skills in students, teaching correct pronunciation, 
+              letter writing, grammar, conversation, voice and word recognition tools, and parts of speech.
             </p>
             <p>
               Without language we cannot communicate with the world. English is the 
-              common language that is spoken all over the world. So it is necessary to speak 
-              English fluently with proper pronunciation without any grammatical mistakes. 
-              we are implementing ―DIGITAL MULTIMEDIA LANGUAGE LAB in colleges and 
-              schools. We split whole subject coverage into three different levels. Level 1, 
-              Level 2 & Level 3.Language Hall - consists of Hardware -based classroom control 
-              system. We have established this language lab projects in 12 colleges based on 
-              the UGC norms
+              common language spoken worldwide, making it essential to speak 
+              English fluently with accurate pronunciation and proper grammar. 
+              We are implementing DIGITAL MULTIMEDIA LANGUAGE LAB in colleges and 
+              schools. We split subject coverage into three distinct levels: Level 1, 
+              Level 2, and Level 3. The Language Hall consists of a hardware-based classroom control 
+              system. We have established these language lab projects in 12 colleges compliant with 
+              UGC norms.
             </p>
             <p>
-              In this software Call Soft installed on each computer in a classroom, a teacher 
-              has the ability to, Reduce Student Distractions, Demonstrate Skills, Monitor 
-              Students, Access Students Understanding, and Help Individual Students.
+              With Call Soft software installed on each computer in a classroom, teachers 
+              have the ability to reduce student distractions, demonstrate skills, monitor 
+              students, assess student understanding, and help individual learners.
             </p>
           </div>
 

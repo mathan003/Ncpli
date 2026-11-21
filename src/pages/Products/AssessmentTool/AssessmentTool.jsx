@@ -106,15 +106,15 @@ function AssessmentTool() {
           </div>
 
           <div className="assess-card">
-            <h3>Assessment for learning:</h3>
+            <h3>Three Overarching Purposes of Assessment:</h3>
             <p>
               <strong>Assessment for learning:</strong> occurs when teachers use inferences about student progress to inform their teaching
             </p>
             <p>
-              <strong>Assessment for learning:</strong> occurs when students reflect on and monitor their progress to inform their future learning goals
+              <strong>Assessment as learning:</strong> occurs when students reflect on and monitor their progress to inform their future learning goals
             </p>
             <p>
-              <strong>Assessment for learning:</strong> occurs when teachers use evidence of student learning to make judgements on student achievement against goals and standards
+              <strong>Assessment of learning:</strong> occurs when teachers use evidence of student learning to make judgements on student achievement against goals and standards
             </p>
           </div>
         </div>

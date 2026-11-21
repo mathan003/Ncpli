@@ -14,7 +14,7 @@ function ShortFilm() {
             <span className="sf-badge">OUR SERVICES</span>
             <h1>Short Film</h1>
             <p>
-              Creative staying through powerful visual storytelling. We craft
+              Creative storytelling through powerful visual cinematic media. We craft
               cinematic short films that engage, inspire and leave a lasting
               impact.
             </p>
@@ -54,7 +54,7 @@ function ShortFilm() {
               for short films, episodic works for television and web. Our Development Division 
               consists of established writers, illustrators and designers who generate ideas 
               and concepts for commercially successful and market-driven products. We are 
-              working on a short films. A complete range of animation services are available 
+              working on short films. A complete range of animation services are available 
               for Netcom's clients. Netcom offers end-to-end animation services for production 
               including storyboard, layout, background and animation, clean-up and 
               compositing.

@@ -12,6 +12,7 @@ import webhostingImg from "../../assets/image/home screen/Web Hosting Services.j
 import customsoftwareImg from "../../assets/image/home screen/Customized Software.jpg";
 import hardwareImg from "../../assets/image/home screen/Hardware Support.jpg";
 import cloudImg from "../../assets/image/home screen/Cloud Maintainance.jpg";
+import arvrServiceImg from "../../assets/image/product/AR & VR/ARVR.png";
 
 const SERVICE_CATEGORIES = [
   { id: "all", label: "All Services" },
@@ -128,6 +129,18 @@ const SERVICES_DATA = [
       "Proactive AWS & cloud infrastructure management, automated disaster recovery, cost optimization, performance scaling, and cloud security compliance.",
     highlights: ["AWS Management", "Disaster Recovery", "Cost Optimization", "24/7 Monitoring"],
     badge: "Cloud & DevOps",
+  },
+  {
+    id: "ar-vr-development",
+    title: "AR & VR Development",
+    category: "software-apps",
+    categoryLabel: "Software & Mobile Apps",
+    image: arvrServiceImg,
+    to: "/service/ar-vr",
+    summary:
+      "Custom Augmented Reality, Virtual Reality applications, interactive 3D simulations, virtual science laboratories, and turnkey experiential learning ecosystems.",
+    highlights: ["Virtual Labs", "Interactive 3D Curriculum", "Web & Mobile AR", "Turnkey VR Labs"],
+    badge: "Spatial Computing",
   },
 ];
 

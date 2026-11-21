@@ -21,6 +21,7 @@ const NAV_ITEMS = [
       { label: "ICT/Hi-Tech Lab", to: "/projects/ict-hi-tech-lab" },
       { label: "Kiosk Project", to: "/projects/kiosk" },
       { label: "Radio-frequency identification (RFID)", to: "/projects/rfid" },
+      { label: "AR & VR Project", to: "/projects/ar-vr" },
     ],
   },
   {
@@ -50,6 +51,7 @@ const NAV_ITEMS = [
       { label: "Custom Software Development", to: "/service/custom-software-development" },
       { label: "Hardware Support & Maintenance", to: "/service/hardware-support" },
       { label: "Cloud Maintenance", to: "/service/cloud-maintenance" },
+      { label: "AR & VR Development", to: "/service/ar-vr" },
     ],
   },
   {

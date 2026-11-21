@@ -8,12 +8,13 @@ import Kiosk from "./Kiosk/Kiosk.jsx";
 import SkillDevelopment from "./SkillDevelopment/SkillDevelopment.jsx";
 import DigitalContent from "./DigitalContent/DigitalContent.jsx";
 import YouTube from "./YouTube/YouTube.jsx";
+import NotFound from "../NotFound.jsx";
 
 function Portfolio() {
   const { category = "ar&vr" } = useParams();
+  const normalizedCategory = String(category).toLowerCase().replace(/&/g, "-");
 
-  switch (category.toLowerCase()) {
-    case "ar&vr":
+  switch (normalizedCategory) {
     case "ar-vr":
       return <ARVR />;
     case "robotics":
@@ -29,7 +30,7 @@ function Portfolio() {
     case "youtube":
       return <YouTube />;
     default:
-      return <ARVR />;
+      return <NotFound />;
   }
 }
 

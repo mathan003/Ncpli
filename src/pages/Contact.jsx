@@ -41,6 +41,13 @@ const locations = [
   },
 ];
 
+const getMapPadding = () => {
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 640;
+  return isMobile
+    ? { paddingTopLeft: [25, 75], paddingBottomRight: [25, 55] }
+    : { paddingTopLeft: [60, 110], paddingBottomRight: [60, 75] };
+};
+
 function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
   const mapElement = useRef(null);
   const mapRef = useRef(null);
@@ -50,13 +57,6 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
   useEffect(() => {
     activeLocationRef.current = activeLocationId;
   }, [activeLocationId]);
-
-  const getMapPadding = () => {
-    const isMobile = typeof window !== "undefined" && window.innerWidth <= 640;
-    return isMobile
-      ? { paddingTopLeft: [25, 75], paddingBottomRight: [25, 55] }
-      : { paddingTopLeft: [60, 110], paddingBottomRight: [60, 75] };
-  };
 
   useEffect(() => {
     if (!mapElement.current) return undefined;
@@ -137,6 +137,8 @@ function GoogleLocationsMap({ activeLocationId, onSelectLocation }) {
     return () => {
       resizeObserver.disconnect();
       map.remove();
+      mapRef.current = null;
+      markersRef.current = {};
     };
   }, [onSelectLocation]);
 
@@ -338,7 +340,7 @@ const Contact = () => {
               <h3><img src={companyIcon} alt="" /> Head Office</h3>
               <div className="contact-item">
                 <img className="contact-icon-image" src={houseIcon} alt="" />
-                <p>No. 1/1, Nathan Street, Adikalapuram, Tirunelveli - 627002,<br/>Tamil Nadu, India.</p>
+                <p>No. 1/1, Nathan Street, Adaikalapuram, Tirunelveli - 627002,<br/>Tamil Nadu, India.</p>
               </div>
               <div className="contact-item">
                 <img className="contact-icon-image" src={mailIcon} alt="" />

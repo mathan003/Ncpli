@@ -12,6 +12,7 @@ import skillDevImg from "../../assets/image/project/our project/skill developmen
 import ictImg from "../../assets/image/project/our project/ict.jpg";
 import kioskImg from "../../assets/image/project/our project/kiosk.jpg";
 import rfidImg from "../../assets/image/project/our project/rfid.png";
+import arvrImg from "../../assets/image/product/AR & VR/ARVR.png";
 
 const PROJECTS = [
   {
@@ -40,7 +41,7 @@ const PROJECTS = [
   },
   {
     id: "assessment",
-    title: "Assesment",
+    title: "Assessment",
     image: assessmentImg,
     to: "/projects/assessment",
   },
@@ -67,6 +68,12 @@ const PROJECTS = [
     title: "Radio-frequency identification (RFID)",
     image: rfidImg,
     to: "/projects/rfid",
+  },
+  {
+    id: "ar-vr",
+    title: "AR & VR Experiential Learning Labs",
+    image: arvrImg,
+    to: "/projects/ar-vr",
   },
 ];
 

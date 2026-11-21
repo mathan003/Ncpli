@@ -85,7 +85,7 @@ function Footer() {
             <div className="site-footer__contact-item">
               <MapPinIcon />
               <span>
-                No. 1/1, Nathan Street, Adikalapuram,<br />
+                No. 1/1, Nathan Street, Adaikalapuram,<br />
                 Murugankurichi, Palayamkottai,<br />
                 Tirunelveli - 627 002
               </span>

@@ -50,8 +50,8 @@ function DigitalContent() {
         <div className="project-grid-3">
           <div className="project-card">
             <h3>Pre Production</h3>
-            <p>The pre-production process of 3D animation involves the initial aspects of an an imated film. This process includes the concept creation, storyboards, rough 
-              script reel, and character creation. With these steps 
+            <p>The pre-production process of 3D animation involves the initial aspects of an animated film. This process includes concept creation, storyboards, rough 
+              script reels, and character creation. With these steps 
               complete, the animation production pipeline is ready 
               to move to the production process.</p>
           </div>
@@ -62,7 +62,7 @@ function DigitalContent() {
               the narrative. They produce series of panels to plan the 
               action, staging and camera choices in 3D digital shots 
               or 2D animation frames. They also work to ensure 
-              continuity betweenanimated scenes.</p>
+              continuity between animated scenes.</p>
           </div>
           <div className="project-card">
             <h3>Animatic</h3>
@@ -71,7 +71,7 @@ function DigitalContent() {
               storyboard images are cut together to make a rough 
               draft animation, usually with sound effects or music, 
               giving filmmakers an idea of what the final animation 
-              or live- actionsequence will look like.</p>
+              or live-action sequence will look like.</p>
           </div>
           <div className="project-card">
             <h3>Storyboard</h3>

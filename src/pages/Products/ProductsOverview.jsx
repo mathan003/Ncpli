@@ -57,7 +57,7 @@ const PRODUCTS = [
   },
   {
     id: "assessment-tool",
-    title: "Assesment Tool",
+    title: "Assessment Tool",
     image: assessmentToolImg,
     to: "/products/assessment-tool",
   },

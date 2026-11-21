@@ -1,0 +1,807 @@
+/* ==========================================================================
+   AR & VR SERVICE PAGE STYLES (Self-Contained & Fully Responsive)
+   ========================================================================== */
+
+.arvr-service-page {
+  background-color: #fcfdfd;
+  color: #172b22;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 80px;
+}
+
+/* Service Hero Section */
+.arvr-serv-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  box-sizing: border-box;
+}
+
+.arvr-serv-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(14, 74, 52, 0.88) 0%, rgba(10, 48, 34, 0.94) 100%);
+}
+
+.arvr-serv-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  text-align: center;
+}
+
+.arvr-serv-badge {
+  display: inline-block;
+  background: #f7a828;
+  color: #0e4a34;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 5px 16px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.arvr-serv-hero-title {
+  color: #ffffff;
+  font-size: clamp(2rem, 3.6vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  letter-spacing: -0.015em;
+}
+
+.arvr-serv-hero-subtitle {
+  color: #dbebe2;
+  font-size: clamp(0.96rem, 1.4vw, 1.12rem);
+  line-height: 1.6;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Main Container */
+.arvr-serv-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Intro Grid (2 Columns) */
+.arvr-serv-intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e1ece6;
+  border-radius: 20px;
+  padding: 44px;
+  box-shadow: 0 6px 24px rgba(14, 74, 52, 0.05);
+  margin-top: 36px;
+  margin-bottom: 56px;
+}
+
+.arvr-serv-tag {
+  display: inline-block;
+  background: #edf7f2;
+  color: #0e4a34;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(14, 74, 52, 0.14);
+}
+
+.arvr-serv-intro-heading {
+  color: #0e4a34;
+  font-size: clamp(1.5rem, 2.3vw, 1.95rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.arvr-serv-intro-card p {
+  color: #3b5045;
+  font-size: 1rem;
+  line-height: 1.68;
+  margin-bottom: 16px;
+}
+
+.arvr-serv-intro-cta {
+  margin-top: 24px;
+}
+
+.arvr-serv-btn-primary {
+  display: inline-block;
+  background-color: #0e4a34;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(14, 74, 52, 0.25);
+  text-decoration: none;
+}
+
+.arvr-serv-btn-primary:hover {
+  background-color: #145e43;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(14, 74, 52, 0.35);
+}
+
+.arvr-serv-media-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #edf8f3 0%, #f7fcf9 100%);
+  border-radius: 18px;
+  padding: 24px;
+  border: 1px solid #e1ece6;
+}
+
+.arvr-serv-media-img {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.arvr-serv-media-img:hover {
+  transform: scale(1.02);
+}
+
+/* Headings Helpers */
+.arvr-serv-heading-center {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 36px;
+}
+
+.arvr-serv-badge-pill {
+  display: inline-block;
+  background-color: #f7a828;
+  color: #132b20;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.arvr-serv-section-title {
+  color: #0e4a34;
+  font-size: clamp(1.6rem, 2.6vw, 2.15rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.arvr-serv-section-subtitle {
+  color: #4b6357;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Core Offerings Grid */
+.arvr-serv-offerings-sec {
+  margin-bottom: 64px;
+}
+
+.arvr-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.arvr-offering-card {
+  background: #ffffff;
+  border: 1px solid #e1ece6;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.arvr-offering-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(14, 74, 52, 0.1);
+  border-color: #79c7a6;
+}
+
+.arvr-offering-tag {
+  display: inline-block;
+  align-self: flex-start;
+  background: #edf7f2;
+  color: #0e4a34;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.arvr-offering-title {
+  color: #0e4a34;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.arvr-offering-desc {
+  color: #4a6155;
+  font-size: 0.91rem;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Why Partner With Netcom */
+.arvr-serv-why-sec {
+  margin-bottom: 64px;
+}
+
+.arvr-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.arvr-why-card {
+  background: #ffffff;
+  border: 1px solid #e1ece6;
+  border-radius: 16px;
+  padding: 26px 20px;
+  box-shadow: 0 4px 16px rgba(14, 74, 52, 0.04);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arvr-why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(14, 74, 52, 0.09);
+  border-color: #79c7a6;
+}
+
+.arvr-why-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: #edf7f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  border: 1px solid #d4ebe0;
+}
+
+.arvr-why-icon-wrap img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.arvr-why-card h3 {
+  color: #0e4a34;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.arvr-why-card p {
+  color: #556c60;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Proven Deployments Showcase (Gallery) */
+.arvr-serv-gallery-sec {
+  margin-bottom: 64px;
+}
+
+.arvr-serv-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.arvr-gallery-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e2ece6;
+  box-shadow: 0 4px 20px rgba(14, 74, 52, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.arvr-gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(14, 74, 52, 0.12);
+}
+
+.arvr-gallery-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #eef4f1;
+}
+
+.arvr-gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.arvr-gallery-card:hover .arvr-gallery-img-wrap img {
+  transform: scale(1.05);
+}
+
+.arvr-gallery-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(14, 74, 52, 0.92);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arvr-gallery-body {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.arvr-gallery-loc {
+  color: #0e4a34;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.arvr-gallery-title {
+  color: #0e4a34;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.arvr-gallery-desc {
+  color: #4d6458;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Development Lifecycle Process */
+.arvr-process-sec {
+  margin-bottom: 64px;
+  background: #ffffff;
+  border: 1px solid #e1ece6;
+  border-radius: 20px;
+  padding: 44px 36px;
+  box-shadow: 0 4px 20px rgba(14, 74, 52, 0.05);
+}
+
+.arvr-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.arvr-process-card {
+  background: #f7fbf9;
+  border: 1px solid #e1ede7;
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arvr-process-card:hover {
+  background: #edf7f2;
+  border-color: #88cfae;
+  transform: translateY(-4px);
+}
+
+.arvr-process-num {
+  background: #0e4a34;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 8px rgba(14, 74, 52, 0.2);
+}
+
+.arvr-process-phase {
+  color: #0e4a34;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.arvr-process-desc {
+  color: #556c60;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Consultation & Demo CTA Card */
+.arvr-serv-cta-box {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: center;
+  background: linear-gradient(135deg, #0e4a34 0%, #156246 100%);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 48px;
+  box-shadow: 0 10px 30px rgba(14, 74, 52, 0.2);
+}
+
+.arvr-serv-cta-left h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.arvr-serv-cta-left p {
+  color: #d1e7dc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.arvr-serv-cta-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.arvr-serv-btn-outline {
+  display: inline-block;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.arvr-serv-btn-outline:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.arvr-serv-cta-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arvr-serv-cta-right img {
+  max-width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.25));
+}
+
+/* ==========================================================================
+   MODAL DIALOG STYLES
+   ========================================================================== */
+
+.arvr-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.arvr-modal-dialog {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 540px;
+  width: 100%;
+  padding: 32px 30px;
+  position: relative;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  animation: arvrModalFadeIn 0.25s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@keyframes arvrModalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.arvr-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: #6d8479;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.arvr-modal-close:hover {
+  color: #0e4a34;
+}
+
+.arvr-modal-title {
+  color: #0e4a34;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  padding-right: 24px;
+}
+
+.arvr-modal-subtitle {
+  color: #556c60;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.arvr-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.arvr-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.arvr-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+
+.arvr-form-group label {
+  color: #273e33;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.arvr-form-group input,
+.arvr-form-group select,
+.arvr-form-group textarea {
+  border: 1px solid #cedcd4;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: #1a2f26;
+  background: #fdfefe;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.arvr-form-group input:focus,
+.arvr-form-group select:focus,
+.arvr-form-group textarea:focus {
+  outline: none;
+  border-color: #0e4a34;
+  box-shadow: 0 0 0 3px rgba(14, 74, 52, 0.12);
+}
+
+.arvr-modal-submit-btn {
+  background-color: #0e4a34;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.96rem;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(14, 74, 52, 0.2);
+}
+
+.arvr-modal-submit-btn:hover {
+  background-color: #145e43;
+  transform: translateY(-2px);
+}
+
+.arvr-modal-success {
+  text-align: center;
+  padding: 24px 16px;
+  background: #edf7f2;
+  border-radius: 12px;
+  color: #0e4a34;
+}
+
+.arvr-modal-success h4 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+.arvr-modal-success p {
+  font-size: 0.92rem;
+  color: #3b5045;
+  margin: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .arvr-serv-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .arvr-offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arvr-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arvr-serv-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .arvr-process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .arvr-serv-cta-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 36px 28px;
+  }
+
+  .arvr-serv-cta-btns {
+    justify-content: center;
+  }
+}
+
+/* Mobile Devices (max-width: 640px) */
+@media (max-width: 640px) {
+  .arvr-serv-main-container {
+    padding: 0 16px;
+  }
+
+  .arvr-serv-hero {
+    min-height: 220px;
+    padding: 40px 16px;
+  }
+
+  .arvr-serv-intro-grid {
+    padding: 24px 18px;
+    border-radius: 16px;
+    margin-top: 24px;
+  }
+
+  .arvr-offerings-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .arvr-why-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .arvr-serv-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .arvr-process-sec {
+    padding: 30px 18px;
+  }
+
+  .arvr-process-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .arvr-serv-cta-box {
+    padding: 30px 20px;
+  }
+
+  .arvr-serv-cta-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .arvr-serv-btn-primary,
+  .arvr-serv-btn-outline {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .arvr-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .arvr-modal-dialog {
+    padding: 24px 18px;
+  }
+}

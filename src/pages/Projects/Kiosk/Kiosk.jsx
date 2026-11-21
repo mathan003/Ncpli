@@ -35,9 +35,9 @@ function Kiosk() {
           <div className="kiosk-top-info-col">
             <h2 className="kiosk-top-card-title">Kiosk Project</h2>
             <p>
-              A kiosk is an interactive system designed for public use thatdelivers information or enables transactions.
+              A kiosk is an interactive system designed for public use that delivers information or enables transactions.
               Standard or custom applications developed for information kiosks provide customers with information, 
-              the ability to participate in loyalty programs, and transaction capability.Enterprises deploy kiosks to 
+              the ability to participate in loyalty programs, and transaction capability. Enterprises deploy kiosks to 
               increase customer loyalty, strengthen their brand with target customers, and reduce operational costs.
             </p>
             <p>
@@ -52,7 +52,7 @@ function Kiosk() {
         <div className="kiosk-goals-box">
           <h3 className="kiosk-goals-heading">Purpose of Kiosk:</h3>
           <p className="kiosk-goals-desc">
-                A kiosk is a small, stand-alone booth typically placed in high-traffic areas for business purposes.It typically provides information and applications on education, commerce, entertainment, 
+                A kiosk is a small, stand-alone booth typically placed in high-traffic areas for business purposes. It typically provides information and applications on education, commerce, entertainment, 
                 and a variety of other topics.
           </p>
         </div>
@@ -61,7 +61,7 @@ function Kiosk() {
         <section className="kiosk-intro-block">
           <h1 className="kiosk-center-title">Kiosk Project</h1>
           <p className="kiosk-center-desc">
-            The software we developed for TMB contains the Contents that are designed and developed by using the FLASH software. Online Contents can be upload/download easily. If we want to changeor edit the contents, it will be easily modified and updated.
+            The software we developed for TMB contains the contents that are designed and developed by using modern interactive software. Online contents can be uploaded and downloaded easily. If we want to change or edit the contents, it can be easily modified and updated.
           </p>
           <p className="kiosk-center-desc">
             NETCOM executed the KIOSK project along with Software and have installed 82 Bank Kiosks for Tamil Nadu Mercantile Bank (TMB). These KIOSKs have touch screen facility where the user or the customer could access his / her Banking details such as transaction details along with the information about the bank's new products and facilities. These KIOSKs have been established in the States of Karnataka, Gujarat, Delhi, Maharashtra, Andhra Pradesh, Kerala, Tamil Nadu and Puducherry in India.

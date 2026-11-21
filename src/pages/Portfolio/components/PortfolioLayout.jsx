@@ -49,6 +49,7 @@ export function PortfolioLayout({ currentSlug, categoryTitle, children }) {
 
   // Smoothly center the active category into view
   useEffect(() => {
+    if (!normCurrent) return;
     const el = categoriesRef.current;
     if (el) {
       const activeEl = el.querySelector(".category-active");

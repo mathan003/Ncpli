@@ -28,3 +28,4 @@ __pycache__
 *.njsproj
 *.sln
 *.sw?
+test-results/
