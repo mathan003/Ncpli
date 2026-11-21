@@ -20,8 +20,8 @@ npm run build
 npm run preview
 ```
 
-`npm run build` outputs static files to `dist/`, which you can deploy to any
-static host (Netlify, Vercel, GitHub Pages, an S3 bucket, etc).
+`npm run build` outputs static files to `dist/`, which you can deploy directly to
+Hostinger (upload `dist/` contents to `public_html`), or any web host.
 
 ## Project structure
 
